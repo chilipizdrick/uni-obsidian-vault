@@ -1,4 +1,6 @@
 {
   "accentColor": "",
-  "baseFontSize": 19
+  "baseFontSize": 19,
+  "cssTheme": "Rosé Pine",
+  "theme": "system"
 }

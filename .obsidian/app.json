@@ -2,5 +2,6 @@
   "promptDelete": false,
   "vimMode": true,
   "rightToLeft": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "tabSize": 4
 }
