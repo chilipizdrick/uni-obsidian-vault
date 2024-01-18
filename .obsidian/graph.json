@@ -5,47 +5,54 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:\"ДИСКРЕТНАЯ МАТЕМАТИКА\"  ",
+      "query": "path:Алгоритмика  ",
       "color": {
         "a": 1,
-        "rgb": 6938706
+        "rgb": 12403455
       }
     },
     {
-      "query": "path:\"МАТЕМАТИЧЕСКИЙ АНАЛИЗ\"  ",
+      "query": "path:\"Аналитическая геометрия\"  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 16761631
       }
     },
     {
-      "query": "path:\"ЛИНЕЙНАЯ АЛГЕБРА\"  ",
+      "query": "path:\"Дискретная математика\"  ",
       "color": {
         "a": 1,
-        "rgb": 5410784
+        "rgb": 4915015
       }
     },
     {
-      "query": "path:\"АНАЛИТИЧЕСКАЯ ГЕОМЕТРИЯ\"  ",
+      "query": "path:\"Математический анализ\"  ",
       "color": {
         "a": 1,
-        "rgb": 14729554
+        "rgb": 16728642
+      }
+    },
+    {
+      "query": "path:\"Линейная алгебра\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 4361215
       }
     }
   ],
-  "collapse-display": true,
-  "showArrow": true,
-  "textFadeMultiplier": -0.9,
-  "nodeSizeMultiplier": 1.00073072861668,
-  "lineSizeMultiplier": 3.05386694825766,
-  "collapse-forces": true,
-  "centerStrength": 0.478479408658923,
-  "repelStrength": 14.2192185850053,
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.22881481481481,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.408148148148148,
+  "repelStrength": 11.2444444444444,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.49021692325724614,
-  "close": true
+  "linkDistance": 259,
+  "scale": 0.41599798120349546,
+  "close": false
 }
