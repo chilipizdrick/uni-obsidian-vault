@@ -11,8 +11,13 @@
             "id": "a981a9b1230f0745",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "АЛГОРИТМИКА/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "АЛГОРИТМИКА/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "АЛГОРИТМИКА/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "АЛГОРИТМИКА/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md"
+              }
             }
           },
           {
@@ -147,7 +156,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d8dd75c0d1297b4",
+  "active": "a981a9b1230f0745",
   "lastOpenFiles": [
     "ЛЕКЦИИ (НЕ СОРТ.)/Лекция Дискретная Математика 2023-12-18.md",
     "ЛЕКЦИИ (НЕ СОРТ.)/Лекция методы матана 2023-12-20.md",

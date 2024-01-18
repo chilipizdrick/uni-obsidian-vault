@@ -5,5 +5,7 @@
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-icon-folder",
   "code-emitter",
-  "obsidian-git"
+  "obsidian-git",
+  "vim-im-select",
+  "obsidian-excalidraw-plugin"
 ]
