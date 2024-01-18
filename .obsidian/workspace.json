@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "ff8cbd0260613a7c",
+    "type": "split",
+    "children": [
+      {
+        "id": "79bf3bb74e772018",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a981a9b1230f0745",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3ea58cb953ae5fbb",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd2d7d5ef0a31673",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d8dd75c0d1297b4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "df0c118712cb16df",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "предел",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dd263cca78ce384a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f52afa7cf66eb8b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d6923e06cc96326",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9bca5c08622fa996",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "daf5f3690da5c52b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fde3ae0e32a80ecf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e2470c350970eba2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "6f4875441838abc0",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3d8dd75c0d1297b4",
+  "lastOpenFiles": [
+    "ЛЕКЦИИ (НЕ СОРТ.)/Лекция Дискретная Математика 2023-12-18.md",
+    "ЛЕКЦИИ (НЕ СОРТ.)/Лекция методы матана 2023-12-20.md",
+    "АЛГОРИТМИКА/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
+    "ДИСКРЕТНАЯ МАТЕМАТИКА/Untitled.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Предел числовой последовательности.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Открытое множество.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Основные эквивалентности.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Окрестность числа.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Непрерывность функции в точке.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Наибольший и наименьший элемент.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Методы вычисления пределов функции.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Замыкание множества.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Замкнутое множество.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Дифференциал функции.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Граничная точка.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Граница множества.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Второй замечательный предел.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Бесконечно малая последовательность.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Бесконечно большая последовательность.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Полярные координаты.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Теоремы Вейерштрасса.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Теорема о промежуточном значении.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Теорема о непрерывности сложной функции.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Теорема Больцано-Вейерштрасса.md",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Сходящаяся и расходящаяся последовательности.md",
+    "IMAGES/Pasted image 20231211092631.png",
+    "IMAGES/Pasted image 20231211092421.png",
+    "IMAGES/Pasted image 20231211091936.png",
+    "Консультация матан.md",
+    "IMAGES",
+    "IMAGES/Pasted image 20240115162255.png",
+    "Pasted image 20240115162206.png",
+    "IMAGES/Pasted image 20231211092852.png",
+    "IMAGES/Pasted image 20231211092723.png",
+    "ЛЕКЦИИ (НЕ СОРТ.)",
+    "АЛГОРИТМИКА",
+    "Pasted image 20231209230057.png",
+    "АНАЛИТИЧЕСКАЯ ГЕОМЕТРИЯ/геома.zip",
+    "АНАЛИТИЧЕСКАЯ ГЕОМЕТРИЯ/геома.zip.tmp",
+    "Obsidian Vault.zip",
+    "Untitled.canvas",
+    "ЛИНЕЙНАЯ АЛГЕБРА/Untitled",
+    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Untitled.canvas",
+    "ЛИНЕЙНАЯ АЛГЕБРА",
+    "АНАЛИТИЧЕСКАЯ ГЕОМЕТРИЯ",
+    "ДИСКРЕТНАЯ МАТЕМАТИКА"
+  ]
+}
