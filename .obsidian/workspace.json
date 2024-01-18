@@ -11,8 +11,13 @@
             "id": "a981a9b1230f0745",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Дискретная математика/Идемпотентность.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Дискретная математика/Идемпотентность.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Дискретная математика/Идемпотентность.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Дискретная математика/Идемпотентность.md"
+              }
             }
           },
           {
@@ -150,7 +159,6 @@
   },
   "active": "a981a9b1230f0745",
   "lastOpenFiles": [
-    "Дискретная математика/Идемпотентность.md",
     "Дискретная математика/Делитель нуля (Кольцо).md",
     "Дискретная математика/Декартово произведение.md",
     "Дискретная математика/Группа.md",
@@ -177,6 +185,7 @@
     "Excalidraw/Drawing 2024-01-18 16.54.48.excalidraw.md",
     "Excalidraw",
     "Лекции/Лекция Дискретная Математика 2023-12-18.md",
+    "Лекции/Лекция методы матана 2023-12-20.md",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
     "Images/Pasted image 20231211091936.png",
