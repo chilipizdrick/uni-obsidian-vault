@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Консультация дискра.md",
+                "file": "Дискретная математика/Теорема мультипликативности.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "тн",
+                "query": "теорема мульт",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Консультация дискра.md",
+                "file": "Дискретная математика/Теорема мультипликативности.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Консультация дискра.md",
+                "file": "Дискретная математика/Теорема мультипликативности.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Консультация дискра.md"
+                "file": "Дискретная математика/Теорема мультипликативности.md"
               }
             }
           },
@@ -158,10 +158,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "df0c118712cb16df",
+  "active": "39341ea81da8519f",
   "lastOpenFiles": [
-    "Дискретная математика/Кольцо вычетов.md",
     "Консультация дискра.md",
+    "Дискретная математика/Кольцо вычетов.md",
     "Test note.md",
     "Дискретная математика/Идемпотентность.md",
     "Дискретная математика/Делитель нуля (Кольцо).md",
