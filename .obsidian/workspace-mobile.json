@@ -4,32 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "3eea8cbf1e5df204",
+        "id": "c674881d0fea6026",
         "type": "tabs",
         "children": [
           {
-            "id": "ac01291e0ff53437",
+            "id": "026ce2c3d01680f9",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "5d5110244ee1168f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Математический анализ/Бесконечно большая последовательность.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +81,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Математический анализ/Бесконечно большая последовательность.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -112,7 +97,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Математический анализ/Бесконечно большая последовательность.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -123,9 +107,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "Математический анализ/Бесконечно большая последовательность.md"
-          }
+          "state": {}
         }
       }
     ],
@@ -142,8 +124,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5d5110244ee1168f",
+  "active": "026ce2c3d01680f9",
   "lastOpenFiles": [
-    "Test note.md"
+    "Test note.md",
+    "Математический анализ/Точнная верхняя и нижняя грань.md",
+    "Математический анализ/Бесконечно большая последовательность.md"
   ]
 }
