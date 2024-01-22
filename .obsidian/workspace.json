@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Дискретная математика/Кольцо вычетов.md",
+                "file": "Дискретная математика/Функция Эйлера.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "обратимости",
+                "query": "эйлера",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +119,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -139,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Дискретная математика/Кольцо вычетов.md",
+                "file": "Дискретная математика/Функция Эйлера.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Дискретная математика/Кольцо вычетов.md",
+                "file": "Дискретная математика/Функция Эйлера.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Дискретная математика/Кольцо вычетов.md"
+                "file": "Дискретная математика/Функция Эйлера.md"
               }
             }
           },
@@ -212,8 +213,8 @@
   },
   "active": "f3c92931905e9e4d",
   "lastOpenFiles": [
-    "Дискретная математика/Критерий обратимости остатка.md",
     "Дискретная математика/Кольцо вычетов.md",
+    "Дискретная математика/Критерий обратимости остатка.md",
     "Дискретная математика/Делитель нуля (Кольцо).md",
     "Дискретная математика/Нильпотентность.md",
     "Дискретная математика/Идемпотентность.md",
