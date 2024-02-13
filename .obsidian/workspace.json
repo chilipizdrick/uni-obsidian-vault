@@ -34,6 +34,19 @@
             }
           },
           {
+            "id": "11ddd084d6cd460c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Линейная алгебра/Базис (Линейная алгебра).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "132385b92904d0b3",
             "type": "leaf",
             "state": {
@@ -47,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Линейная алгебра/Линейное отображение.md",
+                "file": "Линейная алгебра/Базис (Линейная алгебра).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Линейная алгебра/Линейное отображение.md",
+                "file": "Линейная алгебра/Базис (Линейная алгебра).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Линейная алгебра/Линейное отображение.md"
+                "file": "Линейная алгебра/Базис (Линейная алгебра).md"
               }
             }
           },
@@ -184,10 +197,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "43edab811cae918c",
+  "active": "11ddd084d6cd460c",
   "lastOpenFiles": [
-    "Линейная алгебра/Линейная оболочка.md",
     "Линейная алгебра/Линейное отображение.md",
+    "Линейная алгебра/Линейная оболочка.md",
     "conflict-files-obsidian-git.md",
     "НИР/Регрессионный анализ. Линейные регрессии.md",
     "НИР/Введение.md",
