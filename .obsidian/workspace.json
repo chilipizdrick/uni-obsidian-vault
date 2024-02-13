@@ -34,6 +34,19 @@
             }
           },
           {
+            "id": "c938c64f09db45ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "132385b92904d0b3",
             "type": "leaf",
             "state": {
@@ -47,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Линейная алгебра/Линейная оболочка.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Линейная алгебра/Линейная оболочка.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Линейная алгебра/Линейная оболочка.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -184,8 +197,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "43edab811cae918c",
+  "active": "c938c64f09db45ff",
   "lastOpenFiles": [
+    "Линейная алгебра/Линейная оболочка.md",
+    "conflict-files-obsidian-git.md",
+    "НИР/Регрессионный анализ. Линейные регрессии.md",
+    "НИР/Введение.md",
+    "НИР",
     "Линейная алгебра/Прямая сумма линейных пространств.md",
     "Линейная алгебра/Линейное пространство.md",
     "Дискретная математика/Бинарная операция.md",
@@ -208,10 +226,6 @@
     "Дискретная математика/Линейные Диофантовы уравнения с двумя переменными.md",
     "Дискретная математика/Кольцо.md",
     "Дискретная математика/Классы эквивалентности.md",
-    "Дискретная математика/Китайская теорема об остатках.md",
-    "Дискретная математика/Изоморфизм.md",
-    "Дискретная математика/Идемпотентность.md",
-    "Дискретная математика/Декартово произведение.md",
     "Excalidraw",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
@@ -230,7 +244,6 @@
     "Untitled.canvas",
     "ЛИНЕЙНАЯ АЛГЕБРА/Untitled",
     "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Untitled.canvas",
-    "Линейная алгебра",
-    "Аналитическая геометрия"
+    "Линейная алгебра"
   ]
 }
