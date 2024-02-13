@@ -13,14 +13,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Линейная алгебра/Untitled.md",
+                "file": "Линейная алгебра/Поле.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "718ffb2228d46a00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Линейная алгебра/Линейное пространство.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6f862d41bba04feb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Дискретная математика/Бинарная операция.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Линейная алгебра/Untitled.md",
+                "file": "Линейная алгебра/Линейное пространство.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Линейная алгебра/Untitled.md",
+                "file": "Линейная алгебра/Линейное пространство.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Линейная алгебра/Untitled.md"
+                "file": "Линейная алгебра/Линейное пространство.md"
               }
             }
           },
@@ -157,8 +184,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7b4fc90ce903a2bf",
+  "active": "718ffb2228d46a00",
   "lastOpenFiles": [
+    "Дискретная математика/Бинарная операция.md",
+    "Линейная алгебра/Линейное пространство.md",
+    "Линейная алгебра/Поле.md",
     "Линейная алгебра/Untitled.md",
     "Дискретная математика/Кольцо вычетов.md",
     "Дискретная математика/Функция Эйлера.md",
@@ -182,9 +212,6 @@
     "Дискретная математика/Изоморфизм.md",
     "Дискретная математика/Идемпотентность.md",
     "Дискретная математика/Декартово произведение.md",
-    "Дискретная математика/Группа.md",
-    "Дискретная математика/Бинарное отношение.md",
-    "Дискретная математика/Бинарная операция.md",
     "Excalidraw",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
