@@ -11,8 +11,13 @@
             "id": "7b4fc90ce903a2bf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Линейная алгебра/Untitled.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Линейная алгебра/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Линейная алгебра/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Линейная алгебра/Untitled.md"
+              }
             }
           },
           {
@@ -150,6 +159,7 @@
   },
   "active": "7b4fc90ce903a2bf",
   "lastOpenFiles": [
+    "Линейная алгебра/Untitled.md",
     "Дискретная математика/Кольцо вычетов.md",
     "Дискретная математика/Функция Эйлера.md",
     "Дискретная математика/Делитель нуля (Кольцо).md",
@@ -175,7 +185,6 @@
     "Дискретная математика/Группа.md",
     "Дискретная математика/Бинарное отношение.md",
     "Дискретная математика/Бинарная операция.md",
-    "Дискретная математика/Алгоритм Евклида.md",
     "Excalidraw",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
