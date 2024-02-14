@@ -4,5 +4,3 @@ tags:
   - note
   - {{date}}
 ---
-
-## 

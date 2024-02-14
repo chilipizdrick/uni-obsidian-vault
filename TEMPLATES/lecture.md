@@ -4,5 +4,3 @@ tags:
   - 2nd-semester
   - {{date}}
 ---
-
-## 
