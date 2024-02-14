@@ -13,7 +13,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "Лекции"
+          "Lectures"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -43,7 +43,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "Семинары"
+          "Seminars"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -94,7 +94,7 @@
   "macros": [],
   "inputPrompt": "single-line",
   "devMode": false,
-  "templateFolderPath": "",
+  "templateFolderPath": "TEMPLATES",
   "announceUpdates": false,
   "version": "1.6.1",
   "disableOnlineFeatures": true,

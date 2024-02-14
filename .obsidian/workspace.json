@@ -26,7 +26,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/Лекция Дискретная Математика 2023-12-18.md",
+                "file": "TEMPLATES/definition.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "dc655a33693fff20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TEMPLATES/lecture.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/Лекция Дискретная Математика 2023-12-18.md",
+                "file": "TEMPLATES/definition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/Лекция Дискретная Математика 2023-12-18.md",
+                "file": "TEMPLATES/definition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/Лекция Дискретная Математика 2023-12-18.md"
+                "file": "TEMPLATES/definition.md"
               }
             }
           },
@@ -171,17 +184,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3d8dd75c0d1297b4",
+  "active": "4d776ee58964531d",
   "lastOpenFiles": [
-    "Lectures/Лекция методы матана 2023-12-20.md",
+    "TEMPLATES/note.md",
+    "TEMPLATES/definition.md",
+    "TEMPLATES/lecture.md",
+    "TEMPLATES/seminar.md",
+    "Lectures/Лекция Дискретная Математика 2023-12-18.md",
     "Семинары/2024-02-14 Семинар - Дискретная математика.md",
+    "Lectures/Лекция методы матана 2023-12-20.md",
     "Seminars",
     "Lectures",
     "Лекции/2024-02-14 Лекция - .md",
-    "Lectures/Лекция Дискретная Математика 2023-12-18.md",
     "Лекции/Untitled.md",
-    "TEMPLATES/seminar.md",
-    "TEMPLATES/lecture.md",
     "Untitled.md",
     "Семинары",
     "Лекции/Cringe.md",
@@ -201,7 +216,6 @@
     "Математический анализ/Определенный интеграл.md",
     "Линейная алгебра/Критерий Сильвестра.md",
     "Математический анализ/Непрерывность функции в точке.md",
-    "Математический анализ/Функция от двух переменных.md",
     "НИР",
     "Excalidraw",
     "Images/Pasted image 20231211092631.png",
