@@ -13,10 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Лекции/Untitled.md",
+                "file": "TEMPLATES/lecture.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Лекции/Untitled.md",
+                "file": "TEMPLATES/lecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Лекции/Untitled.md",
+                "file": "TEMPLATES/lecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Лекции/Untitled.md"
+                "file": "TEMPLATES/lecture.md"
               }
             }
           },
@@ -159,7 +159,7 @@
   },
   "active": "d2884e1520f34867",
   "lastOpenFiles": [
-    "Лекции/Untitled.md",
+    "Лекции/Cringe.md",
     "TEMPLATES/lecture.md",
     "Лекции/Лекция методы матана 2023-12-20.md",
     "Лекции/Лекция Дискретная Математика 2023-12-18.md",

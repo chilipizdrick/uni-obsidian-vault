@@ -1,2 +1,6 @@
->#{{date}}
->Creation time: {{time}}
+---
+aliases:
+tags:
+  lecture
+  {{date}}
+---
