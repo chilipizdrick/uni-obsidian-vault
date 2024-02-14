@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TEMPLATES/seminar.md",
+                "file": "TEMPLATES/lecture.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
+          },
+          {
+            "id": "9d1a5efc2b372a65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TEMPLATES/lecture.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TEMPLATES/seminar.md",
+                "file": "TEMPLATES/lecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TEMPLATES/seminar.md",
+                "file": "TEMPLATES/lecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TEMPLATES/seminar.md"
+                "file": "TEMPLATES/lecture.md"
               }
             }
           },
@@ -154,14 +168,19 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "d2884e1520f34867",
+  "active": "9d1a5efc2b372a65",
   "lastOpenFiles": [
+    "Untitled.md",
     "TEMPLATES/lecture.md",
+    "Лекции/Untitled.md",
     "TEMPLATES/seminar.md",
     "Лекции/Cringe.md",
+    "Дискретная математика/Мультипликативная группа кольца вычетов.md",
+    "Дискретная математика/Порядок группы. Порядок элемента.md",
     "Лекции/Лекция методы матана 2023-12-20.md",
     "Лекции/Лекция Дискретная Математика 2023-12-18.md",
     "Excalidraw/Drawing 2024-02-14 12.36.49.excalidraw.md",
@@ -182,10 +201,6 @@
     "Математический анализ/Открытое множество.md",
     "Математический анализ/Основные эквивалентности.md",
     "Математический анализ/Окрестность числа.md",
-    "Математический анализ/Наибольший и наименьший элемент.md",
-    "Математический анализ/Методы вычисления пределов функции.md",
-    "Математический анализ/Замыкание множества.md",
-    "Математический анализ/Замкнутое множество.md",
     "НИР",
     "Excalidraw",
     "Images/Pasted image 20231211092631.png",
