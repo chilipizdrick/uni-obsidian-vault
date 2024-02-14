@@ -1,7 +1,7 @@
 ---
 tags:
   - seminar
-  - 2nd semester
+  - 2nd-semester
   - {{date}}
 ---
 

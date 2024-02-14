@@ -1,5 +1,66 @@
 {
-  "choices": [],
+  "choices": [
+    {
+      "id": "a18cac72-ab53-4adc-9ae1-6f0bfbf9d743",
+      "name": "lecture",
+      "type": "Template",
+      "command": false,
+      "templatePath": "TEMPLATES/lecture.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{date}} Лекция: "
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "Лекции"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Append to the bottom of the file",
+      "setFileExistsBehavior": false
+    },
+    {
+      "id": "59c46cc9-2bf9-420f-b2a0-1e771081c344",
+      "name": "seminar",
+      "type": "Template",
+      "command": false,
+      "templatePath": "TEMPLATES/seminar.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{date}} Семинар: "
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "Семинары"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    }
+  ],
   "macros": [],
   "inputPrompt": "single-line",
   "devMode": false,

@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "9c40ed7f8f189d67",
+        "id": "d43e208a5a41f6d3",
         "type": "tabs",
         "children": [
           {
-            "id": "d2884e1520f34867",
+            "id": "c41acbf95f2f9a8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TEMPLATES/lecture.md",
+                "file": "Лекции/Лекция Дискретная Математика 2023-12-18.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               }
             }
-          },
-          {
-            "id": "9d1a5efc2b372a65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TEMPLATES/lecture.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TEMPLATES/lecture.md",
+                "file": "Лекции/Лекция Дискретная Математика 2023-12-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TEMPLATES/lecture.md",
+                "file": "Лекции/Лекция Дискретная Математика 2023-12-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TEMPLATES/lecture.md"
+                "file": "Лекции/Лекция Дискретная Математика 2023-12-18.md"
               }
             }
           },
@@ -168,21 +154,21 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "zk-prefixer:Create new unique note": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9d1a5efc2b372a65",
+  "active": "3d8dd75c0d1297b4",
   "lastOpenFiles": [
-    "Untitled.md",
-    "TEMPLATES/lecture.md",
     "Лекции/Untitled.md",
+    "Лекции/Лекция Дискретная Математика 2023-12-18.md",
     "TEMPLATES/seminar.md",
+    "TEMPLATES/lecture.md",
+    "Untitled.md",
+    "Семинары",
     "Лекции/Cringe.md",
     "Дискретная математика/Мультипликативная группа кольца вычетов.md",
     "Дискретная математика/Порядок группы. Порядок элемента.md",
     "Лекции/Лекция методы матана 2023-12-20.md",
-    "Лекции/Лекция Дискретная Математика 2023-12-18.md",
     "Excalidraw/Drawing 2024-02-14 12.36.49.excalidraw.md",
     "TEMPLATES",
     "Математический анализ/Переход из полярных координат в декартовы и обратно.md",
@@ -200,7 +186,6 @@
     "Математический анализ/Функция от двух переменных.md",
     "Математический анализ/Открытое множество.md",
     "Математический анализ/Основные эквивалентности.md",
-    "Математический анализ/Окрестность числа.md",
     "НИР",
     "Excalidraw",
     "Images/Pasted image 20231211092631.png",
@@ -218,7 +203,6 @@
     "АНАЛИТИЧЕСКАЯ ГЕОМЕТРИЯ/геома.zip.tmp",
     "Obsidian Vault.zip",
     "Untitled.canvas",
-    "ЛИНЕЙНАЯ АЛГЕБРА/Untitled",
     "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Untitled.canvas"
   ]
 }
