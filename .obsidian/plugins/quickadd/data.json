@@ -4,11 +4,11 @@
       "id": "a18cac72-ab53-4adc-9ae1-6f0bfbf9d743",
       "name": "lecture",
       "type": "Template",
-      "command": false,
+      "command": true,
       "templatePath": "TEMPLATES/lecture.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "{{date}} Лекция: "
+        "format": "{{date}} Лекция - {{value}}"
       },
       "folder": {
         "enabled": true,
@@ -34,16 +34,46 @@
       "id": "59c46cc9-2bf9-420f-b2a0-1e771081c344",
       "name": "seminar",
       "type": "Template",
-      "command": false,
+      "command": true,
       "templatePath": "TEMPLATES/seminar.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "{{date}} Семинар: "
+        "format": "{{date}} Семинар - {{value}}"
       },
       "folder": {
         "enabled": true,
         "folders": [
           "Семинары"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
+      "id": "0bb9aad5-1a9b-461b-a7cb-85628a568861",
+      "name": "note",
+      "type": "Template",
+      "command": true,
+      "templatePath": "TEMPLATES/note.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{value}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "Notes"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
@@ -65,7 +95,7 @@
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "",
-  "announceUpdates": true,
+  "announceUpdates": false,
   "version": "1.6.1",
   "disableOnlineFeatures": true,
   "ai": {
