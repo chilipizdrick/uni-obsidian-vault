@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TEMPLATES/lecture.md",
+                "file": "TEMPLATES/seminar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TEMPLATES/lecture.md",
+                "file": "TEMPLATES/seminar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TEMPLATES/lecture.md",
+                "file": "TEMPLATES/seminar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TEMPLATES/lecture.md"
+                "file": "TEMPLATES/seminar.md"
               }
             }
           },
@@ -159,8 +159,9 @@
   },
   "active": "d2884e1520f34867",
   "lastOpenFiles": [
-    "Лекции/Cringe.md",
     "TEMPLATES/lecture.md",
+    "TEMPLATES/seminar.md",
+    "Лекции/Cringe.md",
     "Лекции/Лекция методы матана 2023-12-20.md",
     "Лекции/Лекция Дискретная Математика 2023-12-18.md",
     "Excalidraw/Drawing 2024-02-14 12.36.49.excalidraw.md",
@@ -185,7 +186,6 @@
     "Математический анализ/Методы вычисления пределов функции.md",
     "Математический анализ/Замыкание множества.md",
     "Математический анализ/Замкнутое множество.md",
-    "Математический анализ/Граничная точка.md",
     "НИР",
     "Excalidraw",
     "Images/Pasted image 20231211092631.png",
