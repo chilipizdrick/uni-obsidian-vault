@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1d39c9ff46b5a422",
+        "id": "53abf4d3c847c659",
         "type": "tabs",
         "children": [
           {
-            "id": "06404e169d3a0a24",
+            "id": "ee3a43e18222101d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Дискретная математика/Абелева группа.md",
+                "file": "test.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Дискретная математика/Абелева группа.md",
+                "file": "test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Дискретная математика/Абелева группа.md",
+                "file": "test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Дискретная математика/Абелева группа.md"
+                "file": "test.md"
               }
             }
           },
@@ -157,8 +157,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "06404e169d3a0a24",
+  "active": "ee3a43e18222101d",
   "lastOpenFiles": [
+    "test.md",
+    "Notes/Дискретная математика/Абелева группа.md",
     "Lectures/Лекция Дискретная Математика 2023-12-18.md",
     "Seminars/2024-02-14 Семинар - Дискретная математика.md",
     "TEMPLATES/definition.md",
@@ -167,7 +169,6 @@
     "TEMPLATES/note.md",
     "TEMPLATES/lecture.md",
     "Notes/aboba.md",
-    "Untitled.md",
     "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
     "НИР/Регрессионный анализ. Линейные регрессии.md",
     "Notes/НИР/Регрессионный анализ. Линейные регрессии.md",
@@ -185,7 +186,6 @@
     "Notes/Математический анализ/Теоремы Вейерштрасса.md",
     "Notes/Математический анализ/Теорема о промежуточном значении.md",
     "Notes/Математический анализ/Теорема о множестве первообразных.md",
-    "Notes/Математический анализ/Теорема Вейерштрасса (о пределе ограниченной последовательности).md",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
     "Notes/Дискретная математика",

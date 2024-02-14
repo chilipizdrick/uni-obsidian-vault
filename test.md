@@ -1,0 +1,3 @@
+```python
+print(rand(0, 10))
+```
