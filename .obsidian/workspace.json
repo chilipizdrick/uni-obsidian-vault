@@ -13,14 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Математический анализ/Функция от двух переменных.md",
+                "file": "Математический анализ/Полярные координаты.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "f5c3ae2ce220840a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Математический анализ/Дифференциал функции.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "49feda0b8c9b7e85",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-02-14 09.24.11.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Математический анализ/Функция от двух переменных.md",
+                "file": "Математический анализ/Дифференциал функции.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Математический анализ/Функция от двух переменных.md",
+                "file": "Математический анализ/Дифференциал функции.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Математический анализ/Функция от двух переменных.md"
+                "file": "Математический анализ/Дифференциал функции.md"
               }
             }
           },
@@ -157,8 +181,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b996402721ea3b78",
+  "active": "f5c3ae2ce220840a",
   "lastOpenFiles": [
+    "Математический анализ/Функция от двух переменных.md",
+    "Excalidraw/Drawing 2024-02-14 09.24.11.excalidraw.md",
+    "Линейная алгебра/Критерий Сильвестра.md",
+    "Математический анализ/Полярные координаты.md",
     "Математический анализ/Фундаментальная числовая последовательность.md",
     "Математический анализ/Дифференциал функции.md",
     "Математический анализ/Граничная точка.md",
@@ -182,10 +210,6 @@
     "Дискретная математика/Бинарная операция.md",
     "Линейная алгебра/Поле.md",
     "Дискретная математика/Кольцо вычетов.md",
-    "Дискретная математика/Функция Эйлера.md",
-    "Дискретная математика/Делитель нуля (Кольцо).md",
-    "Дискретная математика/Нильпотентность.md",
-    "Дискретная математика/Циклическая группа.md",
     "Excalidraw",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
