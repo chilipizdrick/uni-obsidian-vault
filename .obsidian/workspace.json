@@ -11,8 +11,13 @@
             "id": "ee3a43e18222101d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-02-15 Семинар - Математический анxализ.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Seminars/2024-02-15 Семинар - Математический анxализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Seminars/2024-02-15 Семинар - Математический анxализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Seminars/2024-02-15 Семинар - Математический анxализ.md"
+              }
             }
           },
           {
@@ -150,6 +159,7 @@
   },
   "active": "ee3a43e18222101d",
   "lastOpenFiles": [
+    "Seminars/2024-02-15 Семинар - Математический анxализ.md",
     "Untitled.md",
     "test.md",
     "Notes/Дискретная математика/Абелева группа.md",
@@ -176,7 +186,6 @@
     "Notes/Математический анализ/Точки разрыва.md",
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
     "Notes/Математический анализ/Теоремы Вейерштрасса.md",
-    "Notes/Математический анализ/Теорема о промежуточном значении.md",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
     "Notes/Дискретная математика",
