@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "53abf4d3c847c659",
+        "id": "d78586c97a290c1f",
         "type": "tabs",
         "children": [
           {
-            "id": "8d14a21c5302a4f5",
+            "id": "00fa96bd7b84378d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
+                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
+                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
+                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md"
+                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md"
               }
             }
           },
@@ -157,12 +157,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d14a21c5302a4f5",
+  "active": "00fa96bd7b84378d",
   "lastOpenFiles": [
+    "Seminars/2024-02-15 Семинар - Математический анализ.md",
+    "Lectures/Лекция методы матана 2023-12-20.md",
+    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "Seminars/2024-02-16 Семинар - English.md",
     "Seminars/2024-02-16 Семинар - ОРГ.md",
     "znanierussia.ru.md",
-    "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Untitled.md",
     "test.md",
     "Notes/Дискретная математика/Абелева группа.md",
@@ -184,8 +186,6 @@
     "Notes/Математический анализ/Фундаментальная числовая последовательность.md",
     "Notes/Математический анализ/Формула Тейлора.md",
     "Notes/Математический анализ/Точнная верхняя и нижняя грань.md",
-    "Notes/Математический анализ/Условие эквивалентности фукций.md",
-    "Notes/Математический анализ/Теорема о непрерывности сложной функции.md",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
     "Notes/Дискретная математика",
