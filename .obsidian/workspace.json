@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "286b024c4822dd59",
+        "id": "ee457b9e098ac172",
         "type": "tabs",
         "children": [
           {
-            "id": "038fed8c7aaba724",
+            "id": "acc4eb1ed01fb436",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
-                "staged": false,
-                "hash": "65b75457cad70fd624c75f748dbb2f23c8f40a75"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,21 +44,13 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#2nd-semester",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "dd263cca78ce384a",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
             }
           }
         ]
@@ -102,7 +90,7 @@
               "type": "outgoing-link",
               "state": {
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -112,8 +100,8 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "sortOrder": "alphabeticalReverse",
+                "useHierarchy": false
               }
             }
           },
@@ -126,14 +114,6 @@
             }
           },
           {
-            "id": "6f4875441838abc0",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
             "id": "7017fa47e5650f8c",
             "type": "leaf",
             "state": {
@@ -142,25 +122,27 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 382.5
+    "width": 382.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false
     }
   },
-  "active": "038fed8c7aaba724",
+  "active": "7017fa47e5650f8c",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Untitled.canvas",
+    "2024-02-16.md",
     "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "2024-02-16 Lecture - Ангем.md",
     "Lectures/Лекция методы матана 2023-12-20.md",
@@ -182,11 +164,9 @@
     "TEMPLATES/seminar.md",
     "TEMPLATES/theorem.md",
     "znanierussia.ru.md",
-    "Untitled.md",
     "test.md",
     "Seminars/2024-02-14 Семинар - Дискретная математика.md",
     "TEMPLATES/lecture.md",
-    "Notes/aboba.md",
     "Notes/НИР",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
@@ -204,7 +184,6 @@
     "Images/Pasted image 20231211092852.png",
     "Images/Pasted image 20231211092723.png",
     "Pasted image 20231209230057.png",
-    "Untitled.canvas",
     "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Untitled.canvas"
   ]
 }
