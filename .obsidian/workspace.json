@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "92031ed76f777219",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-02-16 Семинар - English.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анxализ.md",
+                "file": "Seminars/2024-02-16 Семинар - English.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анxализ.md",
+                "file": "Seminars/2024-02-16 Семинар - English.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анxализ.md"
+                "file": "Seminars/2024-02-16 Семинар - English.md"
               }
             }
           },
@@ -157,9 +171,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ee3a43e18222101d",
+  "active": "92031ed76f777219",
   "lastOpenFiles": [
     "Seminars/2024-02-15 Семинар - Математический анxализ.md",
+    "Seminars/2024-02-16 Семинар - English.md",
     "Untitled.md",
     "test.md",
     "Notes/Дискретная математика/Абелева группа.md",
@@ -185,7 +200,6 @@
     "Notes/Математический анализ/Теорема о непрерывности сложной функции.md",
     "Notes/Математический анализ/Точки разрыва.md",
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
-    "Notes/Математический анализ/Теоремы Вейерштрасса.md",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
     "Notes/Дискретная математика",
