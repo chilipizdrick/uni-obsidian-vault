@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Дискретка  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md"
+                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md"
               }
             }
           },
@@ -159,11 +160,11 @@
   },
   "active": "b68bd9d6d9ecfe6b",
   "lastOpenFiles": [
+    "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "TEMPLATES/definition.md",
     "TEMPLATES/note.md",
     "TEMPLATES/seminar.md",
     "TEMPLATES/theorem.md",
-    "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Lectures/Лекция методы матана 2023-12-20.md",
