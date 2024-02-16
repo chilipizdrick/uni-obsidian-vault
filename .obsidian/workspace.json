@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a3e3920444349b81",
+        "id": "24d470ed59f8a1d7",
         "type": "tabs",
         "children": [
           {
-            "id": "b68bd9d6d9ecfe6b",
+            "id": "4dad015fbe91b907",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
+                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Дискретка  ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,12 +66,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f52afa7cf66eb8b5",
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
+                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md",
+                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Дискретная математика.md"
+                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md"
               }
             }
           },
@@ -158,14 +158,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b68bd9d6d9ecfe6b",
+  "active": "4dad015fbe91b907",
   "lastOpenFiles": [
+    "Lectures/Лекция Дискретная Математика 2023-12-18.md",
+    "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
     "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "TEMPLATES/definition.md",
     "TEMPLATES/note.md",
     "TEMPLATES/seminar.md",
     "TEMPLATES/theorem.md",
-    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Lectures/Лекция методы матана 2023-12-20.md",
     "Seminars/2024-02-16 Семинар - English.md",
@@ -174,11 +176,9 @@
     "Untitled.md",
     "test.md",
     "Notes/Дискретная математика/Абелева группа.md",
-    "Lectures/Лекция Дискретная Математика 2023-12-18.md",
     "Seminars/2024-02-14 Семинар - Дискретная математика.md",
     "TEMPLATES/lecture.md",
     "Notes/aboba.md",
-    "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
     "НИР/Регрессионный анализ. Линейные регрессии.md",
     "Notes/НИР/Регрессионный анализ. Линейные регрессии.md",
     "Notes/НИР",
