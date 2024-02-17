@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5cc2e6c362a0627d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md"
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md"
               }
             }
           },
@@ -147,20 +161,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6bd54aea9522cbf",
+  "active": "5cc2e6c362a0627d",
   "lastOpenFiles": [
-    "Seminars/2024-02-16 Семинар - English.md",
+    "Lectures/Лекция Дискретная Математика 2023-12-18.md",
+    "Lectures/Лекция методы матана 2023-12-20.md",
+    "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/2024-02-16 Семинар - ОРГ.md",
+    "Seminars/2024-02-16 Семинар - English.md",
     "Untitled.md",
     "Untitled.canvas",
     "2024-02-16.md",
-    "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "2024-02-16 Lecture - Ангем.md",
-    "Lectures/Лекция методы матана 2023-12-20.md",
-    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "git-diagnostics-2024-02-16-2028.zip",
-    "Lectures/Лекция Дискретная Математика 2023-12-18.md",
     "Notes/Математический анализ/Дифференциал функции.md",
     "Дифференциал.md",
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
