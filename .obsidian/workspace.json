@@ -11,8 +11,13 @@
             "id": "e6bd54aea9522cbf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md"
+              }
             }
           },
           {
@@ -140,9 +149,9 @@
   },
   "active": "e6bd54aea9522cbf",
   "lastOpenFiles": [
-    "Seminars/2024-02-16 Семинар - ОРГ.md",
     "Seminars/2024-02-16 Семинар - English.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
+    "Seminars/2024-02-16 Семинар - ОРГ.md",
     "Untitled.md",
     "Untitled.canvas",
     "2024-02-16.md",
