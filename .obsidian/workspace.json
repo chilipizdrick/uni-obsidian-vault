@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ee457b9e098ac172",
+        "id": "b1fbfbd3b3f3478e",
         "type": "tabs",
         "children": [
           {
-            "id": "acc4eb1ed01fb436",
+            "id": "e6bd54aea9522cbf",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,17 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acc4eb1ed01fb436",
+  "active": "e6bd54aea9522cbf",
   "lastOpenFiles": [
+    "Seminars/2024-02-16 Семинар - ОРГ.md",
+    "Seminars/2024-02-16 Семинар - English.md",
+    "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Untitled.md",
     "Untitled.canvas",
     "2024-02-16.md",
     "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "2024-02-16 Lecture - Ангем.md",
     "Lectures/Лекция методы матана 2023-12-20.md",
-    "Seminars/2024-02-16 Семинар - ОРГ.md",
-    "Seminars/2024-02-16 Семинар - English.md",
-    "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "git-diagnostics-2024-02-16-2028.zip",
     "Lectures/Лекция Дискретная Математика 2023-12-18.md",
