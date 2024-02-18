@@ -26,7 +26,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "TEMPLATES/homework.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6fc4411301c446d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/2024-02-18 Домашнее задание - English.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -63,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#2nd-semester",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "Homework/2024-02-18 Домашнее задание - English.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "Homework/2024-02-18 Домашнее задание - English.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md"
+                "file": "Homework/2024-02-18 Домашнее задание - English.md"
               }
             }
           },
@@ -161,10 +174,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5cc2e6c362a0627d",
+  "active": "6fc4411301c446d5",
   "lastOpenFiles": [
-    "Notes/Математический анализ/Теорема об итегрировании по частям.md",
+    "TEMPLATES/homework.md",
+    "Homework/2024-02-18 Домашнее задание - English.md",
+    "TEMPLATES/lecture.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
+    "Homework",
+    "Notes/Математический анализ/Теорема об итегрировании по частям.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Lectures/Лекция Дискретная Математика 2023-12-18.md",
     "Lectures/Лекция методы матана 2023-12-20.md",
@@ -188,8 +205,6 @@
     "TEMPLATES/theorem.md",
     "znanierussia.ru.md",
     "test.md",
-    "Seminars/2024-02-14 Семинар - Дискретная математика.md",
-    "TEMPLATES/lecture.md",
     "Notes/НИР",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
@@ -198,7 +213,6 @@
     "Notes/Аналитическая геометрия",
     "Notes/Алгоритмика",
     "Notes",
-    "Seminars",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
     "Images/Pasted image 20231211091936.png",

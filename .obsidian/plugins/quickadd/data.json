@@ -89,6 +89,36 @@
       "openFileInMode": "default",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": false
+    },
+    {
+      "id": "cedefaa2-857c-4ee9-b336-775bd94ecf64",
+      "name": "homework",
+      "type": "Template",
+      "command": true,
+      "templatePath": "TEMPLATES/homework.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{date}} Домашнее задание - {{value}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "Homework"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
     }
   ],
   "macros": [],
