@@ -19,35 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5cc2e6c362a0627d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TEMPLATES/homework.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "6fc4411301c446d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/2024-02-18 Домашнее задание - English.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Homework/2024-02-18 Домашнее задание - English.md",
+                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Homework/2024-02-18 Домашнее задание - English.md",
+                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Homework/2024-02-18 Домашнее задание - English.md"
+                "file": "Seminars/2024-02-15 Семинар - Математический анализ.md"
               }
             }
           },
@@ -174,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6fc4411301c446d5",
+  "active": "e6bd54aea9522cbf",
   "lastOpenFiles": [
     "TEMPLATES/homework.md",
     "Homework/2024-02-18 Домашнее задание - English.md",
