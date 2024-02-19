@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "531168989606859b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
+                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
+                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md"
+                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md"
               }
             }
           },
@@ -147,8 +161,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e8dede838becfe0",
+  "active": "531168989606859b",
   "lastOpenFiles": [
+    "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
+    "Lectures/2024-02-19 Лекция - Алгоритмика.md",
     "Seminars/2024-02-19 Семинар - История.md",
     "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
     "Notes/Линейная алгебра/Линейное отображение.md",
@@ -176,8 +192,6 @@
     "git-diagnostics-2024-02-16-2028.zip",
     "Notes/Математический анализ/Дифференциал функции.md",
     "Дифференциал.md",
-    "Notes/Дискретная математика/Абелева группа.md",
-    "TEMPLATES/note.md",
     "Notes/НИР",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
