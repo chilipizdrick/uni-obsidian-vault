@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "4c3c39df52d2632e",
+        "id": "acd9c944f9bf6c2e",
         "type": "tabs",
         "children": [
           {
-            "id": "81bb582fee6d5b9b",
+            "id": "746903c3cfaa1058",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Линейная алгебра/Линейное отображение.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "056e3a993e5e2715",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
+                "file": "Seminars/2024-02-19 Семинар - История.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
+                "file": "Seminars/2024-02-19 Семинар - История.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
+                "file": "Seminars/2024-02-19 Семинар - История.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md"
+                "file": "Seminars/2024-02-19 Семинар - История.md"
               }
             }
           },
@@ -161,10 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "056e3a993e5e2715",
+  "active": "746903c3cfaa1058",
   "lastOpenFiles": [
-    "Notes/Линейная алгебра/Линейное отображение.md",
+    "Seminars/2024-02-19 Семинар - История.md",
     "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
+    "Notes/Линейная алгебра/Линейное отображение.md",
     "Notes/Линейная алгебра/Линейное пространство.md",
     "Notes/Линейная алгебра/Система линейно независимых алгебраических уравнений (СЛАУ).md",
     "Notes/Линейная алгебра/Замена баиса.md",
@@ -191,7 +178,6 @@
     "Дифференциал.md",
     "Notes/Дискретная математика/Абелева группа.md",
     "TEMPLATES/note.md",
-    "Notes/Дискретная математика/Прямое произведение групп.md",
     "Notes/НИР",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
