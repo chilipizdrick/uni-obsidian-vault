@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md"
               }
             }
           },
@@ -149,10 +149,11 @@
   },
   "active": "81bb582fee6d5b9b",
   "lastOpenFiles": [
-    "Untitled.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
-    "TEMPLATES/homework.md",
     "Homework/2024-02-18 Домашнее задание - English.md",
+    "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
+    "Untitled.md",
+    "TEMPLATES/homework.md",
     "TEMPLATES/lecture.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Homework",
@@ -177,7 +178,6 @@
     "TEMPLATES/seminar.md",
     "TEMPLATES/theorem.md",
     "znanierussia.ru.md",
-    "test.md",
     "Notes/НИР",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
