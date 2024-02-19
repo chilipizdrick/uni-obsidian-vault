@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "acd9c944f9bf6c2e",
+        "id": "0bb4b7f293fcee8f",
         "type": "tabs",
         "children": [
           {
-            "id": "746903c3cfaa1058",
+            "id": "8e8dede838becfe0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - История.md",
+                "file": "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - История.md",
+                "file": "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - История.md",
+                "file": "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - История.md"
+                "file": "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md"
               }
             }
           },
@@ -147,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "746903c3cfaa1058",
+  "active": "8e8dede838becfe0",
   "lastOpenFiles": [
     "Seminars/2024-02-19 Семинар - История.md",
     "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
