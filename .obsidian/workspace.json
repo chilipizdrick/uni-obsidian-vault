@@ -13,10 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
+                "file": "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": true
+                "source": false
               }
             }
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
+                "file": "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
+                "file": "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md"
+                "file": "Lectures/2024-02-20 Лекция - Линейная алгебра.md"
               }
             }
           },
@@ -149,6 +149,14 @@
   },
   "active": "b40d80841fceaad6",
   "lastOpenFiles": [
+    "Lectures/2024-02-19 Лекция - Алгоритмика.md",
+    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
+    "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+    "Notes/Дискретная математика/Кольцо.md",
+    "Notes/Дискретная математика/Классы эквивалентности.md",
+    "Notes/Дискретная математика/Китайская теорема об остатках.md",
+    "Notes/Дискретная математика/Изоморфизм.md",
+    "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
     "Notes/Дискретная математика/Делитель нуля (Кольцо).md",
     "Notes/Дискретная математика/Декартово произведение.md",
     "Notes/Дискретная математика/Группа.md",
@@ -167,15 +175,7 @@
     "Seminars/2024-02-19 Семинар - История.md",
     "Seminars/2024-02-16 Семинар - ОРГ.md",
     "Seminars/2024-02-16 Семинар - English.md",
-    "Seminars/2024-02-15 Семинар - Математический анализ.md",
-    "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
-    "Lectures/unformatted/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
-    "Lectures/unformatted/Лекция Дискретная Математика 2023-12-18.md",
-    "Lectures/unformatted/Лекция методы матана 2023-12-20.md",
     "Lectures/unformatted",
-    "Lectures/2024-02-19 Лекция - Алгоритмика.md",
-    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
-    "Homework/2024-02-18 Домашнее задание - English.md",
     "Homework",
     "Untitled.canvas",
     "git-diagnostics-2024-02-16-2028.zip",
