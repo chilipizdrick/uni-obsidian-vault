@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "0bb4b7f293fcee8f",
+        "id": "f5ae830c95a2ba60",
         "type": "tabs",
         "children": [
           {
-            "id": "8e8dede838becfe0",
+            "id": "14e0929cda88b9c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "531168989606859b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
+                "file": "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
+                "file": "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
+                "file": "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md"
+                "file": "Lectures/2024-02-20 Лекция - Линейная алгебра.md"
               }
             }
           },
@@ -161,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "531168989606859b",
+  "active": "14e0929cda88b9c6",
   "lastOpenFiles": [
+    "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
     "Lectures/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
     "Lectures/2024-02-19 Лекция - Алгоритмика.md",
     "Seminars/2024-02-19 Семинар - История.md",
@@ -191,7 +178,6 @@
     "2024-02-16 Lecture - Ангем.md",
     "git-diagnostics-2024-02-16-2028.zip",
     "Notes/Математический анализ/Дифференциал функции.md",
-    "Дифференциал.md",
     "Notes/НИР",
     "Notes/Математический анализ",
     "Notes/Линейная алгебра",
