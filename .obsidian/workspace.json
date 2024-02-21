@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d1623480f17e9433",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ни",
+                "query": "интегрирование по ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,8 +72,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -79,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -119,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md"
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md"
               }
             }
           },
@@ -148,11 +161,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "df0c118712cb16df",
+  "active": "d1623480f17e9433",
   "lastOpenFiles": [
-    "Notes/Дискретная математика/Кольцо.md",
-    "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
     "Lectures/2024-02-21 Лекция - Математический анализ.md",
+    "Notes/Математический анализ/Теорема об итегрировании по частям.md",
+    "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
+    "Notes/Дискретная математика/Кольцо.md",
     "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Notes/Дискретная математика/Классы эквивалентности.md",
@@ -175,7 +189,6 @@
     "TEMPLATES/seminar.md",
     "TEMPLATES/note.md",
     "TEMPLATES/lecture.md",
-    "TEMPLATES/homework.md",
     "Lectures/unformatted",
     "Homework",
     "Untitled.canvas",
