@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ни",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +58,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -147,7 +148,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83865c50d8ad8af6",
+  "active": "df0c118712cb16df",
   "lastOpenFiles": [
     "Notes/Дискретная математика/Кольцо.md",
     "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
