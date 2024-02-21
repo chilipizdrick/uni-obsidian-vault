@@ -13,10 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-02-21 Семинар - Дискретная математика.md",
+                "file": "Lectures/2024-02-21 Lecture - матан.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           },
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-21 Семинар - Дискретная математика.md",
+                "file": "Lectures/2024-02-21 Lecture - матан.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-21 Семинар - Дискретная математика.md",
+                "file": "Lectures/2024-02-21 Lecture - матан.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-21 Семинар - Дискретная математика.md"
+                "file": "Lectures/2024-02-21 Lecture - матан.md"
               }
             }
           },
@@ -162,8 +162,9 @@
   },
   "active": "5e8eaf44939530d7",
   "lastOpenFiles": [
-    "Notes/Дискретная математика/Изоморфизм.md",
     "Seminars/2024-02-21 Семинар - Дискретная математика.md",
+    "Lectures/2024-02-21 Lecture - матан.md",
+    "Notes/Дискретная математика/Изоморфизм.md",
     "Notes/Дискретная математика/Китайская теорема об остатках.md",
     "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
     "Notes/Дискретная математика/Порядок группы. Порядок элемента.md",
@@ -187,7 +188,6 @@
     "Notes/Дискретная математика/Делитель нуля (Кольцо).md",
     "Notes/Дискретная математика/Декартово произведение.md",
     "Notes/Дискретная математика/Группа.md",
-    "Notes/Дискретная математика/Бинарное отношение.md",
     "Lectures/unformatted",
     "Homework",
     "Untitled.canvas",
