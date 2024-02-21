@@ -11,8 +11,13 @@
             "id": "5e8eaf44939530d7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-02-21 Семинар - Дискретная математика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Seminars/2024-02-21 Семинар - Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Seminars/2024-02-21 Семинар - Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Seminars/2024-02-21 Семинар - Дискретная математика.md"
+              }
             }
           },
           {
@@ -140,6 +149,7 @@
   },
   "active": "5e8eaf44939530d7",
   "lastOpenFiles": [
+    "Seminars/2024-02-21 Семинар - Дискретная математика.md",
     "Lectures/2024-02-21 Лекция - Математический анализ.md",
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
     "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
@@ -165,7 +175,6 @@
     "TEMPLATES/theorem.md",
     "TEMPLATES/seminar.md",
     "TEMPLATES/note.md",
-    "TEMPLATES/lecture.md",
     "Lectures/unformatted",
     "Homework",
     "Untitled.canvas",
