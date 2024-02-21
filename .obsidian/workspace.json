@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "186be1c4efa18f5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -62,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 423.5
   },
   "right": {
     "id": "f52afa7cf66eb8b5",
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Дискретная математика/Кольцо.md",
+                "file": "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Дискретная математика/Кольцо.md",
+                "file": "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Дискретная математика/Кольцо.md"
+                "file": "Seminars/2024-02-21 Семинар - Методы математического анализа.md"
               }
             }
           },
@@ -147,10 +161,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b40d80841fceaad6",
+  "active": "186be1c4efa18f5f",
   "lastOpenFiles": [
-    "Notes/Дискретная математика/Классы эквивалентности.md",
+    "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
+    "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
+    "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Notes/Дискретная математика/Кольцо.md",
+    "Notes/Дискретная математика/Классы эквивалентности.md",
     "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
     "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "Lectures/2024-02-19 Лекция - Алгоритмика.md",
@@ -172,9 +189,6 @@
     "TEMPLATES/lecture.md",
     "TEMPLATES/homework.md",
     "TEMPLATES/definition.md",
-    "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
-    "Seminars/2024-02-19 Семинар - История.md",
-    "Seminars/2024-02-16 Семинар - ОРГ.md",
     "Lectures/unformatted",
     "Homework",
     "Untitled.canvas",
