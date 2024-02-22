@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "d51fd71a1be672b7",
+        "id": "2592c01ea3b18628",
         "type": "tabs",
         "children": [
           {
-            "id": "f72655c454d6e733",
+            "id": "7ac0f77c71d58c34",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md"
+              }
             }
           },
           {
@@ -138,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f72655c454d6e733",
+  "active": "7ac0f77c71d58c34",
   "lastOpenFiles": [
     "Dumpster/Дз для бабушек.md",
     "Lectures/2024-02-16 Лекция - Дискретная математика.md",
