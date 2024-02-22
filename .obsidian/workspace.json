@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/2024-02-22 Лекция - ООП.md",
+                "file": "Dumpster/Дз для бабушек.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ооп",
+                "query": "алгор",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,8 +58,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -79,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-02-22 Лекция - ООП.md",
+                "file": "Dumpster/Дз для бабушек.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-02-22 Лекция - ООП.md",
+                "file": "Dumpster/Дз для бабушек.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -119,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-02-22 Лекция - ООП.md"
+                "file": "Dumpster/Дз для бабушек.md"
               }
             }
           },
@@ -150,9 +149,16 @@
   },
   "active": "a3e8e4646bf3f4db",
   "lastOpenFiles": [
+    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
+    "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+    "Lectures/unformatted/Лекция Дискретная Математика 2023-12-18.md",
+    "Lectures/unformatted/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
+    "Homework/2024-02-18 Домашнее задание - English.md",
+    "Dumpster/Дз для бабушек.md",
     "Lectures/2024-02-19 Лекция - Алгоритмика.md",
-    "Notes/Дискретная математика/Изоморфизм.md",
+    "Dumpster",
     "Lectures/2024-02-22 Лекция - ООП.md",
+    "Notes/Дискретная математика/Изоморфизм.md",
     "Seminars/2024-02-22 Семинар - Алгоритмика.md",
     "Seminars/2024-02-22 Семинар - Математический анализ.md",
     "Seminars/2024-02-22 Семинар - Алгоритмика1.md",
@@ -170,12 +176,6 @@
     "Notes/Дискретная математика/Теорема мультипликативности.md",
     "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
     "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
-    "Seminars/2024-02-19 Семинар - История.md",
-    "Seminars/2024-02-16 Семинар - ОРГ.md",
-    "Seminars/2024-02-16 Семинар - English.md",
-    "Lectures/2024-02-21 Лекция - Математический анализ.md",
-    "Lectures/2024-02-20 Лекция - Линейная алгебра.md",
-    "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "Lectures/unformatted",
     "Homework",
     "Untitled.canvas",
@@ -186,7 +186,6 @@
     "Notes/Дискретная математика",
     "Notes/Аналитическая геометрия/геома.zip",
     "Notes/Аналитическая геометрия",
-    "Notes/Алгоритмика",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
     "Images/Pasted image 20231211091936.png",

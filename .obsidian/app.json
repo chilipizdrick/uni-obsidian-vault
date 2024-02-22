@@ -4,5 +4,12 @@
   "rightToLeft": false,
   "alwaysUpdateLinks": true,
   "tabSize": 4,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
