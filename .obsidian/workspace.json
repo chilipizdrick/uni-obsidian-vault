@@ -13,10 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Дискретная математика/Изоморфизм.md",
+                "file": "Notes/Дискретная математика/Кольцо вычетов.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           },
@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
+                "file": "Notes/Дискретная математика/Кольцо вычетов.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
+                "file": "Notes/Дискретная математика/Кольцо вычетов.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md"
+                "file": "Notes/Дискретная математика/Кольцо вычетов.md"
               }
             }
           },
@@ -161,11 +160,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8bab4dd4b47c86d0",
+  "active": "ba7ed609a7c12fd6",
   "lastOpenFiles": [
+    "Notes/Дискретная математика/Кольцо.md",
     "Notes/Дискретная математика/Изоморфизм.md",
-    "Notes/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
     "Notes/Дискретная математика/Китайская теорема об остатках.md",
+    "Notes/Дискретная математика/Классы эквивалентности.md",
+    "Notes/Дискретная математика/Кольцо вычетов.md",
+    "Notes/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
     "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
     "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "Notes/Дискретная математика/Делитель нуля (Кольцо).md",
@@ -186,10 +188,7 @@
     "Lectures/unformatted/Лекция Дискретная Математика 2023-12-18.md",
     "Lectures/unformatted/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
     "Homework/2024-02-18 Домашнее задание - English.md",
-    "Lectures/2024-02-19 Лекция - Алгоритмика.md",
     "Dumpster",
-    "Lectures/2024-02-22 Лекция - ООП.md",
-    "Seminars/2024-02-22 Семинар - Алгоритмика.md",
     "Lectures/unformatted",
     "Homework",
     "Untitled.canvas",
