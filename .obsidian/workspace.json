@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "643b02b2f8de5bac",
+        "id": "d51fd71a1be672b7",
         "type": "tabs",
         "children": [
           {
-            "id": "a3e8e4646bf3f4db",
+            "id": "f72655c454d6e733",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dumpster/Дз для бабушек.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -78,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dumpster/Дз для бабушек.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dumpster/Дз для бабушек.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -117,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Dumpster/Дз для бабушек.md"
-              }
+              "state": {}
             }
           },
           {
@@ -147,14 +138,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3e8e4646bf3f4db",
+  "active": "f72655c454d6e733",
   "lastOpenFiles": [
+    "Dumpster/Дз для бабушек.md",
     "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "Lectures/unformatted/Лекция Дискретная Математика 2023-12-18.md",
     "Lectures/unformatted/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
     "Homework/2024-02-18 Домашнее задание - English.md",
-    "Dumpster/Дз для бабушек.md",
     "Lectures/2024-02-19 Лекция - Алгоритмика.md",
     "Dumpster",
     "Lectures/2024-02-22 Лекция - ООП.md",
