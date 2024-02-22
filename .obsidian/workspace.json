@@ -19,8 +19,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3da6e1f64ac3a921",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Теорема о существовании касательной плоскости.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f0bf7b86cd610e45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Плоскость, касательная к поверхности.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+                "file": "Notes/Плоскость, касательная к поверхности.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+                "file": "Notes/Плоскость, касательная к поверхности.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md"
+                "file": "Notes/Плоскость, касательная к поверхности.md"
               }
             }
           },
@@ -147,11 +174,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7ac0f77c71d58c34",
+  "active": "f0bf7b86cd610e45",
   "lastOpenFiles": [
+    "Notes/Теорема о существовании касательной плоскости.md",
+    "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
+    "Notes/Плоскость, касательная к поверхности.md",
+    "Notes/Математический анализ/Теорема о дифференциируемости функции от нескольких переменных.md",
+    "Notes/Математический анализ/Дифференциал функции от нескольких переменных.md",
     "Dumpster/Дз для бабушек.md",
     "Lectures/2024-02-16 Лекция - Дискретная математика.md",
-    "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "Lectures/unformatted/Лекция Дискретная Математика 2023-12-18.md",
     "Lectures/unformatted/Итератор. Генератор. Автоматическое дифференциирование. Метод Ньютона.md",
     "Homework/2024-02-18 Домашнее задание - English.md",
@@ -172,10 +203,6 @@
     "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
     "Notes/Дискретная математика/Порядок группы. Порядок элемента.md",
     "Notes/Дискретная математика/Мультипликативная группа кольца вычетов.md",
-    "Notes/Дискретная математика/Теорема Эйлера (Теория групп).md",
-    "Notes/Дискретная математика/Теорема мультипликативности.md",
-    "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
-    "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
     "Lectures/unformatted",
     "Homework",
     "Untitled.canvas",
