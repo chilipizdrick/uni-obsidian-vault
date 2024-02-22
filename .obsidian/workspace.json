@@ -4,38 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "374e8cf8a48feb93",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "39638add5c2823c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lectures/2024-02-21 Lecture - Математический анализ.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7c53a879f84cd109",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "2e3269fb232a0ba6",
         "type": "tabs",
         "children": [
@@ -51,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d6eb2f13a51f177a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2024-02-22",
+                "query": "алгоритмика",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5,
-    "collapsed": true
+    "width": 408.5
   },
   "right": {
     "id": "f52afa7cf66eb8b5",
@@ -112,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md",
+                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md",
+                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -152,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md"
+                "file": "Lectures/2024-02-19 Лекция - Алгоритмика.md"
               }
             }
           },
@@ -181,11 +162,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eebdd291f9253fbb",
+  "active": "d6eb2f13a51f177a",
   "lastOpenFiles": [
+    "Seminars/2024-02-22 Семинар - Алгоритмика.md",
+    "Seminars/2024-02-22 Семинар - Математический анализ.md",
     "Lectures/2024-02-21 Lecture - Математический анализ.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
-    "Seminars/2024-02-22 Семинар - Математический анализ.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "TEMPLATES/seminar.md",
     "Seminars/2024-02-22 Семинар - ООП.md",
@@ -208,7 +190,6 @@
     "Lectures/2024-02-16 Лекция - Дискретная математика.md",
     "Lectures/2024-02-16 Лекция - Аналитическая геометрия.md",
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
-    "Notes/Дискретная математика/Кольцо.md",
     "Lectures/unformatted",
     "Homework",
     "Untitled.canvas",
