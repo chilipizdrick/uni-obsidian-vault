@@ -19,8 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5a4fd6f6885f8188",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,14 +151,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d4f0035da7206535",
+  "active": "5a4fd6f6885f8188",
   "lastOpenFiles": [
     "Notes/Линейная алгебра/Базис (Линейная алгебра).md",
     "Notes/Аналитическая геометрия/Поверхности второго порядка.md",
