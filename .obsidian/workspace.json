@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7cd6a871499c22e1",
+            "id": "d4f0035da7206535",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Дискретная математика/Теорема Вильсона.md",
+                "file": "Seminars/2024-02-22 Семинар - ООП.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,15 +21,12 @@
             }
           },
           {
-            "id": "51e185c502387580",
+            "id": "f4960f511f01986f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Notes/Аналитическая геометрия/Поверхности второго порядка.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
+                "currentVersion": "1.5.8"
               }
             }
           }
@@ -92,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Аналитическая геометрия/Поверхности второго порядка.md",
+                "file": "Seminars/2024-02-22 Семинар - ООП.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Аналитическая геометрия/Поверхности второго порядка.md",
+                "file": "Seminars/2024-02-22 Семинар - ООП.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Аналитическая геометрия/Поверхности второго порядка.md"
+                "file": "Seminars/2024-02-22 Семинар - ООП.md"
               }
             }
           },
@@ -161,8 +158,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51e185c502387580",
+  "active": "f4960f511f01986f",
   "lastOpenFiles": [
+    "Notes/Линейная алгебра/Базис (Линейная алгебра).md",
+    "Notes/Аналитическая геометрия/Поверхности второго порядка.md",
     "Notes/Дискретная математика/Циклическая группа.md",
     "Notes/Дискретная математика/Цикл (перестановки).md",
     "Notes/Дискретная математика/Цепная дробь.md",
@@ -187,8 +186,6 @@
     "Notes/Дискретная математика/Отношения эквивалентности.md",
     "Notes/Дискретная математика/Отношения частичного порядка.md",
     "Notes/Дискретная математика/Бинарное отношение.md",
-    "Notes/Дискретная математика/Нильпотентность.md",
-    "Notes/Дискретная математика/Мультипликативная группа кольца вычетов.md",
     "Dumpster",
     "Lectures/unformatted",
     "Homework",
@@ -203,11 +200,4 @@
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
     "Images/Pasted image 20231211091936.png",
-    "Images/Pasted image 20240115162255.png",
-    "Pasted image 20240115162206.png",
-    "Images/Pasted image 20231211092852.png",
-    "Images/Pasted image 20231211092723.png",
-    "Pasted image 20231209230057.png",
-    "МАТЕМАТИЧЕСКИЙ АНАЛИЗ/Untitled.canvas"
-  ]
-}
+    "Image
