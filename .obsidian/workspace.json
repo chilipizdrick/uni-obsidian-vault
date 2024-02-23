@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
+                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
+                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
+                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-21 Семинар - Методы математического анализа.md"
+                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md"
               }
             }
           },
@@ -162,6 +162,7 @@
   },
   "active": "d4f0035da7206535",
   "lastOpenFiles": [
+    "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
     "Seminars/2024-02-21 Семинар - Дискретная математика.md",
     "Notes/Дискретная математика/Китайская теорема об остатках.md",
     "Lectures/2024-02-22 Лекция - ООП.md",
@@ -187,7 +188,6 @@
     "Notes/Дискретная математика/Перестановки.md",
     "Notes/Дискретная математика/Счетно-бесконечное и несчетно-бесконечное множество.md",
     "Notes/Дискретная математика/Сравнимость по модулю элементов в группах.md",
-    "Notes/Дискретная математика/Смежные классы группы G по подруппе H.md",
     "Dumpster",
     "Lectures/unformatted",
     "Homework",
