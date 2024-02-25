@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - ООП.md",
+                "file": "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ee134d0fbb8c9a3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "алгор",
+                "query": "лина",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +72,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -78,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - ООП.md",
+                "file": "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - ООП.md",
+                "file": "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - ООП.md"
+                "file": "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md"
               }
             }
           },
@@ -147,8 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4f0035da7206535",
+  "active": "ee134d0fbb8c9a3c",
   "lastOpenFiles": [
+    "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
+    "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
+    "Seminars/2024-02-22 Семинар - ООП.md",
     "Notes/Линейная алгебра/Базис (Линейная алгебра).md",
     "Notes/Аналитическая геометрия/Поверхности второго порядка.md",
     "Notes/Дискретная математика/Циклическая группа.md",
@@ -172,9 +190,6 @@
     "Notes/Дискретная математика/Подгруппа.md",
     "Notes/Дискретная математика/Первообразные корни.md",
     "Notes/Дискретная математика/Отображение (функция).md",
-    "Notes/Дискретная математика/Отношения эквивалентности.md",
-    "Notes/Дискретная математика/Отношения частичного порядка.md",
-    "Notes/Дискретная математика/Бинарное отношение.md",
     "Dumpster",
     "Lectures/unformatted",
     "Homework",
