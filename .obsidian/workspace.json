@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-02-26 Семинар - Линейная алгебра.md",
+                "file": "Seminars/2024-02-19 Семинар - История.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -76,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "линей",
+                "query": "история",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-26 Семинар - Линейная алгебра.md",
+                "file": "Seminars/2024-02-19 Семинар - История.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-26 Семинар - Линейная алгебра.md",
+                "file": "Seminars/2024-02-19 Семинар - История.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-26 Семинар - Линейная алгебра.md"
+                "file": "Seminars/2024-02-19 Семинар - История.md"
               }
             }
           },
@@ -177,8 +177,8 @@
   },
   "active": "6b5e4ac755c4016c",
   "lastOpenFiles": [
-    "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
     "Seminars/2024-02-26 Семинар - Линейная алгебра.md",
+    "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
     "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
     "conflict-files-obsidian-git.md",
     "Seminars/2024-02-22 Семинар - ООП.md",
