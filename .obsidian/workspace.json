@@ -45,9 +45,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "03f6d4060d20cab9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-02-26 Семинар - История.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - История.md",
+                "file": "Seminars/2024-02-26 Семинар - История.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - История.md",
+                "file": "Seminars/2024-02-26 Семинар - История.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -146,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-19 Семинар - История.md"
+                "file": "Seminars/2024-02-26 Семинар - История.md"
               }
             }
           },
@@ -175,8 +188,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6b5e4ac755c4016c",
+  "active": "03f6d4060d20cab9",
   "lastOpenFiles": [
+    "Seminars/2024-02-19 Семинар - История.md",
+    "Seminars/2024-02-26 Семинар - История.md",
     "Seminars/2024-02-26 Семинар - Линейная алгебра.md",
     "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
     "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
@@ -201,8 +216,6 @@
     "Notes/Дискретная математика/Расширенный алгоритм Евклида.md",
     "Notes/Дискретная математика/Прямое произведение групп.md",
     "Notes/Дискретная математика/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
-    "Notes/Дискретная математика/Порядок группы. Порядок элемента.md",
-    "Notes/Дискретная математика/Подгруппа.md",
     "Dumpster",
     "Lectures/unformatted",
     "Homework",
