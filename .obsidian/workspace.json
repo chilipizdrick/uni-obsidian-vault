@@ -21,7 +21,7 @@
             }
           },
           {
-            "id": "7517740a838fb55d",
+            "id": "ba95ca3d83ff4f50",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -46,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md"
+                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md"
               }
             }
           },
@@ -174,10 +175,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03f6d4060d20cab9",
+  "active": "ba95ca3d83ff4f50",
   "lastOpenFiles": [
-    "Lectures/2024-02-21 Лекция - Математический анализ.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
+    "Lectures/2024-02-21 Лекция - Математический анализ.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/2024-02-26 Семинар - История.md",
     "Seminars/2024-02-22 Семинар - Математический анализ.md",
