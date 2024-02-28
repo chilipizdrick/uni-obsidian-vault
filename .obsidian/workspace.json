@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0e175f825fb1187e",
+        "id": "2f838b3558bab264",
         "type": "tabs",
         "children": [
           {
-            "id": "03f6d4060d20cab9",
+            "id": "bff08e33d641255a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "Lectures/2024-02-28 Лекция - Математический анализ.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,25 +21,12 @@
             }
           },
           {
-            "id": "92fc20e7482b4491",
+            "id": "d88622e3e54a6c20",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "10225de9a19ece04",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md",
+                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -75,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "семи",
+                "query": "лекция",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "Lectures/2024-02-28 Лекция - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "Lectures/2024-02-28 Лекция - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md"
+                "file": "Lectures/2024-02-28 Лекция - Математический анализ.md"
               }
             }
           },
@@ -174,14 +161,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03f6d4060d20cab9",
+  "active": "bff08e33d641255a",
   "lastOpenFiles": [
+    "Lectures/2024-02-21 Лекция - Математический анализ.md",
+    "Lectures/2024-02-28 Лекция - Математический анализ.md",
+    "Seminars/2024-02-22 Семинар - Математический анализ.md",
     "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
-    "Lectures/2024-02-21 Лекция - Математический анализ.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/2024-02-26 Семинар - История.md",
-    "Seminars/2024-02-22 Семинар - Математический анализ.md",
     "Lectures/2024-02-27 Лекция - Дискретная математика.md",
     "Seminars/2024-02-19 Семинар - История.md",
     "Seminars/2024-02-26 Семинар - Линейная алгебра.md",
@@ -201,7 +189,6 @@
     "Notes/Дискретная математика/Теорема Лагранжа (Теория групп).md",
     "Notes/Дискретная математика/Теорема Вильсона.md",
     "Notes/Дискретная математика/Перестановки.md",
-    "Notes/Дискретная математика/Счетно-бесконечное и несчетно-бесконечное множество.md",
     "Dumpster",
     "Lectures/unformatted",
     "Homework",
