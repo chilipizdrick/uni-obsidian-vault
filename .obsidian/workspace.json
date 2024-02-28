@@ -46,8 +46,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-28 Семинар - Методы математического анализа.md"
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md"
               }
             }
           },
@@ -175,11 +174,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92fc20e7482b4491",
+  "active": "03f6d4060d20cab9",
   "lastOpenFiles": [
+    "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Lectures/2024-02-21 Лекция - Математический анализ.md",
-    "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/2024-02-26 Семинар - История.md",
     "Seminars/2024-02-22 Семинар - Математический анализ.md",
