@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bff08e33d641255a",
+            "id": "c16b95e259a4d590",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/2024-02-28 Лекция - Математический анализ.md",
+                "file": "2024-02-28 Practice - матан (методы).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,19 +21,33 @@
             }
           },
           {
-            "id": "d88622e3e54a6c20",
+            "id": "aa12036507145453",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/2024-02-21 Лекция - Математический анализ.md",
+                "file": "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ffef6544cd6c180c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Оператор Лапласа.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -71,8 +85,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -92,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-02-28 Лекция - Математический анализ.md",
+                "file": "Notes/Оператор Лапласа.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-02-28 Лекция - Математический анализ.md",
+                "file": "Notes/Оператор Лапласа.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-02-28 Лекция - Математический анализ.md"
+                "file": "Notes/Оператор Лапласа.md"
               }
             }
           },
@@ -161,12 +174,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bff08e33d641255a",
+  "active": "ffef6544cd6c180c",
   "lastOpenFiles": [
-    "Lectures/2024-02-21 Лекция - Математический анализ.md",
-    "Lectures/2024-02-28 Лекция - Математический анализ.md",
-    "Seminars/2024-02-22 Семинар - Математический анализ.md",
     "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
+    "Notes/Оператор Лапласа.md",
+    "2024-02-28 Practice - матан (методы).md",
+    "2024-02-28 Lecture - матан.md",
+    "2024-02-28 Lecture - матан 1.md",
+    "Lectures/2024-02-28 Лекция - Математический анализ.md",
+    "2024-02-28 Practice - матан (методы) 1.md",
+    "Lectures/2024-02-21 Лекция - Математический анализ.md",
+    "Seminars/2024-02-22 Семинар - Математический анализ.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/2024-02-26 Семинар - История.md",
@@ -184,11 +202,6 @@
     "Notes/Дискретная математика/Цепная дробь.md",
     "Notes/Дискретная математика/Функция Эйлера.md",
     "Notes/Дискретная математика/Теорема Эйлера (Теория групп).md",
-    "Notes/Дискретная математика/Теорема об обратимости остатка.md",
-    "Notes/Дискретная математика/Теорема мультипликативности.md",
-    "Notes/Дискретная математика/Теорема Лагранжа (Теория групп).md",
-    "Notes/Дискретная математика/Теорема Вильсона.md",
-    "Notes/Дискретная математика/Перестановки.md",
     "Dumpster",
     "Lectures/unformatted",
     "Homework",
