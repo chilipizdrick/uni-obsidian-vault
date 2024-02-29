@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5f780f9dd1e7aaf9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Seminars/2024-02-29 Семинар - Математический анализ.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "56a405ac48a5e22a",
             "type": "leaf",
             "state": {
@@ -105,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-29 Семинар - Математический анализ.md",
+                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-29 Семинар - Математический анализ.md",
+                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-29 Семинар - Математический анализ.md"
+                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md"
               }
             }
           },
@@ -174,11 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f780f9dd1e7aaf9",
+  "active": "56a405ac48a5e22a",
   "lastOpenFiles": [
+    "Seminars/2024-02-29 Семинар - Математический анализ.md",
     "Seminars/2024-02-22 Семинар - Математический анализ.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
-    "Seminars/2024-02-29 Семинар - Математический анализ.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
