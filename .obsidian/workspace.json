@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5f780f9dd1e7aaf9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-02-29 Семинар - Математический анализ.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-02-27 Лекция - Линейная алгебра.md",
+                "file": "Seminars/2024-02-29 Семинар - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-02-27 Лекция - Линейная алгебра.md",
+                "file": "Seminars/2024-02-29 Семинар - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-02-27 Лекция - Линейная алгебра.md"
+                "file": "Seminars/2024-02-29 Семинар - Математический анализ.md"
               }
             }
           },
@@ -147,8 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d8dd75c0d1297b4",
+  "active": "5f780f9dd1e7aaf9",
   "lastOpenFiles": [
+    "Notes/Математический анализ/Теорема об итегрировании по частям.md",
+    "Seminars/2024-02-29 Семинар - Математический анализ.md",
+    "Lectures/2024-02-27 Лекция - Линейная алгебра.md",
     "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
     "TEMPLATES/practical.md",
     "TEMPLATES/homework.md",
@@ -167,7 +184,6 @@
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/2024-02-26 Семинар - История.md",
-    "Lectures/2024-02-27 Лекция - Линейная алгебра.md",
     "Seminars/2024-02-19 Семинар - История.md",
     "Seminars/2024-02-26 Семинар - Линейная алгебра.md",
     "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
@@ -175,8 +191,6 @@
     "conflict-files-obsidian-git.md",
     "Seminars/2024-02-22 Семинар - ООП.md",
     "Notes/Линейная алгебра/Базис (Линейная алгебра).md",
-    "Notes/Аналитическая геометрия/Поверхности второго порядка.md",
-    "Notes/Дискретная математика/Циклическая группа.md",
     "Dumpster",
     "Lectures/unformatted",
     "Homework",
