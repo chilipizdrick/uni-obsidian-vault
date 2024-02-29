@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md",
+                "file": "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -71,8 +71,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -92,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md",
+                "file": "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md",
+                "file": "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-02-22 Семинар - Математический анализ.md"
+                "file": "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md"
               }
             }
           },
@@ -163,8 +162,10 @@
   },
   "active": "56a405ac48a5e22a",
   "lastOpenFiles": [
-    "Seminars/2024-02-29 Семинар - Математический анализ.md",
+    "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
+    "Homework/2024-02-18 Домашнее задание - English.md",
     "Seminars/2024-02-22 Семинар - Математический анализ.md",
+    "Seminars/2024-02-29 Семинар - Математический анализ.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
@@ -188,9 +189,7 @@
     "Seminars/2024-02-19 Семинар - История.md",
     "Seminars/2024-02-26 Семинар - Линейная алгебра.md",
     "Seminars/2024-02-19 Семинар - Линейная алгебра.md",
-    "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
     "conflict-files-obsidian-git.md",
-    "Seminars/2024-02-22 Семинар - ООП.md",
     "Dumpster",
     "Lectures/unformatted",
     "Homework",
