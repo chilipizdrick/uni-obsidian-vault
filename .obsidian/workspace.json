@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/История/2024-02-19 Семинар - История.md",
+                "file": "Homework/English/2024-02-18 Домашнее задание - English.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/История/2024-02-19 Семинар - История.md",
+                "file": "Homework/English/2024-02-18 Домашнее задание - English.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/История/2024-02-19 Семинар - История.md",
+                "file": "Homework/English/2024-02-18 Домашнее задание - English.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/История/2024-02-19 Семинар - История.md"
+                "file": "Homework/English/2024-02-18 Домашнее задание - English.md"
               }
             }
           },
@@ -147,9 +147,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d8dd75c0d1297b4",
+  "active": "b55054ba8bfdeea5",
   "lastOpenFiles": [
-    "Seminars/Untitled",
+    "Homework/Линейная алгебра/2024-02-25 Домашнее задание - Линейная алгебра.md",
+    "Homework/English/2024-02-18 Домашнее задание - English.md",
+    "Homework/Линейная алгебра",
+    "Seminars/Алгоритмика/2024-02-22 Семинар - Алгоритмика.md",
+    "Homework/English",
+    "Seminars/Дискретная математика/2024-02-28 Семинар - Дискретная математика.md",
+    "Seminars/Алгоритмика",
+    "Seminars/Методы математического анализа",
+    "Seminars/Линейная алгебра/2024-02-19 Семинар - Линейная алгебра.md",
+    "Seminars/Дискретная математика",
+    "Seminars/История/2024-02-19 Семинар - История.md",
+    "Seminars/Линейная алгебра",
     "Seminars/English/2024-02-16 Семинар - English.md",
     "Seminars/История",
     "Seminars/ООП/2024-02-22 Семинар - ООП.md",
@@ -161,30 +172,18 @@
     "Seminars/Математический анализ/2024-02-15 Семинар - Математический анализ.md",
     "Lectures/Алгоритмика/2024-02-19 Лекция - Алгоритмика.md",
     "Seminars/Математический анализ",
-    "Lectures/ООП",
     "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
-    "Lectures/Алгоритмика",
     "Lectures/Методы математического анализа/2024-02-16 Лекция - Методы математического анализа.md",
-    "Lectures/Дискретная математика",
     "Notes/Математический анализ/Оператор Лапласа.md",
-    "Lectures/Методы математического анализа",
-    "Lectures/Линейная алгебра",
-    "Lectures/Математический анализ",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
-    "Homework/2024-02-25 Домашнее задание - Линейная алгебра.md",
-    "Homework/2024-02-18 Домашнее задание - English.md",
-    "Seminars/2024-02-21 Семинар - Методы математического анализа.md",
+    "Seminars/Методы математического анализа/2024-02-21 Семинар - Методы математического анализа.md",
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
     "Lectures/Линейная алгебра/2024-02-27 Лекция - Линейная алгебра.md",
     "TEMPLATES/practical.md",
     "TEMPLATES/homework.md",
-    "Seminars/2024-02-28 Семинар - Дискретная математика.md",
     "2024-02-28 Practice - матан (методы).md",
-    "Seminars/2024-02-28 Семинар - Методы математического анализа.md",
-    "2024-02-28 Lecture - матан.md",
-    "2024-02-28 Lecture - матан 1.md",
-    "Lectures/Математический анализ/2024-02-28 Лекция - Математический анализ.md",
+    "Seminars/Методы математического анализа/2024-02-28 Семинар - Методы математического анализа.md",
     "Untitled.canvas",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
