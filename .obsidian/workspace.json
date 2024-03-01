@@ -26,8 +26,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-03-01 Семинар - English.md",
-                "mode": "preview",
+                "file": "Seminars/English/2024-03-01 Семинар - English.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-01 Семинар - English.md",
+                "file": "Homework/English/2024-02-18 Домашнее задание - English.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-01 Семинар - English.md",
+                "file": "Homework/English/2024-02-18 Домашнее задание - English.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-01 Семинар - English.md"
+                "file": "Homework/English/2024-02-18 Домашнее задание - English.md"
               }
             }
           },
@@ -161,11 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f790b669e7c436d",
+  "active": "3d8dd75c0d1297b4",
   "lastOpenFiles": [
     "Dumpster/2024-02-29 Homework - матан.md",
     "Homework/English/2024-02-18 Домашнее задание - English.md",
-    "Seminars/2024-03-01 Семинар - English.md",
+    "Seminars/English/2024-03-01 Семинар - English.md",
     "Homework/Линейная алгебра/2024-02-25 Домашнее задание - Линейная алгебра.md",
     "Homework/Линейная алгебра",
     "Seminars/Алгоритмика/2024-02-22 Семинар - Алгоритмика.md",
