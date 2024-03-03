@@ -47,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Дискретная математика/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
+                "file": "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Дискретная математика/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
+                "file": "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Дискретная математика/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md"
+                "file": "Practical works/Дискретная математика/ТР 1 (дискретная математика).md"
               }
             }
           },
@@ -175,10 +175,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41bc3c9fe9557841",
+  "active": "044da5cff0909238",
   "lastOpenFiles": [
-    "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Notes/Дискретная математика/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
+    "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
     "Seminars/Дискретная математика/2024-02-21 Семинар - Дискретная математика.md",
     "Practical works/Дискретная математика",
