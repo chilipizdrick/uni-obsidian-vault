@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2ececcb69ab0d5d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "обратимо",
+                "query": "дискретна",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +72,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -78,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
+                "file": "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
+                "file": "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-04 Семинар - Линейная алгебра.md"
+                "file": "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md"
               }
             }
           },
@@ -147,11 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d8dd75c0d1297b4",
+  "active": "2ececcb69ab0d5d3",
   "lastOpenFiles": [
+    "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
     "Dumpster/testing.md",
     "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
-    "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
     "Notes/Дискретная математика/Кольцо вычетов.md",
     "Notes/Дискретная математика/Китайская теорема об остатках.md",
     "Notes/Дискретная математика/Теорема об обратимости остатка.md",
