@@ -21,6 +21,19 @@
             }
           },
           {
+            "id": "f48c6295ebdb3ef2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "2ececcb69ab0d5d3",
             "type": "leaf",
             "state": {
@@ -72,8 +85,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -93,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
+                "file": "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
+                "file": "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md"
+                "file": "Practical works/Дискретная математика/ТР 1 (дискретная математика).md"
               }
             }
           },
@@ -162,11 +174,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2ececcb69ab0d5d3",
+  "active": "f48c6295ebdb3ef2",
   "lastOpenFiles": [
+    "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
+    "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
     "Dumpster/testing.md",
-    "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Notes/Дискретная математика/Кольцо вычетов.md",
     "Notes/Дискретная математика/Китайская теорема об остатках.md",
     "Notes/Дискретная математика/Теорема об обратимости остатка.md",
@@ -199,7 +212,6 @@
     "Seminars/2024-02-16 Семинар - ОРГ.md",
     "Seminars/Математический анализ/2024-02-29 Семинар - Математический анализ.md",
     "Seminars/ООП",
-    "Seminars/Математический анализ/2024-02-22 Семинар - Математический анализ.md",
     "Untitled.canvas",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
