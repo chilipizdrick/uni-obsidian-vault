@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
+                "file": "Dumpster/testing.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -58,8 +58,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -79,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
+                "file": "Dumpster/testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
+                "file": "Dumpster/testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -119,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-04 Семинар - Линейная алгебра.md"
+                "file": "Dumpster/testing.md"
               }
             }
           },
@@ -150,10 +149,11 @@
   },
   "active": "29a22140e176d8d5",
   "lastOpenFiles": [
-    "Notes/Дискретная математика/Кольцо вычетов.md",
-    "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
-    "Notes/Дискретная математика/Китайская теорема об остатках.md",
     "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
+    "Dumpster/testing.md",
+    "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
+    "Notes/Дискретная математика/Кольцо вычетов.md",
+    "Notes/Дискретная математика/Китайская теорема об остатках.md",
     "Notes/Дискретная математика/Теорема об обратимости остатка.md",
     "Seminars/Линейная алгебра/2024-02-19 Семинар - Линейная алгебра.md",
     "Seminars/Линейная алгебра/2024-02-26 Семинар - Линейная алгебра.md",
@@ -185,7 +185,6 @@
     "Seminars/Математический анализ/2024-02-29 Семинар - Математический анализ.md",
     "Seminars/ООП",
     "Seminars/Математический анализ/2024-02-22 Семинар - Математический анализ.md",
-    "Seminars/Математический анализ/2024-02-15 Семинар - Математический анализ.md",
     "Untitled.canvas",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
