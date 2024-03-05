@@ -11,8 +11,13 @@
             "id": "f14b6fcc83240bdc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md"
+              }
             }
           },
           {
@@ -138,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f14b6fcc83240bdc",
+  "active": "3d8dd75c0d1297b4",
   "lastOpenFiles": [
+    "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
     "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
@@ -167,7 +177,6 @@
     "Homework/English/2024-02-18 Домашнее задание - English.md",
     "Seminars/English/2024-03-01 Семинар - English.md",
     "Dumpster/2024-02-29 Homework - матан.md",
-    "Homework/Линейная алгебра/2024-02-25 Домашнее задание - Линейная алгебра.md",
     "Homework/Линейная алгебра",
     "Homework/English",
     "Seminars/Алгоритмика",
