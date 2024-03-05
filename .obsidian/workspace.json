@@ -4,50 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "a9feb55f8397e7f1",
+        "id": "7964a3b1b570db0f",
         "type": "tabs",
         "children": [
           {
-            "id": "002ca5e59e77493d",
+            "id": "f14b6fcc83240bdc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1b01385fabb9ba7d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fded260a8a7bd974",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -144,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md"
-              }
+              "state": {}
             }
           },
           {
@@ -174,11 +138,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fded260a8a7bd974",
+  "active": "f14b6fcc83240bdc",
   "lastOpenFiles": [
+    "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
-    "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
     "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
     "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
