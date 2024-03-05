@@ -32,19 +32,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "9c5200b4926e015b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
         ],
         "currentTab": 1
@@ -176,10 +163,10 @@
   },
   "active": "dcc11057c47c392c",
   "lastOpenFiles": [
-    "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
     "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
-    "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
+    "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
+    "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
     "Seminars/Линейная алгебра/2024-02-26 Семинар - Линейная алгебра.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Practical works/Линейная алгебра",
