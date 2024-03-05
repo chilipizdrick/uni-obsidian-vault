@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a978dfd041ceb944",
+            "id": "002ca5e59e77493d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +21,20 @@
             }
           },
           {
-            "id": "dcc11057c47c392c",
+            "id": "1b01385fabb9ba7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fded260a8a7bd974",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -161,18 +174,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dcc11057c47c392c",
+  "active": "fded260a8a7bd974",
   "lastOpenFiles": [
-    "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
-    "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
-    "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
+    "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
+    "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
+    "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
+    "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
+    "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
     "Seminars/Линейная алгебра/2024-02-26 Семинар - Линейная алгебра.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Practical works/Линейная алгебра",
     "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
     "Notes/Дискретная математика/Порядок группы. Порядок элемента.md",
-    "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Seminars/Дискретная математика/2024-02-21 Семинар - Дискретная математика.md",
     "Dumpster/testing.md",
     "Notes/Дискретная математика/Кольцо вычетов.md",
@@ -191,7 +205,6 @@
     "Dumpster/2024-02-29 Homework - матан.md",
     "Homework/Линейная алгебра/2024-02-25 Домашнее задание - Линейная алгебра.md",
     "Homework/Линейная алгебра",
-    "Seminars/Алгоритмика/2024-02-22 Семинар - Алгоритмика.md",
     "Homework/English",
     "Seminars/Алгоритмика",
     "Seminars/Методы математического анализа",
