@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d4e022bda26d4e15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-03-06 Семинар - Дискретная математика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
+                "file": "Seminars/2024-03-06 Семинар - Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
+                "file": "Seminars/2024-03-06 Семинар - Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md"
+                "file": "Seminars/2024-03-06 Семинар - Дискретная математика.md"
               }
             }
           },
@@ -147,10 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f14b6fcc83240bdc",
+  "active": "d4e022bda26d4e15",
   "lastOpenFiles": [
-    "Lectures/2024-03-01 Лекция - Дискретная математика.md",
     "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
+    "Seminars/2024-03-06 Семинар - Дискретная математика.md",
+    "Lectures/2024-03-01 Лекция - Дискретная математика.md",
     "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
@@ -176,7 +191,6 @@
     "Seminars/Дискретная математика/2024-02-28 Семинар - Дискретная математика.md",
     "Homework/English/2024-02-18 Домашнее задание - English.md",
     "Seminars/English/2024-03-01 Семинар - English.md",
-    "Dumpster/2024-02-29 Homework - матан.md",
     "Homework/Линейная алгебра",
     "Homework/English",
     "Seminars/Алгоритмика",
