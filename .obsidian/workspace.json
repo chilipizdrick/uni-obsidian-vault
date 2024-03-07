@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
+                "file": "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -71,8 +71,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -92,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
+                "file": "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
+                "file": "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md"
+                "file": "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md"
               }
             }
           },
@@ -163,14 +162,14 @@
   },
   "active": "f14b6fcc83240bdc",
   "lastOpenFiles": [
+    "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
+    "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
     "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
     "Seminars/2024-03-06 Семинар - Дискретная математика.md",
     "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Seminars/Дискретная математика/2024-02-28 Семинар - Дискретная математика.md",
-    "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
     "Lectures/2024-03-01 Лекция - Дискретная математика.md",
     "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
-    "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
     "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
     "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
