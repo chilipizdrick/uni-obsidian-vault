@@ -34,6 +34,45 @@
             }
           },
           {
+            "id": "f6180dd04bdf2b18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4db624758f220a2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a3a31a0779cff955",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3a2b4c2f5c24bd08",
             "type": "leaf",
             "state": {
@@ -47,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -105,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - Линейная алгебра.md"
+                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md"
               }
             }
           },
@@ -174,11 +213,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "06ae5e4ea937058d",
+  "active": "a3a31a0779cff955",
   "lastOpenFiles": [
     "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
-    "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
     "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
+    "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
     "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
     "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
     "Seminars/2024-03-06 Семинар - Дискретная математика.md",
