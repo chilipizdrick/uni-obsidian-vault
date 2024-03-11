@@ -11,8 +11,13 @@
             "id": "ef0c945c118756d8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-03-11 Семинар - История.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Seminars/2024-03-11 Семинар - История.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Seminars/2024-03-11 Семинар - История.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Seminars/2024-03-11 Семинар - История.md"
+              }
             }
           },
           {
@@ -140,6 +149,7 @@
   },
   "active": "ef0c945c118756d8",
   "lastOpenFiles": [
+    "Seminars/2024-03-11 Семинар - История.md",
     "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
@@ -167,7 +177,6 @@
     "Notes/Дискретная математика/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
     "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
     "Practical works/Дискретная математика",
-    "Homework/English/2024-02-18 Домашнее задание - English.md",
     "Homework/Линейная алгебра",
     "Homework/English",
     "Seminars/Алгоритмика",
