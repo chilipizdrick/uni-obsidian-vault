@@ -39,8 +39,26 @@ $$\begin{vmatrix}
 -\frac{1}{3} & -\frac{1}{3} & \frac{2}{3} - \lambda
 \end{vmatrix} = 0$$
 
-принимая $\frac{\lambda}{3} = k$, можем вынести $-\frac{1}{3}$:
+принимая $3\lambda = k$, можем вынести $-\frac{1}{3}$:
 
-$$\begin{vmatrix}
-2 - k & -1 & -1
-\end{vmatrix}$$
+$$\begin{gather}
+\cancel{ -\frac{1}{3} } \begin{vmatrix}
+k - 2 & 1 & 1 \\
+1 & k - 2 & 1 \\
+1 & 1 & k - 2
+\end{vmatrix} = 0 \\
+(k-2)^{3} + 2 - 3(k-2)^{3} = 0 \\
+\cancel{ -2 }(k-3)(k^{2} - 3k + 3) = 0
+\end{gather}$$
+
+Из полученного уравнения получаем один действительный и два комплексных корня:
+
+$$\left[\begin{align}
+&k = 3 \\
+&k = \frac{3}{2} + \frac{\sqrt{ 3 }}{2}i \\
+&k = \frac{3}{2} - \frac{\sqrt{ 3 }}{2}i
+\end{align}\right. \implies \left[\begin{align}
+&k = 3 \\
+&k = \frac{3}{2} + \frac{\sqrt{ 3 }}{2}i \\
+&k = \frac{3}{2} - \frac{\sqrt{ 3 }}{2}i
+\end{align}\right.$$
