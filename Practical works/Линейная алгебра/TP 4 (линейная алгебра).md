@@ -39,5 +39,6 @@ $$\begin{gather}
 -\frac{1}{3} & \frac{2}{3} - \lambda & -\frac{1}{3} \\
 -\frac{1}{3} & -\frac{1}{3} & \frac{2}{3} - \lambda
 \end{vmatrix} = 0 \\
+\left( \frac{2}{3} - \lambda \right)^{3} + 2\left( -\frac{1}{3} \right)^{3} - \left( \frac{1}{9}\left( \frac{2}{3} - \lambda \right) \right)^{3} = 0 \\
 
 \end{gather}$$
