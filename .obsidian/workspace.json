@@ -4,16 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "0ec10ffed1bef4b2",
+        "id": "a2314f9bf6a34148",
         "type": "tabs",
         "children": [
           {
-            "id": "ef0c945c118756d8",
+            "id": "ac4343065f0d12f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - История.md",
+                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "0ec10ffed1bef4b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "463696705bcb2d2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5024719238281
+    "width": 405.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "f52afa7cf66eb8b5",
@@ -78,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - История.md",
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - История.md",
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - История.md"
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md"
               }
             }
           },
@@ -147,12 +167,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef0c945c118756d8",
+  "active": "463696705bcb2d2d",
   "lastOpenFiles": [
+    "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
+    "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
+    "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
     "Seminars/2024-03-11 Семинар - История.md",
     "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
-    "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
-    "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
     "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
     "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
@@ -175,7 +196,6 @@
     "Notes/Дискретная математика/Мультипликативная группа кольца вычетов.md",
     "Lectures/unformatted/Лекция Дискретная Математика 2023-12-18.md",
     "Notes/Дискретная математика/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
-    "Notes/Дискретная математика/Идемпотентный элемент (Кольцо).md",
     "Practical works/Дискретная математика",
     "Homework/Линейная алгебра",
     "Homework/English",
