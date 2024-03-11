@@ -57,8 +57,16 @@ $$\left[\begin{align}
 &k = 3 \\
 &k = \frac{3}{2} + \frac{\sqrt{ 3 }}{2}i \\
 &k = \frac{3}{2} - \frac{\sqrt{ 3 }}{2}i
-\end{align}\right. \implies \left[\begin{align}
-&k = 3 \\
-&k = \frac{3}{2} + \frac{\sqrt{ 3 }}{2}i \\
-&k = \frac{3}{2} - \frac{\sqrt{ 3 }}{2}i
+\end{align}\right. \implies$$
+
+$$\implies \left[\begin{align}
+&\lambda_{1} = 1 \\
+&\lambda_{2} = \frac{1}{2} + \frac{\sqrt{ 3 }}{6}i \\
+&\lambda_{3} = \frac{1}{2} - \frac{\sqrt{ 3 }}{6}i
 \end{align}\right.$$
+
+Теперь, применяя полученные собственные значения, найдем собственные векторы:
+
+#### $\lambda_{1} = 1$
+
+$$$$
