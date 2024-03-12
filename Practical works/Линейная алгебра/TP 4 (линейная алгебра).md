@@ -71,6 +71,19 @@ $$\implies \left[\begin{align}
 
 $$\begin{gather}
 \begin{pmatrix}
+\frac{2}{3} - 1 & -\frac{1}{3} & -\frac{1}{3} \\
+-\frac{1}{3} & \frac{2}{3} - 1 & -\frac{1}{3} \\
+-\frac{1}{3} & -\frac{1}{3} & \frac{2}{3} - 1
+\end{pmatrix}\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} = 1\cdot \begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} \\
+\begin{pmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1
@@ -78,14 +91,21 @@ $$\begin{gather}
 x \\
 y \\
 z
-\end{pmatrix} = 1\cdot\begin{pmatrix}
+\end{pmatrix} = \begin{pmatrix}
 x \\
 y \\
 z
 \end{pmatrix} \\
 \begin{cases}
-x+y+z = x \\
-x+y+z = y \\
-x+y+z = z \\
-\end{cases}
+y+z = 0 \\
+x+z = 0 \\
+x+y = 0
+\end{cases} \implies \begin{cases}
+x = -z \\
+y = -z \\
+\end{cases} \implies \vec{x}_{1} = \begin{pmatrix}
+-1 \\
+-1 \\
+1
+\end{pmatrix}
 \end{gather}$$
