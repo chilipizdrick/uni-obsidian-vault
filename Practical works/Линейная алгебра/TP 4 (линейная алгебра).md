@@ -83,7 +83,7 @@ x \\
 y \\
 z
 \end{pmatrix} \\
-\begin{pmatrix}
+-\frac{1}{3}\begin{pmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1
@@ -95,18 +95,33 @@ z
 x \\
 y \\
 z
-\end{pmatrix} \\
-\begin{cases}
-y+z = 0 \\
-x+z = 0 \\
-x+y = 0
-\end{cases} \implies \begin{cases}
-x = -z \\
-x = -y \\
-y = -z \\
-\end{cases} \implies \vec{x}_{1} = \begin{pmatrix}
-1 \\
-1 \\
--2
 \end{pmatrix}
 \end{gather}$$
+
+$$
+\begin{gather}
+\begin{cases}
+\frac{1}{3}(x+y+z) = -x \\
+\frac{1}{3}(x+y+z) = -y \\
+\frac{1}{3}(x+y+z) = -z
+\end{cases} \implies \begin{cases}
+x+y+z = -3x \\
+x+y+z = -3y \\
+x+y+z = -3z
+\end{cases} \implies \\
+\implies \begin{cases}
+4x + y + z = 0 \\
+x + 4y + z = 0 \\
+x + y + 4z = 0
+\end{cases} \implies \\
+\implies \left(\begin{array}{ccc|c}
+4 & 1 & 1 & 0 \\
+1 & 4 & 1 & 0 \\
+1 & 1 & 4 & 0
+\end{array}\right) \to \left(\begin{array}{ccc|c}
+4 & 1 & 1 & 0 \\
+1 & 4 & 1 & 0 \\
+1 & 1 & 4 & 0
+\end{array}\right)
+\end{gather}
+$$
