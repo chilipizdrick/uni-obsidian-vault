@@ -102,10 +102,11 @@ x+z = 0 \\
 x+y = 0
 \end{cases} \implies \begin{cases}
 x = -z \\
+x = -y \\
 y = -z \\
 \end{cases} \implies \vec{x}_{1} = \begin{pmatrix}
--1 \\
--1 \\
-1
+1 \\
+1 \\
+-2
 \end{pmatrix}
 \end{gather}$$
