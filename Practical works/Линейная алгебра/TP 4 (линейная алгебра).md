@@ -71,19 +71,6 @@ $$\implies \left[\begin{align}
 
 $$\begin{gather}
 \begin{pmatrix}
-\frac{2}{3} - 1 & -\frac{1}{3} & -\frac{1}{3} \\
--\frac{1}{3} & \frac{2}{3} - 1 & -\frac{1}{3} \\
--\frac{1}{3} & -\frac{1}{3} & \frac{2}{3} - 1
-\end{pmatrix}\begin{pmatrix}
-x \\
-y \\
-z
-\end{pmatrix} = 1\cdot \begin{pmatrix}
-x \\
-y \\
-z
-\end{pmatrix} \\
--\frac{1}{3}\begin{pmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1
@@ -91,49 +78,5 @@ z
 x \\
 y \\
 z
-\end{pmatrix} = \begin{pmatrix}
-x \\
-y \\
-z
 \end{pmatrix}
-\end{gather}$$
-
-$$
-\begin{gather}
-\begin{cases}
-\frac{1}{3}(x+y+z) = -x \\
-\frac{1}{3}(x+y+z) = -y \\
-\frac{1}{3}(x+y+z) = -z
-\end{cases} \implies \begin{cases}
-x+y+z = -3x \\
-x+y+z = -3y \\
-x+y+z = -3z
-\end{cases} \implies \\
-\implies \begin{cases}
-4x + y + z = 0 \\
-x + 4y + z = 0 \\
-x + y + 4z = 0
-\end{cases} \\
-\left(\begin{array}{ccc|c}
-4 & 1 & 1 & 0 \\
-1 & 4 & 1 & 0 \\
-1 & 1 & 4 & 0
-\end{array}\right) \to \left(\begin{array}{ccc|c}
-4 & 1 & 1 & 0 \\
-1 & 4 & 1 & 0 \\
-0 & -3 & 3 & 0
-\end{array}\right) \to \left(\begin{array}{ccc|c}
-4 & 1 & 1 & 0 \\
-1 & 4 & 1 & 0 \\
-0 & 0 & 6 & 0
-\end{array}\right) \to \\
-\to \left(\begin{array}{ccc|c}
-1 & 4 & 1 & 0 \\
-0 & -15 & -3 & 0 \\
-0 & 0 & 1 & 0
-\end{array}\right) \to \left(\begin{array}{ccc|c}
-1 & 4 & 1 & 0 \\
-0 & 5 & 1 & 0 \\
-0 & 0 & 1 & 0
-\end{array}\right)
 \end{gather}$$
