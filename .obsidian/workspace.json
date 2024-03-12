@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - Линейная алгебра.md"
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md"
               }
             }
           },
@@ -181,8 +181,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e7c8253a4623c9be",
+  "active": "463696705bcb2d2d",
   "lastOpenFiles": [
+    "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
     "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
     "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
@@ -190,7 +191,6 @@
     "Seminars/2024-03-11 Семинар - История.md",
     "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
     "Practical works/Линейная алгебра/ТР 2 (линейная алгебра).md",
-    "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
     "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
     "Lectures/Дискретная математика/2024-02-16 Лекция - Дискретная математика.md",
     "Seminars/2024-03-06 Семинар - Дискретная математика.md",

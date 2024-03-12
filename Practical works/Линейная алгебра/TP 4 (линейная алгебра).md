@@ -69,4 +69,23 @@ $$\implies \left[\begin{align}
 
 #### $\lambda_{1} = 1$
 
-$$$$
+$$\begin{gather}
+\cancel{ -\frac{1}{3} }\begin{pmatrix}
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1
+\end{pmatrix} \vec{x} = \vec{0} \\
+\vec{x} \in \left\{ \begin{pmatrix}
+1 \\
+-1 \\
+0
+\end{pmatrix}, \begin{pmatrix}
+1 \\
+0 \\
+-1
+\end{pmatrix}, \begin{pmatrix}
+0 \\
+1 \\
+-1
+\end{pmatrix} \right\}
+\end{gather}$$
