@@ -74,9 +74,16 @@ $$\begin{gather}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1
-\end{pmatrix}\begin{pmatrix}
-x \\
-y \\
-z
-\end{pmatrix}
-\end{gather}$$
+\end{pmatrix} \vec{x}_{1}
+\end{gather} = \vec{0} \implies \vec{x}_{1} \in \left\{ \begin{pmatrix}
+1 \\
+-1 \\
+0
+\end{pmatrix}, \begin{pmatrix}
+1 \\
+0 \\
+-1
+\end{pmatrix} \right\}$$
+
+#### $\lambda_{2} = \frac{1}{2}+\frac{\sqrt{ 3 }}{6}i$
+
