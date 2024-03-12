@@ -113,15 +113,27 @@ x+y+z = -3z
 4x + y + z = 0 \\
 x + 4y + z = 0 \\
 x + y + 4z = 0
-\end{cases} \implies \\
-\implies \left(\begin{array}{ccc|c}
+\end{cases} \\
+\left(\begin{array}{ccc|c}
 4 & 1 & 1 & 0 \\
 1 & 4 & 1 & 0 \\
 1 & 1 & 4 & 0
 \end{array}\right) \to \left(\begin{array}{ccc|c}
 4 & 1 & 1 & 0 \\
 1 & 4 & 1 & 0 \\
-1 & 1 & 4 & 0
+0 & -3 & 3 & 0
+\end{array}\right) \to \left(\begin{array}{ccc|c}
+4 & 1 & 1 & 0 \\
+1 & 4 & 1 & 0 \\
+0 & 0 & 6 & 0
+\end{array}\right) \to \\
+\to \left(\begin{array}{ccc|c}
+1 & 4 & 1 & 0 \\
+0 & -15 & -3 & 0 \\
+0 & 0 & 1 & 0
+\end{array}\right) \to \left(\begin{array}{ccc|c}
+1 & 4 & 1 & 0 \\
+0 & 5 & 1 & 0 \\
+0 & 0 & 1 & 0
 \end{array}\right)
-\end{gather}
-$$
+\end{gather}$$
