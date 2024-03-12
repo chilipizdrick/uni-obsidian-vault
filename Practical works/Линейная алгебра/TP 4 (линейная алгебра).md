@@ -70,22 +70,22 @@ $$\implies \left[\begin{align}
 #### $\lambda_{1} = 1$
 
 $$\begin{gather}
-\cancel{ -\frac{1}{3} }\begin{pmatrix}
+\begin{pmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1
-\end{pmatrix} \vec{x} = \vec{0} \\
-\vec{x} \in \left\{ \begin{pmatrix}
-1 \\
--1 \\
-0
-\end{pmatrix}, \begin{pmatrix}
-1 \\
-0 \\
--1
-\end{pmatrix}, \begin{pmatrix}
-0 \\
-1 \\
--1
-\end{pmatrix} \right\}
+\end{pmatrix}\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} = 1\cdot\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} \\
+\begin{cases}
+x+y+z = x \\
+x+y+z = y \\
+x+y+z = z \\
+\end{cases}
 \end{gather}$$
