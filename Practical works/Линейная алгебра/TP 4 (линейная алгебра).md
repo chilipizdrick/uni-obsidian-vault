@@ -87,3 +87,10 @@ $$\begin{gather}
 
 #### $\lambda_{2} = \frac{1}{2}+\frac{\sqrt{ 3 }}{6}i$
 
+$$\begin{gather}
+\begin{pmatrix}
+-\frac{1}{2} + \frac{\sqrt{ 3 }}{6}i & 1 & 1 \\
+1 & -\frac{1}{2} + \frac{\sqrt{ 3 }}{6}i & 1 \\
+1 & 1 & -\frac{1}{2} + \frac{\sqrt{ 3 }}{6}i
+\end{pmatrix} \vec{x}_{2} = \vec{0}
+\end{gather}$$
