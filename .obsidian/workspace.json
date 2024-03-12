@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a2314f9bf6a34148",
+        "id": "fb42e50eecefe621",
         "type": "tabs",
         "children": [
           {
-            "id": "ac4343065f0d12f3",
+            "id": "f44e4992e062348b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
+                "file": "Seminars/Математический анализ/2024-02-29 Семинар - Математический анализ.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,38 @@
             }
           },
           {
-            "id": "e7c8253a4623c9be",
+            "id": "8a652e9e6cf09e80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23f828d7dd59b5de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "737fd253e223d0da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,26 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "0ec10ffed1bef4b2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "463696705bcb2d2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "цикли",
+                "query": "интегрирование по частям",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,12 +98,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 292.5024719238281,
-    "collapsed": true
+    "width": 292.5024719238281
   },
   "right": {
     "id": "f52afa7cf66eb8b5",
@@ -112,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -152,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md"
+                "file": "Notes/Математический анализ/Теорема об итегрировании по частям.md"
               }
             }
           },
@@ -181,11 +188,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "463696705bcb2d2d",
+  "active": "23f828d7dd59b5de",
   "lastOpenFiles": [
+    "Notes/Математический анализ/Неопределенный интеграл.md",
+    "Seminars/Математический анализ/2024-02-29 Семинар - Математический анализ.md",
+    "Seminars/Математический анализ/2024-02-22 Семинар - Математический анализ.md",
+    "Seminars/Математический анализ/2024-02-15 Семинар - Математический анализ.md",
+    "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
     "Seminars/2024-03-11 Семинар - Линейная алгебра.md",
     "Seminars/2024-03-04 Семинар - Линейная алгебра.md",
-    "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
     "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
     "Seminars/2024-03-11 Семинар - История.md",
@@ -198,7 +209,6 @@
     "Lectures/2024-03-01 Лекция - Дискретная математика.md",
     "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
     "Seminars/Линейная алгебра/2024-02-26 Семинар - Линейная алгебра.md",
-    "Notes/Математический анализ/Неопределенный интеграл.md",
     "Practical works/Линейная алгебра",
     "Notes/Дискретная математика/Порядок группы. Порядок элемента.md",
     "Seminars/Дискретная математика/2024-02-21 Семинар - Дискретная математика.md",
@@ -207,9 +217,6 @@
     "Notes/Дискретная математика/Китайская теорема об остатках.md",
     "Notes/Дискретная математика/Теорема об обратимости остатка.md",
     "Seminars/Линейная алгебра/2024-02-19 Семинар - Линейная алгебра.md",
-    "Notes/Дискретная математика/Мультипликативная группа кольца вычетов.md",
-    "Lectures/unformatted/Лекция Дискретная Математика 2023-12-18.md",
-    "Notes/Дискретная математика/Алгоритм нахождения идемпотентных элементов в прямом произведении колец.md",
     "Practical works/Дискретная математика",
     "Homework/Линейная алгебра",
     "Homework/English",
