@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-13 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-13 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-13 Семинар - Линейная алгебра.md"
+                "file": "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md"
               }
             }
           },
@@ -162,10 +161,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b53ed36ed80e329",
+  "active": "055b4428b91fda7f",
   "lastOpenFiles": [
-    "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
     "Seminars/2024-03-13 Семинар - Линейная алгебра.md",
+    "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
     "Practical works/Методы математического анализа/ТР 18, 19 (математический анализ) (1-ый семестр).md",
     "Seminars/2024-03-13 Семинар - Методы математического анализа.md",
     "Practical works/Методы математического анализа/Титульный лист.md",
