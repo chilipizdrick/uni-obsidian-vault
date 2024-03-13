@@ -11,8 +11,10 @@
             "id": "b1d98da8b31d9549",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-03-13 09.06.12.excalidraw.md"
+              }
             }
           }
         ]
@@ -73,6 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Excalidraw/Drawing 2024-03-13 09.06.12.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +92,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Excalidraw/Drawing 2024-03-13 09.06.12.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -110,7 +114,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Excalidraw/Drawing 2024-03-13 09.06.12.excalidraw.md"
+              }
             }
           },
           {
@@ -140,6 +146,8 @@
   },
   "active": "b1d98da8b31d9549",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-03-13 09.06.12.excalidraw.md",
+    "Excalidraw",
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
     "Dumpster/testing.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
@@ -166,7 +174,6 @@
     "Seminars/Дискретная математика/2024-02-21 Семинар - Дискретная математика.md",
     "Notes/Дискретная математика/Кольцо вычетов.md",
     "Notes/Дискретная математика/Китайская теорема об остатках.md",
-    "Notes/Дискретная математика/Теорема об обратимости остатка.md",
     "Practical works/Дискретная математика",
     "Homework/Линейная алгебра",
     "Homework/English",
@@ -175,7 +182,6 @@
     "Seminars/Дискретная математика",
     "Seminars/Линейная алгебра",
     "Seminars/История",
-    "Seminars/English",
     "Untitled.canvas",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
