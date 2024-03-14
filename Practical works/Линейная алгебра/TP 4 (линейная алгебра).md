@@ -88,6 +88,39 @@ $$\implies \left[\begin{align}
 
 Теперь, применяя полученные собственные значения, найдем собственные векторы:
 
+#### $\lambda_{1} = 0$
+
+$$\begin{pmatrix}
+-2 & 1 & 1 \\
+1 & -2 & 1 \\
+1 & 1 & -2
+\end{pmatrix} \vec{x}_{1} = \vec{0}$$
+
+$$\begin{gather}
+\left(\begin{array}{ccc|c}
+-2 & 1 & 1 & 0 \\
+1 & -2 & 1 & 0 \\
+1 & 1 & -2 & 0
+\end{array}\right) \to \left(\begin{array}{ccc|c}
+0 & -3 & 3 & 0 \\
+1 & -2 & 1 & 0 \\
+0 & 3 & -3 & 0
+\end{array}\right) \to \left(\begin{array}{ccc|c}
+1 & -2 & 1 & 0 \\
+0 & -1 & 1 & 0 \\
+0 & 0 & 0 & 0
+\end{array}\right) \to \\
+\to \left(\begin{array}{ccc|c}
+1 & -2 & 1 & 0 \\
+0 & -1 & 1 & 0 \\
+0 & 0 & 0 & 0
+\end{array}\right) \implies \vec{x}_{1} = \begin{pmatrix}
+-1 \\
+1 \\
+1
+\end{pmatrix}
+\end{gather}$$
+
 #### $\lambda_{2,3} = 1$
 
 $$\begin{gather}
@@ -95,8 +128,8 @@ $$\begin{gather}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1
-\end{pmatrix} \vec{x}_{1}
-\end{gather} = \vec{0} \implies \vec{x}_{1} \in \left\{ \begin{pmatrix}
+\end{pmatrix} \vec{x}_{2,3}
+\end{gather} = \vec{0} \implies \vec{x}_{2,3} \in \left\{ \begin{pmatrix}
 1 \\
 -1 \\
 0
@@ -105,13 +138,3 @@ $$\begin{gather}
 0 \\
 -1
 \end{pmatrix} \right\}$$
-
-#### $\lambda_{2} = \frac{1}{2}+\frac{\sqrt{ 3 }}{6}i$
-
-$$\begin{gather}
-\begin{pmatrix}
--\frac{1}{2} + \frac{\sqrt{ 3 }}{6}i & 1 & 1 \\
-1 & -\frac{1}{2} + \frac{\sqrt{ 3 }}{6}i & 1 \\
-1 & 1 & -\frac{1}{2} + \frac{\sqrt{ 3 }}{6}i
-\end{pmatrix} \vec{x}_{2} = \vec{0}
-\end{gather}$$
