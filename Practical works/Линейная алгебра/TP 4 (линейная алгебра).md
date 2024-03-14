@@ -51,6 +51,22 @@ k - 2 & 1 & 1 \\
 \cancel{ -2 }(k-3)(k^{2} - 3k + 3) = 0
 \end{gather}$$
 
+$$\begin{gather}
+(k-2)\begin{vmatrix}
+k-2 & 1 \\
+1  & k-2
+\end{vmatrix} - \begin{vmatrix}
+1 & 1 \\
+1 & k-2
+\end{vmatrix} + \begin{vmatrix}
+1 & k-2 \\
+1 & 1
+\end{vmatrix} = \\
+= (k-2)[(k-2)^{2} - 1] - ([k-2] - 1) + (1 - [k-2]) = \\
+= (k-2)^{3} - (k-2) - (k-2) + 1 + 1 - (k-2) = \\
+= (k-2)^{3} - 3(k-2) + 2 = (k-3)()
+\end{gather}$$
+
 Из полученного уравнения получаем один действительный и два комплексных корня:
 
 $$\left[\begin{align}
