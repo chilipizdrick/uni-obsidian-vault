@@ -52,6 +52,11 @@ k - 2 & 1 & 1 \\
 \end{gather}$$
 
 $$\begin{gather}
+\begin{vmatrix}
+k - 2 & 1 & 1 \\
+1 & k - 2 & 1 \\
+1 & 1 & k - 2
+\end{vmatrix} = \\
 (k-2)\begin{vmatrix}
 k-2 & 1 \\
 1  & k-2
@@ -64,26 +69,26 @@ k-2 & 1 \\
 \end{vmatrix} = \\
 = (k-2)[(k-2)^{2} - 1] - ([k-2] - 1) + (1 - [k-2]) = \\
 = (k-2)^{3} - (k-2) - (k-2) + 1 + 1 - (k-2) = \\
-= (k-2)^{3} - 3(k-2) + 2 = (k-3)()
+= (k-2)^{3} - 3(k-2) + 2 = (k-3)([k-2]^{2} + [k-2] - 2) = \\
+= (k-3)(k^{2} - 3k) = k(k-3)^{2} \implies \\
+\implies k(k-3)^{2} = 0
 \end{gather}$$
 
-Из полученного уравнения получаем один действительный и два комплексных корня:
+Из полученного уравнения получаем три действительных корня:
 
 $$\left[\begin{align}
-&k = 3 \\
-&k = \frac{3}{2} + \frac{\sqrt{ 3 }}{2}i \\
-&k = \frac{3}{2} - \frac{\sqrt{ 3 }}{2}i
+&k_{1} = 0 \\
+&k_{2,3} = 3
 \end{align}\right. \implies$$
 
 $$\implies \left[\begin{align}
-&\lambda_{1} = 1 \\
-&\lambda_{2} = \frac{1}{2} + \frac{\sqrt{ 3 }}{6}i \\
-&\lambda_{3} = \frac{1}{2} - \frac{\sqrt{ 3 }}{6}i
+&\lambda_{1} = 0 \\
+&\lambda_{2,3} = 1
 \end{align}\right.$$
 
 Теперь, применяя полученные собственные значения, найдем собственные векторы:
 
-#### $\lambda_{1} = 1$
+#### $\lambda_{2,3} = 1$
 
 $$\begin{gather}
 \begin{pmatrix}
