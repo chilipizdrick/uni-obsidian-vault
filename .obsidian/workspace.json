@@ -8,12 +8,25 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1dda73dbb04e3546",
+            "id": "105236861dc4bf4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-03-18 Семинар - История.md",
+                "file": "Practical works/Математический анализ/Матан ТР 1.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "db7b8f76398f2078",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/Математический анализ/2024-02-29 Семинар - Математический анализ.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:2024-02-15",
+                "query": "интегрирование по частям",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -62,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 396.5
+    "width": 333.5
   },
   "right": {
     "id": "f52afa7cf66eb8b5",
@@ -78,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-18 Семинар - История.md",
+                "file": "Practical works/Математический анализ/Матан ТР 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-18 Семинар - История.md",
+                "file": "Practical works/Математический анализ/Матан ТР 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-18 Семинар - История.md"
+                "file": "Practical works/Математический анализ/Матан ТР 1.md"
               }
             }
           },
@@ -147,12 +160,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1dda73dbb04e3546",
+  "active": "105236861dc4bf4e",
   "lastOpenFiles": [
+    "Seminars/Математический анализ/2024-02-29 Семинар - Математический анализ.md",
+    "Practical works/Математический анализ/Матан ТР 1.md",
+    "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
+    "Lectures/Математический анализ/2024-02-21 Лекция - Математический анализ.md",
+    "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
+    "Practical works/Математический анализ",
     "Seminars/2024-03-18 Семинар - История.md",
     "Seminars/Линейная алгебра/2024-03-18 Семинар - Линейная алгебра.md",
-    "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
-    "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
     "Seminars/Линейная алгебра/2024-03-11 Семинар - Линейная алгебра.md",
     "Seminars/Линейная алгебра/2024-03-11 Practice - Линал.md",
     "Seminars/Линейная алгебра/2024-03-13 Семинар - Линейная алгебра.md",
@@ -173,9 +190,6 @@
     "Notes/Математический анализ/Теорема об итегрировании по частям.md",
     "Dumpster/testing.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
-    "Seminars/Математический анализ/2024-02-29 Семинар - Математический анализ.md",
-    "Seminars/Математический анализ/2024-02-22 Семинар - Математический анализ.md",
-    "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
     "Practical works/Линейная алгебра",
     "Practical works/Дискретная математика",
     "Homework/Линейная алгебра",
@@ -184,7 +198,6 @@
     "Seminars/Методы математического анализа",
     "Seminars/Дискретная математика",
     "Seminars/Линейная алгебра",
-    "Seminars/История",
     "Untitled.canvas",
     "Images/Pasted image 20231211092631.png",
     "Images/Pasted image 20231211092421.png",
