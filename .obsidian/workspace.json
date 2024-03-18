@@ -11,8 +11,13 @@
             "id": "1dda73dbb04e3546",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-03-18 Семинар - История.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Seminars/2024-03-18 Семинар - История.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Seminars/2024-03-18 Семинар - История.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Seminars/2024-03-18 Семинар - История.md"
+              }
             }
           },
           {
@@ -140,6 +149,7 @@
   },
   "active": "1dda73dbb04e3546",
   "lastOpenFiles": [
+    "Seminars/2024-03-18 Семинар - История.md",
     "Seminars/Линейная алгебра/2024-03-18 Семинар - Линейная алгебра.md",
     "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
     "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
