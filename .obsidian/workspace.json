@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3bc13dc4400c9243",
+        "id": "e39fb08cb00f2817",
         "type": "tabs",
         "children": [
           {
-            "id": "636447a2e5f21b74",
+            "id": "1dda73dbb04e3546",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -78,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -117,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md"
-              }
+              "state": {}
             }
           },
           {
@@ -147,9 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "636447a2e5f21b74",
+  "active": "1dda73dbb04e3546",
   "lastOpenFiles": [
-    "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
+    "Seminars/Линейная алгебра/2024-03-18 Семинар - Линейная алгебра.md",
     "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
     "Practical works/Линейная алгебра/TP 4 (линейная алгебра).md",
     "Seminars/Линейная алгебра/2024-03-11 Семинар - Линейная алгебра.md",
@@ -175,7 +166,6 @@
     "Seminars/Математический анализ/2024-02-29 Семинар - Математический анализ.md",
     "Seminars/Математический анализ/2024-02-22 Семинар - Математический анализ.md",
     "Practical works/Линейная алгебра/ТР 3 (линейная алгебра).md",
-    "Practical works/Линейная алгебра/ТР 1 (линейная алгебра).md",
     "Practical works/Линейная алгебра",
     "Practical works/Дискретная математика",
     "Homework/Линейная алгебра",
