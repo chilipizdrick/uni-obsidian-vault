@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical works/Методы математического анализа/Титульный лист.md",
+                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/Методы математического анализа/Титульный лист.md",
+                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/Методы математического анализа/Титульный лист.md",
+                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practical works/Методы математического анализа/Титульный лист.md"
+                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md"
               }
             }
           },
@@ -188,6 +188,7 @@
   },
   "active": "105236861dc4bf4e",
   "lastOpenFiles": [
+    "Practical works/Методы математического анализа/Титульный лист.md",
     "Practical works/Методы математического анализа/ТР 18, 19 Математический анализ (1-ый семестр).md",
     "Practical works/Линейная алгебра/ТР 3 Линейная алгебра.md",
     "Practical works/Линейная алгебра/ТР 2 Линейная алгебра.md",
@@ -214,7 +215,6 @@
     "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md",
     "Notes/Линейная алгебра/Многочлен.md",
     "Lectures/Дискретная математика/2024-03-01 Лекция - Дискретная математика.md",
-    "Seminars/Методы математического анализа/2024-03-13 Семинар - Методы математического анализа.md",
     "Excalidraw",
     "Practical works/Линейная алгебра",
     "Practical works/Дискретная математика",
