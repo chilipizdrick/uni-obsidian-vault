@@ -32,9 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "06d6c4dd4579a209",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.11"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -161,7 +171,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b3513fde27529cd4",
+  "active": "06d6c4dd4579a209",
   "lastOpenFiles": [
     "Practical works/Методы математического анализа/ТР 18, 19 Математический анализ (1-ый семестр).md",
     "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md",
