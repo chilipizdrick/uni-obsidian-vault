@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e39fb08cb00f2817",
+        "id": "bdc25addac99904e",
         "type": "tabs",
         "children": [
           {
-            "id": "105236861dc4bf4e",
+            "id": "4d6ed106d190303c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,10 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "105236861dc4bf4e",
+  "active": "4d6ed106d190303c",
   "lastOpenFiles": [
-    "Practical works/Методы математического анализа/Титульный лист.md",
     "Practical works/Математический анализ/ТР 1 Математический анализ.md",
+    "Practical works/Методы математического анализа/Титульный лист.md",
     "Practical works/Методы математического анализа/ТР 18, 19 Математический анализ (1-ый семестр).md",
     "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
