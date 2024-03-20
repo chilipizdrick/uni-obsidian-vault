@@ -8,19 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4d6ed106d190303c",
+            "id": "333f0f80d9067c34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
+                "file": "Seminars/Методы математического анализа/2024-03-13 Семинар - Методы математического анализа.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8aa7e51f42212927",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/Методы математического анализа/2024-03-20 Семинар - Методы математического анализа.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
+                "file": "Seminars/Методы математического анализа/2024-03-20 Семинар - Методы математического анализа.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
+                "file": "Seminars/Методы математического анализа/2024-03-20 Семинар - Методы математического анализа.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md"
+                "file": "Seminars/Методы математического анализа/2024-03-20 Семинар - Методы математического анализа.md"
               }
             }
           },
@@ -147,8 +161,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d6ed106d190303c",
+  "active": "8aa7e51f42212927",
   "lastOpenFiles": [
+    "Seminars/Методы математического анализа/2024-03-13 Семинар - Методы математического анализа.md",
+    "Seminars/Методы математического анализа/2024-03-20 Семинар - Методы математического анализа.md",
     "Practical works/Математический анализ/ТР 1 Математический анализ.md",
     "Practical works/Методы математического анализа/Титульный лист.md",
     "Practical works/Методы математического анализа/ТР 18, 19 Математический анализ (1-ый семестр).md",
@@ -175,8 +191,6 @@
     "Seminars/Дискретная математика/2024-02-21 Семинар - Дискретная математика.md",
     "Seminars/Математический анализ/2024-02-15 Семинар - Математический анализ.md",
     "Seminars/Линейная алгебра/2024-03-04 Семинар - Линейная алгебра.md",
-    "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md",
-    "Notes/Линейная алгебра/Многочлен.md",
     "Excalidraw",
     "Practical works/Линейная алгебра",
     "Practical works/Дискретная математика",
