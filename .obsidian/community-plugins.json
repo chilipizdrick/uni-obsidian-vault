@@ -1,10 +1,10 @@
 [
   "obsidian-latex-suite",
-  "cm-editor-syntax-highlight-obsidian",
   "code-emitter",
   "obsidian-git",
   "obsidian-excalidraw-plugin",
   "obsidian-vimrc-support",
   "quickadd",
-  "quick-latex"
+  "quick-latex",
+  "cm-editor-syntax-highlight-obsidian"
 ]
