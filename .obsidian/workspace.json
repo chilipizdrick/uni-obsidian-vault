@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-20 12.53.59.excalidraw.md",
+                "file": "Seminars/2024-03-20 Семинар - Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-20 12.53.59.excalidraw.md",
+                "file": "Seminars/2024-03-20 Семинар - Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-20 12.53.59.excalidraw.md"
+                "file": "Seminars/2024-03-20 Семинар - Дискретная математика.md"
               }
             }
           },
@@ -172,10 +172,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db45b83f3029c07a",
+  "active": "bf38d0aed3e5eb4e",
   "lastOpenFiles": [
-    "Seminars/2024-03-20 Семинар - Дискретная математика.md",
     "Excalidraw/Drawing 2024-03-20 12.53.59.excalidraw.md",
+    "Seminars/2024-03-20 Семинар - Дискретная математика.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/Методы математического анализа/2024-03-13 Семинар - Методы математического анализа.md",
     "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
