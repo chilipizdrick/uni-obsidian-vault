@@ -5,6 +5,6 @@
   "obsidian-excalidraw-plugin",
   "obsidian-vimrc-support",
   "quickadd",
-  "cm-editor-syntax-highlight-obsidian",
-  "quick-latex"
+  "quick-latex",
+  "cm-editor-syntax-highlight-obsidian"
 ]

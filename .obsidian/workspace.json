@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-03-21 Семинар - Математический анализ.md",
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -32,8 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c652b0ab35f6df42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-03-21 Семинар - Математический анализ.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -62,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "триго",
+                "query": "неопределенный",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,8 +85,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -161,9 +174,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "737318cdff8bd315",
+  "active": "c652b0ab35f6df42",
   "lastOpenFiles": [
     "Lectures/Математический анализ/2024-02-28 Лекция - Математический анализ.md",
+    "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/2024-03-21 Семинар - Математический анализ.md",
     "Seminars/Линейная алгебра/2024-02-19 Семинар - Линейная алгебра.md",
     "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
@@ -177,7 +191,6 @@
     "Practical works/ООП",
     "Practical works/Untitled.md",
     "Excalidraw/Drawing 2024-03-20 12.53.59.excalidraw.md",
-    "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/Методы математического анализа/2024-03-13 Семинар - Методы математического анализа.md",
     "Practical works/Методы математического анализа/ТР 18, 19 Математический анализ (1-ый семестр).md",
     "Practical works/Математический анализ/Титульный лист.md",
