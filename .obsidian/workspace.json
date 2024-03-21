@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical works/ООП/ООП Практика 2.md",
+                "file": "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/ООП/ООП Практика 2.md",
+                "file": "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/ООП/ООП Практика 2.md",
+                "file": "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practical works/ООП/ООП Практика 2.md"
+                "file": "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md"
               }
             }
           },
@@ -147,12 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d8dd75c0d1297b4",
+  "active": "41dba16640d2f68f",
   "lastOpenFiles": [
+    "Practical works/ООП/ООП Практика 2.md",
     "Practical works/НИР/НИР Практика 2.md",
     "Practical works/НИР/НИР Практика 1.md",
     "Practical works/ООП/ООП Практика 1.md",
-    "Practical works/ООП/ООП Практика 2.md",
     "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md",
     "Seminars/2024-03-20 Семинар - Дискретная математика.md",
     "Practical works/НИР",
