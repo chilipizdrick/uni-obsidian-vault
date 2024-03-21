@@ -59,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md",
+                "file": "Practical works/Методы математического анализа/Титульный лист.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md",
+                "file": "Practical works/Методы математического анализа/Титульный лист.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -158,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md"
+                "file": "Practical works/Методы математического анализа/Титульный лист.md"
               }
             }
           },
@@ -187,11 +186,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d9c58f3b2fe02713",
+  "active": "c652b0ab35f6df42",
   "lastOpenFiles": [
+    "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md",
     "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
     "Practical works/Математический анализ/ТР 1 Математический анализ.md",
-    "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md",
     "Practical works/Методы математического анализа/Титульный лист.md",
     "Practical works/Методы математического анализа/ТР 18, 19 Математический анализ (1-ый семестр).md",
     "Lectures/Математический анализ/2024-02-28 Лекция - Математический анализ.md",
