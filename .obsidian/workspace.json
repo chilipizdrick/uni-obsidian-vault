@@ -19,6 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "caf4c9756088c7ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lectures/Математический анализ/2024-02-28 Лекция - Математический анализ.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -49,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "неопреде",
+                "query": "триго",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +71,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -149,7 +163,9 @@
   },
   "active": "737318cdff8bd315",
   "lastOpenFiles": [
+    "Lectures/Математический анализ/2024-02-28 Лекция - Математический анализ.md",
     "Seminars/2024-03-21 Семинар - Математический анализ.md",
+    "Seminars/Линейная алгебра/2024-02-19 Семинар - Линейная алгебра.md",
     "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
     "Practical works/ООП/ООП Практика 2.md",
     "Practical works/НИР/НИР Практика 2.md",
@@ -176,8 +192,6 @@
     "Practical works/Линейная алгебра/ТР 2 Линейная алгебра.md",
     "Practical works/Линейная алгебра/ТР 1 Линейная алгебра.md",
     "Seminars/Линейная алгебра/2024-03-18 Семинар - Линейная алгебра.md",
-    "Seminars/Линейная алгебра/2024-03-18 Practice - Линал.md",
-    "Lectures/Математический анализ/2024-02-21 Лекция - Математический анализ.md",
     "Practical works/Математический анализ",
     "Excalidraw",
     "Practical works/Линейная алгебра",
