@@ -3,6 +3,6 @@
   "baseFontSize": 20,
   "cssTheme": "Rosé Pine",
   "theme": "obsidian",
-  "monospaceFontFamily": "MesloLGM Nerd Font Mono,JetBrainsMono Nerd Font Mono",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono,MesloLGM Nerd Font Mono",
   "textFontFamily": ""
 }
