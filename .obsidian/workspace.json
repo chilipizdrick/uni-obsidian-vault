@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "60b96632c4da0b97",
+        "id": "593b4b979d7ee99d",
         "type": "tabs",
         "children": [
           {
-            "id": "41dba16640d2f68f",
+            "id": "737318cdff8bd315",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
-                "mode": "preview",
+                "file": "Seminars/2024-03-21 Семинар - Математический анализ.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": false
               }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
+                "file": "Seminars/2024-03-21 Семинар - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
+                "file": "Seminars/2024-03-21 Семинар - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md"
+                "file": "Seminars/2024-03-21 Семинар - Математический анализ.md"
               }
             }
           },
@@ -147,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41dba16640d2f68f",
+  "active": "737318cdff8bd315",
   "lastOpenFiles": [
+    "Seminars/2024-03-21 Семинар - Математический анализ.md",
+    "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
     "Practical works/ООП/ООП Практика 2.md",
     "Practical works/НИР/НИР Практика 2.md",
     "Practical works/НИР/НИР Практика 1.md",
@@ -161,7 +163,6 @@
     "Excalidraw/Drawing 2024-03-20 12.53.59.excalidraw.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/Методы математического анализа/2024-03-13 Семинар - Методы математического анализа.md",
-    "Practical works/Методы математического анализа/ТР 20 Математический анализ (1 семестр).md",
     "Practical works/Методы математического анализа/ТР 18, 19 Математический анализ (1-ый семестр).md",
     "Practical works/Математический анализ/Титульный лист.md",
     "Seminars/Методы математического анализа/2024-03-20 Семинар - Методы математического анализа.md",
@@ -178,7 +179,6 @@
     "Seminars/Линейная алгебра/2024-03-18 Practice - Линал.md",
     "Lectures/Математический анализ/2024-02-21 Лекция - Математический анализ.md",
     "Practical works/Математический анализ",
-    "Seminars/2024-03-18 Семинар - История.md",
     "Excalidraw",
     "Practical works/Линейная алгебра",
     "Practical works/Дискретная математика",
