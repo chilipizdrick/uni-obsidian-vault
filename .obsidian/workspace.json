@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/2024-03-22 Лекция - Дискретная математика.md",
+                "file": "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/2024-03-22 Лекция - Дискретная математика.md",
+                "file": "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/2024-03-22 Лекция - Дискретная математика.md"
+                "file": "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md"
               }
             }
           },
@@ -162,10 +161,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "826f77d8f56f84c0",
+  "active": "668d5a5d6a709cc7",
   "lastOpenFiles": [
-    "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
     "Lectures/2024-03-22 Лекция - Дискретная математика.md",
+    "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
     "Seminars/Линейная алгебра/2024-03-18 Семинар - Линейная алгебра.md",
     "Notes/Линейная алгебра/Матрица.md",
     "Practical works/Линейная алгебра/ТР 1 Линейная алгебра.md",
