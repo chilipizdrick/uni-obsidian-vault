@@ -1,8 +1,6 @@
 @media print {
     body {
-        font-family: "Times New Roman", Times, serif !important;
+        --font-text: 'Times New Roman' !important;
+        --font-text-size: 14pt !important;
     }
-    /* h1 {
-  font-family: 'SFMono-Regular' !important;
-  } */
 }

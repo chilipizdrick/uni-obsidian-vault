@@ -4,5 +4,8 @@
   "cssTheme": "Rosé Pine",
   "theme": "obsidian",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono,MesloLGM Nerd Font Mono",
-  "textFontFamily": ""
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "pdf"
+  ]
 }
