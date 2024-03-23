@@ -1,0 +1,8 @@
+@media print {
+    body {
+        --font-text: 'Times New Roman' !important;
+    }
+    /* h1 {
+  font-family: 'SFMono-Regular' !important;
+  } */
+}
