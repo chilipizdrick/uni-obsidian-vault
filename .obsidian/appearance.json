@@ -6,6 +6,7 @@
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono,MesloLGM Nerd Font Mono",
   "textFontFamily": "",
   "enabledCssSnippets": [
-    "pdf"
+    "pdf",
+    "image"
   ]
 }

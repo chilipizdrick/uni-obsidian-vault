@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -103,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-23 14.47.55.excalidraw.md",
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-23 14.47.55.excalidraw.md",
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -143,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-23 14.47.55.excalidraw.md"
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md"
               }
             }
           },
@@ -172,10 +171,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e8bf06e4181016b",
+  "active": "fef197b7508c4026",
   "lastOpenFiles": [
-    "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
     "Excalidraw/Drawing 2024-03-23 14.47.55.excalidraw.md",
+    "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
     "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
     "Seminars/Дискретная математика/2024-02-28 Семинар - Дискретная математика.md",
     "Seminars/Дискретная математика/2024-03-13 Семинар - Дискретная математика.md",
