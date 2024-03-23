@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3b1168e58ae5ef50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "fef197b7508c4026",
             "type": "leaf",
             "state": {
@@ -40,6 +27,32 @@
               "type": "markdown",
               "state": {
                 "file": "Seminars/Дискретная математика/2024-03-13 Семинар - Дискретная математика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4183ca15750eb281",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/Дискретная математика/2024-02-28 Семинар - Дискретная математика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d99daaa8d77cfbb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -102,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\\mathbb{F}",
+                "query": "задать",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md",
+                "file": "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md",
+                "file": "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -172,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md"
+                "file": "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md"
               }
             }
           },
@@ -201,13 +214,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "613dcc3730fba2a4",
+  "active": "d99daaa8d77cfbb9",
   "lastOpenFiles": [
+    "Seminars/Дискретная математика/2024-02-28 Семинар - Дискретная математика.md",
     "Seminars/Дискретная математика/2024-03-13 Семинар - Дискретная математика.md",
-    "Seminars/Дискретная математика/2024-03-20 Семинар - Дискретная математика.md",
-    "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md",
     "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
     "Practical works/Дискретная математика/ТР 1 (дискретная математика).md",
+    "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md",
+    "Seminars/Дискретная математика/2024-03-20 Семинар - Дискретная математика.md",
     "Practical works/Линейная алгебра/ТР 3 Линейная алгебра.md",
     "Practical works/Математический анализ/ТР 1 Математический анализ.md",
     "Practical works/Математический анализ/Титульный лист.md",
@@ -219,7 +233,6 @@
     "TEMPLATES/seminar.md",
     "TEMPLATES/theorem.md",
     "Practical works/Линейная алгебра/TP 4 Линейная алгебра.md",
-    "Seminars/Дискретная математика/2024-02-28 Семинар - Дискретная математика.md",
     "Lectures/2024-03-22 Лекция - Дискретная математика.md",
     "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
     "Seminars/Линейная алгебра/2024-03-18 Семинар - Линейная алгебра.md",
