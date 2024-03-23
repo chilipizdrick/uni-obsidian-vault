@@ -1,6 +1,6 @@
 @media print {
     body {
-        --font-text: 'Times New Roman' !important;
+        font-family: "Times New Roman", Times, serif !important;
     }
     /* h1 {
   font-family: 'SFMono-Regular' !important;
