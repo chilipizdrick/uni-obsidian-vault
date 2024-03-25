@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
+                "file": "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
+                "file": "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
+                "file": "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md"
+                "file": "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md"
               }
             }
           },
@@ -147,10 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cd80eb085970a9e2",
+  "active": "3d8dd75c0d1297b4",
   "lastOpenFiles": [
-    "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
     "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
+    "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
     "Seminars/2024-03-25 Семинар - История.md",
     "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
     "Excalidraw/Drawing 2024-03-23 14.47.55.excalidraw.md",
