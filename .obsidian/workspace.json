@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cd80eb085970a9e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "задать",
+                "query": "ТР 2 дискретная",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +72,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -78,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md"
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md"
               }
             }
           },
@@ -147,7 +162,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2d151d70d9b5261",
+  "active": "cd80eb085970a9e2",
   "lastOpenFiles": [
     "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
     "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
