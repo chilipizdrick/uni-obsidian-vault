@@ -11,8 +11,13 @@
             "id": "c2d151d70d9b5261",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md"
+              }
             }
           },
           {
@@ -140,6 +149,7 @@
   },
   "active": "c2d151d70d9b5261",
   "lastOpenFiles": [
+    "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
     "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
     "Excalidraw/Drawing 2024-03-23 14.47.55.excalidraw.md",
     "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
@@ -165,7 +175,6 @@
     "Notes/Линейная алгебра/Матрица.md",
     "Practical works/Линейная алгебра/ТР 1 Линейная алгебра.md",
     "Practical works/Линейная алгебра/ТР 2 Линейная алгебра.md",
-    "Practical works/Методы математического анализа/ТР 1 Методы математического анализа.md",
     "Practical works/НИР",
     "Practical works/ООП",
     "Pasted image 20240319143339.png",
