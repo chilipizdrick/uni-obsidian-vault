@@ -33,7 +33,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md"
+                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md"
               }
             }
           },
@@ -161,10 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2d151d70d9b5261",
+  "active": "cd80eb085970a9e2",
   "lastOpenFiles": [
-    "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
     "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
+    "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
     "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
     "Excalidraw/Drawing 2024-03-23 14.47.55.excalidraw.md",
     "Seminars/Дискретная математика/2024-03-20 Семинар - Дискретная математика.md",
