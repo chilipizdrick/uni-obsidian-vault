@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
+                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
+                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practical works/Дискретная математика/ТР 2 Дискретная математика.md"
+                "file": "Seminars/2024-03-25 Семинар - Линейная алгебра.md"
               }
             }
           },
@@ -162,12 +161,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cd80eb085970a9e2",
+  "active": "c2d151d70d9b5261",
   "lastOpenFiles": [
+    "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
     "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
     "Seminars/Дискретная математика/2024-03-06 Семинар - Дискретная математика.md",
     "Excalidraw/Drawing 2024-03-23 14.47.55.excalidraw.md",
-    "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
     "Seminars/Дискретная математика/2024-03-20 Семинар - Дискретная математика.md",
     "Seminars/Дискретная математика/2024-02-28 Семинар - Дискретная математика.md",
     "Seminars/Дискретная математика/2024-03-13 Семинар - Дискретная математика.md",
