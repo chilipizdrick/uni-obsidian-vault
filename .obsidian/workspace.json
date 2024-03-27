@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Seminars/2024-03-27 Семинар - Дискретная математика.md",
+                "file": "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-27 Семинар - Дискретная математика.md",
+                "file": "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-27 Семинар - Дискретная математика.md",
+                "file": "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-27 Семинар - Дискретная математика.md"
+                "file": "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md"
               }
             }
           },
@@ -173,8 +173,9 @@
   },
   "active": "0b55b31d300ef994",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-03-27 13.02.46.excalidraw.md",
+    "Seminars/Математический анализ/2024-03-14 Семинар - Математический анализ.md",
     "Seminars/2024-03-27 Семинар - Дискретная математика.md",
+    "Excalidraw/Drawing 2024-03-27 13.02.46.excalidraw.md",
     "Lectures/Дискретная математика/2024-03-22 Лекция - Дискретная математика.md",
     "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
@@ -198,7 +199,6 @@
     "TEMPLATES/lecture.md",
     "TEMPLATES/homework.md",
     "TEMPLATES/definition.md",
-    "TEMPLATES/seminar.md",
     "Practical works/НИР",
     "Practical works/ООП",
     "Pasted image 20240319143339.png",
