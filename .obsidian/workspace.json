@@ -4,50 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "6c162bb87010dee2",
+        "id": "a6d42819f739d072",
         "type": "tabs",
         "children": [
           {
-            "id": "cd80eb085970a9e2",
+            "id": "50dc6925c91f0023",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0bc2ebf71a533f50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "710fa437bea3119e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,12 +53,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 333.5
+    "width": 297.5024719238281
   },
   "right": {
     "id": "f52afa7cf66eb8b5",
@@ -106,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md"
-              }
+              "state": {}
             }
           },
           {
@@ -175,10 +138,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "710fa437bea3119e",
+  "active": "3d8dd75c0d1297b4",
   "lastOpenFiles": [
-    "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
+    "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
     "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
     "Seminars/2024-03-27 Семинар - Методы математического анализа.md",
     "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
