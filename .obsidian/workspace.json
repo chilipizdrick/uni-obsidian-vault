@@ -47,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md"
+                "file": "Notes/Математический анализ/Неопределенный интеграл.md"
               }
             }
           },
@@ -175,11 +175,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0bc2ebf71a533f50",
+  "active": "710fa437bea3119e",
   "lastOpenFiles": [
+    "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Practical works/Линейная алгебра/ТР 5 Линейная алгебра.md",
-    "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
     "Seminars/2024-03-27 Семинар - Методы математического анализа.md",
     "Practical works/Дискретная математика/ТР 2 Дискретная математика.md",
     "Seminars/2024-03-25 Семинар - Линейная алгебра.md",
