@@ -32,9 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ef04b8c7037ca05c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-03-27 13.02.46.excalidraw.md"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -76,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 297.5024719238281
+    "width": 200
   },
   "right": {
     "id": "f52afa7cf66eb8b5",
@@ -92,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-27 Семинар - Дискретная математика.md",
+                "file": "Excalidraw/Drawing 2024-03-27 13.02.46.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-27 Семинар - Дискретная математика.md",
+                "file": "Excalidraw/Drawing 2024-03-27 13.02.46.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-27 Семинар - Дискретная математика.md"
+                "file": "Excalidraw/Drawing 2024-03-27 13.02.46.excalidraw.md"
               }
             }
           },
@@ -161,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b55b31d300ef994",
+  "active": "3d8dd75c0d1297b4",
   "lastOpenFiles": [
-    "Lectures/Дискретная математика/2024-03-22 Лекция - Дискретная математика.md",
     "Seminars/2024-03-27 Семинар - Дискретная математика.md",
+    "Excalidraw/Drawing 2024-03-27 13.02.46.excalidraw.md",
+    "Lectures/Дискретная математика/2024-03-22 Лекция - Дискретная математика.md",
     "Lectures/Дискретная математика/2024-03-15 Лекция - Дискретная математика.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/Математический анализ/2024-03-21 Семинар - Математический анализ.md",
@@ -188,7 +199,6 @@
     "TEMPLATES/homework.md",
     "TEMPLATES/definition.md",
     "TEMPLATES/seminar.md",
-    "TEMPLATES/theorem.md",
     "Practical works/НИР",
     "Practical works/ООП",
     "Pasted image 20240319143339.png",
