@@ -1,0 +1,1 @@
+$$T_{n}^{\cos} = T_{n-1}^{\cos} + T_{n-1}^{\cos}\cdot \frac{(-1)^{n}x^{2}}{2n(2n-1)} = T_{n-1}^{\cos}\left(1 + \frac{(-1)^{n}x^{2}}{2n(2n-1)}\right)$$
