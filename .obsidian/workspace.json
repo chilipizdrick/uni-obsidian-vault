@@ -26,14 +26,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Математический анализ/Неопределенный интеграл.md",
+                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -71,8 +72,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Seminars/2024-03-28 Семинар - Математический анализ.md",
+                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Seminars/2024-03-28 Семинар - Математический анализ.md",
+                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Seminars/2024-03-28 Семинар - Математический анализ.md"
+                "file": "Practical works/Математический анализ/ТР 1 Математический анализ.md"
               }
             }
           },
@@ -161,11 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d8d4d39e77eacc28",
+  "active": "786c0437d8edede5",
   "lastOpenFiles": [
-    "Seminars/2024-03-27 Practice - Дискретаня математика.md",
     "Notes/Математический анализ/Неопределенный интеграл.md",
     "Seminars/2024-03-28 Семинар - Математический анализ.md",
+    "Seminars/2024-03-27 Practice - Дискретаня математика.md",
     "Seminars/2024-03-27 Семинар - Дискретная математика.md",
     "Seminars/2024-03-27 Семинар - Методы математического анализа.md",
     "Excalidraw/2024-03-27 Practice - Дискретаня математика 2024-03-27 14.04.46.excalidraw.md",
