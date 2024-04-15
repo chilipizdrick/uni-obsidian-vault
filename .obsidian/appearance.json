@@ -1,0 +1,12 @@
+{
+  "accentColor": "",
+  "baseFontSize": 20,
+  "cssTheme": "Rosé Pine",
+  "theme": "obsidian",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono,MesloLGM Nerd Font Mono",
+  "textFontFamily": "",
+  "enabledCssSnippets": [
+    "pdf",
+    "image"
+  ]
+}

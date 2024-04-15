@@ -1,0 +1,6 @@
+@media print {
+    body {
+        --font-text: 'Times New Roman' !important;
+        --font-text-size: 14pt !important;
+    }
+}
