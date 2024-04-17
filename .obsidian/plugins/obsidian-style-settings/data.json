@@ -10,5 +10,6 @@
   "encore-settings@@encore-disable-grain": true,
   "encore-settings@@encore-translucency-strength": 0.25,
   "encore-settings@@encore-translucency-image": "url(\"https://cdn.discordapp.com/attachments/628563698314903554/1230229971029721158/girl_whale_walpaper.jpeg?ex=66328ff1&is=66201af1&hm=7a98dbe97b1a4e15cd9c5a2be3ac26805a9d0e43a3662ab3f5ad055f9e3abfbb&\")",
-  "encore-settings@@encore-translucency-blur-amount": 10
+  "encore-settings@@encore-translucency-blur-amount": 10,
+  "encore-settings@@encore-mobile-translucency": false
 }
