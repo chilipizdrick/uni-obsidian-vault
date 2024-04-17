@@ -1,4 +1,4 @@
-/* @settings */
+/* @settings
 
 name: Encore
 id: encore-settings
@@ -335,7 +335,7 @@ settings:
     title: Disable MAKE.md Integration
     description: Encore makes some changes to MAKE.md to enhance its look and feel. Turn this on to disable
     type: class-toggle
-
+*/
 
 .view-content,
 .view-header,
