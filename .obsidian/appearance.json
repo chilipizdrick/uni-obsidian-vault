@@ -1,12 +1,13 @@
 {
   "accentColor": "",
   "baseFontSize": 20,
-  "cssTheme": "Encore",
-  "theme": "obsidian",
+  "cssTheme": "",
+  "theme": "system",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono,MesloLGM Nerd Font Mono",
   "textFontFamily": "",
   "enabledCssSnippets": [
     "pdf",
     "image"
-  ]
+  ],
+  "nativeMenus": false
 }
