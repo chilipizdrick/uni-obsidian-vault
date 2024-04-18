@@ -3,7 +3,7 @@
   "baseFontSize": 20,
   "cssTheme": "Encore",
   "theme": "system",
-  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono,MesloLGM Nerd Font Mono",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
   "textFontFamily": "",
   "enabledCssSnippets": [
     "pdf",
