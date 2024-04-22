@@ -8,7 +8,8 @@
   "enabledCssSnippets": [
     "pdf",
     "image",
-    "obsidian.css.live-preview.list-rainbow-indents"
+    "obsidian.css.live-preview.list-rainbow-indents",
+    "custom-callouts"
   ],
   "nativeMenus": false
 }
