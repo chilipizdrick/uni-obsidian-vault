@@ -1,7 +1,7 @@
 {
   "encore-settings@@theme-dark": "encore-theme-dark-glass-royale",
   "encore-settings@@encore-translucency-background": "encore-bg-image",
-  "encore-settings@@encore-translucency": true,
+  "encore-settings@@encore-translucency": false,
   "encore-settings@@colors": "encore-colors-neutral",
   "encore-settings@@encore-fancy-headers": false,
   "encore-settings@@encore-mobile-oled-mode": false,
