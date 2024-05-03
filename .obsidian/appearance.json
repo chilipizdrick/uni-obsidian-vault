@@ -9,7 +9,8 @@
     "pdf",
     "image",
     "obsidian.css.live-preview.list-rainbow-indents",
-    "custom-callouts"
+    "custom-callouts",
+    "hide-ribbon-when-collapsed"
   ],
   "nativeMenus": false
 }
