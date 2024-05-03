@@ -10,7 +10,8 @@
     "image",
     "obsidian.css.live-preview.list-rainbow-indents",
     "custom-callouts",
-    "hide-ribbon-when-collapsed"
+    "hide-ribbon-when-collapsed",
+    "cursor-line-highlight"
   ],
   "nativeMenus": false
 }
