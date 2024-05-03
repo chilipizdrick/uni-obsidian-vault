@@ -15,7 +15,9 @@
   "minimal-style@@window-title-off": false,
   "minimal-advanced@@styled-scrollbars": false,
   "minimal-advanced@@cursor": "default",
-  "minimal-advanced@@font-ui-small": 14,
-  "minimal-advanced@@font-ui-smaller": 12,
-  "minimal-mobile@@mobile-toolbar-off": false
+  "minimal-advanced@@font-ui-small": 13,
+  "minimal-advanced@@font-ui-smaller": 11,
+  "minimal-mobile@@mobile-toolbar-off": false,
+  "Components@@tab-autohide": false,
+  "Components@@Ribbon-autohide": false
 }
