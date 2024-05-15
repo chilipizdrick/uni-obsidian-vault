@@ -1,8 +1,8 @@
 {
   "accentColor": "",
   "baseFontSize": 20,
-  "cssTheme": "Minimal",
-  "theme": "system",
+  "cssTheme": "Border",
+  "theme": "moonstone",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
   "textFontFamily": "",
   "enabledCssSnippets": [
