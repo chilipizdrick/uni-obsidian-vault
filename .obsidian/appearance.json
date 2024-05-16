@@ -3,7 +3,7 @@
   "baseFontSize": 20,
   "cssTheme": "Minimal",
   "theme": "system",
-  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font",
   "textFontFamily": "",
   "enabledCssSnippets": [
     "pdf",
