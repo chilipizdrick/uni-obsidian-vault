@@ -1,4 +1,5 @@
 :root body {
-    --bold-weight: 750;
+    --italic-color: lightblue;
     --bold-color: lightblue;
+    --bold-weight: 750;
 }

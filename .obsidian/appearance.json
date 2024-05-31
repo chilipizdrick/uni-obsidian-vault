@@ -10,9 +10,7 @@
     "image",
     "obsidian.css.live-preview.list-rainbow-indents",
     "cursor-line-highlight",
-    "bulkier-bold-font",
-    "hide-ribbon-when-collapsed",
-    "list-rainbow-indents"
+    "bulkier-bold-font"
   ],
   "nativeMenus": false
 }
