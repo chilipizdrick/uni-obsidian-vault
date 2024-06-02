@@ -5,6 +5,7 @@
 | 1    | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
 | ---- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | <br> |     |     |     |     |     |     |     |     |     |
+
 ## 1.4(a)
 
 $$\int x^{2}\ln(x^{2}+2x+5) \, dx$$
@@ -129,88 +130,7 @@ $$\begin{gather}
 \frac{-x^4+5 x^3-7 x^2+11 x-16}{(x-1) (x+1)^2 \left(x^2-4 x+5\right)}= \\
 = -\frac{1}{x-1}+\frac{2}{(x+1)^{2}}+\frac{1}{x^{2}-4x+5}
 \end{gather}$$
-## 10.4
-
-$$
-\vec{a} = \{ y;xy;-z \}, \ 
-\Gamma = x+y+z=2, \left[\begin{align}
-&x=0 \\
-&z=0 \\
-&y=0
-\end{align}\right.
-$$
-
-![[scan_2024-05-23_12-49-56.jpg]]
-
-## 10.4(а)
-
-$$\begin{gather}
-\oint_{\Gamma} y\,dx + xy\,dy -z\,dz \\
-\oint_{\Gamma} = \oint_{\Gamma_{1}} + \oint_{\Gamma_{2}} + \oint_{\Gamma_{3}}
-\end{gather}$$
-
-$$\begin{gather}
-\oint_{\Gamma_{1}} = \begin{bmatrix}
-F : y = 2-x \implies x = 2-y \\
-y = t, \ 
-x = 2-t, \ 
-z = 0 \\
-t \in [0;2] \\
-dx = -dt \\
-dy = dt \\
-dz = 0
-\end{bmatrix} = \int_{0}^{2} \left(-t + t(2-t) \right)\,dt = \\
-= \int_{0}^{2} \left( -t^{2} + t \right) \, dt = -\frac{8}{3} + 2 = -\frac{2}{3}
-\end{gather}$$
-
-$$\begin{gather}
-\oint_{\Gamma_{2}} = \begin{bmatrix}
-F : z = 2-x \\
-x = t, \
-z = 2-t, \
-y = 0 \\
-t \in [0;2] \\
-dx = dt \\
-dy = 0 \\
-dz = -dt
-\end{bmatrix} = \int_{0}^{2} \left( 2-t \right)  \, dt = 4 - 2 = 2
-\end{gather}$$
-
-$$\begin{gather}
-\oint_{\Gamma_{3}} = \begin{bmatrix}
-F : z = 2-y \\
-y = t, \
-z = 2-t, \
-x = 0 \\
-t \in [0; 2] \\
-dx = 0 \\
-dy = dt \\
-dz = -dt
-\end{bmatrix} = \int_{0}^{2} (t-2) \, dt = \\
-= -\int_{0}^{2} (2-t) \, dt = -\oint_{\Gamma_{2}} = -2
-\end{gather}$$
-
-$$\begin{gather}
-\oint_{\Gamma} = -\frac{2}{3} + 2 - 2 = -\frac{2}{3}
-\end{gather}$$
-
-## 10.4(б) (по т. Стокса)
-
-$$\begin{gather}
-\oint_{\Gamma} (\vec{a}, d\vec{r}) = \iint_{\sigma} (\mathrm{rot} \ \vec{a}, \vec{n}) \,d\sigma \\
-\mathrm{rot} \ \vec{a} = \begin{vmatrix}
-\vec{i} & \vec{j} & \vec{k} \\
-\frac{ \partial  }{ \partial x } & \frac{ \partial  }{ \partial y } & \frac{ \partial  }{ \partial z } \\
-y & xy & -z
-\end{vmatrix} = \vec{i} \cdot 0 - \vec{j} \cdot 0 + \vec{k} \cdot (y-1) = \{ 0; 0; y-1 \} \\
-\end{gather}$$
-
-$$\begin{gather}
-\vec{n} = \{ 1; 1; 1 \} \ (\text{смотрит на нас}) \\
-\iint_{\sigma} (\mathrm{rot} \ \vec{a}, \vec{n}) \, d\sigma = \iint_{\sigma} (y-1) \, d\sigma = \\
-= \int_{0}^{2} \, dx \int_{0}^{2-x} (y-1) \, dy = \frac{1}{2}\int_{0}^{2} (-2x+x^{2}) \, dx = -\frac{2}{3}
-\end{gather}$$
-## 4.2(а)
+## 2.4(а)
 
 $$\begin{gather}
 \int _{0}^{2}(2+x^{2})\sqrt{ 4x-x^{2} } \, dx = \int _{0}^{2}(2+((x-2)+2)^{2}) \sqrt{ 2^{2}-(x-2)^{2} }d(x-2) = \\
@@ -241,7 +161,7 @@ $$\begin{gather}
 = 2\left( -4-\frac{4}{3} \right) - 2\left( -\frac{7\pi}{2} \right) = 7\pi - \frac{32}{3}
 \end{gather}$$
 
-## 4.2(б)
+## 2.4(б)
 
 $$\begin{gather}
 \int_{1}^{1.5} \frac{(x+2)^{3}}{\sqrt{ (2x-x^{2})^{5} }} \, dx = \int_{1}^{1.5} \frac{((x-1)+3)^{3}}{\sqrt{ (1-(x-1)^{2})^{5} }} \, d(x-1) = \\
@@ -369,7 +289,8 @@ $$\begin{gather}
 y = \frac{x^{2}}{4} \implies x = 2\sqrt{ y } \\
 y = \sqrt{ 5-x^{2} } \implies x = \sqrt{ 5 - y^{a} }
 \end{bmatrix} = \\
-= \int_{\frac{1}{4}}^{1} \, dy \int_{1}^{2\sqrt{ y }} f(x,y) \, dx + \int_{1}^{2} \, dy \int_{1}^{\sqrt{ 5 - y^{2} }} f(x,y) \, dx   \end{gather}$$ ## 5.4
+= \int_{\frac{1}{4}}^{1} \, dy \int_{1}^{2\sqrt{ y }} f(x,y) \, dx + \int_{1}^{2} \, dy \int_{1}^{\sqrt{ 5 - y^{2} }} f(x,y) \, dx   \end{gather}$$ 
+## 5.4
 
 $$\begin{gather}
 f: \begin{cases}
@@ -481,7 +402,8 @@ u\frac{ \partial u }{ \partial y }  \\
 u\frac{ \partial u }{ \partial z } 
 \end{pmatrix} = \\
 = u\frac{ \partial^{2} u }{ \partial x^{2} } + u\frac{ \partial^{2} u }{ \partial y^{2} } + u\frac{ \partial^{2} u }{ \partial z^{2} } = u \left( \frac{ \partial^{2} u }{ \partial x^{2} } + \frac{ \partial^{2} u }{ \partial y^{2} } + \frac{ \partial^{2} u }{ \partial z^{2} } \right) 
-\end{gather}$$## 8.4
+\end{gather}$$
+## 8.4
 
 $$\begin{gather}
 \sigma : y^{2} = x^{2}+z^{2} \\
@@ -514,7 +436,7 @@ $$\begin{gather}
 = 4\sqrt{ 2 }\int_{-\pi/2}^{\pi/2} [\cos 2t + 1] \, d(2t) = \\
 = 4\sqrt{ 2 }\left.\left[ \sin 2t + 2t \right]\right|_{-\pi/2}^{\pi/2} = 8\sqrt{ 2 }\pi
 \end{gather}$$
-## 9.6
+## 9.6 (вар. 6 т.к. 4 решили на семинаре)
 
 $$\begin{gather}
 a = \{ 3x; 2y; z^{2} \} \\
@@ -651,3 +573,84 @@ $$\begin{gather}
 + 10 \int_{0}^{\pi/2} \sin t \, dt = 2\pi \sin \phi + \frac{40}{3}
 \end{gather}$$
 
+## 10.4
+
+$$
+\vec{a} = \{ y;xy;-z \}, \ 
+\Gamma = x+y+z=2, \left[\begin{align}
+&x=0 \\
+&z=0 \\
+&y=0
+\end{align}\right.
+$$
+
+![[scan_2024-05-23_12-49-56.jpg]]
+
+## 10.4(а)
+
+$$\begin{gather}
+\oint_{\Gamma} y\,dx + xy\,dy -z\,dz \\
+\oint_{\Gamma} = \oint_{\Gamma_{1}} + \oint_{\Gamma_{2}} + \oint_{\Gamma_{3}}
+\end{gather}$$
+
+$$\begin{gather}
+\oint_{\Gamma_{1}} = \begin{bmatrix}
+F : y = 2-x \implies x = 2-y \\
+y = t, \ 
+x = 2-t, \ 
+z = 0 \\
+t \in [0;2] \\
+dx = -dt \\
+dy = dt \\
+dz = 0
+\end{bmatrix} = \int_{0}^{2} \left(-t + t(2-t) \right)\,dt = \\
+= \int_{0}^{2} \left( -t^{2} + t \right) \, dt = -\frac{8}{3} + 2 = -\frac{2}{3}
+\end{gather}$$
+
+$$\begin{gather}
+\oint_{\Gamma_{2}} = \begin{bmatrix}
+F : z = 2-x \\
+x = t, \
+z = 2-t, \
+y = 0 \\
+t \in [0;2] \\
+dx = dt \\
+dy = 0 \\
+dz = -dt
+\end{bmatrix} = \int_{0}^{2} \left( 2-t \right)  \, dt = 4 - 2 = 2
+\end{gather}$$
+
+$$\begin{gather}
+\oint_{\Gamma_{3}} = \begin{bmatrix}
+F : z = 2-y \\
+y = t, \
+z = 2-t, \
+x = 0 \\
+t \in [0; 2] \\
+dx = 0 \\
+dy = dt \\
+dz = -dt
+\end{bmatrix} = \int_{0}^{2} (t-2) \, dt = \\
+= -\int_{0}^{2} (2-t) \, dt = -\oint_{\Gamma_{2}} = -2
+\end{gather}$$
+
+$$\begin{gather}
+\oint_{\Gamma} = -\frac{2}{3} + 2 - 2 = -\frac{2}{3}
+\end{gather}$$
+
+## 10.4(б) (по т. Стокса)
+
+$$\begin{gather}
+\oint_{\Gamma} (\vec{a}, d\vec{r}) = \iint_{\sigma} (\mathrm{rot} \ \vec{a}, \vec{n}) \,d\sigma \\
+\mathrm{rot} \ \vec{a} = \begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+\frac{ \partial  }{ \partial x } & \frac{ \partial  }{ \partial y } & \frac{ \partial  }{ \partial z } \\
+y & xy & -z
+\end{vmatrix} = \vec{i} \cdot 0 - \vec{j} \cdot 0 + \vec{k} \cdot (y-1) = \{ 0; 0; y-1 \} \\
+\end{gather}$$
+
+$$\begin{gather}
+\vec{n} = \{ 1; 1; 1 \} \ (\text{смотрит на нас}) \\
+\iint_{\sigma} (\mathrm{rot} \ \vec{a}, \vec{n}) \, d\sigma = \iint_{\sigma} (y-1) \, d\sigma = \\
+= \int_{0}^{2} \, dx \int_{0}^{2-x} (y-1) \, dy = \frac{1}{2}\int_{0}^{2} (-2x+x^{2}) \, dx = -\frac{2}{3}
+\end{gather}$$
