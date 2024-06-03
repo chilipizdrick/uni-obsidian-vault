@@ -1,18 +1,3 @@
----
-tags:
-  - типовой-рассчет
-  - 2nd-semester
-  - 20-03-2024
-  - ооп
----
-
-## ООП Практика 2
-
-### Ершов Алексей Геннадьевич КМБО-03-23
-
-### Вариант 4
-
-```cpp
 #include <iostream>
 #include <cmath>
 
@@ -135,6 +120,7 @@ public:
     void removeLastValue() {
         if (len <= 0) {
             throw std::out_of_range("cannot remove element from empty array");
+            return;
         }
         len--;
     }
@@ -187,9 +173,11 @@ public:
     void removeAt(int index = -1) {
         if (len == 0) {
             throw std::out_of_range("cannot remove element from empty array");
+            return;
         }
         if (index < 0 || index >= len) {
             throw std::out_of_range("invalid index has been provided");
+            return;
         }
         if (index == -1) {
             removeLastValue();
@@ -207,7 +195,8 @@ public:
             return;
         }
         if (index < 0 || index > len) {
-            throw std::out_of_range("invalid index porvided");
+            std::out_of_range("invalid index porvided");
+            return;
         }
         if (len >= cap) {
             doubleCapacity();
@@ -231,50 +220,15 @@ public:
         }
         return newArr;
     }
-
-    // Принимает полуинтервал [start; end), возвращает все 
-    // элементы индексов, находящихся в полуинтервале
-    MyArrayChild subsequence(int start, int end) {
-        if (start < 0 || start > len - 1) {
-            throw std::out_of_range("invalid start index");
-        }
-        if (end < 1 || end > len) {
-            throw std::out_of_range("invalid end index");
-        }
-        if (start >= end) {
-            throw std::out_of_range("start cannot be >= end");
-        }
-
-        MyArrayChild res = MyArrayChild();
-        for (int i = start; i < end; i++) {
-            res.push(p_arr[i]);
-        }
-        return res;
-    }
-
-    // Добавление нового элемента через оператор +
-    MyArrayChild operator+(double elem) {
-        MyArrayChild res = MyArrayChild(*this);
-        res.push(elem);
-        return res;
-    }
-
-    friend MyArrayChild operator+(double elem, MyArrayChild arr);
 };
-
-MyArrayChild operator+(double elem, MyArrayChild arr) {
-    MyArrayChild res = MyArrayChild(arr);
-    res.push(elem);
-    return res;
-}
 
 class MySortedArray : public MyArrayChild {
 protected:
     int binSearch(double elem) {
-        if (p_arr[0] == elem) {
+        if (p_arr[0] = elem) {
             return 0;
         }
-        if (p_arr[len - 1] == elem) {
+        if (p_arr[len - 1] = elem) {
             return len;
         }
         int l = 0;
@@ -407,4 +361,3 @@ int main() {
 
     return 0;
 }
-```
