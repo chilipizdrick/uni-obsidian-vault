@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Number of NA values per column:\PYGZsq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n+nb}{sorted}\PYG{p}{(}\PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{p}{,}
+                    \PYG{n}{key}\PYG{o}{=}\PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:} \PYG{n}{data}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{.}\PYG{n}{isna}\PYG{p}{()}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(),}
+                    \PYG{n}{reverse}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{):}
+\PYG{o}{\PYGZgt{}}     \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}col\PYGZcb{}}\PYG{l+s+s1}{: \PYGZob{}data[col].isna().sum()\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{Number} \PYG{n}{of} \PYG{n}{NA} \PYG{n}{values} \PYG{n}{per} \PYG{n}{column}\PYG{p}{:}
+\PYG{n}{last\PYGZus{}occurrence\PYGZus{}date}\PYG{p}{:} \PYG{l+m+mi}{175556}
+\PYG{n}{geo\PYGZus{}lon}\PYG{p}{:} \PYG{l+m+mi}{15769}
+\PYG{n}{geo\PYGZus{}lat}\PYG{p}{:} \PYG{l+m+mi}{15769}
+\PYG{n}{incident\PYGZus{}address}\PYG{p}{:} \PYG{l+m+mi}{15503}
+\PYG{n}{geo\PYGZus{}x}\PYG{p}{:} \PYG{l+m+mi}{15503}
+\PYG{n}{geo\PYGZus{}y}\PYG{p}{:} \PYG{l+m+mi}{15503}
+\PYG{n}{neighborhood\PYGZus{}id}\PYG{p}{:} \PYG{l+m+mi}{689}
+\PYG{n}{district\PYGZus{}id}\PYG{p}{:} \PYG{l+m+mi}{57}
+\PYG{n}{offense\PYGZus{}code}\PYG{p}{:} \PYG{l+m+mi}{0}
+\PYG{o}{...}
+\end{Verbatim}

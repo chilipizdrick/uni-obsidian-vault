@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{best\PYGZus{}model} \PYG{o}{=} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{new.data} \PYG{o}{=} \PYG{n+nf}{data.frame}\PYG{p}{(}\PYG{n}{Fertility} \PYG{o}{=} \PYG{l+m}{80}\PYG{p}{,} \PYG{n}{Agriculture} \PYG{o}{=} \PYG{l+m}{25}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{predict}\PYG{p}{(}\PYG{n}{best\PYGZus{}model}\PYG{p}{,} \PYG{n}{new.data}\PYG{p}{,} \PYG{n}{interval}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}confidence\PYGZdq{}}\PYG{p}{)}
+       \PYG{n}{fit}      \PYG{n}{lwr}      \PYG{n}{upr}
+\PYG{l+m}{1} \PYG{l+m}{10.97556} \PYG{l+m}{8.287011} \PYG{l+m}{13.66411}
+\end{Verbatim}

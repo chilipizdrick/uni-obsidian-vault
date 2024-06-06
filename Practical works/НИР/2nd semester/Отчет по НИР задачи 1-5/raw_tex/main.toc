@@ -1,0 +1,27 @@
+
+\selectlanguage *[spelling=modern]{russian}
+\contentsline {section}{Задача 1}{3}{section*.1}%
+\contentsline {section}{Задача 2}{6}{section*.2}%
+\contentsline {subsection}{Задача 2.1}{6}{section*.3}%
+\contentsline {subsection}{Задача 2.2}{11}{section*.4}%
+\contentsline {section}{Задача 3}{15}{section*.5}%
+\contentsline {section}{Задача 4}{23}{section*.7}%
+\contentsline {section}{Задача 5}{32}{section*.11}%
+\contentsline {section}{Заключение}{45}{section*.14}%
+\selectlanguage *[]{russian}
+\selectlanguage *[babelshorthands=false,spelling=modern,numerals=arabic,indentfirst=true,forceheadingpunctuation=true,mathfunctions=true]{russian}
+\selectlanguage *[spelling=modern]{russian}
+\selectlanguage *[]{russian}
+\selectlanguage *[babelshorthands=false,spelling=modern,numerals=arabic,indentfirst=true,forceheadingpunctuation=true,mathfunctions=true]{russian}
+\selectlanguage *[spelling=modern]{russian}
+\selectlanguage *[]{russian}
+\selectlanguage *[babelshorthands=false,spelling=modern,numerals=arabic,indentfirst=true,forceheadingpunctuation=true,mathfunctions=true]{russian}
+\selectlanguage *[spelling=modern]{russian}
+\selectlanguage *[]{russian}
+\selectlanguage *[babelshorthands=false,spelling=modern,numerals=arabic,indentfirst=true,forceheadingpunctuation=true,mathfunctions=true]{russian}
+\selectlanguage *[spelling=modern]{russian}
+\selectlanguage *[]{russian}
+\selectlanguage *[babelshorthands=false,spelling=modern,numerals=arabic,indentfirst=true,forceheadingpunctuation=true,mathfunctions=true]{russian}
+\selectlanguage *[spelling=modern]{russian}
+\contentsline {section}{Список литературы}{48}{section*.15}%
+\contentsline {section}{Приложение}{49}{section*.16}%

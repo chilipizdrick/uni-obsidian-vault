@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Fertility}\PYG{o}{\PYGZti{}}\PYG{n}{Agriculture}\PYG{p}{,} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.12}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Fertility}\PYG{o}{\PYGZti{}}\PYG{n}{Infant.Mortality}\PYG{p}{,} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.17}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{o}{\PYGZti{}}\PYG{n}{Infant.Mortality}\PYG{p}{,} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.003}
+\end{Verbatim}

@@ -1,0 +1,76 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}lmtest\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}GGally\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}car\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{swiss}
+
+\PYG{c+c1}{\PYGZsh{} Все проверенные регрессоры не имеют значимой взаимной линейной зависимости}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Fertility}\PYG{o}{\PYGZti{}}\PYG{n}{Agriculture}\PYG{p}{,} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.12}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Fertility}\PYG{o}{\PYGZti{}}\PYG{n}{Infant.Mortality}\PYG{p}{,} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.17}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{o}{\PYGZti{}}\PYG{n}{Infant.Mortality}\PYG{p}{,} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.003}
+
+\PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.63, исключим регрессор Infant.Mortality в силу высокого k\PYGZhy{}коэф.}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n}{Fertility} \PYG{o}{+} \PYG{n}{Agriculture} \PYG{o}{+} \PYG{n}{Infant.Mortality}\PYG{p}{,} \PYG{n}{data}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Введем логарифмы регрессоров:}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n}{Fertility} \PYG{o}{+} \PYG{n}{Agriculture}\PYG{p}{,} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.6281}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n}{Agriculture}\PYG{p}{,} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.6875}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n}{Fertility} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.6994}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7301}
+
+\PYG{c+c1}{\PYGZsh{} Наилучшей вышла модель:}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7301}
+
+\PYG{c+c1}{\PYGZsh{} Введем квадраты и произведения регрессоров:}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7301}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)}\PYG{o}{*}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{)),} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.6405}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7227}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7098}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.6983}
+
+\PYG{c+c1}{\PYGZsh{} Наилучшей вышла изначальная модель с логарифмами:}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7301}
+\PYG{n}{best\PYGZus{}model} \PYG{o}{=} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Рассмотрим индивидуальные лин. регрессии, построенные на основе каждого из регрессоров:}
+\PYG{c+c1}{\PYGZsh{} Регрессор log(Fertility) \PYGZhy{} значим; взаимосвязь между объясняемой и объясняющей переменной \PYGZhy{} отрицательная (k = \PYGZhy{}35)}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))}
+\PYG{c+c1}{\PYGZsh{} Регрессор log(Agriculture) \PYGZhy{} значим; взаимосвязь между объясняемой и объясняющей переменной \PYGZhy{} отрицательная (k = \PYGZhy{}9.4)}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Построим доверительные интервалы для коэффициетов регрессоров полученной модели:}
+\PYG{c+c1}{\PYGZsh{} Std. err:}
+\PYG{c+c1}{\PYGZsh{}   log(Fertility) : 4.479}
+\PYG{c+c1}{\PYGZsh{}   log(Agriculture) : 1.146}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{best\PYGZus{}model}\PYG{p}{)}
+\PYG{n}{t\PYGZus{}crit} \PYG{o}{=} \PYG{n+nf}{qt}\PYG{p}{(}\PYG{l+m}{0.975}\PYG{p}{,} \PYG{n}{df}\PYG{o}{=}\PYG{l+m}{44}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} t\PYGZus{}crit = 2.015 (p = 95\PYGZpc{}, 42 степени свободы)}
+\PYG{c+c1}{\PYGZsh{} Ни в один из интервалов не попадает \PYGZdq{}0\PYGZdq{} =\PYGZgt{} гипотеза о равенстве}
+\PYG{c+c1}{\PYGZsh{} коэффициента нулю опровергнута}
+\PYG{c+c1}{\PYGZsh{} log(Fertility)}
+\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{\PYGZhy{}22.874} \PYG{o}{\PYGZhy{}} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{4.479}\PYG{p}{,} \PYG{l+m}{\PYGZhy{}22.874} \PYG{o}{+} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{4.479}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}31.90083; \PYGZhy{}13.84717)}
+\PYG{c+c1}{\PYGZsh{} log(Agriculture)}
+\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{\PYGZhy{}6.461} \PYG{o}{\PYGZhy{}} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{1.146}\PYG{p}{,} \PYG{l+m}{\PYGZhy{}6.461} \PYG{o}{+} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{1.146}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}8.770611; \PYGZhy{}4.151389)}
+
+\PYG{c+c1}{\PYGZsh{} Доверительный интервал для одного прогноза: Fertility = 80, Agriculture = 25}
+\PYG{n}{best\PYGZus{}model} \PYG{o}{=} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{)}
+\PYG{n}{new.data} \PYG{o}{=} \PYG{n+nf}{data.frame}\PYG{p}{(}\PYG{n}{Fertility} \PYG{o}{=} \PYG{l+m}{80}\PYG{p}{,} \PYG{n}{Agriculture} \PYG{o}{=} \PYG{l+m}{25}\PYG{p}{)}
+\PYG{n+nf}{predict}\PYG{p}{(}\PYG{n}{best\PYGZus{}model}\PYG{p}{,} \PYG{n}{new.data}\PYG{p}{,} \PYG{n}{interval}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}confidence\PYGZdq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{}      fit      lwr      upr}
+\PYG{c+c1}{\PYGZsh{} 10.97556 8.287011 13.66411}
+
+\PYG{c+c1}{\PYGZsh{} Построим модели для индивидуальных регрессоров лучшей модели}
+\PYG{c+c1}{\PYGZsh{} Education \PYGZti{} log(Fertility)}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education}\PYG{o}{\PYGZti{}}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))}
+\PYG{n}{t\PYGZus{}crit2} \PYG{o}{=} \PYG{n+nf}{qt}\PYG{p}{(}\PYG{l+m}{0.975}\PYG{p}{,} \PYG{n}{df}\PYG{o}{=}\PYG{l+m}{45}\PYG{p}{)}\PYG{c+c1}{\PYGZsh{} t\PYGZus{}crit2 = 2.014 (p = 95\PYGZpc{}, 45 степеней свободы)}
+\PYG{c+c1}{\PYGZsh{} Полученный дов. интервал \PYGZhy{} полностью отрицательный =\PYGZgt{} выявленная связь между }
+\PYG{c+c1}{\PYGZsh{} объясняемой переменной и регрессором \PYGZhy{} отрицательная}
+\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{\PYGZhy{}35.87} \PYG{o}{\PYGZhy{}} \PYG{n}{t\PYGZus{}crit2}\PYG{o}{*}\PYG{l+m}{4.984}\PYG{p}{,} \PYG{l+m}{\PYGZhy{}35.87} \PYG{o}{+} \PYG{n}{t\PYGZus{}crit2}\PYG{o}{*}\PYG{l+m}{4.984}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}45.90829; \PYGZhy{}25.83171)}
+
+\PYG{c+c1}{\PYGZsh{} Education \PYGZti{} log(Agriculture)}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education}\PYG{o}{\PYGZti{}}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))}
+\PYG{n}{t\PYGZus{}crit2} \PYG{o}{=} \PYG{n+nf}{qt}\PYG{p}{(}\PYG{l+m}{0.975}\PYG{p}{,} \PYG{n}{df}\PYG{o}{=}\PYG{l+m}{45}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} t\PYGZus{}crit2 = 2.014 (p = 95\PYGZpc{}, 45 степеней свободы)}
+\PYG{c+c1}{\PYGZsh{} Полученный дов. интервал \PYGZhy{} полностью отрицательный =\PYGZgt{} выявленная связь между }
+\PYG{c+c1}{\PYGZsh{} объясняемой переменной и регрессором \PYGZhy{} отрицательная}
+\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{\PYGZhy{}9.472} \PYG{o}{\PYGZhy{}} \PYG{n}{t\PYGZus{}crit2}\PYG{o}{*}\PYG{l+m}{1.226}\PYG{p}{,} \PYG{l+m}{\PYGZhy{}9.472} \PYG{o}{+} \PYG{n}{t\PYGZus{}crit2}\PYG{o}{*}\PYG{l+m}{1.226}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}11.941291; \PYGZhy{}7.002709)}
+\end{Verbatim}

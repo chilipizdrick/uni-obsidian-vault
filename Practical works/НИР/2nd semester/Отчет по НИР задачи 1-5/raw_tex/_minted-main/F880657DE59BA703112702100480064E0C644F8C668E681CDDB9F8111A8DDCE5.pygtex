@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} 45 DF, k = \PYGZhy{}9.472, Std. err. = 1.226}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education}\PYG{o}{\PYGZti{}}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{))}
+\PYG{c+c1}{\PYGZsh{} t\PYGZus{}criterion = 2.014 (p = 95\PYGZpc{}, 45 степеней свободы)}
+\PYG{n}{t\PYGZus{}crit} \PYG{o}{=} \PYG{n+nf}{qt}\PYG{p}{(}\PYG{l+m}{0.975}\PYG{p}{,} \PYG{n}{df}\PYG{o}{=}\PYG{l+m}{45}\PYG{p}{)}
+\PYG{p}{(}\PYG{l+m}{\PYGZhy{}11.941291}\PYG{p}{,} \PYG{l+m}{\PYGZhy{}7.002709}\PYG{p}{)}
+\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{\PYGZhy{}9.472} \PYG{o}{\PYGZhy{}} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{1.226}\PYG{p}{,} \PYG{l+m}{\PYGZhy{}9.472} \PYG{o}{+} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{1.226}\PYG{p}{)}
+\end{Verbatim}

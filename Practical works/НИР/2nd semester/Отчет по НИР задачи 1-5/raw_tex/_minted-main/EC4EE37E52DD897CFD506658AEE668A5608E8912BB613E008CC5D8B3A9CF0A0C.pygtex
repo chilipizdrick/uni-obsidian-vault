@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}lmtest\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n+nf}{mean}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Agriculture}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Ср. арифм. Agriculture = 50.65957}
+\PYG{n+nf}{var}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Agriculture}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Дисперсия Agriculture = 515.7994}
+\PYG{n+nf}{sd}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Agriculture}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} СКО Agriculture = 22.71122}
+
+\PYG{n+nf}{mean}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Education}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Ср. арифм. Education = 10.97872}
+\PYG{n+nf}{var}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Education}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Дисперсия Education = 92.45606}
+\PYG{n+nf}{sd}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Education}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} СКО Education = 9.615407}
+
+\PYG{n+nf}{mean}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Examination}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Ср. арифм. Examination = 16.48936}
+\PYG{n+nf}{var}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Examination}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Дисперсия Examination = 63.64662}
+\PYG{n+nf}{sd}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Examination}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} СКО Examination = 7.977883}
+
+\PYG{c+c1}{\PYGZsh{} k = \PYGZhy{}1.5105, R\PYGZca{}2 = 0.409}
+\PYG{n}{model1} \PYG{o}{=} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula}\PYG{o}{=}\PYG{n}{Agriculture}\PYG{o}{\PYGZti{}}\PYG{n}{Education}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{swiss}\PYG{p}{)}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{model1}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} k = \PYGZhy{}1.9544, R\PYGZca{}2 = 0.4713}
+\PYG{n}{model2} \PYG{o}{=} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula}\PYG{o}{=}\PYG{n}{Agriculture}\PYG{o}{\PYGZti{}}\PYG{n}{Examination}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{swiss}\PYG{p}{)}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{model2}\PYG{p}{)}
+\end{Verbatim}

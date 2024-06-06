@@ -1,0 +1,35 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{clean\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{,}
+                  \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{,}
+                  \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}\PYG{n}{columns}\PYG{o}{=}\PYG{n}{clean\PYGZus{}features}\PYG{p}{,} \PYG{n}{index}\PYG{o}{=}\PYG{n}{data}\PYG{o}{.}\PYG{n}{index}\PYG{p}{)}
+
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{]} \PYG{o}{*} \PYGZbs{}
+    \PYG{l+m+mi}{10} \PYG{o}{+} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZus{}extension\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} print(f\PYGZsq{}Number of objects in cleaned dataset: \PYGZob{}len(clean\PYGZus{}data.index)\PYGZcb{}\PYGZsq{})}
+
+\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{,}
+                               \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}
+    \PYG{n}{normalizible\PYGZus{}clean\PYGZus{}features}\PYG{p}{)]}
+\PYG{n}{std\PYGZus{}scaler} \PYG{o}{=} \PYG{n}{preprocessing}\PYG{o}{.}\PYG{n}{StandardScaler}\PYG{p}{()}
+\PYG{n}{normalized\PYGZus{}clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}
+    \PYG{n}{std\PYGZus{}scaler}\PYG{o}{.}\PYG{n}{fit\PYGZus{}transform}\PYG{p}{(}\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}data}\PYG{p}{),}
+    \PYG{n}{columns}\PYG{o}{=}\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{p}{,}
+    \PYG{n}{index}\PYG{o}{=}\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{index}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n}{normalizible\PYGZus{}clean\PYGZus{}features}\PYG{p}{:}
+    \PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{n}{col}\PYG{p}{]} \PYG{o}{=} \PYG{n}{normalized\PYGZus{}clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{col}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{apply}\PYG{p}{(}
+    \PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{to\PYGZus{}numeric}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{errors}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}coerce\PYGZsq{}}\PYG{p}{))}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}
+
+\PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{to\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./clean\PYGZus{}crime.csv\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

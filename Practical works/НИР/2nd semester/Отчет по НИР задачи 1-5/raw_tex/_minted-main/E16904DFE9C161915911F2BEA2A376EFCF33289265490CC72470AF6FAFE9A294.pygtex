@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Total number of objects: 386865}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Total number of objects: \PYGZob{}len(data)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Number of objects with NA values: 180345}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Number of objects with NA values: \PYGZob{}len(data) \PYGZhy{} len(data.dropna())\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Number of \PYGZdq{}clean\PYGZdq{} objects: 206520}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Number of }\PYG{l+s+se}{\PYGZbs{}\PYGZdq{}}\PYG{l+s+s1}{clean}\PYG{l+s+se}{\PYGZbs{}\PYGZdq{}}\PYG{l+s+s1}{ objects: \PYGZob{}len(data.dropna())\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

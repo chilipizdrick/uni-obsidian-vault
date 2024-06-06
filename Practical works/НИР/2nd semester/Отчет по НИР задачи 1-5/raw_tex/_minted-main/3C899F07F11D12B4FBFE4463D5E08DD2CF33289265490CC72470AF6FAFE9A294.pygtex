@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{loadings} \PYG{o}{=} \PYG{n}{pca}\PYG{o}{.}\PYG{n}{components\PYGZus{}}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{o}{\PYGZgt{}} \PYG{n}{feature\PYGZus{}importances} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{Series}\PYG{p}{(}
+\PYG{o}{\PYGZgt{}}     \PYG{n}{loadings}\PYG{p}{,} \PYG{n}{index}\PYG{o}{=}\PYG{n}{pca\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Feature contributions to the first component (pca0):\PYGZsq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{feature\PYGZus{}importances}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{()}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{ascending}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{))}
+\PYG{n}{Feature} \PYG{n}{contributions} \PYG{n}{to} \PYG{n}{the} \PYG{n}{first} \PYG{n}{component} \PYG{p}{(}\PYG{n}{pca0}\PYG{p}{):}
+\PYG{n}{district\PYGZus{}id}          \PYG{l+m+mf}{0.998685}
+\PYG{n}{geo\PYGZus{}y}                \PYG{l+m+mf}{0.037739}
+\PYG{n}{geo\PYGZus{}x}                \PYG{l+m+mf}{0.029419}
+\PYG{n}{reported\PYGZus{}time\PYGZus{}utc}    \PYG{l+m+mf}{0.018063}
+\PYG{n}{victim\PYGZus{}count}         \PYG{l+m+mf}{0.003628}
+\PYG{n}{is\PYGZus{}crime}             \PYG{l+m+mf}{0.000000}
+\PYG{n}{is\PYGZus{}traffic}           \PYG{l+m+mf}{0.000000}
+\end{Verbatim}

@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{binary\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{]}
+\PYG{o}{\PYGZgt{}} \PYG{n}{features} \PYG{o}{=} \PYG{n}{criterial\PYGZus{}features} \PYG{o}{+} \PYG{n}{numerical\PYGZus{}features} \PYG{o}{+} \PYG{n}{binary\PYGZus{}features}
+\PYG{o}{\PYGZgt{}} \PYG{n}{x\PYGZus{}features} \PYG{o}{=} \PYG{n}{features}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{()}
+\PYG{o}{\PYGZgt{}} \PYG{n}{x\PYGZus{}features}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{x\PYGZus{}features}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZus{}extension\PYGZsq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{target} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{]}
+\PYG{o}{\PYGZgt{}} \PYG{n}{x} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{x\PYGZus{}features}\PYG{p}{)]}
+\PYG{o}{\PYGZgt{}} \PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{x\PYGZus{}val}\PYG{p}{,} \PYG{n}{target\PYGZus{}tr}\PYG{p}{,} \PYG{n}{target\PYGZus{}val} \PYG{o}{=} \PYG{n}{train\PYGZus{}test\PYGZus{}split}\PYG{p}{(}
+\PYG{o}{\PYGZgt{}}     \PYG{n}{x}\PYG{p}{,} \PYG{n}{target}\PYG{p}{,} \PYG{n}{test\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mf}{0.3}\PYG{p}{,} \PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{42}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Training split size: \PYGZob{}len(x\PYGZus{}tr)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Validation split size: \PYGZob{}len(x\PYGZus{}val)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{Training} \PYG{n}{split} \PYG{n}{size}\PYG{p}{:} \PYG{l+m+mi}{270805}
+\PYG{n}{Validation} \PYG{n}{split} \PYG{n}{size}\PYG{p}{:} \PYG{l+m+mi}{116060}
+\end{Verbatim}

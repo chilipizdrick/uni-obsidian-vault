@@ -1,0 +1,44 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{geo\PYGZus{}x}                \PYG{l+m+mf}{1.000000}
+\PYG{n}{geo\PYGZus{}y}                \PYG{l+m+mf}{0.988746}
+\PYG{n}{geo\PYGZus{}lat}             \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.989791}
+\PYG{n}{geo\PYGZus{}lon}              \PYG{l+m+mf}{0.999873}
+\PYG{n}{victim\PYGZus{}count}         \PYG{l+m+mf}{0.000309}
+\PYG{n}{reported\PYGZus{}time\PYGZus{}utc}   \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.004854}
+\PYG{n}{Name}\PYG{p}{:} \PYG{n}{geo\PYGZus{}x}\PYG{p}{,} \PYG{n}{dtype}\PYG{p}{:} \PYG{n}{float64}
+\PYG{n}{geo\PYGZus{}x}                \PYG{l+m+mf}{0.988746}
+\PYG{n}{geo\PYGZus{}y}                \PYG{l+m+mf}{1.000000}
+\PYG{n}{geo\PYGZus{}lat}             \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.962731}
+\PYG{n}{geo\PYGZus{}lon}              \PYG{l+m+mf}{0.988911}
+\PYG{n}{victim\PYGZus{}count}         \PYG{l+m+mf}{0.001351}
+\PYG{n}{reported\PYGZus{}time\PYGZus{}utc}   \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.003204}
+\PYG{n}{Name}\PYG{p}{:} \PYG{n}{geo\PYGZus{}y}\PYG{p}{,} \PYG{n}{dtype}\PYG{p}{:} \PYG{n}{float64}
+\PYG{n}{geo\PYGZus{}x}               \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.989791}
+\PYG{n}{geo\PYGZus{}y}               \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.962731}
+\PYG{n}{geo\PYGZus{}lat}              \PYG{l+m+mf}{1.000000}
+\PYG{n}{geo\PYGZus{}lon}             \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.987968}
+\PYG{n}{victim\PYGZus{}count}         \PYG{l+m+mf}{0.000482}
+\PYG{n}{reported\PYGZus{}time\PYGZus{}utc}    \PYG{l+m+mf}{0.005366}
+\PYG{n}{Name}\PYG{p}{:} \PYG{n}{geo\PYGZus{}lat}\PYG{p}{,} \PYG{n}{dtype}\PYG{p}{:} \PYG{n}{float64}
+\PYG{n}{geo\PYGZus{}x}                \PYG{l+m+mf}{0.999873}
+\PYG{n}{geo\PYGZus{}y}                \PYG{l+m+mf}{0.988911}
+\PYG{n}{geo\PYGZus{}lat}             \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.987968}
+\PYG{n}{geo\PYGZus{}lon}              \PYG{l+m+mf}{1.000000}
+\PYG{n}{victim\PYGZus{}count}         \PYG{l+m+mf}{0.000331}
+\PYG{n}{reported\PYGZus{}time\PYGZus{}utc}   \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.004929}
+\PYG{n}{Name}\PYG{p}{:} \PYG{n}{geo\PYGZus{}lon}\PYG{p}{,} \PYG{n}{dtype}\PYG{p}{:} \PYG{n}{float64}
+\PYG{n}{geo\PYGZus{}x}                \PYG{l+m+mf}{0.000309}
+\PYG{n}{geo\PYGZus{}y}                \PYG{l+m+mf}{0.001351}
+\PYG{n}{geo\PYGZus{}lat}              \PYG{l+m+mf}{0.000482}
+\PYG{n}{geo\PYGZus{}lon}              \PYG{l+m+mf}{0.000331}
+\PYG{n}{victim\PYGZus{}count}         \PYG{l+m+mf}{1.000000}
+\PYG{n}{reported\PYGZus{}time\PYGZus{}utc}   \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.003938}
+\PYG{n}{Name}\PYG{p}{:} \PYG{n}{victim\PYGZus{}count}\PYG{p}{,} \PYG{n}{dtype}\PYG{p}{:} \PYG{n}{float64}
+\PYG{n}{geo\PYGZus{}x}               \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.004854}
+\PYG{n}{geo\PYGZus{}y}               \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.003204}
+\PYG{n}{geo\PYGZus{}lat}              \PYG{l+m+mf}{0.005366}
+\PYG{n}{geo\PYGZus{}lon}             \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.004929}
+\PYG{n}{victim\PYGZus{}count}        \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.003938}
+\PYG{n}{reported\PYGZus{}time\PYGZus{}utc}    \PYG{l+m+mf}{1.000000}
+\PYG{n}{Name}\PYG{p}{:} \PYG{n}{reported\PYGZus{}time\PYGZus{}utc}\PYG{p}{,} \PYG{n}{dtype}\PYG{p}{:} \PYG{n}{float64}
+\end{Verbatim}

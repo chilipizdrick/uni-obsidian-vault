@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{model1} \PYG{o}{=} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{sex}\PYG{o}{+}\PYG{n}{wed1}\PYG{o}{+}\PYG{n}{wed2}\PYG{o}{+}\PYG{n}{city\PYGZus{}status}\PYG{o}{+}\PYG{n}{higher\PYGZus{}educ}\PYG{o}{+}
+    \PYG{n}{salary\PYGZus{}satisfaction}\PYG{o}{+}\PYG{n}{is\PYGZus{}entrepreneur}\PYG{o}{+}\PYG{n}{if\PYGZus{}subordinates}\PYG{o}{+}\PYG{n}{age}\PYG{o}{+}
+    \PYG{n}{week\PYGZus{}duration}\PYG{o}{+}\PYG{n}{last\PYGZus{}vacation}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{model1}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Adjusted R\PYGZhy{}squared:  0.2751}
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{vif}\PYG{p}{(}\PYG{n}{model1}\PYG{p}{)}
+\PYG{n}{sex}     \PYG{n}{wed1}    \PYG{n}{wed2}    \PYG{n}{city\PYGZus{}status}    \PYG{n}{higher\PYGZus{}educ}    \PYG{n}{salary\PYGZus{}satisfaction}
+\PYG{l+m}{1.14}    \PYG{l+m}{1.56}    \PYG{l+m}{1.68}    \PYG{l+m}{1.02}           \PYG{l+m}{1.12}           \PYG{l+m}{1.03}
+\PYG{n}{is\PYGZus{}entrepreneur}    \PYG{n}{if\PYGZus{}subordinates}    \PYG{n}{age}     \PYG{n}{week\PYGZus{}duration}    \PYG{n}{last\PYGZus{}vacation}
+\PYG{l+m}{1.03}               \PYG{l+m}{1.09}               \PYG{l+m}{1.18}    \PYG{l+m}{1.07}             \PYG{l+m}{1.02}
+\end{Verbatim}

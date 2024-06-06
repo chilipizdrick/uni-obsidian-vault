@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Number} \PYG{n}{of} \PYG{n}{rows}\PYG{p}{:} \PYG{l+m+mi}{386865}
+\PYG{n}{incident\PYGZus{}address}          \PYG{l+m+mi}{90518}
+\PYG{n}{offense\PYGZus{}code}                \PYG{l+m+mi}{141}
+\PYG{n}{neighborhood\PYGZus{}id}              \PYG{l+m+mi}{78}
+\PYG{n}{precinct\PYGZus{}id}                  \PYG{l+m+mi}{41}
+\PYG{n}{district\PYGZus{}id}                   \PYG{l+m+mi}{8}
+\PYG{n}{offense\PYGZus{}code\PYGZus{}extension}        \PYG{l+m+mi}{7}
+\end{Verbatim}

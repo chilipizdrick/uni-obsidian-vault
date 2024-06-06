@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{best\PYGZus{}tree} \PYG{o}{=} \PYG{n}{DecisionTreeClassifier}\PYG{p}{(}\PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{6679}\PYG{p}{,} \PYG{n}{max\PYGZus{}depth}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{best\PYGZus{}tree} \PYG{o}{=} \PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{y\PYGZus{}tr}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{):}
+    \PYG{n}{tree} \PYG{o}{=} \PYG{n}{DecisionTreeClassifier}\PYG{p}{(}\PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{6679}\PYG{p}{,} \PYG{n}{max\PYGZus{}depth}\PYG{o}{=}\PYG{n}{i}\PYG{p}{)}
+    \PYG{n}{tree} \PYG{o}{=} \PYG{n}{tree}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{y\PYGZus{}tr}\PYG{p}{)}
+    \PYG{k}{if} \PYG{n}{tree}\PYG{o}{.}\PYG{n}{score}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{,} \PYG{n}{y\PYGZus{}val}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{score}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{,} \PYG{n}{y\PYGZus{}val}\PYG{p}{):}
+        \PYG{n}{best\PYGZus{}tree} \PYG{o}{=} \PYG{n}{tree}
+\end{Verbatim}

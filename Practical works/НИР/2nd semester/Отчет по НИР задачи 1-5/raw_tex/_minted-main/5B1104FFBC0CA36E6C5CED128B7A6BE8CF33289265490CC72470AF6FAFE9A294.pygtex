@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for} \PYG{n}{feature} \PYG{o+ow}{in} \PYG{n}{normalizible\PYGZus{}features}\PYG{p}{:}
+    \PYG{n}{Q1} \PYG{o}{=} \PYG{n}{normalizible\PYGZus{}data}\PYG{p}{[}\PYG{n}{feature}\PYG{p}{]}\PYG{o}{.}\PYG{n}{quantile}\PYG{p}{(}\PYG{l+m+mf}{0.25}\PYG{p}{)}
+    \PYG{n}{Q3} \PYG{o}{=} \PYG{n}{normalizible\PYGZus{}data}\PYG{p}{[}\PYG{n}{feature}\PYG{p}{]}\PYG{o}{.}\PYG{n}{quantile}\PYG{p}{(}\PYG{l+m+mf}{0.75}\PYG{p}{)}
+    \PYG{n}{IQR} \PYG{o}{=} \PYG{n}{Q3} \PYG{o}{\PYGZhy{}} \PYG{n}{Q1}
+    \PYG{n}{lower\PYGZus{}bound} \PYG{o}{=} \PYG{n}{Q1} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{1.5} \PYG{o}{*} \PYG{n}{IQR}
+    \PYG{n}{upper\PYGZus{}bound} \PYG{o}{=} \PYG{n}{Q3} \PYG{o}{+} \PYG{l+m+mf}{1.5} \PYG{o}{*} \PYG{n}{IQR}
+    \PYG{n}{normalizible\PYGZus{}data\PYGZus{}no\PYGZus{}outliers} \PYG{o}{=} \PYG{n}{normalizible\PYGZus{}data}\PYG{p}{[}
+        \PYG{p}{(}\PYG{n}{normalizible\PYGZus{}data}\PYG{p}{[}\PYG{n}{feature}\PYG{p}{]} \PYG{o}{\PYGZgt{}=}
+         \PYG{n}{lower\PYGZus{}bound}\PYG{p}{)} \PYG{o}{\PYGZam{}} \PYG{p}{(}\PYG{n}{normalizible\PYGZus{}data}\PYG{p}{[}\PYG{n}{feature}\PYG{p}{]} \PYG{o}{\PYGZlt{}=} \PYG{n}{upper\PYGZus{}bound}\PYG{p}{)]}
+\PYG{n}{normalizible\PYGZus{}data\PYGZus{}no\PYGZus{}outliers} \PYG{o}{=} \PYG{n}{normalizible\PYGZus{}data\PYGZus{}no\PYGZus{}outliers}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Number of outliers: \PYGZob{}len(normalizible\PYGZus{}data) \PYGZhy{}}
+                             \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{normalizible\PYGZus{}data\PYGZus{}no\PYGZus{}outliers}\PYG{p}{)\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{})}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Total number of objects: \PYGZob{}len(normalizible\PYGZus{}data)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{Number} \PYG{n}{of} \PYG{n}{outliers}\PYG{p}{:} \PYG{l+m+mi}{15769}
+\PYG{n}{Total} \PYG{n}{number} \PYG{n}{of} \PYG{n}{objects}\PYG{p}{:} \PYG{l+m+mi}{386865}
+\end{Verbatim}

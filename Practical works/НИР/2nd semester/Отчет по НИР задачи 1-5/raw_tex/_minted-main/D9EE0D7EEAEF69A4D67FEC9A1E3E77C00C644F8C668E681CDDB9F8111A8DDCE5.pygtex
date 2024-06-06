@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} t\PYGZhy{}критерий для p = 95\PYGZpc{}, 42 степеней свободы}
+\PYG{n}{t\PYGZus{}crit} \PYG{o}{=} \PYG{n+nf}{qt}\PYG{p}{(}\PYG{l+m}{0.975}\PYG{p}{,} \PYG{n}{df}\PYG{o}{=}\PYG{l+m}{44}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} t\PYGZus{}crit = 2.015}
+\end{Verbatim}

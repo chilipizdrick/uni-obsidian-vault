@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{sex}\PYG{o}{+}\PYG{n}{city\PYGZus{}status}\PYG{o}{+}\PYG{n}{higher\PYGZus{}educ}\PYG{o}{+}\PYG{n}{salary\PYGZus{}satisfaction}\PYG{o}{+}
+  \PYG{n}{is\PYGZus{}entrepreneur}\PYG{o}{+}\PYG{n}{if\PYGZus{}subordinates}\PYG{o}{+}\PYG{n+nf}{I}\PYG{p}{(}\PYG{l+m}{2.3}\PYG{n}{\PYGZca{}age}\PYG{o}{*}\PYG{l+m}{0.7}\PYG{n}{\PYGZca{}week\PYGZus{}duration}\PYG{p}{),}
+  \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} Adjusted R\PYGZhy{}squared:  0.2718}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{sex}\PYG{o}{+}\PYG{n}{city\PYGZus{}status}\PYG{o}{+}\PYG{n}{higher\PYGZus{}educ}\PYG{o}{+}\PYG{n}{salary\PYGZus{}satisfaction}\PYG{o}{+}
+  \PYG{n}{is\PYGZus{}entrepreneur}\PYG{o}{+}\PYG{n}{if\PYGZus{}subordinates}\PYG{o}{+}\PYG{n+nf}{I}\PYG{p}{((}\PYG{l+m}{2.3}\PYG{n}{\PYGZca{}age}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{)}\PYG{o}{+}\PYG{n+nf}{I}\PYG{p}{(}\PYG{l+m}{0.7}\PYG{n}{\PYGZca{}week\PYGZus{}duration}\PYG{p}{),}
+  \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} Adjusted R\PYGZhy{}squared:  0.2734}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{sex}\PYG{o}{+}\PYG{n}{city\PYGZus{}status}\PYG{o}{+}\PYG{n}{higher\PYGZus{}educ}\PYG{o}{+}\PYG{n}{salary\PYGZus{}satisfaction}\PYG{o}{+}
+  \PYG{n}{is\PYGZus{}entrepreneur}\PYG{o}{+}\PYG{n}{if\PYGZus{}subordinates}\PYG{o}{+}\PYG{n+nf}{I}\PYG{p}{(}\PYG{l+m}{2.3}\PYG{n}{\PYGZca{}age}\PYG{p}{)}\PYG{o}{+}\PYG{n+nf}{I}\PYG{p}{((}\PYG{l+m}{0.7}\PYG{n}{\PYGZca{}week\PYGZus{}duration}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{),}
+  \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} Adjusted R\PYGZhy{}squared:  0.277}
+\end{Verbatim}

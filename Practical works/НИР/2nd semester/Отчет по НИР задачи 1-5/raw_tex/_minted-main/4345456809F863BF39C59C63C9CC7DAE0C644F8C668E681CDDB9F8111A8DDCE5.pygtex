@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{interval} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{function}\PYG{p}{(}\PYG{n}{model}\PYG{p}{)\PYGZob{}}
+  \PYG{n}{df} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{df.residual}\PYG{p}{(}\PYG{n}{model}\PYG{p}{)}
+  \PYG{n}{t\PYGZus{}crit} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{qt}\PYG{p}{(}\PYG{l+m}{0.975}\PYG{p}{,} \PYG{n}{df}\PYG{p}{)}
+  \PYG{n}{out} \PYG{o}{=} \PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{model}\PYG{p}{)}
+  \PYG{n}{std\PYGZus{}err} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{out}\PYG{o}{\PYGZdl{}}\PYG{n}{coefficients[2}\PYG{p}{,} \PYG{l+m}{2}\PYG{n}{]}
+  \PYG{n}{koef} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{out}\PYG{o}{\PYGZdl{}}\PYG{n}{coefficients[2}\PYG{p}{,} \PYG{l+m}{1}\PYG{n}{]}
+  \PYG{n+nf}{c}\PYG{p}{(}\PYG{n}{koef} \PYG{o}{\PYGZhy{}} \PYG{n}{std\PYGZus{}err}\PYG{o}{*}\PYG{n}{t\PYGZus{}crit}\PYG{p}{,} \PYG{n}{koef} \PYG{o}{+} \PYG{n}{std\PYGZus{}err}\PYG{o}{*}\PYG{n}{t\PYGZus{}crit}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

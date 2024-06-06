@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./crime.csv\PYGZsq{}}\PYG{p}{,} \PYG{n}{encoding}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}unicode\PYGZus{}escape\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZus{}extension\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}first\PYGZus{}occurrence\PYGZus{}date\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}last\PYGZus{}occurrence\PYGZus{}date\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}date\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}incident\PYGZus{}address\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}lon\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}lat\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}precinct\PYGZus{}id\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}neighborhood\PYGZus{}id\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{features}\PYG{p}{)]}
+\PYG{n}{criterial\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZus{}extension\PYGZsq{}}\PYG{p}{,}
+                     \PYG{l+s+s1}{\PYGZsq{}incident\PYGZus{}address\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}precinct\PYGZus{}id\PYGZsq{}}\PYG{p}{,}
+                     \PYG{l+s+s1}{\PYGZsq{}neighborhood\PYGZus{}id\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{criterial\PYGZus{}data} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{criterial\PYGZus{}features}\PYG{p}{)]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Number of rows: \PYGZob{}len(data)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{criterial\PYGZus{}data}\PYG{o}{.}\PYG{n}{nunique}\PYG{p}{()}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{ascending}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
+\end{Verbatim}

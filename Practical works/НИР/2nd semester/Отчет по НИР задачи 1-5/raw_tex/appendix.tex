@@ -1,0 +1,190 @@
+\newpage
+\phantomsection
+\section{Приложение}
+
+\RaggedLeft
+
+\phantomsection
+\subsection*{Приложение 1. Код решения задачи 1}
+\label{appendix:1}
+\codefromfile{work_1.R}{R}
+
+\newpage
+\phantomsection
+\subsection*{Приложение 2. Код решения задачи 2}
+\label{appendix:2}
+\codefromfile{work_2.R}{R}
+
+\newpage
+\phantomsection
+\subsection*{Приложение 3. Код решения задачи 3}
+\label{appendix:3}
+\codefromfile{work_3.R}{R}
+
+\newpage
+\phantomsection
+\subsection*{Приложение 4. Код решения задачи 4}
+\label{appendix:4}
+\codefromfile{work_4.py}{python}
+
+\newpage
+\phantomsection
+\subsection*{Приложение 5. Код решения задачи 5}
+\label{appendix:5}
+\codefromfile{work_5.py}{python}
+
+
+\newpage
+\phantomsection
+Приложение 6
+\image{images/plot_2.png}{Схема усеченного решающего дерева, полученного при решении задачи 4.}{1}
+\label{appendix:6}
+
+\newpage
+\phantomsection
+Приложение 7
+\begin{code}
+\begin{minted}{python}
+numerical_features = ['first_occurrence_date', 'last_occurrence_date',
+                      'reported_date', 'geo_x', 'geo_y', 'geo_lat', 'geo_lon',
+                      'victim_count', 'reported_time', 'reported_time_utc']
+numerical_data = pd.DataFrame(index=data.index, columns=numerical_features)
+numerical_data.loc[:, numerical_features] = data.loc[:,
+    data.columns.isin(numerical_features)]
+
+time_features = ['first_occurrence_date',
+                 'last_occurrence_date', 'reported_date']
+
+for col in time_features:
+    numerical_data.loc[:, col] = numerical_data[col].apply(
+        lambda timestr: pd.to_datetime(timestr, format='%m/%d/%Y %I:%M:%S %p'))
+numerical_data['reported_time'] = \
+    numerical_data['reported_date'].apply(lambda x: pd.to_datetime(
+        x.strftime('%H:%M:%S')))
+numerical_data.loc[:, 'reported_time_utc'] = \
+    numerical_data['reported_time'].dt.hour * 60 * 60 + \
+    numerical_data['reported_time'].dt.minute * 60 + \
+    numerical_data['reported_time'].dt.second
+numerical_data = numerical_data.astype('float64', errors='ignore')
+# Отбросим значения даты и времени в формате Timestamp для нормализации
+normalizible_features = ['geo_x', 'geo_y', 'geo_lat',
+                         'geo_lon', 'victim_count', 'reported_time_utc']
+normalizible_data = numerical_data.loc[:, numerical_data.columns.isin(
+    normalizible_features)]
+\end{minted}
+\captionof{listing}{Нормализация числовых данных, представленных в датасете.}
+\end{code}
+\label{appendix:7}
+
+\newpage
+\phantomsection
+Приложение 8
+\begin{codeappendix}
+\begin{minted}{python}
+geo_x                1.000000
+geo_y                0.988746
+geo_lat             -0.989791
+geo_lon              0.999873
+victim_count         0.000309
+reported_time_utc   -0.004854
+Name: geo_x, dtype: float64 
+geo_x                0.988746
+geo_y                1.000000
+geo_lat             -0.962731
+geo_lon              0.988911
+victim_count         0.001351
+reported_time_utc   -0.003204
+Name: geo_y, dtype: float64 
+geo_x               -0.989791
+geo_y               -0.962731
+geo_lat              1.000000
+geo_lon             -0.987968
+victim_count         0.000482
+reported_time_utc    0.005366
+Name: geo_lat, dtype: float64 
+geo_x                0.999873
+geo_y                0.988911
+geo_lat             -0.987968
+geo_lon              1.000000
+victim_count         0.000331
+reported_time_utc   -0.004929
+Name: geo_lon, dtype: float64 
+geo_x                0.000309
+geo_y                0.001351
+geo_lat              0.000482
+geo_lon              0.000331
+victim_count         1.000000
+reported_time_utc   -0.003938
+Name: victim_count, dtype: float64 
+geo_x               -0.004854
+geo_y               -0.003204
+geo_lat              0.005366
+geo_lon             -0.004929
+victim_count        -0.003938
+reported_time_utc    1.000000
+Name: reported_time_utc, dtype: float64 
+\end{minted}
+\captionof{listing}{Вывод \hyperref[code:41]{кода 41} (Нахождение коррелирующих признаков, представленных в датасете).}
+\end{codeappendix}
+\label{appendix:8}
+
+\newpage
+\phantomsection
+Приложение 9
+\begin{codeappendix}
+\begin{minted}{python}
+clean_features = ['offence_code+extension', 'reported_time_utc',
+                  'geo_x', 'geo_y', 'district_id', 'is_crime',
+                  'is_traffic', 'victim_count']
+clean_data = pd.DataFrame(columns=clean_features, index=data.index)
+
+clean_data['offence_code+extension'] = data['offense_code'] * \
+    10 + data['offense_code_extension']
+clean_data['reported_time_utc'] = numerical_data['reported_time_utc']
+clean_data['geo_x'] = numerical_data['geo_x']
+clean_data['geo_y'] = numerical_data['geo_y']
+clean_data['district_id'] = data['district_id']
+clean_data['is_crime'] = data['is_crime']
+clean_data['is_traffic'] = data['is_traffic']
+clean_data['victim_count'] = data['victim_count']
+clean_data = clean_data.dropna()
+# print(f'Number of objects in cleaned dataset: {len(clean_data.index)}')
+
+normalizible_clean_features = ['reported_time_utc', 'geo_x', 'geo_y',
+                               'victim_count']
+normalizible_clean_data = clean_data.loc[:, clean_data.columns.isin(
+    normalizible_clean_features)]
+std_scaler = preprocessing.StandardScaler()
+normalized_clean_data = pd.DataFrame(
+    std_scaler.fit_transform(normalizible_clean_data),
+    columns=normalizible_clean_data.columns,
+    index=normalizible_clean_data.index)
+
+for col in normalizible_clean_features:
+    clean_data[col] = normalized_clean_data.loc[:, col]
+clean_data = clean_data.apply(
+    lambda x: pd.to_numeric(x, errors='coerce')).dropna()
+
+clean_data.to_csv('./clean_crime.csv')
+\end{minted}
+\captionof{listing}{Подготовка данных к применению метода PCA.}
+\end{codeappendix}
+\label{appendix:9}
+
+\newpage
+\phantomsection
+Приложение 10
+\image{images/plot_5.png}{График доли дисперсии объясненной каждой из компонент после применения метода PCA.}{1}
+\label{appendix:10}
+
+\newpage
+\phantomsection
+Приложение 11
+\image{images/plot_8.png}{Двумерная визуализация данных, полученная после применения алгоритма t-SNE (окраска по критерию \textit{victim\_count}).}{1}
+\label{appendix:11}
+
+\newpage
+\phantomsection
+Приложение 12
+\image{images/plot_9.png}{Двумерная визуализация данных, полученная после применения алгоритма t-SNE (окраска по критерию \textit{offence\_code+extension}).}{1}
+\label{appendix:12}

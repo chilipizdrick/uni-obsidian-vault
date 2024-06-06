@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7301}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)}\PYG{o}{*}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{)),} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.6405}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{),} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7227}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{),} \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.7098}
+\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Fertility}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{)} \PYG{o}{+} \PYG{n+nf}{I}\PYG{p}{(}\PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{Agriculture}\PYG{p}{)}\PYG{n}{\PYGZca{}2}\PYG{p}{),}
+  \PYG{n}{data}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} R\PYGZca{}2 = 0.6983}
+\end{Verbatim}

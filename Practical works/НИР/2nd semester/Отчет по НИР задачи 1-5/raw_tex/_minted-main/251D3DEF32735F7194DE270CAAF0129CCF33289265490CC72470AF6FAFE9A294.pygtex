@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{forest} \PYG{o}{=} \PYG{n}{RandomForestClassifier}\PYG{p}{(}\PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{6679}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{forest} \PYG{o}{=} \PYG{n}{forest}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(}\PYG{n}{y\PYGZus{}tr}\PYG{p}{))}
+\PYG{o}{\PYGZgt{}} \PYG{n}{report} \PYG{o}{=} \PYG{n}{classification\PYGZus{}report}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{forest}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{report}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{accuracy} \PYG{o}{=} \PYG{n}{accuracy\PYGZus{}score}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{forest}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Accuracy: }\PYG{l+s+si}{\PYGZob{}accuracy\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+              \PYG{n}{precision}    \PYG{n}{recall}  \PYG{n}{f1}\PYG{o}{\PYGZhy{}}\PYG{n}{score}   \PYG{n}{support}
+
+           \PYG{l+m+mi}{0}       \PYG{l+m+mf}{0.46}      \PYG{l+m+mf}{0.33}      \PYG{l+m+mf}{0.39}       \PYG{l+m+mi}{545}
+           \PYG{l+m+mi}{1}       \PYG{l+m+mf}{0.90}      \PYG{l+m+mf}{0.94}      \PYG{l+m+mf}{0.92}      \PYG{l+m+mi}{3528}
+
+    \PYG{n}{accuracy}                           \PYG{l+m+mf}{0.86}      \PYG{l+m+mi}{4073}
+   \PYG{n}{macro} \PYG{n}{avg}       \PYG{l+m+mf}{0.68}      \PYG{l+m+mf}{0.64}      \PYG{l+m+mf}{0.65}      \PYG{l+m+mi}{4073}
+\PYG{n}{weighted} \PYG{n}{avg}       \PYG{l+m+mf}{0.84}      \PYG{l+m+mf}{0.86}      \PYG{l+m+mf}{0.85}      \PYG{l+m+mi}{4073}
+\PYG{n}{Accuracy}\PYG{p}{:} \PYG{l+m+mf}{0.859317456420329}
+\end{Verbatim}

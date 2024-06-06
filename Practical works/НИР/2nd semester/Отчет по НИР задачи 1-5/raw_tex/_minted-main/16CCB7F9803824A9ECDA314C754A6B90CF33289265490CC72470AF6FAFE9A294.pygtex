@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{report} \PYG{o}{=} \PYG{n}{classification\PYGZus{}report}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{report}\PYG{p}{)}
+              \PYG{n}{precision}    \PYG{n}{recall}  \PYG{n}{f1}\PYG{o}{\PYGZhy{}}\PYG{n}{score}   \PYG{n}{support}
+
+           \PYG{l+m+mi}{0}       \PYG{l+m+mf}{1.00}      \PYG{l+m+mf}{0.01}      \PYG{l+m+mf}{0.01}       \PYG{l+m+mi}{545}
+           \PYG{l+m+mi}{1}       \PYG{l+m+mf}{0.87}      \PYG{l+m+mf}{1.00}      \PYG{l+m+mf}{0.93}      \PYG{l+m+mi}{3528}
+
+    \PYG{n}{accuracy}                           \PYG{l+m+mf}{0.87}      \PYG{l+m+mi}{4073}
+   \PYG{n}{macro} \PYG{n}{avg}       \PYG{l+m+mf}{0.93}      \PYG{l+m+mf}{0.50}      \PYG{l+m+mf}{0.47}      \PYG{l+m+mi}{4073}
+\PYG{n}{weighted} \PYG{n}{avg}       \PYG{l+m+mf}{0.88}      \PYG{l+m+mf}{0.87}      \PYG{l+m+mf}{0.81}      \PYG{l+m+mi}{4073}
+\PYG{o}{\PYGZgt{}} \PYG{n}{accuracy} \PYG{o}{=} \PYG{n}{accuracy\PYGZus{}score}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Accuracy: }\PYG{l+s+si}{\PYGZob{}accuracy\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{Accuracy}\PYG{p}{:} \PYG{l+m+mf}{0.8671740731647435}
+\end{Verbatim}

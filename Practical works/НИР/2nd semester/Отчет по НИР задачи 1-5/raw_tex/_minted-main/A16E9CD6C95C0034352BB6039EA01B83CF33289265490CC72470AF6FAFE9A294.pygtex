@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{feature\PYGZus{}importances} \PYG{o}{=} \PYG{p}{(}\PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{feature\PYGZus{}importances\PYGZus{}} \PYG{o}{/}
+                       \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{feature\PYGZus{}importances\PYGZus{}}\PYG{p}{))}
+\PYG{n}{results} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}Features\PYGZsq{}}\PYG{p}{:} \PYG{n}{features}\PYG{p}{,}
+                        \PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{:} \PYG{n}{feature\PYGZus{}importances}\PYG{p}{\PYGZcb{})}
+\PYG{n}{results}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{by}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{,} \PYG{n}{inplace}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{barh}\PYG{p}{(}\PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Features\PYGZsq{}}\PYG{p}{],} \PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{])}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Feature importances\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}

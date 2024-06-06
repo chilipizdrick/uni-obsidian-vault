@@ -1,0 +1,194 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd}
+\PYG{k+kn}{from} \PYG{n+nn}{scipy} \PYG{k+kn}{import} \PYG{n}{stats}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn} \PYG{k+kn}{import} \PYG{n}{preprocessing}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.model\PYGZus{}selection} \PYG{k+kn}{import} \PYG{n}{train\PYGZus{}test\PYGZus{}split}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.decomposition} \PYG{k+kn}{import} \PYG{n}{PCA}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.manifold} \PYG{k+kn}{import} \PYG{n}{TSNE}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.utils} \PYG{k+kn}{import} \PYG{n}{shuffle}
+\PYG{k+kn}{import} \PYG{n+nn}{seaborn} \PYG{k}{as} \PYG{n+nn}{sns}
+
+
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./crime.csv\PYGZsq{}}\PYG{p}{,} \PYG{n}{encoding}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}unicode\PYGZus{}escape\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZus{}extension\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}first\PYGZus{}occurrence\PYGZus{}date\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}last\PYGZus{}occurrence\PYGZus{}date\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}date\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}incident\PYGZus{}address\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}lon\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}lat\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}precinct\PYGZus{}id\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}neighborhood\PYGZus{}id\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{features}\PYG{p}{)]}
+\PYG{n}{criterial\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZus{}extension\PYGZsq{}}\PYG{p}{,}
+                     \PYG{l+s+s1}{\PYGZsq{}incident\PYGZus{}address\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}precinct\PYGZus{}id\PYGZsq{}}\PYG{p}{,}
+                     \PYG{l+s+s1}{\PYGZsq{}neighborhood\PYGZus{}id\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{criterial\PYGZus{}data} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{criterial\PYGZus{}features}\PYG{p}{)]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Number of rows: \PYGZob{}len(data)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{criterial\PYGZus{}data}\PYG{o}{.}\PYG{n}{nunique}\PYG{p}{()}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{ascending}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Total number of objects: \PYGZob{}len(data)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Number of objects with NA values: \PYGZob{}len(data) \PYGZhy{} len(data.dropna())\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Number of }\PYG{l+s+se}{\PYGZbs{}\PYGZsq{}}\PYG{l+s+s1}{clean}\PYG{l+s+se}{\PYGZbs{}\PYGZsq{}}\PYG{l+s+s1}{ objects: \PYGZob{}len(data.dropna())\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Number of NA values per column:\PYGZsq{}}\PYG{p}{)}
+\PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n+nb}{sorted}\PYG{p}{(}\PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{p}{,} 
+                  \PYG{n}{key}\PYG{o}{=}\PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:} \PYG{n}{data}\PYG{p}{[}\PYG{n}{x}\PYG{p}{]}\PYG{o}{.}\PYG{n}{isna}\PYG{p}{()}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(),} 
+                  \PYG{n}{reverse}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{):}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}col\PYGZcb{}}\PYG{l+s+s1}{: \PYGZob{}data[col].isna().sum()\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{numerical\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}first\PYGZus{}occurrence\PYGZus{}date\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}last\PYGZus{}occurrence\PYGZus{}date\PYGZsq{}}\PYG{p}{,}
+                      \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}date\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}lat\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}lon\PYGZsq{}}\PYG{p}{,}
+                      \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{numerical\PYGZus{}data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}\PYG{n}{index}\PYG{o}{=}\PYG{n}{data}\PYG{o}{.}\PYG{n}{index}\PYG{p}{,} \PYG{n}{columns}\PYG{o}{=}\PYG{n}{numerical\PYGZus{}features}\PYG{p}{)}
+\PYG{n}{numerical\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{numerical\PYGZus{}features}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,}
+    \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{numerical\PYGZus{}features}\PYG{p}{)]}
+
+\PYG{n}{time\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}first\PYGZus{}occurrence\PYGZus{}date\PYGZsq{}}\PYG{p}{,}
+                 \PYG{l+s+s1}{\PYGZsq{}last\PYGZus{}occurrence\PYGZus{}date\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}date\PYGZsq{}}\PYG{p}{]}
+
+\PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n}{time\PYGZus{}features}\PYG{p}{:}
+    \PYG{n}{numerical\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{col}\PYG{p}{]} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{n}{col}\PYG{p}{]}\PYG{o}{.}\PYG{n}{apply}\PYG{p}{(}
+        \PYG{k}{lambda} \PYG{n}{timestr}\PYG{p}{:} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{to\PYGZus{}datetime}\PYG{p}{(}\PYG{n}{timestr}\PYG{p}{,} \PYG{n+nb}{format}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZpc{}m/}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{/\PYGZpc{}Y \PYGZpc{}I:\PYGZpc{}M:\PYGZpc{}S \PYGZpc{}p\PYGZsq{}}\PYG{p}{))}
+
+\PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYGZbs{}
+    \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}date\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{apply}\PYG{p}{(}\PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{to\PYGZus{}datetime}\PYG{p}{(}
+        \PYG{n}{x}\PYG{o}{.}\PYG{n}{strftime}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZpc{}H:\PYGZpc{}M:\PYGZpc{}S\PYGZsq{}}\PYG{p}{)))}
+
+\PYG{n}{numerical\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYGZbs{}
+    \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{dt}\PYG{o}{.}\PYG{n}{hour} \PYG{o}{*} \PYG{l+m+mi}{60} \PYG{o}{*} \PYG{l+m+mi}{60} \PYG{o}{+} \PYGZbs{}
+    \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{dt}\PYG{o}{.}\PYG{n}{minute} \PYG{o}{*} \PYG{l+m+mi}{60} \PYG{o}{+} \PYGZbs{}
+    \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{dt}\PYG{o}{.}\PYG{n}{second}
+\PYG{n}{numerical\PYGZus{}data} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{o}{.}\PYG{n}{astype}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}float64\PYGZsq{}}\PYG{p}{,} \PYG{n}{errors}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}ignore\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Отбросим значения даты и времени в формате Timestamp для нормализации}
+\PYG{n}{normalizible\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}lat\PYGZsq{}}\PYG{p}{,}
+                         \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}lon\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{normalizible\PYGZus{}data} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{numerical\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}
+    \PYG{n}{normalizible\PYGZus{}features}\PYG{p}{)]}
+
+\PYG{n}{outliers} \PYG{o}{=} \PYG{p}{[]}
+\PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n}{normalizible\PYGZus{}features}\PYG{p}{:}
+    \PYG{n}{z\PYGZus{}scores} \PYG{o}{=} \PYG{n}{stats}\PYG{o}{.}\PYG{n}{zscore}\PYG{p}{(}\PYG{n}{normalizible\PYGZus{}data}\PYG{p}{[}\PYG{n}{col}\PYG{p}{])}
+    \PYG{n}{outliers}\PYG{o}{.}\PYG{n}{extend}\PYG{p}{([}\PYG{n}{i} \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{z} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{z\PYGZus{}scores}\PYG{p}{)} \PYG{k}{if} \PYG{n+nb}{abs}\PYG{p}{(}\PYG{n}{z}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{3}\PYG{p}{])}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Number of outliers: \PYGZob{}len(outliers)\PYGZcb{}\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Number of }\PYG{l+s+se}{\PYGZbs{}\PYGZsq{}}\PYG{l+s+s1}{clean}\PYG{l+s+se}{\PYGZbs{}\PYGZsq{}}\PYG{l+s+s1}{ objects: \PYGZob{}len(data)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{std\PYGZus{}scaler} \PYG{o}{=} \PYG{n}{preprocessing}\PYG{o}{.}\PYG{n}{StandardScaler}\PYG{p}{()}
+\PYG{n}{normalized\PYGZus{}numerical\PYGZus{}data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}
+    \PYG{n}{std\PYGZus{}scaler}\PYG{o}{.}\PYG{n}{fit\PYGZus{}transform}\PYG{p}{(}\PYG{n}{normalizible\PYGZus{}data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()),}
+    \PYG{n}{columns}\PYG{o}{=}\PYG{n}{normalizible\PYGZus{}data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}\PYG{o}{.}\PYG{n}{columns}\PYG{p}{,}
+    \PYG{n}{index}\PYG{o}{=}\PYG{n}{normalizible\PYGZus{}data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}\PYG{o}{.}\PYG{n}{index}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Mean values:\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n}{normalizible\PYGZus{}features}\PYG{p}{:}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}col\PYGZcb{}}\PYG{l+s+s1}{: \PYGZob{}normalized\PYGZus{}numerical\PYGZus{}data[col].mean()\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{normalized\PYGZus{}numerical\PYGZus{}data}\PYG{o}{.}\PYG{n}{head}\PYG{p}{()}
+
+\PYG{n}{binary\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{features} \PYG{o}{=} \PYG{n}{criterial\PYGZus{}features} \PYG{o}{+} \PYG{n}{numerical\PYGZus{}features} \PYG{o}{+} \PYG{n}{binary\PYGZus{}features}
+\PYG{n}{x\PYGZus{}features} \PYG{o}{=} \PYG{n}{features}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{()}
+\PYG{n}{x\PYGZus{}features}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{x\PYGZus{}features}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZus{}extension\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{target} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{x\PYGZus{}features}\PYG{p}{)]}
+
+\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{x\PYGZus{}val}\PYG{p}{,} \PYG{n}{target\PYGZus{}tr}\PYG{p}{,} \PYG{n}{target\PYGZus{}val} \PYG{o}{=} \PYG{n}{train\PYGZus{}test\PYGZus{}split}\PYG{p}{(}
+    \PYG{n}{x}\PYG{p}{,} \PYG{n}{target}\PYG{p}{,} \PYG{n}{test\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mf}{0.3}\PYG{p}{,} \PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{42}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Training split size: \PYGZob{}len(x\PYGZus{}tr)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Validation split size: \PYGZob{}len(x\PYGZus{}val)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n}{normalizible\PYGZus{}features}\PYG{p}{:}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{normalized\PYGZus{}numerical\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:]}\PYG{o}{.}\PYG{n}{corr}\PYG{p}{()[}\PYG{n}{col}\PYG{p}{][:],} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{clean\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{,}
+                  \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{,}
+                  \PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}\PYG{n}{columns}\PYG{o}{=}\PYG{n}{clean\PYGZus{}features}\PYG{p}{,} \PYG{n}{index}\PYG{o}{=}\PYG{n}{data}\PYG{o}{.}\PYG{n}{index}\PYG{p}{)}
+
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZsq{}}\PYG{p}{]} \PYG{o}{*} \PYGZbs{}
+    \PYG{l+m+mi}{10} \PYG{o}{+} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offense\PYGZus{}code\PYGZus{}extension\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{numerical\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}crime\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}is\PYGZus{}traffic\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} print(f\PYGZsq{}Number of objects in cleaned dataset: \PYGZob{}len(clean\PYGZus{}data.index)\PYGZcb{}\PYGZsq{})}
+
+\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}reported\PYGZus{}time\PYGZus{}utc\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}x\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}geo\PYGZus{}y\PYGZsq{}}\PYG{p}{,}
+                               \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}
+    \PYG{n}{normalizible\PYGZus{}clean\PYGZus{}features}\PYG{p}{)]}
+\PYG{n}{std\PYGZus{}scaler} \PYG{o}{=} \PYG{n}{preprocessing}\PYG{o}{.}\PYG{n}{StandardScaler}\PYG{p}{()}
+\PYG{n}{normalized\PYGZus{}clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}
+    \PYG{n}{std\PYGZus{}scaler}\PYG{o}{.}\PYG{n}{fit\PYGZus{}transform}\PYG{p}{(}\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}data}\PYG{p}{),}
+    \PYG{n}{columns}\PYG{o}{=}\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{p}{,}
+    \PYG{n}{index}\PYG{o}{=}\PYG{n}{normalizible\PYGZus{}clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{index}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n}{normalizible\PYGZus{}clean\PYGZus{}features}\PYG{p}{:}
+    \PYG{n}{clean\PYGZus{}data}\PYG{p}{[}\PYG{n}{col}\PYG{p}{]} \PYG{o}{=} \PYG{n}{normalized\PYGZus{}clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{col}\PYG{p}{]}
+\PYG{n}{clean\PYGZus{}data} \PYG{o}{=} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{apply}\PYG{p}{(}
+    \PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{to\PYGZus{}numeric}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{errors}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}coerce\PYGZsq{}}\PYG{p}{))}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}
+
+\PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{to\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./clean\PYGZus{}crime.csv\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{pca\PYGZus{}data} \PYG{o}{=} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{drop}\PYG{p}{(}\PYG{n}{columns}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{])}
+
+\PYG{n}{pca} \PYG{o}{=} \PYG{n}{PCA}\PYG{p}{()}
+\PYG{n}{x\PYGZus{}pca} \PYG{o}{=} \PYG{n}{pca}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{pca\PYGZus{}data}\PYG{o}{.}\PYG{n}{values}\PYG{p}{)}
+\PYG{n}{explained\PYGZus{}variance\PYGZus{}ratio} \PYG{o}{=} \PYG{n}{pca}\PYG{o}{.}\PYG{n}{explained\PYGZus{}variance\PYGZus{}ratio\PYGZus{}}
+\PYG{n}{cumulative\PYGZus{}variance} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cumsum}\PYG{p}{(}\PYG{n}{explained\PYGZus{}variance\PYGZus{}ratio}\PYG{p}{)}
+\PYG{n}{n\PYGZus{}components} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{argmax}\PYG{p}{(}\PYG{n}{cumulative\PYGZus{}variance} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mf}{0.9}\PYG{p}{)} \PYG{o}{+} \PYG{l+m+mi}{1}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{barh}\PYG{p}{(}\PYG{n}{pca}\PYG{o}{.}\PYG{n}{get\PYGZus{}feature\PYGZus{}names\PYGZus{}out}\PYG{p}{(),} \PYG{n}{explained\PYGZus{}variance\PYGZus{}ratio}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Feature importances\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{bar}\PYG{p}{(}\PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{cumulative\PYGZus{}variance}\PYG{p}{)} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{),} \PYG{n}{cumulative\PYGZus{}variance}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plt.plot(range(1, len(cumulative\PYGZus{}variance) + 1), cumulative\PYGZus{}variance)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Cummulative variance by number of features\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}n\PYGZus{}components\PYGZcb{}}\PYG{l+s+s1}{ features are sufficient to explain 90}\PYG{l+s+si}{\PYGZpc{} o}\PYG{l+s+s1}{f the variance.\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{loadings} \PYG{o}{=} \PYG{n}{pca}\PYG{o}{.}\PYG{n}{components\PYGZus{}}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{feature\PYGZus{}importances} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{Series}\PYG{p}{(}
+    \PYG{n}{loadings}\PYG{p}{,} \PYG{n}{index}\PYG{o}{=}\PYG{n}{pca\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Feature contributions to the first component (pca0):\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{feature\PYGZus{}importances}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{()}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{ascending}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{))}
+
+\PYG{n}{shuffled\PYGZus{}data} \PYG{o}{=} \PYG{n}{shuffle}\PYG{p}{(}\PYG{n}{clean\PYGZus{}data}\PYG{p}{,} \PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{20000}\PYG{p}{)}
+
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{shuffled\PYGZus{}data}\PYG{o}{.}\PYG{n}{drop}\PYG{p}{(}\PYG{n}{columns}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{,])}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{shuffled\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{([}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{])]}
+
+\PYG{n}{z} \PYG{o}{=} \PYG{n}{TSNE}\PYG{p}{(}\PYG{n}{n\PYGZus{}components}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{learning\PYGZus{}rate}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}auto\PYGZsq{}}\PYG{p}{,} \PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,}
+         \PYG{n}{init}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}pca\PYGZsq{}}\PYG{p}{,} \PYG{n}{perplexity}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{)}\PYG{o}{.}\PYG{n}{fit\PYGZus{}transform}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+
+\PYG{n}{x\PYGZus{}features} \PYG{o}{=} \PYG{n}{clean\PYGZus{}features}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{()}
+\PYG{n}{x\PYGZus{}features}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{()}
+\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}y\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{y}
+\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Component 1\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{z}\PYG{p}{[:,} \PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Component 2\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{z}\PYG{p}{[:,} \PYG{l+m+mi}{1}\PYG{p}{]}
+
+\PYG{n}{sns}\PYG{o}{.}\PYG{n}{scatterplot}\PYG{p}{(}\PYG{n}{x}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Component 1\PYGZsq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Component 2\PYGZsq{}}\PYG{p}{,}
+                \PYG{n}{hue}\PYG{o}{=}\PYG{n}{shuffled\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}district\PYGZus{}id\PYGZsq{}}\PYG{p}{],}
+                \PYG{n}{data}\PYG{o}{=}\PYG{n}{df}\PYG{p}{)}\PYG{o}{.}\PYG{n}{set}\PYG{p}{(}\PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}t\PYGZhy{}SNE Visualization (district\PYGZus{}id)\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\PYG{n}{sns}\PYG{o}{.}\PYG{n}{scatterplot}\PYG{p}{(}\PYG{n}{x}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Component 1\PYGZsq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Component 2\PYGZsq{}}\PYG{p}{,}
+                \PYG{n}{hue}\PYG{o}{=}\PYG{n}{shuffled\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{],}
+                \PYG{n}{data}\PYG{o}{=}\PYG{n}{df}\PYG{p}{)}\PYG{o}{.}\PYG{n}{set}\PYG{p}{(}\PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}t\PYGZhy{}SNE Visualization (victim\PYGZus{}count)\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\PYG{n}{sns}\PYG{o}{.}\PYG{n}{scatterplot}\PYG{p}{(}\PYG{n}{x}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Component 1\PYGZsq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Component 2\PYGZsq{}}\PYG{p}{,}
+                \PYG{n}{hue}\PYG{o}{=}\PYG{n}{shuffled\PYGZus{}data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{],}
+                \PYG{n}{data}\PYG{o}{=}\PYG{n}{df}\PYG{p}{)}\PYG{o}{.}\PYG{n}{set}\PYG{p}{(}
+                    \PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}t\PYGZhy{}SNE Visualization (offence\PYGZus{}code+extension)\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+
+\PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{by}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{],}
+                       \PYG{n}{ascending}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,}
+                        \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{([}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{,}
+                                                 \PYG{l+s+s1}{\PYGZsq{}victim\PYGZus{}count\PYGZsq{}}\PYG{p}{])]}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\end{Verbatim}

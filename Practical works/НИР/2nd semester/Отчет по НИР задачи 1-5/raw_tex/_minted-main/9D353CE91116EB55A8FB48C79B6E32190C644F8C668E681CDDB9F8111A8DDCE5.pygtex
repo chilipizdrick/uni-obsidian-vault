@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{model3} \PYG{o}{=} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{sex}\PYG{o}{+}\PYG{n}{wed1}\PYG{o}{+}\PYG{n}{city\PYGZus{}status}\PYG{o}{+}\PYG{n}{higher\PYGZus{}educ}\PYG{o}{+}\PYG{n}{salary\PYGZus{}satisfaction}\PYG{o}{+}
+  \PYG{n}{is\PYGZus{}entrepreneur}\PYG{o}{+}\PYG{n}{if\PYGZus{}subordinates}\PYG{o}{+}\PYG{n+nf}{I}\PYG{p}{(}\PYG{l+m}{2.3}\PYG{n}{\PYGZca{}age}\PYG{p}{)}\PYG{o}{+}\PYG{n+nf}{I}\PYG{p}{(}\PYG{l+m}{0.7}\PYG{n}{\PYGZca{}week\PYGZus{}duration}\PYG{p}{),}
+  \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{)}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{model3}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Adjusted R\PYGZhy{}squared:  0.2798}
+\end{Verbatim}

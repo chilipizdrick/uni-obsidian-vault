@@ -1,0 +1,1255 @@
+\justifying
+
+\phantomsection
+\section{Задача 1}
+
+Необходимо загрузить данные из указанного набора и произвести следующие действия.
+
+Набор данных: Swiss.
+
+Объясняемая переменная: \textit{Agriculture}.
+
+Регрессоры: \textit{Education}, \textit{Examination}.
+
+\begin{enumerate}
+    \item[1.] Оценить среднее значение, дисперсию и СКО переменных \textit{Agriculture}, \textit{Education} и \textit{Examination}.
+\end{enumerate}
+
+Для нахождения среднего значения, дисперсии и среднего квадратического отклонения указанных переменных воспользуемся встроенными в язык R командами (\hyperref[code:1]{Код 1}).
+
+\begin{code}
+\begin{minted}{R}
+mean(swiss$Agriculture) # Ср. арифм. Agriculture = 50.65957
+var(swiss$Agriculture) # Дисперсия Agriculture = 515.7994
+sd(swiss$Agriculture) # СКО Agriculture = 22.71122
+
+mean(swiss$Education) # Ср. арифм. Education = 10.97872
+var(swiss$Education) # Дисперсия Education = 92.45606
+sd(swiss$Education) # СКО Education = 9.615407
+
+mean(swiss$Examination) # Ср. арифм. Examination = 16.48936
+var(swiss$Examination) # Дисперсия Examination = 63.64662
+sd(swiss$Examination) # СКО Examination = 7.977883
+\end{minted}
+\captionof{listing}{Вычисление среднего арифметического, дисперсии и СКО переменных.}
+\label{code:1}
+\end{code}
+
+\begin{enumerate}
+    \item[2.] Построить зависимости вида $y = a + bx$, где $y$ --- объясняемая переменная, $x$ --- регрессор (для каждого варианта по две зависимости).
+\end{enumerate}
+
+При построении моделей воспользуемся функцией \textit{lm} пакета \textit{lmtest} для облегчения задачи. Построим модели $\textit{Agriculture} = a + b(\textit{Education})$ (\hyperref[code:2]{Код 2}) и $\textit{Agriculture} = a + b(\textit{Examination})$ (\hyperref[code:3]{Код 3}).
+
+\begin{code}
+\begin{minted}{R}
+> library("lmtest")
+> summary(lm(formula=Agriculture~Education, data=swiss))
+
+...
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  67.2432     3.9321   17.10  < 2e-16 ***
+Education    -1.5105     0.2707   -5.58  1.3e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 17.65 on 45 degrees of freedom
+Multiple R-squared:  0.409,    Adjusted R-squared:  0.3959 
+F-statistic: 31.14 on 1 and 45 DF,  p-value: 1.305e-06
+\end{minted}
+\captionof{listing}{Построение зависимости $\textit{Agriculture} = a + b(\textit{Education})$.}
+\label{code:2}
+\end{code}
+
+\begin{code}
+\begin{minted}{R}
+> library("lmtest")
+> summary(lm(formula=Agriculture~Examination, data=swiss))
+
+...
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  82.8869     5.6407  14.694  < 2e-16 ***
+Examination  -1.9544     0.3086  -6.334 9.95e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.7 on 45 degrees of freedom
+Multiple R-squared:  0.4713,    Adjusted R-squared:  0.4596 
+F-statistic: 40.12 on 1 and 45 DF,  p-value: 9.952e-08
+\end{minted}
+\captionof{listing}{Построение зависимости $\textit{Agriculture} = a + b(\textit{Examination})$.}
+\label{code:3}
+\end{code}
+
+\begin{enumerate}
+    \item[3.] Оценить, насколько \textquote{хороши} полученные модели по коэффициенту детерминации $R^2$.
+\end{enumerate}
+
+Как видно из вывода консоли вызова функции \textit{summary} (\hyperref[code:2]{Код 2}, \hyperref[code:3]{Код 3}), $R^2$ первой модели равняется 0.409, $R^2$ второй модели --- 0.4713. Это означает, что обе модели получились приемлемыми в отношении точности для парной регрессии, однако достаточно \textquote{неточными} в общем случае, поэтому их нужно значительно улучшать, добавляя дополнительные регрессоры и вводя их функции.
+
+\begin{enumerate}
+    \item[4.] Оценить, есть ли взаимосвязь между объясняемой переменной и объясняющей переменной в полученных моделях.
+\end{enumerate}
+
+В первой построенной модели (\hyperref[code:2]{Код 2}) показатель $\textit{p-value} = 1.3 \cdot 10^{-6}$, а также регрессор получил оценку в \textquote{***}. Это говорит о сильной значимости регрессора \textit{Education} при прогнозе объясняемой переменной \textit{Agriculture}. Так как коэффициент $k = -1.5105$, связь между регрессором и объясняемой переменной --- отрицательная.
+
+Аналогично, во второй построенной модели (\hyperref[code:3]{Код 3}) показатель $\textit{p-value} = 9.95 \cdot 10^{-8}$, а также регрессор получил оценку в \textquote{***}. Это говорит о сильной значимости регрессора \textit{Examination} при описании переменной \textit{Agriculture}. Так как коэффициент $k = -1.9544$, связь между регрессором и объясняемой переменной --- отрицательная.
+
+Вывод. На основе предложенного набора данных можно построить линейные регрессии, которые будут давать приблизительные прогнозы объясняемой переменной \textit{Agriculture} по значениям регрессоров \textit{Education} и \textit{Examination}. Перечисленные переменные значимы при описании показателя \textit{Agriculture} и отрицательно коррелируют с ним, что говорит об отрицательной взаимосвязи показателя доли населения, занимающегося сельским хозяйством, и показателей успеваемости и экзаменационных оценок сельского населения Швейцарии на момент 1888 года.
+
+
+\newpage
+\phantomsection
+\section{Задача 2}
+
+Необходимо загрузить данные из указанного набора и произвести следующие действия.
+
+Набор данных: Swiss.
+
+Объясняемая переменная: \textit{Education}.
+
+Регрессоры: \textit{Fertility}, \textit{Agriculture}, \textit{Infant.Mortality}.
+
+\phantomsection
+\subsection{Задача 2.1}
+
+\begin{enumerate}
+    \item[1.] Проверить, что в наборе данных нет линейной зависимости (построить зависимости между переменными, указанными в варианте, и проверить, что $R^2$ в каждой из них невысокий). В случае, если $R^2$ большой, один из таких столбцов можно исключить из рассмотрения.
+\end{enumerate}
+
+Чтобы проверить, присутствует ли линейная зависимость между регрессорами, постоим парные модели, что представлено в \hyperref[code:4]{коде 4}.
+
+\begin{code}
+\begin{minted}{R}
+lm(Fertility~Agriculture, data) # R^2 = 0.12
+lm(Fertility~Infant.Mortality, data) # R^2 = 0.17
+lm(Agriculture~Infant.Mortality, data) # R^2 = 0.003
+\end{minted}
+\captionof{listing}{Построение парных зависимостей между регрессорами.}
+\label{code:4}
+\end{code}
+
+Как видно из коэффициентов корреляции $R^2$ (\hyperref[code:4]{Код 4}), все используемые регрессоры имеют незначительную линейную зависимость друг от друга, поэтому стоит использовать каждый из них при построении модели.
+
+\begin{enumerate}
+    \item[2.] Построить линейную модель зависимой переменной от указанных в варианте регрессоров по методу наименьших квадратов (команда \textit{lm} пакета \textit{lmtest} в языке R). Оценить, насколько хороша модель, согласно 1) $R^2$, 2) p-значениям каждого коэффициента.
+\end{enumerate}
+
+\begin{code}
+\begin{minted}{R}
+> summary(lm(Education ~ Fertility + Agriculture + Infant.Mortality, data))
+
+...
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      43.34806    6.81384   6.362 1.09e-07 ***
+Fertility        -0.42527    0.08564  -4.966 1.13e-05 ***
+Agriculture      -0.18549    0.04290  -4.323 8.95e-05 ***
+Infant.Mortality  0.34385    0.34428   0.999    0.324    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.995 on 43 degrees of freedom
+Multiple R-squared:  0.6366,    Adjusted R-squared:  0.6112 
+F-statistic: 25.11 on 3 and 43 DF,  p-value: 1.522e-09
+\end{minted}
+\captionof{listing}{Построение зависимости $\textit{Education} \sim \textit{Fertility} + \textit{Agriculture} + \textit{Infant.Mortality}$.}
+\label{code:5}
+\end{code}
+
+Полученная \textquote{сырая} модель (\hyperref[code:5]{Код 5}) имеет $R^2 = 0.64$, что говорит о том, что зависимость между регрессорами и объясняемой переменной определенно прослеживается, но она не очень сильна. В то же время регрессоры \textit{Fertility} и \textit{Agriculture} имеют оценку в \textquote{***}, что говорит о сильной статистической связанности этих регрессоров и объясняемой переменной. Регрессор \textit{Infant.Mortality} же имеет оценку в ноль \textquote{*}, поэтому им можно пренебречь.
+
+\begin{code}
+\begin{minted}{R}
+> summary(lm(Education ~ Fertility + Agriculture, data))
+
+...
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 47.92166    5.04541   9.498 3.19e-12 ***
+Fertility   -0.38515    0.07563  -5.092 7.10e-06 ***
+Agriculture -0.19596    0.04160  -4.711 2.49e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.995 on 44 degrees of freedom
+Multiple R-squared:  0.6281,    Adjusted R-squared:  0.6112 
+F-statistic: 37.16 on 2 and 44 DF,  p-value: 3.534e-10
+\end{minted}
+\captionof{listing}{Построение зависимости $\textit{Education} \sim \textit{Fertility} + \textit{Agriculture}$.}
+\label{code:6}
+\end{code}
+
+В сравнении с предыдущей моделью (\hyperref[code:5]{Код 5}) мы потеряли $1\%$ в $R^2$, поэтому отбросим регрессор \textit{Infant.Mortality} (\hyperref[code:6]{Код 6}).
+
+\begin{enumerate}
+    \item[3.] Ввести в модель логарифмы регрессоров (если возможно). Сравнить модели и выбрать наилучшую.
+\end{enumerate}
+
+В \hyperref[code:7]{коде 7} представлено построение модели со всевозможными комбинациями логарифмов регрессоров.
+
+\begin{code}
+\begin{minted}{R}
+lm(Education ~ Fertility + Agriculture, data) # R^2 = 0.6281
+lm(Education ~ log(Fertility) + Agriculture, data) # R^2 = 0.6875
+lm(Education ~ Fertility + log(Agriculture), data) # R^2 = 0.6994
+lm(Education ~ log(Fertility) + log(Agriculture), data) # R^2 = 0.7301
+\end{minted}
+\captionof{listing}{Введение логарифмов регрессоров в модель.}
+\label{code:7}
+\end{code}
+
+Как видно из построенных моделей (\hyperref[code:7]{Код 7}), наилучшей оказалась та, в которой логарифмированы оба регрессора: \textit{Fertility} и \textit{Agriculture}. 
+
+\begin{enumerate}
+    \item[4.] Ввести в модель всевозможные произведения пар регрессоров, в том числе квадраты регрессоров. Найти одну или несколько наилучших моделей по доле объяснённого разброса в данных $R^2$.
+\end{enumerate}
+
+В \hyperref[code:8]{коде 8} представлено построение моделей с введенными в них произведениями и квадратами регрессоров.
+
+\begin{code}
+\begin{minted}{R}
+lm(Education ~ log(Fertility) + log(Agriculture), data) # R^2 = 0.7301
+lm(Education ~ I(log(Fertility)*log(Agriculture)), data) # R^2 = 0.6405
+lm(Education ~ I(log(Fertility)^2) + log(Agriculture), data) # R^2 = 0.7227
+lm(Education ~ log(Fertility) + I(log(Agriculture)^2), data) # R^2 = 0.7098
+lm(Education ~ I(log(Fertility)^2) + I(log(Agriculture)^2),
+  data) # R^2 = 0.6983
+\end{minted}
+\captionof{listing}{Введение произведений и квадратов регрессоров в модель.}
+\label{code:8}
+\end{code}
+
+Анализируя полученные результаты (\hyperref[code:8]{Код 8}), видим, что изначальная модель с двумя логарифмами регрессоров остается лучшей при оценке по $R^2$, однако также достаточно \textquote{хорошей} вышла модель $Education \sim I(\log(Fertility)^2) + \log(Agriculture)$.
+
+\begin{enumerate}
+    \item[5.] Выбрать одну из лучших моделей. Перечислить все регрессоры $x$ в ней и построить парные регрессии $y = a + bx$. Если переменная $x$ значима, сделать вывод о наличии взаимосвязи между объясняемой переменной $y$ и рассматриваемой объясняющей переменной $x$: отрицательной (если коэффициент $b<0$) или положительной (если коэффициент $b>0$).
+\end{enumerate}
+
+Выберем модель $Education \sim \log(\textit{Fertility}) + \log(\textit{Agriculture})$. Построим парные регрессии между объясняемой переменной и регрессором для каждого регрессора выбранной модели (\hyperref[code:9]{Код 9}, \hyperref[code:10]{Код 10}).
+
+\begin{code}
+\begin{minted}{R}
+> summary(lm(Education ~ log(Fertility), data))
+
+...
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     162.819     21.118   7.710 9.14e-10 ***
+log(Fertility)  -35.870      4.984  -7.198 5.20e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.628 on 45 degrees of freedom
+Multiple R-squared:  0.5351,    Adjusted R-squared:  0.5248 
+F-statistic:  51.8 on 1 and 45 DF,  p-value: 5.195e-09
+\end{minted}
+\captionof{listing}{Построение парной регрессии $Education \sim \log(\textit{Fertility})$.}
+\label{code:9}
+\end{code}
+
+Согласно построенной модели (\hyperref[code:9]{Код 9}), регрессор $\log(\textit{Fertility})$ сильно значим при описании поведения переменной \textit{Education} ($p = 5.2\cdot 10^{-9}$), взаимосвязь между ним и объясняемой переменной --- строго отрицательная ($k = -35.87$).
+
+\begin{code}
+\begin{minted}{R}
+> summary(lm(Education ~ log(Agriculture), data))
+
+...
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        46.461      4.686   9.915 6.78e-13 ***
+log(Agriculture)   -9.472      1.226  -7.726 8.66e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.374 on 45 degrees of freedom
+Multiple R-squared:  0.5702,    Adjusted R-squared:  0.5606 
+F-statistic: 59.69 on 1 and 45 DF,  p-value: 8.664e-10
+\end{minted}
+\captionof{listing}{Построение парной регрессии $Education \sim \log(Agriculture)$.}
+\label{code:10}
+\end{code}
+
+Аналогично выводу, сделанному по предыдущей модели (\hyperref[code:9]{Код 9}), регрессор $\log(\textit{Agriculture})$ сильно значим при описании поведения переменной \textit{Education} ($p = 8.66\cdot 10^{-10}$), взаимосвязь между ним и объясняемой переменной --- отрицательная ($k = -9.472$) (\hyperref[code:10]{Код 10}).
+
+Вывод. Объясняемая переменная \textit{Education} может быть описана поведением регрессоров \textit{Fertility} и \textit{Agriculture} в силу их значимости, в то время как регрессор \textit{Infant.Mortality} - не значим при описании переменной \textit{Education}. При этом наибольшая корреляция прослеживается при описании переменной \textit{Education} через логарифмы соответствующих переменных: $\log(\textit{Fertility})$ и $\log(\textit{Agriculture})$. Связь между упомянутыми регрессорами и объясняемой переменной - строго отрицательная, что говорит об отрицательной зависимости показателя успеваемости сельского населения и показателей рождаемости и доли населения занимающегося сельским хозяйством в провинциальных районах Швейцарии на момент 1888 года.
+
+
+\phantomsection
+\subsection{Задача 2.2}
+
+\begin{enumerate}
+    \item[1.] Для лучшей зависимости, построенной при решении практического задания 2.1, оценить доверительные интервалы для всех коэффициентов в модели, $p = 95\%$.
+\end{enumerate}
+
+Для начала найдем значение t-критерия Стьюдента для построения доверительных интервалов коэффициентов регрессоров полученной в первой части задачи лучшей  модели (\hyperref[code:11]{Код 11}).
+
+\begin{code}
+\begin{minted}{R}
+# t-критерий для p = 95%, 42 степеней свободы
+t_crit = qt(0.975, df=44) # t_crit = 2.015
+\end{minted}
+\captionof{listing}{Нахождение t-критерия Стьюдента для лучшей модели полученной в задаче 2.1.}
+\label{code:11}
+\end{code}
+
+Далее построим доверительные интервалы вида ${(k - \textit{t-crit} \cdot \textit{Std. err.}; k + \textit{t-crit} \cdot \textit{Std. err.})}$, что представлено в \hyperref[code:12]{коде 12}.
+
+\begin{code}
+\begin{minted}{R}
+# log(Fertility)
+c(-22.874 - t_crit*4.479, -22.874 + t_crit*4.479) # (-31.90083, -13.84717)
+# log(Agriculture)
+c(-6.461 - t_crit*1.146, -6.461 + t_crit*1.146) # (-8.770611, -4.151389)
+\end{minted}
+\captionof{listing}{Нахождение доверительных интервалов коэффициентов регрессоров.}
+\label{code:12}
+\end{code}
+
+\begin{enumerate}
+    \item[2.] Сделать вывод об отвержении или невозможности отвергнуть статистическую гипотезу о том, что коэффициент равен 0.
+\end{enumerate}
+
+Анализируя полученные интервалы (\hyperref[code:12]{Код 12}), можно заключить, что ни в один из построенных интервалов не попадает 0, что свидетельствует об опровержении гипотезы о равенстве коэффициента нулю.
+
+\begin{enumerate}
+    \item[3.] Доверительный интервал для одного прогноза ($p = 95\%$, набор значений регрессоров выбрать самим).
+\end{enumerate}
+
+Построим прогноз для следующего набора регрессоров: $\textit{Fertility} = 80$, $\textit{Agriculture} = 25$ (\hyperref[code:13]{Код 13}).
+
+\begin{code}
+\begin{minted}{R}
+> best_model = lm(Education ~ log(Fertility) + log(Agriculture), data)
+> new.data = data.frame(Fertility = 80, Agriculture = 25)
+> predict(best_model, new.data, interval="confidence")
+       fit      lwr      upr
+1 10.97556 8.287011 13.66411
+\end{minted}
+\captionof{listing}{Построение прогноза для лучшей модели из задачи 2.1.}
+\label{code:13}
+\end{code}
+
+Согласно построенному прогнозу (\hyperref[code:13]{Код 13}), с вероятностью 95\% значение объясняемой переменной \textit{Education} будет лежать в интервале $(8.287; 13.664)$, наиболее вероятное значение объясняемой переменной при выбранных значениях регрессоров --- 10.976.
+
+\begin{enumerate}
+    \item[4.] Для каждого регрессора $x$ (или функции его первой степени), участвующего в модели, построить парную регрессию $y = a + bx$, здесь $y$ – объясняемая переменная. Для каждой парной зависимости оценить доверительный интервал коэффициента $b$. Указать выявленную связь между объясняемой переменной и регрессором: положительная (доверительный интервал не содержит 0, наиболее вероятное значение коэффициента положительное) / отрицательная (доверительный интервал не содержит 0, наиболее вероятное значение коэффициента отрицательное) / отсутствует (не опровергается гипотеза о том, что коэффициент равен 0).
+\end{enumerate}
+
+Построим парные регрессии между индивидуальными регрессорами и объясняемой переменной, найдем t-критерии для каждой из них и построим довереительные интервалы коэффициентов при индивидуальных регрессорах (\hyperref[code:14]{Код 14}, \hyperref[code:15]{Код 15}).
+
+\begin{code}
+\begin{minted}{R}
+# 45 DF, k = -35.87, Std. err. = 4.984
+summary(lm(Education~log(Fertility), data))
+# t_criterion = 2.014 (p = 95%, 45 степеней свободы)
+t_crit = qt(0.975, df=45)
+# (-45.90829, -25.83171)
+c(-35.87 - t_crit*4.984, -35.87 + t_crit*4.984)
+\end{minted}
+\captionof{listing}{Нахождение доверительного интервала для коэффициента при регрессоре $\log(\textit{Fertility})$ в модели $\textit{Education} \sim \log(\textit{Fertility})$.}
+\label{code:14}
+\end{code}
+
+Полученный доверительный интервал (\hyperref[code:14]{Код 14}) --- полностью отрицательный (не содержит 0), а следовательно выявленная связь между объясняемой переменной \textit{Education} и регрессором $\log(\textit{Fertility})$ --- отрицательная.
+
+\begin{code}
+\begin{minted}{R}
+# 45 DF, k = -9.472, Std. err. = 1.226
+summary(lm(Education~log(Agriculture), data))
+# t_criterion = 2.014 (p = 95%, 45 степеней свободы)
+t_crit = qt(0.975, df=45)
+(-11.941291, -7.002709)
+c(-9.472 - t_crit*1.226, -9.472 + t_crit*1.226)
+\end{minted}
+\captionof{listing}{Нахождение доверительного интервала для коэффициента при регрессоре $\log(\textit{Agriculture})$ в модели $\textit{Education} \sim \log(\textit{Agriculture})$.}
+\label{code:15}
+\end{code}
+
+Аналогично предыдущему результату, полученный доверительный интервал (\hyperref[code:15]{Код 15}) --- полностью отрицательный (не содержит 0), а следовательно выявленная связь между объясняемой переменной \textit{Education} и регрессором $\log(\textit{Agriculture})$ --- отрицательная.
+
+Вывод. Продолжая вывод задачи 2.1, была опровергнута гипотеза о равенстве нулю коэффициентов при регрессорах $\log(\textit{Fertility})$ и $\log(\textit{Agriculture})$, что подтвердило значимость и строго отрицательную взаимосвязь упомянутых регрессоров и объясняемой переменной \textit{Education}. Аналогичным образом была опровергнута гипотеза о равенстве коэффициента нулю в парных регрессиях между объясняемой переменной и упомянутыми регрессорами.
+
+
+\newpage
+\phantomsection
+\section{Задача 3}
+
+Необходимо проанализировать данные волны мониторинга экономического положения и здоровья населения РФ (данные обследования РМЭЗ НИУ ВШЭ).
+
+Набор данных: 20 волна выборки РМЭЗ НИУ ВШЭ.
+
+Подмножества респондентов: не женатые мужчины, с высшим образованием; городские
+жители, состоящие в браке.
+
+Перед началом выполнения поставленных задач прочитаем и обработаем необходимые для построения моделей данные из датасета (\hyperref[appendix:3]{Приложение 3}).
+
+\begin{enumerate}
+    \item[1.] Построить линейную регрессию зарплаты на все параметры, выделенные из данных мониторинга. Оценить коэффициент вздутия дисперсии VIF.
+\end{enumerate}
+
+Так как при разбиении переменной \textit{p-marst} на бинарные переменные \textit{wed1}, \textit{wed2} и \textit{wed3} одна из них становится на прямую линейно зависимой от двух других, исключим самую малоинформативную из них --- \textit{wed3}. Осуществив  данный шаг, можно приступить к построению модели и оценке коэффициента вздутия дисперсии, что представлено в \hyperref[code:16]{коде 16}.
+
+\begin{code}
+\begin{minted}{R}
+> model1 = lm(salary~sex+wed1+wed2+city_status+higher_educ+
+    salary_satisfaction+is_entrepreneur+if_subordinates+age+
+    week_duration+last_vacation, data=clean_data)
+> summary(model1) # Adjusted R-squared:  0.2751
+> vif(model1)
+sex     wed1    wed2    city_status    higher_educ    salary_satisfaction 
+1.14    1.56    1.68    1.02           1.12           1.03 
+is_entrepreneur    if_subordinates    age     week_duration    last_vacation 
+1.03               1.09               1.18    1.07             1.02 
+\end{minted}
+\captionof{listing}{Вычисление коэффициента вздутия дисперсии VIF для модели построенной от всех регрессоров.}
+\label{code:16}
+\end{code}
+
+Все полученные при вызове команды \textit{vif} коэффициенты, достаточно близки к единице, что говорит об отсутствии мультиколлинеарности между выбранными регрессорами (\hyperref[code:16]{Код 16}). 
+
+\begin{enumerate}
+    \item[2.] Поэкспериментировать с функциями вещественных параметров: использовать логарифмы, степени, произведения вещественных регрессоров.
+\end{enumerate}
+
+Для упрощения задачи перебора оснований логарифма и показательной функции напишем функции, автоматически осуществляющие подбор оптимальных параметров (\hyperref[code:17]{Код 17}, \hyperref[code:18]{Код 18}).
+
+\begin{code}
+\begin{minted}{R}
+best_log_base <- function(var, regressor) {
+  best_base <- 0.1
+  best_r_squared <- 0.0
+  for (base in seq(from=0.1, to=5.0, by=0.1)) {
+    if (base != 1.0) {
+      predictor <- log(regressor, base)
+      model = lm(var ~ predictor)
+      r_squared <- summary(model)$r.squared
+      if (r_squared > best_r_squared) {
+        best_r_squared <- r_squared
+        best_base <- base
+      }
+    }
+  }
+  best_base
+}
+\end{minted}
+\captionof{listing}{Функция для вычисления  оптимального основания логарифма регрессора в парной регрессии.}
+\label{code:17}
+\end{code}
+
+\begin{code}
+\begin{minted}{R}
+best_exp_base <- function(var, regressor) {
+  best_base <- 0.1
+  best_r_squared <- 0.0
+  for (base in seq(from=0.1, to=3.0, by=0.1)) {
+    predictor <- base^regressor
+    model = lm(var ~ predictor)
+    r_squared <- summary(model)$r.squared
+    if (r_squared > best_r_squared) {
+      best_r_squared <- r_squared
+      best_base <- base
+    }
+  }
+  best_base
+}
+\end{minted}
+\captionof{listing}{Функция для вычисления  оптимального основания показательной функции от регрессора в парной регрессии.}
+\label{code:18}
+\end{code}
+
+Теперь используем созданные функции для подбора оптимальных оснований логарифма и показательной функции (\hyperref[code:17]{Код 17}, \hyperref[code:18]{Код 18}) для переменных \textit{age} и \textit{week\_duration}, что представлено в \hyperref[code:19]{коде 19}.
+
+\begin{code}
+\begin{minted}{R}
+> best_log_base(clean_data$salary, clean_data$age)
+2.4
+> best_log_base(clean_data$salary, clean_data$week_duration)
+3.5
+> best_exp_base(clean_data$salary, clean_data$age)
+1.6
+> best_exp_base(clean_data$salary, clean_data$week_duration)
+0.8
+\end{minted}
+\captionof{listing}{Вычисление оснований логарифма и показательной функции для переменных \textit{age} и \textit{week\_duration}.}
+\label{code:19}
+\end{code}
+
+Наилучшие значения оснований логарифма и показательной функции для переменных \textit{age} и \textit{week\_duration} (\hyperref[code:20]{Код 19}) представлены в \hyperref[table:1]{таблице 1}.
+
+\begin{table}[H]
+    \caption{Оптимальные значения оснований логарифма и показательной функции для переменных \textit{age} и \textit{week\_duration}.}
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline & $\log_a x$ & $a^x$ \\
+        \hline \textit{age} & 2.4 & 1.6 \\
+        \hline \textit{week\_duration} & 3.5 & 0.8 \\
+        \hline
+    \end{tabular}
+    \label{table:1}
+\end{table}
+
+Используем полученные значения оснований при построении улучшенной модели, а также исключим регрессоры \textit{wed2} и \textit{last\_vacation}, так как они не значимы по p-метрике (\hyperref[code:20]{Код 20}).
+
+\begin{code}
+\begin{minted}{R}
+model3 = lm(salary~sex+wed1+city_status+higher_educ+salary_satisfaction+
+  is_entrepreneur+if_subordinates+I(2.3^age)+I(0.7^week_duration), 
+  data=clean_data)
+summary(model3) # Adjusted R-squared:  0.2798
+\end{minted}
+\captionof{listing}{Построение улучшенной модели с использованием логарифмов и показательных функций от регрессоров.}
+\label{code:20}
+\end{code}
+
+Из \hyperref[code:20]{кода 20} видно, что $R^{2}$ незначительно возрос --- приблизительно на 0.5\% по сравнению с первой построенной моделью (\hyperref[code:16]{Код 16}). Также регрессор \textit{wed1} полностью потерял значимость, поэтому исключим его в последующих моделях.
+
+Теперь введем квадраты и произведения регрессоров в модель (\hyperref[code:21]{Код 21}).
+
+\begin{code}
+\begin{minted}{R}
+summary(lm(salary~sex+city_status+higher_educ+salary_satisfaction+
+  is_entrepreneur+if_subordinates+I(2.3^age*0.7^week_duration),
+  data=clean_data)) # Adjusted R-squared:  0.2718
+summary(lm(salary~sex+city_status+higher_educ+salary_satisfaction+
+  is_entrepreneur+if_subordinates+I((2.3^age)^2)+I(0.7^week_duration),
+  data=clean_data)) # Adjusted R-squared:  0.2734
+summary(lm(salary~sex+city_status+higher_educ+salary_satisfaction+
+  is_entrepreneur+if_subordinates+I(2.3^age)+I((0.7^week_duration)^2),
+  data=clean_data)) # Adjusted R-squared:  0.277
+\end{minted}
+\captionof{listing}{Построение моделей с введенными в них квадратами и произведениями вещественных регрессоров.}
+\label{code:21}
+\end{code}
+
+Согласно полученным в результате выполнения \hyperref[code:21]{кода 21} значениям $R^{2}_{\text{adj.}}$, ни одна из построенных моделей не оказалась лучше оригинальной при сравнении по коэффициенту корреляции $R^2$.
+
+\begin{enumerate}
+    \item[3.] Выделить наилучшие модели из построенных: по значимости параметров, включённых в зависимости, и по объяснённому с помощью построенных зависимостей разбросу adjusted $R^2$ - $R^2_{\text{adj}}$.
+\end{enumerate}
+
+Наилучшей по значимости включенных параметров и по объясненному разбросу $R^{2}_{\text{adj.}}$ оказалась вторая построенная модель --- с введенными в нее логарифмами и показательными функциями регрессоров (\hyperref[code:20]{Код 20}). Также неплохими вышли модели с произведениями и квадратами регрессоров (\hyperref[code:21]{Код 21}).
+
+\begin{enumerate}
+    \item[4.] Для каждого регрессора x (в первой степени, не его функции), участвующего в лучшей модели, построить парную регрессию $y = a + bx$. Указать значимость переменной $x$, построить доверительный интервал для её коэффициента, указать наличие положительной / отрицательной взаимосвязи между ней и объясняемой переменной. Сделать вывод о том, какие индивиды получают наибольшую зарплату.
+\end{enumerate}
+
+Для упрощения задачи построения доверительного интервала для регрессора в каждой из данных  моделей напишем функцию, автоматизирующую данный процесс (\hyperref[code:22]{Код 22}).
+
+\begin{code}
+\begin{minted}{R}
+interval <- function(model){
+  df <- df.residual(model)
+  t_crit <- qt(0.975, df)
+  out = summary(model)
+  std_err <- out$coefficients[2, 2]
+  koef <- out$coefficients[2, 1]
+  c(koef - std_err*t_crit, koef + std_err*t_crit)
+}
+\end{minted}
+\captionof{listing}{Функция построения доверительного интервала при коэффициенте регрессора в парной модели.}
+\label{code:22}
+\end{code}
+
+Теперь, пользуясь функцией из \hyperref[code:22]{кода 22}, построим доверительные интервалы для коэффициентов в парных регрессиях всех чистых переменных, что представлено в \hyperref[code:23]{коде 23}.
+
+\begin{code}
+\begin{minted}{R}
+interval(lm(salary~sex, data=clean_data)) # (0.446; 0.567)
+interval(lm(salary~city_status, data=clean_data)) # (0.334; 0.469)
+interval(lm(salary~higher_educ, data=clean_data)) # (0.481; 0.605)
+interval(lm(salary~salary_satisfaction, data=clean_data)) # (0.528; 0.653)
+interval(lm(salary~is_entrepreneur, data=clean_data)) # (0.443; 0.781)
+interval(lm(salary~if_subordinates, data=clean_data)) # (0.566; 0.706)
+interval(lm(salary~age, data=clean_data)) # (-0.173; -0.113)
+interval(lm(salary~week_duration, data=clean_data)) # (0.110; 0.171)
+\end{minted}
+\captionof{listing}{Построенные доверительные интервалы коэффициентов в парных регрессиях.}
+\label{code:23}
+\end{code}
+
+Согласно выводу \hyperref[code:23]{кода 23}, ни в один из построенных доверительных интервалов не попал 0, что опровергает гипотезу о нахождении нуля в доверительном интервале и говорит о том, что целевая переменная \textit{salary} имеет связь с каждой из объясняющих ее переменных.
+Также каждый из полученных доверительных интервалов за исключением интервала коэффициента при переменной \textit{age} оказался полностью положительным, что приводит нас к следующему выводу: наибольшую зарплату получают молодые мужчины, проживающие в городе, с высшим образованием, удовлетворенные своей заработной платой, предприниматели, имеющие подчиненных, а также имеющие длинную рабочую неделю.
+
+\begin{enumerate}
+    \item[5.] Проверить лучшую модель на указанных подмножествах респондентов. Построить доверительные интервалы для оставшихся в модели коэффициентов и указать, попадает ли 0 в них.
+\end{enumerate}
+
+Для отбора соответствующих подмножеств респондентов воспользуемся \hyperref[code:24]{кодом 24}.
+
+\begin{code}
+\begin{minted}{R}
+# Подмножество не женатых мужчин с высшим образованием
+subset1 = subset(clean_data, sex == 1)
+subset1 = subset(subset1, wed1 == 0)
+subset1 = subset(subset1, higher_educ == 1)
+
+# Подмножество городских жителей, состоящих в браке
+subset2 = subset(clean_data, city_status == 1)
+subset2 = subset(subset2, wed1 == 1)
+\end{minted}
+\captionof{listing}{Отбор подмножеств респондентов из датасета.}
+\label{code:24}
+\end{code}
+
+Теперь, используя полученные в \hyperref[code:24]{коде 24} подмножества респондентов, построим линейную регрессию с лучшим отобранным набором регрессоров для каждого из них (\hyperref[code:25]{Код 25}).
+
+\begin{code}
+\begin{minted}{R}
+summary(lm(salary~city_status+salary_satisfaction+is_entrepreneur+
+  if_subordinates+I(2.3^age)+I(0.7^week_duration),
+  data=subset1)) # Adjusted R-squared:  0.07123
+
+summary(lm(salary~sex+higher_educ+salary_satisfaction+is_entrepreneur+
+  if_subordinates+I(2.3^age)+I(0.7^week_duration),
+  data=subset2)) # Adjusted R-squared:  0.2708
+\end{minted}
+\captionof{listing}{Построение моделей на отобранных подмножествах респондентов.}
+\label{code:25}
+\end{code}
+
+Анализируя полученные показатели $R^{2}_{\text{adj.}}$ построенных в \hyperref[code:25]{коде 25} моделей, можно заключить, что отобранная в пункте 3 задачи модель дает крайне неточные прогнозы на первом отобранном подмножестве респондентов (женатые мужчины с высшим образованием) что выражается в падении показателя $R^{2}_{\text{adj.}}$ на $\approx 21\%$ (c 27.98\% до 7.123\%), в то время как на втором отобранном подмножестве респондентов (городские жители состоящие в браке) модель дает достаточно точные прогнозы с падением показателя $R^{2}_{\text{adj.}}$ на $\approx 1\%$ (с 27.98\% до 27.08
+\%).
+
+В заключение, проверим доверительные интервалы оставшихся регрессоров --- функции переменных \textit{age} и \textit{week\_duration} (\hyperref[code:26]{Код 26}).
+
+\begin{code}
+\begin{minted}{R}
+interval(lm(salary~I(2.3^age), data=clean_data)) # (-0.026; -0.017)
+interval(lm(salary~I(0.7^week_duration), data=clean_data)) # (-1.883; -1.252)
+\end{minted}
+\captionof{listing}{Построение доверительных интервалов для оставшихся участвующих в модели регрессоров.}
+\label{code:26}
+\end{code}
+
+Ни в один из построенных в \hyperref[code:26]{коде 26} интервалов не попал 0, что говорит о присутствии связи между регрессорами $2.3^{\textit{age}}$ и $0.7^{\textit{week\_duration}}$ и объясняемой переменной \textit{salary}. 
+
+Вывод. Из предоставленного датасета были успешно отобраны и обработаны необходимые для предсказания заработной платы с приемлемой точностью данные. Наилучшая из построенных моделей была оценена по метрике $R^{2}_{\text{adj.}}$ в 0.2798. Доверительные интервалы коэффициентов при регрессорах, содержащихся в лучшей модели, при построении парных регрессий между ними и объясняемой переменной не содержали в себе 0, что гарантировало их связь с объясняемой переменной. По результату исследования было выявлено, что наибольшую заработную плату получают молодые мужчины, проживающие в городе, с высшим образованием, удовлетворенные своей заработной платой, предприниматели, имеющие подчиненных, а также имеющие длинную рабочую неделю. Полученная модель дает неточные прогнозы на подмножестве женатых мужчин с высшим образованием и точные прогнозы на подмножестве городских жителей, состоящих в браке.
+
+
+\newpage
+\phantomsection
+\section{Задача 4}
+
+Необходимо загрузить данные из указанного набора и произвести следующие действия.
+
+Набор данных: \href{https://www.kaggle.com/gregorut/videogamesales}{Video game sales}
+
+Тип классификатора: DecisionTreeClassifier (решающее дерево)
+
+Классификация по столбцу (целевой признак): Platform (DS – класс 0, остальные
+уровни – класс 1)
+
+\begin{enumerate}
+    \item[1.] Обработать указанный набор данных, подготовив его к решению задачи классификации. Выделить целевой признак и удалить его из данных, на основе которых будет обучаться классификатор. Разделить набор данных на тестовую и обучающую выборку. Построить классификатор указанного типа для задачи классификации по указанному параметру. Оценить точность построенного классификатора с помощью метрик \textit{precision}, \textit{recall} и \textit{F1} на тестовой выборке.
+\end{enumerate}
+
+Чтобы приступить к построению решающего дерева, прочитаем датасет из файла, отбросим отсутствующие значения (NA), отделим целевой признак в отдельный массив и удалим его из оригинального датасета, а также разделим датасет на тренировочную и тестовую выборки при помощи функции \textit{train\_test\_split} пакета \textit{sklearn} с параметром \textit{test\_size} = 0.25 (\hyperref[code:27]{Код 27}).
+
+\begin{code}
+\begin{minted}{python}
+data = pd.read_csv('./vgsales.csv')
+data['Platform'] = np.where(data['Platform'] == 'DS', 0, 1)
+data = data.dropna()
+
+platform = data.loc[:, data.columns.isin(['Platform'])]
+features = ['Rank', 'Year', 'NA_Sales', 'EU_Sales',
+            'JP_Sales', 'Other_Sales', 'Global_Sales']
+x = data.loc[:, data.columns.isin(features)]
+
+x_tr, x_val, y_tr, y_val = train_test_split(x, platform,
+                                            test_size=0.25, random_state=8)
+\end{minted}
+\captionof{listing}{Чтение, обработка и разделение датасета на тренировочную и тестовую выборки.}
+\label{code:27}
+\end{code}
+
+Теперь построим решающие деревья различной глубины (от 1 до 20) и выберем наилучшее из них, ориентируясь на большие значения, получаемые при вызове функции \textit{score} (\hyperref[code:28]{Код 28}).
+
+\begin{code}
+\begin{minted}{python}
+best_tree = DecisionTreeClassifier(random_state=6679, max_depth=1)
+best_tree = best_tree.fit(x_tr, y_tr)
+
+for i in range(2,10):
+    tree = DecisionTreeClassifier(random_state=6679, max_depth=i)
+    tree = tree.fit(x_tr, y_tr)
+    if tree.score(x_val, y_val) > best_tree.score(x_val, y_val):
+        best_tree = tree
+\end{minted}
+\captionof{listing}{Построение оптимального решающего дерева.}
+\label{code:28}
+\end{code}
+
+Далее выведем метрики \textit{precision}, \textit{recall} и \textit{F1} полученного классификатора при помощи функции \textit{classification\_report} (\hyperref[code:29]{Код 29}).
+
+\begin{code}
+\begin{minted}{python}
+> report = classification_report(y_val, best_tree.predict(x_val))
+> print(report)
+              precision    recall  f1-score   support
+
+           0       1.00      0.01      0.01       545
+           1       0.87      1.00      0.93      3528
+
+    accuracy                           0.87      4073
+   macro avg       0.93      0.50      0.47      4073
+weighted avg       0.88      0.87      0.81      4073
+> accuracy = accuracy_score(y_val, best_tree.predict(x_val))
+> print(f'Accuracy: {accuracy}')
+Accuracy: 0.8671740731647435
+\end{minted}
+\captionof{listing}{Вывод отчета по полученному классификатору.}
+\label{code:29}
+\end{code}
+
+Анализируя полученные значения метрик (\hyperref[code:29]{Код 29}), можно заключить, что полученный классификатор достаточно точен на данных, представленных в датасете (\textit{accuracy} $\approx 0.87$), однако он не опознает класс 0, что выражается в значениях метрик \textit{recall} и \textit{F1} равных 0.01. Значение метрики \textit{accuracy} равное $\approx 0.87$ говорит о том, что построенный классификатор будет давать верные прогнозы приблизительно в 87\% случаев.
+
+Также оценим вклад каждой из переменных в описании целевого признака использовав \hyperref[code:30]{код 30}.
+
+\begin{code}
+\begin{minted}{python}
+feature_importances = (best_tree.feature_importances_ /
+                       sum(best_tree.feature_importances_))
+results = pd.DataFrame({'Features': features,
+                        'Importances': feature_importances})
+results.sort_values(by='Importances', inplace=True)
+ax = plt.barh(results['Features'], results['Importances'])
+plt.xlabel('Feature importances')
+plt.show()
+\end{minted}
+\captionof{listing}{Построение графика важности признаков при описании целевого признака.}
+\label{code:30}
+\end{code}
+
+При вызове \hyperref[code:30]{кода 30} получим график, представленный на \hyperref[image:1]{рисунке 1}.
+
+\image{images/plot_1.png}{График важности признаков при описании целевого признака для классификатора DecisionTreeClassifier.}{0.8}
+\label{image:1}
+
+Согласно изображенному на \hyperref[image:1]{рисунке 1} графику, наибольший вклад в предсказание целевого признака вносят признаки \textit{Year} и \textit{EU\_Sales}.
+
+Схему усеченного полученного решающего дерева можно увидеть в \hyperref[appendix:6]{Приложении 6}.
+
+Согласно структуре построенного решающего дерева (усеченная схема изображена в \hyperref[appendix:6]{приложении 6}), можно построить следующую систему неравенств, ограничивающих объекты класса 0 и 1 (1): 
+
+\begin{equation}
+\textit{Class 0}: \begin{sqcases}
+    \begin{cases}
+        \textit{Year} \leq 1988.5 \\
+        \textit{Rank} > 15836.5 \\
+    \end{cases} \\
+    \begin{cases}
+        \textit{Year} > 2003.5 \\
+        \begin{sqcases}
+            \begin{cases}
+            \textit{EU\_Sales} \leq 0.0 \\
+            \textit{NA\_Sales} > 0.02 \\
+            \end{cases} \\
+            \textit{EU\_Sales} \leq 3.06 \\
+        \end{sqcases} \\
+    \end{cases} \\
+\end{sqcases}
+\end{equation}
+
+В данном случае достаточно одной системы неравенств, так как классы 0 и 1 --- взаимоисключающие, что значит, что все объекты класса 0 будут удовлетворять системе, а объекты класса 1 --- нет.
+
+\begin{enumerate}
+    \item[2.] Построить классификатор типа Случайный Лес (Random Forest) для решения той же задачи классификации. Оценить его качество с помощью метрик \textit{precision}, \textit{recall} и \textit{F1} на тестовой выборке. С помощью \textit{GridSearch} перебрать различные комбинации гиперпараметров. Определить, какой из классификаторов оказывается лучше.
+\end{enumerate}
+
+Для начала построим Случайный Лес, не подбирая гиперпараметры, и выведем уже использованные в пункте 1 задачи метрики (\hyperref[code:31]{Код 31}).
+
+\begin{code}
+\begin{minted}{python}
+> forest = RandomForestClassifier(random_state=6679)
+> forest = forest.fit(x_tr, np.ravel(y_tr))
+> report = classification_report(y_val, forest.predict(x_val))
+> print(report)
+> accuracy = accuracy_score(y_val, forest.predict(x_val))
+> print(f'Accuracy: {accuracy}')
+              precision    recall  f1-score   support
+
+           0       0.46      0.33      0.39       545
+           1       0.90      0.94      0.92      3528
+
+    accuracy                           0.86      4073
+   macro avg       0.68      0.64      0.65      4073
+weighted avg       0.84      0.86      0.85      4073
+Accuracy: 0.859317456420329
+\end{minted}
+\captionof{listing}{Построение классификатора RandomForestClassifier и вывод его метрик.}
+\label{code:31}
+\end{code}
+
+Построенный классификатор получил большую на 4\% оценку по метрике \textit{F1} в общем случае, а также точность прогнозов в подмножестве класса 0 значительно увеличилась (метрика \textit{F1} увеличилась на 0.40).
+
+График важности признаков при описании целевого признака изображен на \hyperref[image:2]{рисунке 2}.
+
+\image{images/plot_3.png}{График важности признаков при описании целевого признака для классификатора RandomForestClassifier.}{0.8}
+\label{image:2}
+
+Согласно \hyperref[image:2]{рисунку 2}, главными признаками при описании целевого признака стали \textit{Rank} и \textit{Year}.
+
+Теперь, используя метод \textit{GridSearch}, подберем следующие гиперпараметры классификатора: \textit{num\_estimators} и \textit{max\_depth} (\hyperref[code:32]{Код 32}).
+
+\begin{code}
+\begin{minted}{python}
+param_grid = {
+    'n_estimators': [50, 100, 200, 400],
+    'max_depth': list(range(1, 20)),
+    'criterion': ['gini']
+}
+tuned_forest = GridSearchCV(estimator=RandomForestClassifier(), 
+                            param_grid=param_grid, cv=5, refit=True)
+tuned_forest.fit(x_tr, np.ravel(y_tr))
+print(f'n_estimators: {tuned_forest.best_estimator_.n_estimators}')
+print(f'max_depth: {tuned_forest.best_estimator_.max_depth}')
+\end{minted}
+\captionof{listing}{Подбор гиперпараметров для классификатора RandomForestClassifier.}
+\label{code:32}
+\end{code}
+
+При многократном вызове \hyperref[code:32]{кода 32} оказалось, что оптимального количества решающих деревьев в случайном лесу (\textit{num\_estimators}) не существует, так как результатом работы программы в каждом случае было новое число, поэтому было принято зафиксировать значение в 100 решающих деревьев. Оптимальная глубина решающего дерева в построенном классификаторе оказалась равной 9.
+
+Построим классификатор типа Случайный Лес с подобранными гиперпараметрами и оценим его согласно использованным ранее метрикам (\hyperref[code:33]{Код 33}).
+
+\begin{code}
+\begin{minted}{python}
+> report = classification_report(y_val,
+                               tuned_forest.best_estimator_.predict(x_val))
+> print(report)
+              precision    recall  f1-score   support
+
+           0       0.67      0.08      0.15       545
+           1       0.88      0.99      0.93      3528
+
+    accuracy                           0.87      4073
+   macro avg       0.77      0.54      0.54      4073
+weighted avg       0.85      0.87      0.83      4073
+> accuracy = accuracy_score(y_val, tuned_forest.best_estimator_.predict(x_val))
+> print(f'Accuracy: {accuracy}')
+Accuracy: 0.8718389393567395
+\end{minted}
+\captionof{listing}{Построение классификатора RandomForestClassifier с подобранными гиперпараметрами и вывод его метрик.}
+\label{code:33}
+\end{code}
+
+Построенный в \hyperref[code:33]{коде 33} классификатор получил худшую оценку по метрике \textit{F1}, чем изначальный классификатор, построенный без подбора гиперпараметров (потеря в 1\%), но получил лучшую оценку по критерию \textit{accuracy} (выигрыш в 1\%). Также в случае классификатора с введенными гиперпараметрами резко упала точность в подмножестве класса 0, что прослеживается  в падении метрики \textit{F1} в соответствующем классе до показателя в 15\%.
+
+Также приведем график важности признаков при описании целевого признака для полученного классификатора (\hyperref[image:3]{Рис. 3}).
+
+\image{images/plot_4.png}{График важности признаков при описании целевого признака классификатора RandomForestClassifier с введенными в него гиперпараметрами.}{0.8}
+\label{image:3}
+
+Согласно \hyperref[image:3]{рисунку 3}, главными признаками при описании целевого признака усовершенствованным классификатором стали \textit{Year} и \textit{EU\_Sales}.
+
+Вывод. Данные, необходимые для выполнения задачи классификации, были успешно прочитаны и обработаны. Первый построенный классификатор (решающее дерево) оказался довольно точным на данных, представленных в датасете, однако его оценка на подмножестве класса 0 оказалась крайне низкой ($\textit{F1} = 0.01$), что говорит о том, что этот класс вообще не опознается построенным классификатором. Точность в общем случае же составила 47\%. Второй построенный классификатор (Случайный Лес) оказался более точным в общем случае ($\textit{F1}_{\textit{macro avg}} = 65\%$), а также класс 0 начал расспознаваться классификатором ($\textit{F1}_{0} = 40\%$). После подбора гиперпараметров для классификатора типа Случайный Лес показатели точности классификатора при оценке по метрике \textit{F1} снова упали ($\textit{F1}_{\textit{macro avg}} = 54\%$), класс 0 вновь перестал распознаваться. Во время построения указанных классификаторов наиболее важными признаками при описании целевого признака \textit{Platform} оказались \textit{Year}, \textit{Rank} и \textit{EU\_Sales}.
+
+
+\newpage
+\phantomsection
+\section{Задача 5}
+
+Необходимо провести анализ нижеуказанного датасета и сделать обработку данных по предложенному алгоритму.
+
+Набор данных: \href{https://www.kaggle.com/datasets/paultimothymooney/denver-crime-data}{Denver Crime Data}
+
+\begin{enumerate}
+    \item[1.] Сколько в наборе данных объектов и признаков? Дать описание каждому признаку, если оно есть.
+\end{enumerate}
+
+Если отбросить всяческие ID, в наборе присутствует 16 признаков со следующими описаниями (нумерация идет по столбцам; столбцы, содержащие описания и ID --- отброшены):
+
+\begin{enumerate}
+    \item[3)] \textit{offense\_code} --- код преступления;
+    \item[4)] \textit{offense\_code\_extension} --- расширение кода преступления (стоит \textquote{склеить} с \textit{offence\_code} или отбросить);
+    \item[5)] \textit{first\_occurrence\_date} --- когда происшествие произошло в первый раз;
+    \item[6)] \textit{last\_occurrence\_date} --- когда происшествие произошло в последний раз относительно описываемого происшествия;
+    \item[7)] \textit{reported\_date} --- когда о происшествии было доложено в полицию;
+    \item[8)] \textit{incident\_address} --- адрес улицы, на которой произошло происшествие;
+    \item[9)] \textit{geo\_x} --- гео-код по оси \textit{X};
+    \item[10)] \textit{geo\_y} --- гео-код по оси \textit{Y};
+    \item[11)] \textit{geo\_lat} --- широта, по которой произошло происшествие;
+    \item[12)] \textit{geo\_lon} --- долгота, по которой произошло происшествие;
+    \item[13)] \textit{district\_id} --- округ;
+    \item[14)] \textit{precinct\_id} --- участок;
+    \item[15)] \textit{neighborhood\_id} --- район;
+    \item[16)] \textit{is\_crime} --- 1, если преступление; 0, если нет;
+    \item[17)] \textit{is\_traffic} --- 1, если дорожно транспортное происшествие; 0, если нет;
+    \item[18)] \textit{victim\_count} --- число пострадавших в происшествии.
+\end{enumerate}
+
+\begin{enumerate}
+    \item[2.] Сколько категориальных признаков представлено в датасете, какие?
+\end{enumerate}
+
+Из перечисленных в пункте 1 признаков категориальными являются: \textit{offense\_code}, \textit{offense\_code\_extension}, \textit{incident\_address}, \textit{district\_id}, \textit{precinct\_id}, \textit{neighborhood\_id}.
+
+\begin{enumerate}
+    \item[3.] Указать столбец с максимальным количеством уникальных значений категориального признака.
+\end{enumerate}
+
+Для того, чтобы подсчитать количество уникальных значений в каждом из столбцов содержащих категориальные признаки, прочитаем датасет из файла, отберем из него все перечисленные в пункте 1 признаки (для дальнейшей обработки), и выделим отдельный \textit{pandas.DataFrame} с категориальными признаками. Наконец, выведем суммарное количество объектов в датасете и количества уникальных значений по столбцам (\hyperref[code:34]{Код 34}).
+
+\begin{code}
+\begin{minted}{python}
+data = pd.read_csv('./crime.csv', encoding='unicode_escape')
+features = ['offense_code', 'offense_code_extension', 'first_occurrence_date',
+            'last_occurrence_date', 'reported_date', 'incident_address',
+            'geo_x', 'geo_y', 'geo_lon', 'geo_lat', 'district_id',
+            'precinct_id', 'neighborhood_id', 'is_crime', 'is_traffic',
+            'victim_count']
+data = data.loc[:, data.columns.isin(features)]
+criterial_features = ['offense_code', 'offense_code_extension',
+                     'incident_address', 'district_id', 'precinct_id',
+                     'neighborhood_id']
+criterial_data = data.loc[:, data.columns.isin(criterial_features)]
+print(f'Number of rows: {len(data)}')
+criterial_data.nunique().sort_values(ascending=False)
+\end{minted}
+\captionof{listing}{Подсчет количества уникальных значений категориальных признаков по столбцам в датасете.}
+\label{code:34}
+\end{code}
+
+Выполнение \hyperref[code:34]{кода 34} дает результат, представленный в \hyperref[code:35]{коде 35}.
+
+\begin{code}
+\begin{minted}{python}
+Number of rows: 386865
+incident_address          90518
+offense_code                141
+neighborhood_id              78
+precinct_id                  41
+district_id                   8
+offense_code_extension        7
+\end{minted}
+\captionof{listing}{Количество уникальных значений соответствующих категориальных признаков в датасете.}
+\label{code:35}
+\end{code}
+
+Как видно из \hyperref[code:35]{кода 35}, максимальное количество значений (90518) достигается у категориального признака \textit{incident\_addresses} (адрес, по которому произошло преступление), что не удивительно. Проводить классификацию по этому признаку, учитывая, что суммарное количество объектов в датасете равно 386865 --- бессмысленно, если предварительно не проводить обработку данной переменной.
+
+\begin{enumerate}
+    \item[4.] Есть ли бинарные признаки?
+\end{enumerate}
+
+В датасете присутствуют бинарные признаки. Из перечисленных в пункте 1 признаков бинарными являются: \textit{is\_crime}, \textit{is\_traffic}.
+
+\begin{enumerate}
+    \item[5.] Какие числовые признаки представлены в датасете?
+\end{enumerate}
+
+Из перечисленных в пункте 1 признаков числовыми являются: \textit{first\_occurence\_date}, \textit{last\_occurrence\_date}, \textit{reported\_date}, \textit{geo\_x}, \textit{geo\_y}, \textit{geo\_lat}, \textit{geo\_lon}, \textit{victim\_count}.
+
+\begin{enumerate}
+    \item[6.] Есть ли пропуски?
+\end{enumerate}
+
+В датасете присутствуют пропуски. Количество пропусков в каждом из столбцов приведено ниже.
+
+\begin{enumerate}
+    \item[7.] Сколько объектов с пропусками присутствует в датасете?
+\end{enumerate}
+
+В \hyperref[code:36]{коде 36} представлено нахождение количества объектов с пропусками, присутствующих в датасете.
+
+\begin{code}
+\begin{minted}{python}
+# Total number of objects: 386865
+print(f'Total number of objects: {len(data)}')
+# Number of objects with NA values: 180345
+print(f'Number of objects with NA values: {len(data) - len(data.dropna())}')
+# Number of "clean" objects: 206520
+print(f'Number of \"clean\" objects: {len(data.dropna())}')
+\end{minted}
+\captionof{listing}{Подсчет количества объектов с пропусками в датасете.}
+\label{code:36}
+\end{code}
+
+Согласно выводу \hyperref[code:36]{кода 36}, количество объектов с пропусками оказалось равным 180345 (46.6\% от суммарного количества объектов).
+
+\begin{enumerate}
+    \item[8.] Указать столбец с максимальным количеством пропусков.
+\end{enumerate}
+
+Для нахождения количества пропусков в каждом из столбцов воспользуемся алгоритмом, представленным в \hyperref[code:37]{коде 37}.
+
+\begin{code}
+\begin{minted}{python}
+> print('Number of NA values per column:')
+> for col in sorted(data.columns, 
+                    key=lambda x: data[x].isna().sum(), 
+                    reverse=True):
+>     print(f'{col}: {data[col].isna().sum()}')
+Number of NA values per column:
+last_occurrence_date: 175556
+geo_lon: 15769
+geo_lat: 15769
+incident_address: 15503
+geo_x: 15503
+geo_y: 15503
+neighborhood_id: 689
+district_id: 57
+offense_code: 0
+...
+\end{minted}
+\captionof{listing}{Подсчет количества пропусков в каждом из столбцов.}
+\label{code:37}
+\end{code}
+
+Согласно выводу \hyperref[code:37]{кода 37}, столбцом с максимальным количеством пропусков оказался столбец \textit{last\_occurence\_date}.
+Также много пропусков присутствует в столбцах, относящихся к местоположению происшествия.
+
+\begin{enumerate}
+    \item[9.] Выявить возможные выбросы, аномальные значения.
+\end{enumerate}
+
+Чтобы проверить данные на выбросы, отделим время происшествия от даты его происхождения в отдельный признак, а также выделим числовые признаки в отдельный \textit{pandas.DataFrame} (\hyperref[appendix:7]{Приложение 7}).
+
+Теперь получим количество выбросов, присутствующих в датасете (\hyperref[code:38]{Код 38}).
+
+\begin{code}
+\begin{minted}{python}
+for feature in normalizible_features:
+    Q1 = normalizible_data[feature].quantile(0.25)
+    Q3 = normalizible_data[feature].quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    normalizible_data_no_outliers = normalizible_data[
+        (normalizible_data[feature] >=
+         lower_bound) & (normalizible_data[feature] <= upper_bound)]
+normalizible_data_no_outliers = normalizible_data_no_outliers.dropna()
+print(f"Number of outliers: {len(normalizible_data) -
+                             len(normalizible_data_no_outliers)}")
+print(f'Total number of objects: {len(normalizible_data)}')
+Number of outliers: 15769
+Total number of objects: 386865
+\end{minted}
+\captionof{listing}{Подсчет количества выбросов, содержащихся в датасете.}
+\label{code:38}
+\end{code}
+
+После отбора выбросов по межквартильному диапозону (\hyperref[code:38]{Код 38}) оказалось, что приблизительно каждый 25-ый объект --- выброс. При построении моделей и классификаторов исключим указанные объекты из датасета.
+
+\begin{enumerate}
+    \item[10.] Указать столбец с максимальным средним значением после нормировки признаков через стандартное отклонение.
+\end{enumerate}
+
+Применим нормализацию числовых признаков через среднее квадратическое отклонение (\hyperref[code:39]{Код 39}).
+
+\begin{code}
+\begin{minted}{python}
+> std_scaler = preprocessing.StandardScaler()
+> normalized_numerical_data = pd.DataFrame(
+>     std_scaler.fit_transform(normalizible_data.dropna()),
+>     columns=normalizible_data.dropna().columns,
+>     index=normalizible_data.dropna().index)
+> print("Mean values:")
+> for col in normalizible_features:
+>     print(f'{col}: {normalized_numerical_data[col].mean()}')
+Mean values:
+geo_x: 5.650704189145687e-16
+geo_y: -9.493152402339494e-16
+geo_lat: 5.0441993575674176e-15
+geo_lon: 1.0637079181535481e-14
+victim_count: -3.342133424421861e-17
+reported_time_utc: 8.612383926124051e-17
+\end{minted}
+\captionof{listing}{Подсчет средних значений по столбцам после применения нормализации через среднее квадратическое отклонение.}
+\label{code:39}
+\end{code}
+
+Согласно \hyperref[code:39]{коду 39}, столбцом с максимальным средним значением после нормировки признаков через стандартное квадратическое отклонение оказался столбец \textit{geo\_lon}, однако все полученные средние значения очень близки к нулю.
+
+\begin{enumerate}
+    \item[11.] Указать столбец с целевым признаком.
+\end{enumerate}
+
+Столбцом с целевым признаком является столбец \textit{offence\_code} (после обработки данных --- столбец \textit{offence\_code+extension}) --- тип происшествия.
+
+\begin{enumerate}
+    \item[12.] Сколько объектов попадает в тренировочную выборку при использовании train\_test\_split с параметрами \textit{test\_size} = 0.3, \textit{random\_state} = 42?
+\end{enumerate}
+
+Возьмем столбец \textit{offence\_code} как столбец с целевым признаком, и разделим датасет на тренировочную и целевую выборки с указанными параметрами (\hyperref[code:40]{Код 40}).
+
+\begin{code}
+\begin{minted}{python}
+> binary_features = ['is_crime', 'is_traffic']
+> features = criterial_features + numerical_features + binary_features
+> x_features = features.copy()
+> x_features.remove('offense_code')
+> x_features.remove('offense_code_extension')
+> target = data['offense_code']
+> x = data.loc[:, data.columns.isin(x_features)]
+> x_tr, x_val, target_tr, target_val = train_test_split(
+>     x, target, test_size=0.3, random_state=42)
+> print(f'Training split size: {len(x_tr)}')
+> print(f'Validation split size: {len(x_val)}')
+Training split size: 270805
+Validation split size: 116060
+\end{minted}
+\captionof{listing}{Разделение датасета на тренировочную и тестовую выборки.}
+\label{code:40}
+\end{code}
+
+Согласно выводу \hyperref[code:40]{кода 40}, в тренировочную выборку попало 270805 объектов, в тестовую --- 116060.
+
+\begin{enumerate}
+    \item[13.] Между какими признаками наблюдается линейная зависимость (корреляция)?
+\end{enumerate}
+
+В \hyperref[code:41]{коде 41} представлен код для нахождения коррелирующих признаков.
+
+\begin{code}
+\begin{minted}{python}
+for col in normalizible_features:
+    print(normalized_numerical_data.loc[:].corr()[col][:], "\n")
+\end{minted}
+\captionof{listing}{Нахождение коррелирующих признаков, представленных в датасете.}
+\label{code:41}
+\end{code}
+
+Согласно выводу \hyperref[code:41]{кода 41} (\hyperref[appendix:8]{Приложение 8}), сильная линейная зависимость прослеживается между следующими признаками:
+\begin{itemize}
+    \item \textit{first\_occurence\_date} / \textit{last\_occurence\_date} и \textit{reported\_date};
+    \item \textit{geo\_lat} и \textit{geo\_y};
+    \item \textit{geo\_lon} и \textit{geo\_x};
+    \item \textit{reported\_time} и \textit{reported\_time\_utc};
+\end{itemize}
+
+При дальнейшей обработке исключим некоторые из перечисленных признаков.
+
+\begin{enumerate}
+    \item[14.] Сколько признаков достаточно для объяснения 90\% дисперсии после применения метода PCA?
+\end{enumerate}
+
+Чтобы применить метод главных компонент, исключим мультиколлинеарные признаки, закодируем признак \textit{district\_id}, применив one-hot-encoding, и объединим и закодируем признаки \textit{offense\_code} и \textit{offense\_code\_extension}, применив label-encoding (\hyperref[appendix:9]{Приложение 9}).
+
+\begin{code}
+\begin{minted}{python}
+pca_data = clean_data.drop(columns=['offence_code+extension'])
+pca = PCA()
+x_pca = pca.fit(pca_data.values)
+explained_variance_ratio = pca.explained_variance_ratio_
+cumulative_variance = np.cumsum(explained_variance_ratio)
+n_components = np.argmax(cumulative_variance >= 0.9) + 1
+plt.barh(pca.get_feature_names_out(), explained_variance_ratio)
+plt.xlabel('Feature importances')
+plt.show()
+plt.bar(range(1, len(cumulative_variance) + 1), cumulative_variance)
+plt.xlabel('Cummulative variance by number of features')
+plt.show()
+# 4 features are sufficient to explain 90% of the variance.
+print(f'{n_components} features are sufficient to explain 90% of the variance.')
+\end{minted}
+\captionof{listing}{Применение метода PCA на обработанных данных.}
+\label{code:42}
+\end{code}
+
+Согласно выводу \hyperref[code:42]{кода 42}, 4-ех признаков оказалось достаточно для объяснения 90\% дисперсии после применения метода PCA. Также были сгенерированы 2 графика: график доли дисперсии объясненной каждой из компонент (\hyperref[appendix:10]{Приложение 10}) и график суммарной доли объясненной дисперсии в зависимости от числа взятых компонент, изображенный на \hyperref[image:4]{рисунке 4}.
+
+\image{images/plot_6.png}{График суммарной доли объясненной дисперсии в зависимости от числа взятых компонент после применения метода PCA.}{0.8}
+\label{image:4}
+
+\begin{enumerate}
+    \item[15.] Какой признак вносит наибольший вклад в первую компоненту?
+\end{enumerate}
+
+Для того, чтобы выяснить, какой признак вносит наибольший вклад в первую компоненту, воспользуемся кодом, представленным в \hyperref[code:43]{коде 43}.
+
+\begin{code}
+\begin{minted}{python}
+> loadings = pca.components_[0]
+> feature_importances = pd.Series(
+>     loadings, index=pca_data.columns)
+> print('Feature contributions to the first component (pca0):')
+> print(feature_importances.abs().sort_values(ascending=False))
+Feature contributions to the first component (pca0):
+district_id          0.998685
+geo_y                0.037739
+geo_x                0.029419
+reported_time_utc    0.018063
+victim_count         0.003628
+is_crime             0.000000
+is_traffic           0.000000
+\end{minted}
+\captionof{listing}{Доли вкладов в первую компоненту признаками после применения метода PCA.}
+\label{code:43}
+\end{code}
+
+Согласно выводу \hyperref[code:43]{кода 43}, наибольший вклад в 99\% в первую компоненту вносит признак \textit{district\_id}.
+
+\begin{enumerate}
+    \item[16.] Построить двухмерное представление данных с помощью алгоритма t-SNE. Оценить, на сколько кластеров визуально разделяется выборка. Объяснить смысл кластеров.
+\end{enumerate}
+
+В \hyperref[code:44]{коде 44} представлено построение двумерного представления данных при помощи алгоритма t-SNE.
+
+\begin{code}
+\begin{minted}{python}
+shuffled_data = shuffle(clean_data, random_state=0).head(20000)
+x = shuffled_data.drop(columns=['offence_code+extension',])
+y = shuffled_data.loc[:, clean_data.columns.isin(['offence_code+extension'])]
+z = TSNE(n_components=2, learning_rate='auto', random_state=0,
+         init='pca', perplexity=50).fit_transform(x)
+\end{minted}
+\captionof{listing}{Применение алгоритма t-SNE для построения двумерного представления данных, содержащихся в датасете.}
+\label{code:44}
+\end{code}
+
+Теперь построим графики с разной окраской точек, соответствующей одному из признаков, для определения смысла кластеров (\hyperref[code:45]{Код 45}).
+
+\begin{code}
+\begin{minted}{python}
+sns.scatterplot(x='Component 1', y='Component 2',
+                hue=shuffled_data['district_id'],
+                data=df).set(title='t-SNE Visualization (district_id)')
+plt.show()
+sns.scatterplot(x='Component 1', y='Component 2',
+                hue=shuffled_data['victim_count'],
+                data=df).set(title='t-SNE Visualization (victim_count)')
+plt.show()
+sns.scatterplot(x='Component 1', y='Component 2',
+                hue=shuffled_data['offence_code+extension'],
+                data=df).set(
+                    title='t-SNE Visualization (offence_code+extension)')
+plt.show()
+\end{minted}
+\captionof{listing}{Построение трех окрашенных графиков для визуализации кластеров, полученных после применения алгоритма t-SNE.}
+\label{code:45}
+\end{code}
+
+В результате выполнения \hyperref[code:45]{кода 45} получим 3 графика (\hyperref[image:5]{Рис. 5}, \hyperref[appendix:11]{Приложение 11}, \hyperref[appendix:12]{Приложение 12}).
+
+\image{images/plot_7.png}{Двумерная визуализация данных, полученная после применения алгоритма t-SNE (окраска по критерию \textit{district\_id}).}{0.8}
+\label{image:5}
+
+Анализируя первый полученный график, изображенный на \hyperref[image:5]{рисунке 5}, можно заключить, что 7 из 8-ми отчетливо выраженных на графике кластеров представляют собой районы города (с 1-го по 7-ой). Последний изображенный на графиках кластер представляет собой преступления с большим количеством жертв, что можно отчетливо увидеть на втором построенном графике (\hyperref[appendix:11]{Приложение 11}). Большинство из преступлений попавших в 8-ой кластер --- преступления с кодом вида 131**, который соответствует преступлениям --- различным видам массовой стрельбы.
+
+Вывод. Предоставленный для выполнения задачи 6 датасет был успешно прочитан из файла, из датасета были отброшены индексные переменные и переменные, содержащие описания. В датасете были выделены категориальные, бинарные и числовые признаки. Были выявлены категориальные признаки с максимальным количеством уникальных значений а также столбцы с максимальным количеством пропусков. По итогам анализа было определено, что около трети объектов, присутствующих в датасете имеют пропуски, а также что приблизительно каждый 80-ый объект является выбросом. После нормализации числовых признаков через среднее квадратическое отклонение у каждого из представленных признаков среднее значение оказалось крайне близко к нулю. Столбцом с целевым признаком был определен столбец \textit{offence\_code}. Было обнаружено значительное количество коррелирующих признаков, которые при дальнейшей обработке были отброшены. После применения метода PCA на полученных обработанных данных оказалось, что 4-ех компонент достаточно для объяснения 90\% дисперсии в данных. Наибольший вклад в первую компоненту после применения метода PCA имел признак \textit{district\_id}. После применения алгоритма t-SNE данные визуально разбились на 8 кластеров, 7 из которых представляли собой районы города (\textit{district\_id}), а последний 8-ой кластер представлял собой преступления с большим количеством жертв.
+
+
+\newpage
+\phantomsection
+\section{Заключение}
+
+В задаче 1 была выявлена отрицательная связь между объясняемой переменной \textit{Agriculture} и регрессорами \textit{Education} (k = −1.5105) и \textit{Examination} (k = −1.9544), коэффициенты корреляции $R^2$ получились равными 0.409 и 0.4713 соответственно, что говорит о неточности даваемых моделями прогнозов. Используемые коэффициенты также были оценены как значимые по p-метрике ($\textit{p-value} = 1.3 \cdot 10^{-6}$ в случае регрессора \textit{Education}, $\textit{p-value} = 9.95 \cdot 10^{-8}$ в случае регрессора \textit{Examination}).
+
+В задаче 2 лучшей из построенных моделей оказалась модель $\textit{Education}\sim\log(\textit{Fertility})+\log(\textit{Agriculture})$ с показателем $R^2 = 0.7301$. Также при построении доверительных интервалов коэффициентов регрессоров была опровергнута гипотеза о равенстве коэффициента  нулю, что гарантировало значимость указанных регрессоров и подтвердило отрицательную взаимосвязь объясняемой переменной \textit{Education} и регрессоров $\log(\textit{Fertility})$ и $\log(\textit{Agriculture})$ ($k_{\log(\textit{Fer.})} = −35.87$, ($k_{\log(\textit{Agr.})} = −9.472$).
+
+В задаче 3 наилучшая из построенных моделей была оценена по метрике $R^{2}_{\text{adj.}}$ в 0.2798. Доверительные интервалы коэффициентов при регрессорах, содержащихся в лучшей модели, при построении парных регрессий между ними и объясняемой переменной не содержали в себе 0, что гарантировало их связь с объясняемой переменной. По результату исследования было выявлено, что наибольшую заработную плату получают молодые мужчины, проживающие в городе, с высшим образованием, удовлетворенные своей заработной платой, предприниматели, имеющие подчиненных, а также имеющие длинную рабочую неделю. Лучшая полученная модель дает неточные прогнозы на подмножестве женатых мужчин с высшим образованием и точные прогнозы на подмножестве городских жителей, состоящих в браке.
+
+В задаче 4 первый построенный классификатор (решающее дерево) оказался довольно точным на данных, представленных в датасете, однако его оценка на подмножестве класса 0 оказалась крайне низкой ($\textit{F1} = 0.01$), что говорит о том, что этот класс вообще не опознается построенным классификатором. Точность в общем случае же составила 47\%. Второй построенный классификатор (Случайный Лес) оказался более точным в общем случае ($\textit{F1}_{\textit{macro avg}} = 65\%$), а также класс 0 начал расспознаваться классификатором ($\textit{F1}_{0} = 40\%$). После подбора гиперпараметров для классификатора типа Случайный Лес показатели точности классификатора при оценке по метрике \textit{F1} снова упали ($\textit{F1}_{\textit{macro avg}} = 54\%$), класс 0 вновь перестал распознаваться. Во время построения указанных классификаторов наиболее важными признаками при описании целевого признака \textit{Platform} оказались \textit{Year}, \textit{Rank} и \textit{EU\_Sales}.
+
+В задаче 5 в датасете были выделены категориальные, бинарные и числовые признаки. Были выявлены категориальные признаки с максимальным количеством уникальных значений а также столбцы с максимальным количеством пропусков. По итогам анализа было определено, что около трети объектов, присутствующих в датасете имеют пропуски, а также что приблизительно каждый 80-ый объект является выбросом. После нормализации числовых признаков через среднее квадратическое отклонение у каждого из представленных признаков среднее значение оказалось крайне близко к нулю. Столбцом с целевым признаком был определен столбец \textit{offence\_code}. Было обнаружено значительное количество коррелирующих признаков, которые при дальнейшей обработке были отброшены. После применения метода PCA на полученных обработанных данных оказалось, что 4-ех компонент достаточно для объяснения 90\% дисперсии в данных. Наибольший вклад в первую компоненту после применения метода PCA имел признак \textit{district\_id}. После применения алгоритма t-SNE данные визуально разбились на 8 кластеров, 7 из которых представляли собой районы города (\textit{district\_id}), а последний 8-ой кластер представлял собой преступления с большим количеством жертв.

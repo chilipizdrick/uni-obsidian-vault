@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{param\PYGZus{}grid} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}estimators\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{,} \PYG{l+m+mi}{400}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth\PYGZsq{}}\PYG{p}{:} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)),}
+    \PYG{l+s+s1}{\PYGZsq{}criterion\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}gini\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{tuned\PYGZus{}forest} \PYG{o}{=} \PYG{n}{GridSearchCV}\PYG{p}{(}\PYG{n}{estimator}\PYG{o}{=}\PYG{n}{RandomForestClassifier}\PYG{p}{(),}
+                            \PYG{n}{param\PYGZus{}grid}\PYG{o}{=}\PYG{n}{param\PYGZus{}grid}\PYG{p}{,} \PYG{n}{cv}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{refit}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{tuned\PYGZus{}forest}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(}\PYG{n}{y\PYGZus{}tr}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}estimators: }\PYG{l+s+si}{\PYGZob{}tuned\PYGZus{}forest.best\PYGZus{}estimator\PYGZus{}.n\PYGZus{}estimators\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth: }\PYG{l+s+si}{\PYGZob{}tuned\PYGZus{}forest.best\PYGZus{}estimator\PYGZus{}.max\PYGZus{}depth\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} log(Fertility)}
+\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{\PYGZhy{}22.874} \PYG{o}{\PYGZhy{}} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{4.479}\PYG{p}{,} \PYG{l+m}{\PYGZhy{}22.874} \PYG{o}{+} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{4.479}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}31.90083, \PYGZhy{}13.84717)}
+\PYG{c+c1}{\PYGZsh{} log(Agriculture)}
+\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{\PYGZhy{}6.461} \PYG{o}{\PYGZhy{}} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{1.146}\PYG{p}{,} \PYG{l+m}{\PYGZhy{}6.461} \PYG{o}{+} \PYG{n}{t\PYGZus{}crit}\PYG{o}{*}\PYG{l+m}{1.146}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}8.770611, \PYGZhy{}4.151389)}
+\end{Verbatim}

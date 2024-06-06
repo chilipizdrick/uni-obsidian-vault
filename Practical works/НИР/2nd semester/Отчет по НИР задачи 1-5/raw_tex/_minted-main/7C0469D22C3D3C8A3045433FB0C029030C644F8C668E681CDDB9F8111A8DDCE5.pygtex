@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{best\PYGZus{}log\PYGZus{}base}\PYG{p}{(}\PYG{n}{clean\PYGZus{}data}\PYG{o}{\PYGZdl{}}\PYG{n}{salary}\PYG{p}{,} \PYG{n}{clean\PYGZus{}data}\PYG{o}{\PYGZdl{}}\PYG{n}{age}\PYG{p}{)}
+\PYG{l+m}{2.4}
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{best\PYGZus{}log\PYGZus{}base}\PYG{p}{(}\PYG{n}{clean\PYGZus{}data}\PYG{o}{\PYGZdl{}}\PYG{n}{salary}\PYG{p}{,} \PYG{n}{clean\PYGZus{}data}\PYG{o}{\PYGZdl{}}\PYG{n}{week\PYGZus{}duration}\PYG{p}{)}
+\PYG{l+m}{3.5}
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{best\PYGZus{}exp\PYGZus{}base}\PYG{p}{(}\PYG{n}{clean\PYGZus{}data}\PYG{o}{\PYGZdl{}}\PYG{n}{salary}\PYG{p}{,} \PYG{n}{clean\PYGZus{}data}\PYG{o}{\PYGZdl{}}\PYG{n}{age}\PYG{p}{)}
+\PYG{l+m}{1.6}
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{best\PYGZus{}exp\PYGZus{}base}\PYG{p}{(}\PYG{n}{clean\PYGZus{}data}\PYG{o}{\PYGZdl{}}\PYG{n}{salary}\PYG{p}{,} \PYG{n}{clean\PYGZus{}data}\PYG{o}{\PYGZdl{}}\PYG{n}{week\PYGZus{}duration}\PYG{p}{)}
+\PYG{l+m}{0.8}
+\end{Verbatim}

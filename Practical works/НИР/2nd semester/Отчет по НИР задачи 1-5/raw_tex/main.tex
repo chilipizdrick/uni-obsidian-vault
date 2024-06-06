@@ -1,0 +1,216 @@
+\documentclass[14pt, a4paper]{extarticle}
+
+% --- Packages ---
+
+% Experimental
+% \usepackage[none]{hyphenat}
+
+\usepackage{polyglossia} % Localization
+\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages} % Importing PDF files
+\usepackage{tocvsec2} % Controll over sections in the table of contents
+\usepackage{longtable} % Support for tables continuing to the next page
+\usepackage{booktabs} % The package enhances the quality of tables in LATEX, providing extra commands as well as behind-the-scenes optimisation
+\usepackage{array} % An extended implementation of the array and tabular environments which extends the options for column formats, and provides “programmable” format specifications
+\usepackage{setspace} % Provides support for setting the spacing between lines in a document
+\usepackage{graphicx} % Required for inserting images
+\usepackage[newfloat]{minted} % Code highliting
+\usepackage[labelsep=period,justification=centering]{caption} % Captions
+\usepackage{amsmath} % Math symbol support
+\usepackage{url} % Support of url links
+\usepackage{multirow} % Tables with merged rows
+\usepackage{hyperref} % Links integration
+\usepackage{indentfirst} % Paragraph indentation
+\usepackage{chngcntr} % Captions and enumeration of images
+\usepackage{ragged2e} % Justification of text
+\usepackage{titlesec} % Section management
+\usepackage[
+    style=gost-footnote,
+    backend=biber,
+    % bibencoding=utf8
+    sorting=nyt,
+    language=russian,
+    autolang=other,
+    citestyle=gost-numeric,
+    bibstyle=gost-numeric,
+    opcittracker=false
+]{biblatex} % Bibliography management
+\usepackage{csquotes} % quotes for other languages
+\usepackage{fancyhdr} % For something...
+\usepackage{float} % For table placements
+
+\usepackage[left=3cm,right=1.5cm,top=2cm,bottom=2cm]{geometry} % Padding
+
+% --- Formatting ---
+
+% Language support
+\setdefaultlanguage[spelling=modern]{russian}
+\setotherlanguage{english}
+% Font settings
+\setmainfont{Times New Roman} 
+\setmonofont{Times New Roman}
+\setromanfont{Times New Roman} 
+\newfontfamily\cyrillicfont[
+    Ligatures=TeX,    
+]{Times New Roman}
+\newfontfamily\cyrillicfonttt{JetBrainsMono-Regular.otf}[
+  Script=Cyrillic,
+  Path=fonts/,
+]
+% Set mono font
+\setmonofont{JetBrainsMono-Regular.otf}[
+    SizeFeatures={Size=10},
+    Path = fonts/,
+    Ligatures=TeX,
+    Contextuals=Alternate
+]
+% Fix page numbers
+\fancyhf{}
+\fancyfoot[C]{\cyrillicfont\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+% Other
+\urlstyle{same} % Url font style
+\linespread{1.5} % Gap between lines should be 1.5
+\setlength{\parindent}{1.25cm} % Paragraph gap = 1.25 cm
+\graphicspath{ {./images/} } % Path to the images directory
+\hypersetup{
+    colorlinks=true, 
+    linkcolor=black,
+    filecolor=blue, 
+    citecolor = black,       
+    urlcolor=blue,
+} % Links and citations coloring
+
+% Make figures, tables, listings be enumerated with sections
+% \counterwithin{figure}{section}
+% \counterwithin{table}{section}
+% \counterwithin{listing}{section}
+
+% Configure listings
+\SetupFloatingEnvironment{listing}{name={Код}}
+\newenvironment{code}{
+    \captionsetup[listing]{hypcap=false}
+    \vbox\bgroup
+}{
+    \smallskip
+    \egroup
+}
+\newenvironment{codeappendix}{
+    \captionsetup[listing]{hypcap=false}
+}{
+    \smallskip
+}
+\setminted{
+    frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2,
+    fontsize=\footnotesize
+}
+
+\SetupFloatingEnvironment{table}{name={Таблица}}
+\captionsetup[table]{
+    justification=raggedright,
+    singlelinecheck=false
+}
+% \newenvironment{table}{
+%     \captionsetup[table]{hypcap=false}
+%     \vbox\bgroup
+% }{
+%     \smallskip
+%     \egroup
+% }
+
+% --- Macros ---
+
+% Make square brackets for cases
+\makeatletter
+\newenvironment{sqcases}{%
+  \matrix@check\sqcases\env@sqcases
+}{%
+  \endarray\right.%
+}
+\def\env@sqcases{%
+  \let\@ifnextchar\new@ifnextchar
+  \left\lbrack
+  \def\arraystretch{1.2}%
+  \array{@{}l@{\quad}l@{}}%
+}
+\makeatother
+
+\newcommand{\image}[3]{
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=#3\textwidth]{#1}
+	\caption{#2}
+\end{figure}
+}
+
+% \renewenvironment{appendix}{
+%     \captionsetup[appendix]{hypcap=false}
+%     \vbox\bgroup
+% }{
+%     \smallskip
+%     \egroup
+% }
+
+\newcommand{\codefromfile}[2]{
+\begin{codeappendix}
+    \inputminted[breaklines=true, framesep=2mm, fontsize=\footnotesize, firstline=1, linenos]{#2}{listings/#1}
+\end{codeappendix}
+}
+% \newcommand{\codefromfile}[3]{
+% \begin{codeappendix}
+%     \inputminted[breaklines=true, framesep=2mm, fontsize=\footnotesize, firstline=1,]{#2}{listings/#1}
+%     \captionof{listing}{#3}
+% \end{codeappendix}
+% }
+
+% --- Other ---
+
+% Add bibliography reference
+\addbibresource{bibliography.bib}
+% Disable hyphenation
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+% Disable section and subsection enumeration
+\setcounter{secnumdepth}{0}
+% Make sections and subsections centered
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+\titleformat{\subsection}[block]{\large\bfseries\filcenter}{}{1em}{}
+
+\begin{document}
+
+% --- Title page ---
+
+% \includepdf[pages=-]{titlepage.pdf}
+\setcounter{page}{2}
+
+% --- Table of contents ---
+
+\newpage 
+\begin{center}
+    \tableofcontents
+\end{center}
+\newpage 
+
+% --- Contents ---
+
+\include{content}
+
+% --- Bibliography ---
+
+\newpage
+\phantomsection
+\nocite{*}
+\printbibliography
+\addcontentsline{toc}{section}{Список литературы}
+
+% --- Appendix ---
+
+\include{appendix}
+
+\end{document}

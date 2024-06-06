@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{summary}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Education} \PYG{o}{\PYGZti{}} \PYG{n}{Fertility} \PYG{o}{+} \PYG{n}{Agriculture}\PYG{p}{,} \PYG{n}{data}\PYG{p}{))}
+
+\PYG{k+kc}{...}
+
+\PYG{n}{Coefficients}\PYG{o}{:}
+            \PYG{n}{Estimate} \PYG{n}{Std.} \PYG{n}{Error} \PYG{n}{t} \PYG{n}{value} \PYG{n+nf}{Pr}\PYG{p}{(}\PYG{o}{\PYGZgt{}|}\PYG{n}{t}\PYG{o}{|}\PYG{p}{)}
+\PYG{p}{(}\PYG{n}{Intercept}\PYG{p}{)} \PYG{l+m}{47.92166}    \PYG{l+m}{5.04541}   \PYG{l+m}{9.498} \PYG{l+m}{3.19e\PYGZhy{}12} \PYG{o}{***}
+\PYG{n}{Fertility}   \PYG{l+m}{\PYGZhy{}0.38515}    \PYG{l+m}{0.07563}  \PYG{l+m}{\PYGZhy{}5.092} \PYG{l+m}{7.10e\PYGZhy{}06} \PYG{o}{***}
+\PYG{n}{Agriculture} \PYG{l+m}{\PYGZhy{}0.19596}    \PYG{l+m}{0.04160}  \PYG{l+m}{\PYGZhy{}4.711} \PYG{l+m}{2.49e\PYGZhy{}05} \PYG{o}{***}
+\PYG{o}{\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{n}{Signif.} \PYG{n}{codes}\PYG{o}{:}  \PYG{l+m}{0} ‘\PYG{o}{***}’ \PYG{l+m}{0.001} ‘\PYG{o}{**}’ \PYG{l+m}{0.01} ‘\PYG{o}{*}’ \PYG{l+m}{0.05} ‘\PYG{n}{.’} \PYG{l+m}{0.1} ‘ ’ \PYG{l+m}{1}
+
+\PYG{n}{Residual} \PYG{n}{standard} \PYG{n}{error}\PYG{o}{:} \PYG{l+m}{5.995} \PYG{n}{on} \PYG{l+m}{44} \PYG{n}{degrees} \PYG{n}{of} \PYG{n}{freedom}
+\PYG{n}{Multiple} \PYG{n}{R}\PYG{o}{\PYGZhy{}}\PYG{n}{squared}\PYG{o}{:}  \PYG{l+m}{0.6281}\PYG{p}{,}    \PYG{n}{Adjusted} \PYG{n}{R}\PYG{o}{\PYGZhy{}}\PYG{n}{squared}\PYG{o}{:}  \PYG{l+m}{0.6112}
+\PYG{n+nb+bp}{F}\PYG{o}{\PYGZhy{}}\PYG{n}{statistic}\PYG{o}{:} \PYG{l+m}{37.16} \PYG{n}{on} \PYG{l+m}{2} \PYG{n}{and} \PYG{l+m}{44} \PYG{n}{DF}\PYG{p}{,}  \PYG{n}{p}\PYG{o}{\PYGZhy{}}\PYG{n}{value}\PYG{o}{:} \PYG{l+m}{3.534e\PYGZhy{}10}
+\end{Verbatim}

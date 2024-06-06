@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{std\PYGZus{}scaler} \PYG{o}{=} \PYG{n}{preprocessing}\PYG{o}{.}\PYG{n}{StandardScaler}\PYG{p}{()}
+\PYG{o}{\PYGZgt{}} \PYG{n}{normalized\PYGZus{}numerical\PYGZus{}data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}
+\PYG{o}{\PYGZgt{}}     \PYG{n}{std\PYGZus{}scaler}\PYG{o}{.}\PYG{n}{fit\PYGZus{}transform}\PYG{p}{(}\PYG{n}{normalizible\PYGZus{}data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()),}
+\PYG{o}{\PYGZgt{}}     \PYG{n}{columns}\PYG{o}{=}\PYG{n}{normalizible\PYGZus{}data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}\PYG{o}{.}\PYG{n}{columns}\PYG{p}{,}
+\PYG{o}{\PYGZgt{}}     \PYG{n}{index}\PYG{o}{=}\PYG{n}{normalizible\PYGZus{}data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}\PYG{o}{.}\PYG{n}{index}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Mean values:\PYGZdq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{k}{for} \PYG{n}{col} \PYG{o+ow}{in} \PYG{n}{normalizible\PYGZus{}features}\PYG{p}{:}
+\PYG{o}{\PYGZgt{}}     \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}col\PYGZcb{}}\PYG{l+s+s1}{: \PYGZob{}normalized\PYGZus{}numerical\PYGZus{}data[col].mean()\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{Mean} \PYG{n}{values}\PYG{p}{:}
+\PYG{n}{geo\PYGZus{}x}\PYG{p}{:} \PYG{l+m+mf}{5.650704189145687e\PYGZhy{}16}
+\PYG{n}{geo\PYGZus{}y}\PYG{p}{:} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{9.493152402339494e\PYGZhy{}16}
+\PYG{n}{geo\PYGZus{}lat}\PYG{p}{:} \PYG{l+m+mf}{5.0441993575674176e\PYGZhy{}15}
+\PYG{n}{geo\PYGZus{}lon}\PYG{p}{:} \PYG{l+m+mf}{1.0637079181535481e\PYGZhy{}14}
+\PYG{n}{victim\PYGZus{}count}\PYG{p}{:} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{3.342133424421861e\PYGZhy{}17}
+\PYG{n}{reported\PYGZus{}time\PYGZus{}utc}\PYG{p}{:} \PYG{l+m+mf}{8.612383926124051e\PYGZhy{}17}
+\end{Verbatim}

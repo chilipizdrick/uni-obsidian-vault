@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{best\PYGZus{}log\PYGZus{}base} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{function}\PYG{p}{(}\PYG{n}{var}\PYG{p}{,} \PYG{n}{regressor}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+  \PYG{n}{best\PYGZus{}base} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{l+m}{0.1}
+  \PYG{n}{best\PYGZus{}r\PYGZus{}squared} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{l+m}{0.0}
+  \PYG{n+nf}{for }\PYG{p}{(}\PYG{n}{base} \PYG{n}{in} \PYG{n+nf}{seq}\PYG{p}{(}\PYG{n}{from}\PYG{o}{=}\PYG{l+m}{0.1}\PYG{p}{,} \PYG{n}{to}\PYG{o}{=}\PYG{l+m}{5.0}\PYG{p}{,} \PYG{n}{by}\PYG{o}{=}\PYG{l+m}{0.1}\PYG{p}{))} \PYG{p}{\PYGZob{}}
+    \PYG{n+nf}{if }\PYG{p}{(}\PYG{n}{base} \PYG{o}{!=} \PYG{l+m}{1.0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+      \PYG{n}{predictor} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{log}\PYG{p}{(}\PYG{n}{regressor}\PYG{p}{,} \PYG{n}{base}\PYG{p}{)}
+      \PYG{n}{model} \PYG{o}{=} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{var} \PYG{o}{\PYGZti{}} \PYG{n}{predictor}\PYG{p}{)}
+      \PYG{n}{r\PYGZus{}squared} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{model}\PYG{p}{)}\PYG{o}{\PYGZdl{}}\PYG{n}{r.squared}
+      \PYG{n+nf}{if }\PYG{p}{(}\PYG{n}{r\PYGZus{}squared} \PYG{o}{\PYGZgt{}} \PYG{n}{best\PYGZus{}r\PYGZus{}squared}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{best\PYGZus{}r\PYGZus{}squared} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{r\PYGZus{}squared}
+        \PYG{n}{best\PYGZus{}base} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{base}
+      \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{n}{best\PYGZus{}base}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

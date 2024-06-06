@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n+nf}{I}\PYG{p}{(}\PYG{l+m}{2.3}\PYG{n}{\PYGZca{}age}\PYG{p}{),} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}0.026; \PYGZhy{}0.017)}
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n+nf}{I}\PYG{p}{(}\PYG{l+m}{0.7}\PYG{n}{\PYGZca{}week\PYGZus{}duration}\PYG{p}{),} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}1.883; \PYGZhy{}1.252)}
+\end{Verbatim}

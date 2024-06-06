@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{mean}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Agriculture}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Ср. арифм. Agriculture = 50.65957}
+\PYG{n+nf}{var}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Agriculture}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Дисперсия Agriculture = 515.7994}
+\PYG{n+nf}{sd}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Agriculture}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} СКО Agriculture = 22.71122}
+
+\PYG{n+nf}{mean}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Education}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Ср. арифм. Education = 10.97872}
+\PYG{n+nf}{var}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Education}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Дисперсия Education = 92.45606}
+\PYG{n+nf}{sd}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Education}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} СКО Education = 9.615407}
+
+\PYG{n+nf}{mean}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Examination}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Ср. арифм. Examination = 16.48936}
+\PYG{n+nf}{var}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Examination}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Дисперсия Examination = 63.64662}
+\PYG{n+nf}{sd}\PYG{p}{(}\PYG{n}{swiss}\PYG{o}{\PYGZdl{}}\PYG{n}{Examination}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} СКО Examination = 7.977883}
+\end{Verbatim}

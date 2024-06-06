@@ -1,0 +1,134 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.tree} \PYG{k+kn}{import} \PYG{n}{DecisionTreeClassifier}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.model\PYGZus{}selection} \PYG{k+kn}{import} \PYG{n}{train\PYGZus{}test\PYGZus{}split}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.metrics} \PYG{k+kn}{import} \PYG{n}{classification\PYGZus{}report}\PYG{p}{,} \PYG{n}{accuracy\PYGZus{}score}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.ensemble} \PYG{k+kn}{import} \PYG{n}{RandomForestClassifier}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.model\PYGZus{}selection} \PYG{k+kn}{import} \PYG{n}{GridSearchCV}
+
+
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./vgsales.csv\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Platform\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Platform\PYGZsq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}DS\PYGZsq{}}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{dropna}\PYG{p}{()}
+
+\PYG{n}{platform} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{([}\PYG{l+s+s1}{\PYGZsq{}Platform\PYGZsq{}}\PYG{p}{])]}
+\PYG{n}{features} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Rank\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Year\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}NA\PYGZus{}Sales\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}EU\PYGZus{}Sales\PYGZsq{}}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}JP\PYGZus{}Sales\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Other\PYGZus{}Sales\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Global\PYGZus{}Sales\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{features}\PYG{p}{)]}
+
+\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{x\PYGZus{}val}\PYG{p}{,} \PYG{n}{y\PYGZus{}tr}\PYG{p}{,} \PYG{n}{y\PYGZus{}val} \PYG{o}{=} \PYG{n}{train\PYGZus{}test\PYGZus{}split}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{platform}\PYG{p}{,}
+                                            \PYG{n}{test\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mf}{0.25}\PYG{p}{,} \PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{8}\PYG{p}{)}
+
+\PYG{n}{best\PYGZus{}tree} \PYG{o}{=} \PYG{n}{DecisionTreeClassifier}\PYG{p}{(}\PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{6679}\PYG{p}{,} \PYG{n}{max\PYGZus{}depth}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{best\PYGZus{}tree} \PYG{o}{=} \PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{y\PYGZus{}tr}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{):}
+    \PYG{n}{tree} \PYG{o}{=} \PYG{n}{DecisionTreeClassifier}\PYG{p}{(}\PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{6679}\PYG{p}{,} \PYG{n}{max\PYGZus{}depth}\PYG{o}{=}\PYG{n}{i}\PYG{p}{)}
+    \PYG{n}{tree} \PYG{o}{=} \PYG{n}{tree}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{y\PYGZus{}tr}\PYG{p}{)}
+    \PYG{k}{if} \PYG{n}{tree}\PYG{o}{.}\PYG{n}{score}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{,} \PYG{n}{y\PYGZus{}val}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{score}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{,} \PYG{n}{y\PYGZus{}val}\PYG{p}{):}
+        \PYG{n}{best\PYGZus{}tree} \PYG{o}{=} \PYG{n}{tree}
+
+
+\PYG{n}{report} \PYG{o}{=} \PYG{n}{classification\PYGZus{}report}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{report}\PYG{p}{)}
+
+\PYG{n}{accuracy} \PYG{o}{=} \PYG{n}{accuracy\PYGZus{}score}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Accuracy: }\PYG{l+s+si}{\PYGZob{}accuracy\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{feature\PYGZus{}importances} \PYG{o}{=} \PYG{p}{(}\PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{feature\PYGZus{}importances\PYGZus{}} \PYG{o}{/}
+                       \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{best\PYGZus{}tree}\PYG{o}{.}\PYG{n}{feature\PYGZus{}importances\PYGZus{}}\PYG{p}{))}
+
+\PYG{n}{results} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}Features\PYGZsq{}}\PYG{p}{:} \PYG{n}{features}\PYG{p}{,}
+                        \PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{:} \PYG{n}{feature\PYGZus{}importances}\PYG{p}{\PYGZcb{})}
+\PYG{n}{results}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{by}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{,} \PYG{n}{inplace}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{barh}\PYG{p}{(}\PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Features\PYGZsq{}}\PYG{p}{],} \PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{])}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Feature importances\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn} \PYG{k+kn}{import} \PYG{n}{tree}
+
+
+\PYG{n}{fig} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{7}\PYG{p}{))}
+\PYG{n}{\PYGZus{}} \PYG{o}{=} \PYG{n}{tree}\PYG{o}{.}\PYG{n}{plot\PYGZus{}tree}\PYG{p}{(}\PYG{n}{best\PYGZus{}tree}\PYG{p}{,}
+                   \PYG{n}{feature\PYGZus{}names}\PYG{o}{=}\PYG{n}{features}\PYG{p}{,}
+                   \PYG{n}{impurity}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,}
+                   \PYG{n}{proportion}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,}
+                   \PYG{n}{max\PYGZus{}depth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,}
+                   \PYG{n}{fontsize}\PYG{o}{=}\PYG{l+m+mi}{12}\PYG{p}{,}
+                   \PYG{n}{filled}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+
+
+\PYG{n}{forest} \PYG{o}{=} \PYG{n}{RandomForestClassifier}\PYG{p}{(}\PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{6679}\PYG{p}{)}
+\PYG{n}{forest} \PYG{o}{=} \PYG{n}{forest}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(}\PYG{n}{y\PYGZus{}tr}\PYG{p}{))}
+
+
+\PYG{n}{report} \PYG{o}{=} \PYG{n}{classification\PYGZus{}report}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{forest}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{report}\PYG{p}{)}
+
+\PYG{n}{accuracy} \PYG{o}{=} \PYG{n}{accuracy\PYGZus{}score}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{forest}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Accuracy: }\PYG{l+s+si}{\PYGZob{}accuracy\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{feature\PYGZus{}importances} \PYG{o}{=} \PYG{p}{(}\PYG{n}{forest}\PYG{o}{.}\PYG{n}{feature\PYGZus{}importances\PYGZus{}} \PYG{o}{/}
+                       \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{forest}\PYG{o}{.}\PYG{n}{feature\PYGZus{}importances\PYGZus{}}\PYG{p}{))}
+
+\PYG{n}{results} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}Features\PYGZsq{}}\PYG{p}{:} \PYG{n}{features}\PYG{p}{,}
+                        \PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{:} \PYG{n}{feature\PYGZus{}importances}\PYG{p}{\PYGZcb{})}
+\PYG{n}{results}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{by}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{,} \PYG{n}{inplace}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{barh}\PYG{p}{(}\PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Features\PYGZsq{}}\PYG{p}{],} \PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{])}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Feature importances\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+
+
+\PYG{n}{param\PYGZus{}grid} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}estimators\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{,} \PYG{l+m+mi}{400}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth\PYGZsq{}}\PYG{p}{:} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{)),}
+    \PYG{l+s+s1}{\PYGZsq{}criterion\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}gini\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{tuned\PYGZus{}forest} \PYG{o}{=} \PYG{n}{GridSearchCV}\PYG{p}{(}\PYG{n}{estimator}\PYG{o}{=}\PYG{n}{RandomForestClassifier}\PYG{p}{(),} 
+                            \PYG{n}{param\PYGZus{}grid}\PYG{o}{=}\PYG{n}{param\PYGZus{}grid}\PYG{p}{,} \PYG{n}{cv}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{refit}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{tuned\PYGZus{}forest}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(}\PYG{n}{y\PYGZus{}tr}\PYG{p}{))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Итерация 1\PYGZsq{}}\PYG{p}{)}
+ \PYG{c+c1}{\PYGZsh{} n\PYGZus{}estimators: значения варьируются от 50 до 400, выберем стандартные 100}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}estimators: }\PYG{l+s+si}{\PYGZob{}tuned\PYGZus{}forest.best\PYGZus{}estimator\PYGZus{}.n\PYGZus{}estimators\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth: }\PYG{l+s+si}{\PYGZob{}tuned\PYGZus{}forest.best\PYGZus{}estimator\PYGZus{}.max\PYGZus{}depth\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} max\PYGZus{}depth: 9}
+
+\PYG{c+c1}{\PYGZsh{} Теперь cдвинем диапазон max\PYGZus{}depth}
+
+\PYG{n}{param\PYGZus{}grid} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}estimators\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{100}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth\PYGZsq{}}\PYG{p}{:} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{15}\PYG{p}{)),}
+    \PYG{l+s+s1}{\PYGZsq{}criterion\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}gini\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{tuned\PYGZus{}forest} \PYG{o}{=} \PYG{n}{GridSearchCV}\PYG{p}{(}\PYG{n}{estimator}\PYG{o}{=}\PYG{n}{RandomForestClassifier}\PYG{p}{(),} 
+                            \PYG{n}{param\PYGZus{}grid}\PYG{o}{=}\PYG{n}{param\PYGZus{}grid}\PYG{p}{,} \PYG{n}{cv}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{refit}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{tuned\PYGZus{}forest}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}tr}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(}\PYG{n}{y\PYGZus{}tr}\PYG{p}{))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Итерация 2\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth: }\PYG{l+s+si}{\PYGZob{}tuned\PYGZus{}forest.best\PYGZus{}estimator\PYGZus{}.max\PYGZus{}depth\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} max\PYGZus{}depth: 10}
+
+\PYG{c+c1}{\PYGZsh{} Проанализируем полученный классификатор}
+
+\PYG{n}{report} \PYG{o}{=} \PYG{n}{classification\PYGZus{}report}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,}
+                               \PYG{n}{tuned\PYGZus{}forest}\PYG{o}{.}\PYG{n}{best\PYGZus{}estimator\PYGZus{}}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{report}\PYG{p}{)}
+
+\PYG{n}{accuracy} \PYG{o}{=} \PYG{n}{accuracy\PYGZus{}score}\PYG{p}{(}\PYG{n}{y\PYGZus{}val}\PYG{p}{,} \PYG{n}{tuned\PYGZus{}forest}\PYG{o}{.}\PYG{n}{best\PYGZus{}estimator\PYGZus{}}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{x\PYGZus{}val}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Accuracy: }\PYG{l+s+si}{\PYGZob{}accuracy\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{feature\PYGZus{}importances} \PYG{o}{=} \PYG{p}{(}\PYG{n}{tuned\PYGZus{}forest}\PYG{o}{.}\PYG{n}{best\PYGZus{}estimator\PYGZus{}}\PYG{o}{.}\PYG{n}{feature\PYGZus{}importances\PYGZus{}} \PYG{o}{/}
+                       \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{tuned\PYGZus{}forest}\PYG{o}{.}\PYG{n}{best\PYGZus{}estimator\PYGZus{}}\PYG{o}{.}\PYG{n}{feature\PYGZus{}importances\PYGZus{}}\PYG{p}{))}
+
+\PYG{n}{results} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}Features\PYGZsq{}}\PYG{p}{:} \PYG{n}{features}\PYG{p}{,}
+                        \PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{:} \PYG{n}{feature\PYGZus{}importances}\PYG{p}{\PYGZcb{})}
+\PYG{n}{results}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{by}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{,} \PYG{n}{inplace}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{barh}\PYG{p}{(}\PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Features\PYGZsq{}}\PYG{p}{],} \PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Importances\PYGZsq{}}\PYG{p}{])}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Feature importances\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}

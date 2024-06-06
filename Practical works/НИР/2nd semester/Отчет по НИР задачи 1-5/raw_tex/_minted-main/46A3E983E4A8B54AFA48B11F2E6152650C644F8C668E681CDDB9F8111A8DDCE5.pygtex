@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{sex}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (0.446; 0.567)}
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{city\PYGZus{}status}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (0.334; 0.469)}
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{higher\PYGZus{}educ}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (0.481; 0.605)}
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{salary\PYGZus{}satisfaction}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (0.528; 0.653)}
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{is\PYGZus{}entrepreneur}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (0.443; 0.781)}
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{if\PYGZus{}subordinates}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (0.566; 0.706)}
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{age}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (\PYGZhy{}0.173; \PYGZhy{}0.113)}
+\PYG{n+nf}{interval}\PYG{p}{(}\PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{salary}\PYG{o}{\PYGZti{}}\PYG{n}{week\PYGZus{}duration}\PYG{p}{,} \PYG{n}{data}\PYG{o}{=}\PYG{n}{clean\PYGZus{}data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} (0.110; 0.171)}
+\end{Verbatim}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{shuffled\PYGZus{}data} \PYG{o}{=} \PYG{n}{shuffle}\PYG{p}{(}\PYG{n}{clean\PYGZus{}data}\PYG{p}{,} \PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{20000}\PYG{p}{)}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{shuffled\PYGZus{}data}\PYG{o}{.}\PYG{n}{drop}\PYG{p}{(}\PYG{n}{columns}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{,])}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{shuffled\PYGZus{}data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[:,} \PYG{n}{clean\PYGZus{}data}\PYG{o}{.}\PYG{n}{columns}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{([}\PYG{l+s+s1}{\PYGZsq{}offence\PYGZus{}code+extension\PYGZsq{}}\PYG{p}{])]}
+\PYG{n}{z} \PYG{o}{=} \PYG{n}{TSNE}\PYG{p}{(}\PYG{n}{n\PYGZus{}components}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{learning\PYGZus{}rate}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}auto\PYGZsq{}}\PYG{p}{,} \PYG{n}{random\PYGZus{}state}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,}
+         \PYG{n}{init}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}pca\PYGZsq{}}\PYG{p}{,} \PYG{n}{perplexity}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{)}\PYG{o}{.}\PYG{n}{fit\PYGZus{}transform}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+\end{Verbatim}
