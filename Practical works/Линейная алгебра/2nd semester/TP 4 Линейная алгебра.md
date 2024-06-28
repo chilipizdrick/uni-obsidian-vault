@@ -66,7 +66,9 @@ k-2 & 1 \\
 \end{vmatrix} + \begin{vmatrix}
 1 & k-2 \\
 1 & 1
-\end{vmatrix} = \\
+\end{vmatrix} = \end{gather}$$
+
+$$\begin{gather}
 = (k-2)[(k-2)^{2} - 1] - ([k-2] - 1) + (1 - [k-2]) = \\
 = (k-2)^{3} - (k-2) - (k-2) + 1 + 1 - (k-2) = \\
 = (k-2)^{3} - 3(k-2) + 2 = (k-3)([k-2]^{2} + [k-2] - 2) = \\
@@ -109,7 +111,9 @@ $$\begin{gather}
 1 & -2 & 1 & 0 \\
 0 & -1 & 1 & 0 \\
 0 & 0 & 0 & 0
-\end{array}\right) \to \\
+\end{array}\right) \to\end{gather}$$
+
+$$\begin{gather}
 \to \left(\begin{array}{ccc|c}
 1 & -2 & 1 & 0 \\
 0 & -1 & 1 & 0 \\
