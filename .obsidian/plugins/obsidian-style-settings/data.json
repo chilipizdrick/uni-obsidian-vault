@@ -1,7 +1,7 @@
 {
-  "encore-settings@@theme-dark": "encore-theme-dark-glass-royale",
+  "encore-settings@@theme-dark": "encore-theme-dark-flexoki",
   "encore-settings@@encore-translucency-background": "encore-bg-image",
-  "encore-settings@@encore-translucency": true,
+  "encore-settings@@encore-translucency": false,
   "encore-settings@@colors": "encore-colors-neutral",
   "encore-settings@@encore-fancy-headers": false,
   "encore-settings@@encore-mobile-oled-mode": false,
@@ -19,5 +19,15 @@
   "minimal-advanced@@font-ui-smaller": 11,
   "minimal-mobile@@mobile-toolbar-off": false,
   "Components@@tab-autohide": false,
-  "Components@@Ribbon-autohide": false
+  "Components@@Ribbon-autohide": false,
+  "encore-settings@@theme-light": "encore-theme-light",
+  "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-blue",
+  "minimal-style@@ax1@@light": "#70B7FF",
+  "minimal-style@@ax1@@dark": "#70B7FF",
+  "minimal-style@@ax2@@light": "#A9D4FF",
+  "minimal-style@@ax2@@dark": "#A9D4FF",
+  "minimal-style@@ax3@@light": "#70B7FF",
+  "minimal-style@@ax3@@dark": "#70B7FF",
+  "minimal-style@@sp1@@light": "#A9D4FF",
+  "minimal-style@@sp1@@dark": "#A9D4FF"
 }

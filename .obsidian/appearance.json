@@ -1,16 +1,16 @@
 {
   "accentColor": "",
   "baseFontSize": 20,
-  "cssTheme": "Rosé Pine",
-  "theme": "system",
-  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
-  "textFontFamily": "",
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "monospaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "Noto Sans",
   "enabledCssSnippets": [
     "pdf",
     "image",
     "obsidian.css.live-preview.list-rainbow-indents",
-    "cursor-line-highlight",
-    "bulkier-bold-font"
+    "cursor-line-highlight"
   ],
-  "nativeMenus": false
+  "nativeMenus": false,
+  "interfaceFontFamily": "JetBrains Mono"
 }
