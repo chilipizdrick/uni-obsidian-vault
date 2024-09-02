@@ -1,4 +1,4 @@
-> [!defininion]
+> [!definition]
 > 
 
 ### Примеры
