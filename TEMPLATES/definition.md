@@ -1,4 +1,1 @@
-> [!definition]
-> 
-
-### Примеры
+> [!definition] 
