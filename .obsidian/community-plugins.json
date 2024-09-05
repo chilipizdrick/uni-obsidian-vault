@@ -6,5 +6,6 @@
   "quickadd",
   "quick-latex",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "obsidian-tikzjax"
 ]
