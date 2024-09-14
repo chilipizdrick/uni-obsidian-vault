@@ -21,7 +21,7 @@
   "Components@@tab-autohide": false,
   "Components@@Ribbon-autohide": false,
   "encore-settings@@theme-light": "encore-theme-light",
-  "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-blue",
+  "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-full-palette",
   "minimal-style@@ax1@@light": "#70B7FF",
   "minimal-style@@ax1@@dark": "#70B7FF",
   "minimal-style@@ax2@@light": "#A9D4FF",
