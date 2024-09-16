@@ -29,5 +29,6 @@
   "minimal-style@@ax3@@light": "#70B7FF",
   "minimal-style@@ax3@@dark": "#70B7FF",
   "minimal-style@@sp1@@light": "#A9D4FF",
-  "minimal-style@@sp1@@dark": "#A9D4FF"
+  "minimal-style@@sp1@@dark": "#A9D4FF",
+  "catppuccin-icon-styles@@ctp-icon-hide": false
 }
