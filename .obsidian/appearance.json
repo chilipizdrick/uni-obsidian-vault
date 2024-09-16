@@ -3,7 +3,7 @@
   "baseFontSize": 20,
   "cssTheme": "Catppuccin",
   "theme": "obsidian",
-  "monospaceFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrainsMonoNL NF",
   "textFontFamily": "Noto Sans",
   "enabledCssSnippets": [
     "pdf",
