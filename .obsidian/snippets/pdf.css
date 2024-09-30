@@ -1,22 +1,5 @@
 /* Page breaks */
 @media print {
-    body {
-        --font-text: 'Times New Roman' !important;
-        --font-text-size: 14pt !important;
-    }
-
-    h1 {
-        page-break-before: always;
-    }
-
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        page-break-after: avoid;
-    }
-
     .internal-embed {
         page-break-after: avoid;
         page-break-before: avoid;
@@ -33,5 +16,22 @@
         --strong-color: black;
         --tag-color: black;
         --tag-background: transparent;
-     }
+    }
+
+    body {
+        --font-text: 'Times New Roman' !important;
+        --font-text-size: 14pt !important;
+    }
+
+    h1 {
+        page-break-before: always;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+    }
 }
