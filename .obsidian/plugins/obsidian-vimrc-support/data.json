@@ -1,6 +1,6 @@
 {
   "vimrcFileName": ".obsidian.vimrc",
-  "displayChord": false,
+  "displayChord": true,
   "displayVimMode": true,
   "fixedNormalModeLayout": true,
   "capturedKeyboardMap": {
@@ -35,7 +35,7 @@
     "KeyT": "t",
     "KeyY": "y",
     "Quote": "'",
-    "IntlBackslash": "\\",
+    "IntlBackslash": "<",
     "Backslash": "\\",
     "KeyK": "k",
     "KeyF": "f",

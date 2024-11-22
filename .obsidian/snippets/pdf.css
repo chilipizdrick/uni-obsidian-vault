@@ -1,5 +1,23 @@
 /* Page breaks */
 @media print {
+    .internal-embed {
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+
+    .print > :is(.markdown-preview-view, .markdown-rendered) {
+        --h1-color: black;
+        --h2-color: black;
+        --h3-color: black;
+        --h4-color: black;
+        --h5-color: black;
+        --h6-color: black;
+        --em-color: black;
+        --strong-color: black;
+        --tag-color: black;
+        --tag-background: transparent;
+    }
+
     body {
         --font-text: 'Times New Roman' !important;
         --font-text-size: 14pt !important;
@@ -15,10 +33,5 @@
     h5,
     h6 {
         page-break-after: avoid;
-    }
-
-    .internal-embed {
-        page-break-after: avoid;
-        page-break-before: avoid;
     }
 }
