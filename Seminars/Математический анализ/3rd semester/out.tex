@@ -1,21 +1,21 @@
-# Семинар 1
+\section{Семинар 1}\label{ux441ux435ux43cux438ux43dux430ux440-1}
 
-### Симметризация
+\subsubsection{Симметризация}\label{ux441ux438ux43cux43cux435ux442ux440ux438ux437ux430ux446ux438ux44f}
 
 $$A_{(ij)} = \frac{1}{2}(A_{ij}+A_{ji})$$
 
-### Антисимметризация
+\subsubsection{Антисимметризация}\label{ux430ux43dux442ux438ux441ux438ux43cux43cux435ux442ux440ux438ux437ux430ux446ux438ux44f}
 
 $$A_{[ij]} = \frac{1}{2}(A_{ij}-A_{ji})$$
 
-Симметричная матрица: $A^{T} = A, \ A_{ij} = A_{ji}$
-Антисимметричная матрица: $A^{T} = -A, \ A_{ij} = -A_{ji}$
+Симметричная матрица: \(A^{T} = A, \ A_{ij} = A_{ji}\) Антисимметричная
+матрица: \(A^{T} = -A, \ A_{ij} = -A_{ji}\)
 
 Любой тензор второго ранга можно разложить на симм. и антисимм. части:
 
 $$A_{[ij]} + A_{(ij)} = A_{ij}$$
 
-### Задача 1
+\subsubsection{Задача 1}\label{ux437ux430ux434ux430ux447ux430-1}
 
 Тензор задан своими компонентами
 
@@ -38,66 +38,74 @@ A_{[ij]} = \begin{pmatrix}
 \end{pmatrix}
 \end{gather}$$
 
-### Задача 2
+\subsubsection{Задача 2}\label{ux437ux430ux434ux430ux447ux430-2}
 
-Имеется тензор второго ранга в $\mathbb{R}^{n}$. Число независимых компонент.
+Имеется тензор второго ранга в \(\mathbb{R}^{n}\). Число независимых
+компонент.
 
-Для общ. вида: $n^{2}$
-Для симм. вида: $\frac{n^{2}+n}{2}$
-Для антисимм. вида: $\frac{n^{2}-n}{2}$
+Для общ. вида: \(n^{2}\) Для симм. вида: \(\frac{n^{2}+n}{2}\) Для
+антисимм. вида: \(\frac{n^{2}-n}{2}\)
 
-### Задача 3
+\subsubsection{Задача 3}\label{ux437ux430ux434ux430ux447ux430-3}
 
-1. $3^{3} = 27$
-2. $3 + 6 + 1 = 10$
-3. $1$
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(3^{3} = 27\)
+\item
+  \(3 + 6 + 1 = 10\)
+\item
+  \(1\)
+\end{enumerate}
 
-### Задача 4
+\subsubsection{Задача 4}\label{ux437ux430ux434ux430ux447ux430-4}
 
-$A_{ij}$ - комп симм. тензора
-$B^{ij}$ - комп. антисимм. тензора
-$A_{ij}B^{ij} = 0$
+\(A_{ij}\) - комп симм. тензора \(B^{ij}\) - комп. антисимм. тензора
+\(A_{ij}B^{ij} = 0\)
 
 $$i,j = 1,2: \ A_{11}B^{11} + A_{12}B^{12} + A_{21}B^{21} + A_{22}B^{22} = 0$$
 
-### Задача 5
+\subsubsection{Задача 5}\label{ux437ux430ux434ux430ux447ux430-5}
 
-Показать, что $A_{ij}B^{[ij]}$ зависит только от антисимметричной части тензора $A$.
+Показать, что \(A_{ij}B^{[ij]}\) зависит только от антисимметричной
+части тензора \(A\).
 
 $$A_{ij}B^{[ij]} = (A_{(ij)} + A_{[ij]})B^{[ij]} = \underbrace{A_{(ij)}B^{[ij]}}_{0} + A_{[ij]}B^{[ij]}$$
 
-> [!definition] Символ Кронекера
-> Короткая запись единичной матрицы
-> $$\delta_{k}^{i} = \begin{cases}
+\begin{quote}
+{[}!definition{]} Символ Кронекера Короткая запись единичной матрицы
+$$\delta_{k}^{i} = \begin{cases}
 1, i=k \\
 0, i\neq k
 \end{cases}$$
+\end{quote}
 
-> [!definition] Символ Леви-Чивита
-> $$\begin{gather}
+\begin{quote}
+{[}!definition{]} Символ Леви-Чивита $$\begin{gather}
 \mathbb{R}^{n}, \ \epsilon^{\overbrace{ij\dots k}^{n}} = \epsilon_{\underbrace{ij\dots k}_{n}} = \begin{cases}
- 1, \ \text{если} \ \begin{pmatrix}
+1, \ \text{если} \ \begin{pmatrix}
 1 & 2 & \dots & n \\
 i & j & \dots & k
 \end{pmatrix} - \text{четная перестановка} \\
- -1, \ \text{если} \ \begin{pmatrix}
+-1, \ \text{если} \ \begin{pmatrix}
 1 & 2 & \dots & n \\
 i & j & \dots & k
 \end{pmatrix} - \text{нечетная перестановка} \\
 0 \ \text{в остальных случаях}
 \end{cases}
-\end{gather}$$
-> $$\begin{vmatrix}
+\end{gather}$$ $$\begin{vmatrix}
 a^{1} & b^{1} & c^{1} \\
 a^{2} & b^{2} & c^{2} \\
 a^{3} & b^{3} & c^{3}
 \end{vmatrix} = \epsilon_{ijk}a^{i}b^{j}c^{k}$$
+\end{quote}
 
-### Задача 6
+\subsubsection{Задача 6}\label{ux437ux430ux434ux430ux447ux430-6}
 
 $$n!$$
 
-### Задача 7
+\subsubsection{Задача 7}\label{ux437ux430ux434ux430ux447ux430-7}
 
 $$\epsilon_{ij}\epsilon^{ik} = a_{j}^{k}$$
 
@@ -109,16 +117,18 @@ a_{2}^{2} = 1 \\
 a_{j}^{k} = \delta_{j}^{k}
 \end{gather}$$
 
-### Задача 8
+\subsubsection{Задача 8}\label{ux437ux430ux434ux430ux447ux430-8}
 
 $$\begin{gather}
 \epsilon_{ijk}\epsilon^{ijl} = a_{k}^{l}
 \end{gather}$$
 
-# Семинар 2
+\section{Семинар 2}\label{ux441ux435ux43cux438ux43dux430ux440-2}
 
-## Тензор объема
- $$\begin{gather} \epsilon_{ijk}a^{i}b^{j}c^{k} \\
+\subsection{Тензор
+объема}\label{ux442ux435ux43dux437ux43eux440-ux43eux431ux44aux435ux43cux430}
+
+$$\begin{gather} \epsilon_{ijk}a^{i}b^{j}c^{k} \\
 \text{смеш. пр.} \ \vec{a} \ \vec{b} \ \vec{c} = V \\
 V = \epsilon_{ijk}a^{i}b^{j}c^{k} - \text{тензор объема} \\
 V: \mathbb{R}^{3\times 3} \to \mathbb{R}
@@ -136,14 +146,15 @@ $$\begin{gather}
 \langle \vec{a},\vec{b} \rangle = g_{ij}a^{i}b^{j} - \text{метр. тензор - симм. тензор 2-го ранга}
 \end{gather}$$
 
-## Поднятие и опускание индексов
+\subsection{Поднятие и опускание
+индексов}\label{ux43fux43eux434ux43dux44fux442ux438ux435-ux438-ux43eux43fux443ux441ux43aux430ux43dux438ux435-ux438ux43dux434ux435ux43aux441ux43eux432}
 
 $$\begin{gather}
 x_{i} = g_{ij}x^{j} - \text{вектор} \overset{g_{ij}}{\leftrightarrow} \text{ковектор} \\
 g^{ij} = (G^{-1})^{ij} \ x^{k} = g^{ki}x_{i} = \underbrace{g^{ki}g_{ij}}_{\delta_{j}^{k}}x^{j}
 \end{gather}$$
 
-### Пример
+\subsubsection{Пример}\label{ux43fux440ux438ux43cux435ux440}
 
 $$\begin{gather}
 g_{ij} = \begin{bmatrix}
@@ -227,10 +238,13 @@ a^{3}
 \end{pmatrix}
 \end{gather}$$
 
-## Инванианты тензора
+\subsection{Инванианты
+тензора}\label{ux438ux43dux432ux430ux43dux438ux430ux43dux442ux44b-ux442ux435ux43dux437ux43eux440ux430}
 
-> [!definition] Инванианты тензора
-> Скалярные величины, которые можно построить из компонент тензора.
+\begin{quote}
+{[}!definition{]} Инванианты тензора Скалярные величины, которые можно
+построить из компонент тензора.
+\end{quote}
 
 $$(1,0): \ |a| = \sqrt{ \langle a, a \rangle }, \ \langle a,a \rangle = g_{ij}a^{i}a^{j}$$
 
@@ -240,7 +254,7 @@ $$\begin{gather}
 a^{i}_{j}a^{j}_{i} = \mathrm{inv}
 \end{gather}$$
 
-### Пример
+\subsubsection{Пример}\label{ux43fux440ux438ux43cux435ux440-1}
 
 $$\begin{gather}
 a_{i}^{j}, a_{j}^{i}a_{i}^{j}, \epsilon_{ijk}a_{1}^{i}a_{2}^{j}a_{3}^{k} \\
@@ -266,16 +280,18 @@ TA = \lambda A \\
 T^{i}_{j}a^{j} = \lambda a^{i}
 \end{gather}$$
 
-# Семинар 3
+\section{Семинар 3}\label{ux441ux435ux43cux438ux43dux430ux440-3}
 
 $$\begin{gather}
 A_{j}^{i}x^{j} = \lambda x^{i} \\
 \hat{A} \vec{x} = \lambda \vec{x}
 \end{gather}$$
 
-> [!important] Для тензора второго ранга $\iff$ линейный оператор
-> Главные оси $\iff$ собственные векторы
-> Главные значения $\iff$ собственные значения
+\begin{quote}
+{[}!important{]} Для тензора второго ранга \(\iff\) линейный оператор
+Главные оси \(\iff\) собственные векторы Главные значения \(\iff\)
+собственные значения
+\end{quote}
 
 $$\begin{gather}
 a_{j}^{i} = \begin{pmatrix}
@@ -344,16 +360,20 @@ a_{i}^{i} = \mathrm{Tr} \ [a_{j}^{i}] = \sum_{i=1}^{n} a_{i}^{i} = \sum_{i=1}^{n
 a_{i}^{j}a_{j}^{i} = \sum_{i=1}^{n} \lambda_{i}^{2} = 3^{2}+0+0
 \end{gather}$$
 
-## Момент импульса вращающегося твердого тела
+\subsection{Момент импульса вращающегося твердого
+тела}\label{ux43cux43eux43cux435ux43dux442-ux438ux43cux43fux443ux43bux44cux441ux430-ux432ux440ux430ux449ux430ux44eux449ux435ux433ux43eux441ux44f-ux442ux432ux435ux440ux434ux43eux433ux43e-ux442ux435ux43bux430}
 
-$J^{ij}$ - тензор иннерции симметрий, определяет поведение твердого тела при вращениях.
+\(J^{ij}\) - тензор иннерции симметрий, определяет поведение твердого
+тела при вращениях.
 
-Энергия - $E_{i} = \frac{1}{2}J^{ij}\omega_{i}\omega_{j} = \frac{1}{2} \omega J\omega^{T}$
-Угловой момент - $L^{i} = J^{ij}\omega_{j}, \ L = J\omega^{T}$
+Энергия -
+\(E_{i} = \frac{1}{2}J^{ij}\omega_{i}\omega_{j} = \frac{1}{2} \omega J\omega^{T}\)
+Угловой момент - \(L^{i} = J^{ij}\omega_{j}, \ L = J\omega^{T}\)
 
-$\omega$ - (ко)вектор угловой скорости, задает ось вращения и $|\omega|$ = абсолютная величина угловой скорости.
+\(\omega\) - (ко)вектор угловой скорости, задает ось вращения и
+\(|\omega|\) = абсолютная величина угловой скорости.
 
-### Пример
+\subsubsection{Пример}\label{ux43fux440ux438ux43cux435ux440-2}
 
 $$\begin{gather}
 \omega = (1,-1,1) \\
@@ -394,7 +414,8 @@ L^{i} = \begin{pmatrix}
 \end{pmatrix}
 \end{gather}$$
 
-## Тензорное произведение векторов
+\subsection{Тензорное произведение
+векторов}\label{ux442ux435ux43dux437ux43eux440ux43dux43eux435-ux43fux440ux43eux438ux437ux432ux435ux434ux435ux43dux438ux435-ux432ux435ux43aux442ux43eux440ux43eux432}
 
 $$\begin{gather}
 \vec{a} = a^{i}\vec{e}_{j} \\
@@ -402,7 +423,7 @@ $$\begin{gather}
 \vec{a}\otimes \vec{b} = (a^{j}\vec{e}_{i},b^{i}\vec{e}_{j}) = \underbrace{a^{i}b^{j}}_{f^{ij}}\underbrace{(\vec{e}_{i}, \vec{e}_{j})}_{\text{базис}}
 \end{gather}$$
 
-### Пример
+\subsubsection{Пример}\label{ux43fux440ux438ux43cux435ux440-3}
 
 $$\vec{a}\otimes \vec{b}, \vec{b}\otimes \vec{a}, \vec{a} \wedge \vec{b}, \ \vec{a} = (1,2,3), \ \vec{b} = (-1,1,-1)
 $$
@@ -437,11 +458,16 @@ $$\begin{gather}
 \end{pmatrix} - \text{антисимм.}
 \end{gather}$$
 
-### Всегда ли тензор общего вида типа $(2,0)$ в $\mathbb{R}^{n}$ можно представить в виде тензорного произведения двух векторов?
+\subsubsection{\texorpdfstring{Всегда ли тензор общего вида типа
+\((2,0)\) в \(\mathbb{R}^{n}\) можно представить в виде тензорного
+произведения двух
+векторов?}{Всегда ли тензор общего вида типа (2,0) в \textbackslash mathbb\{R\}\^{}\{n\} можно представить в виде тензорного произведения двух векторов?}}\label{ux432ux441ux435ux433ux434ux430-ux43bux438-ux442ux435ux43dux437ux43eux440-ux43eux431ux449ux435ux433ux43e-ux432ux438ux434ux430-ux442ux438ux43fux430-20-ux432-mathbbrn-ux43cux43eux436ux43dux43e-ux43fux440ux435ux434ux441ux442ux430ux432ux438ux442ux44c-ux432-ux432ux438ux434ux435-ux442ux435ux43dux437ux43eux440ux43dux43eux433ux43e-ux43fux440ux43eux438ux437ux432ux435ux434ux435ux43dux438ux44f-ux434ux432ux443ux445-ux432ux435ux43aux442ux43eux440ux43eux432}
 
-Ответ - невозможно. ($n^{2} > 2n, (n>2)$). Даже в $\mathbb{R}^{2}$ - нельзя.
+Ответ - невозможно. (\(n^{2} > 2n, (n>2)\)). Даже в \(\mathbb{R}^{2}\) -
+нельзя.
 
-### Про объем
+\subsubsection{Про
+объем}\label{ux43fux440ux43e-ux43eux431ux44aux435ux43c}
 
 $$\begin{gather}
 \mathbb{R}^{2}: \\
@@ -462,7 +488,9 @@ $$\begin{gather}
 \underbrace{\epsilon^{ijk}u_{i}v_{j}w_{k}}_{V \ \text{параллелерипеда на} \ \tilde{u}, \tilde{v}, \tilde{w}}\cdot dx^{1} \wedge dx^{2} \wedge dx^{3}
 \end{gather}$$
 
-### Основываясь на предыдущей задаче, получить формулу замены координат в 3-х мерном интеграле.
+\subsubsection{Основываясь на предыдущей задаче, получить формулу замены
+координат в 3-х мерном
+интеграле.}\label{ux43eux441ux43dux43eux432ux44bux432ux430ux44fux441ux44c-ux43dux430-ux43fux440ux435ux434ux44bux434ux443ux449ux435ux439-ux437ux430ux434ux430ux447ux435-ux43fux43eux43bux443ux447ux438ux442ux44c-ux444ux43eux440ux43cux443ux43bux443-ux437ux430ux43cux435ux43dux44b-ux43aux43eux43eux440ux434ux438ux43dux430ux442-ux432-3-ux445-ux43cux435ux440ux43dux43eux43c-ux438ux43dux442ux435ux433ux440ux430ux43bux435.}
 
 $$\begin{gather}
 y^{i} = y^{i}(x) - \text{новые координаты} \\
@@ -471,15 +499,17 @@ dy^{1} \wedge dy^{2} \wedge dy^{3} = \left( \frac{\partial y^{1}}{\partial x^{j}
 = \frac{\partial y^{1}}{\partial x^{j}} \cdot \frac{\partial y^{2}}{\partial x^{k}} \cdot\frac{\partial y^{3}}{\partial x^{e}} \cdot dx^{j} \wedge dx^{k} \wedge dx^{e} = \det \left( \frac{\partial y^{i}}{\partial x^{j}} \right)dx^{j} \wedge dx^{k} \wedge dx^{e}
 \end{gather}$$
 
-# Семинар 4
+\section{Семинар 4}\label{ux441ux435ux43cux438ux43dux430ux440-4}
 
-## Звезда Ходжа
+\subsection{Звезда
+Ходжа}\label{ux437ux432ux435ux437ux434ux430-ux445ux43eux434ux436ux430}
 
-> [!definition] Звезда Ходжа
-> $$\begin{gather}
-> (*T)_{\underbrace{i\dots l}_{n-q}} = \frac{1}{q!}\epsilon_{\underbrace{i\dots lj\dots k}_{n}}T^{\underbrace{j\dots k}_{q}}, \ (0,n-1) \overset{*}{\leftrightarrow} (q,0), \\
-  \text{где} \ *T - \text{тензор, дуальный} \ T
-> \end{gather}$$
+\begin{quote}
+{[}!definition{]} Звезда Ходжа $$\begin{gather}
+(*T)_{\underbrace{i\dots l}_{n-q}} = \frac{1}{q!}\epsilon_{\underbrace{i\dots lj\dots k}_{n}}T^{\underbrace{j\dots k}_{q}}, \ (0,n-1) \overset{*}{\leftrightarrow} (q,0), \\
+\text{где} \ *T - \text{тензор, дуальный} \ T
+\end{gather}$$
+\end{quote}
 
 $$\begin{gather}
 C_{n}^{q} = C_{n}^{n-q} = \frac{n!}{q!(n-q)!} \\
@@ -497,9 +527,15 @@ $$\begin{gather}
 *(\tilde{u}\wedge\tilde{v}\wedge\tilde{w}) = \langle \tilde{u},\tilde{v},\tilde{w} \rangle = V
 \end{gather}$$
 
-### Примеры
+\subsubsection{Примеры}\label{ux43fux440ux438ux43cux435ux440ux44b}
 
-1. Найти $*((2dx^{1} + 3dx^{2})\wedge(dx^{1} - dx^{2}))$ в $\mathbb{R}^{2}$ и $\mathbb{R}^{3}$
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Найти \(*((2dx^{1} + 3dx^{2})\wedge(dx^{1} - dx^{2}))\) в
+  \(\mathbb{R}^{2}\) и \(\mathbb{R}^{3}\)
+\end{enumerate}
 
 $$\begin{gather}
 *(2dx^{1}\wedge dx^{1} - 2dx^{1}\wedge dx^{2} + 3dx^{2}\wedge dx^{1} - 3dx^{2}\wedge dx^{2}) = *(-5dx^{1} \wedge dx^{2}) \\
@@ -507,7 +543,15 @@ $$\begin{gather}
 \mathbb{R}^{3}: \ -5e^{123}\vec{e_{3}} = -5\vec{e_{3}} \\
 \end{gather}$$
 
-2. Найти $*((dx^{1}-3dx^{2})\wedge(dx^{1}-dx^{2})\wedge(dx^{1}-4dx^{3}))$ в $\mathbb{R}^{3}, \ \mathbb{R}^{4}$
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Найти
+  \(*((dx^{1}-3dx^{2})\wedge(dx^{1}-dx^{2})\wedge(dx^{1}-4dx^{3}))\) в
+  \(\mathbb{R}^{3}, \ \mathbb{R}^{4}\)
+\end{enumerate}
 
 $$\begin{gather}
 *((dx^{1}-3dx^{2})\wedge(dx^{1}-dx^{2})\wedge(dx^{1}-4dx^{3})), \ \mathbb{R}^{3}, \ \mathbb{R}^{4} \\
@@ -515,7 +559,15 @@ $$\begin{gather}
 \mathbb{R}^{4}: \ -9\epsilon^{1234}\vec{e}_{4} = -8\vec{e}_{4}
 \end{gather}$$
 
-3. Найти $*((-2dx^{1}+2dx^{2})\wedge(dx^{1}\wedge dx^{2} + 4dx^{1}\wedge dx^{3}))$ в $\mathbb{R}^{3}$ и $\mathbb{R}^{4}$
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Найти
+  \(*((-2dx^{1}+2dx^{2})\wedge(dx^{1}\wedge dx^{2} + 4dx^{1}\wedge dx^{3}))\)
+  в \(\mathbb{R}^{3}\) и \(\mathbb{R}^{4}\)
+\end{enumerate}
 
 $$\begin{gather}
 *((-2dx^{1}+2dx^{2})\wedge(dx^{1}\wedge dx^{2} + 4dx^{1}\wedge dx^{3})) = *(8dx^{2}\wedge dx^{1}\wedge dx^{3}) = \\
@@ -524,7 +576,16 @@ $$\begin{gather}
 \mathbb{R}^{4}: \ -8\epsilon^{1234}\vec{e}_{4} = -8\vec{e}_{4} \\
 \end{gather}$$
 
-4. Показать, что произведение 1 и 2-форм в $\mathbb{R}^{3}$ $\tilde{\omega}_{a} = a_{i}dx^{i}, \ \tilde{\omega}_{b} = b_{ij}dx^{i}\wedge dx^{j}$ выражается через скалярное произведение векторов $a, b$ (дуальны в 2-форме).
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Показать, что произведение 1 и 2-форм в \(\mathbb{R}^{3}\)
+  \(\tilde{\omega}_{a} = a_{i}dx^{i}, \ \tilde{\omega}_{b} = b_{ij}dx^{i}\wedge dx^{j}\)
+  выражается через скалярное произведение векторов \(a, b\) (дуальны в
+  2-форме).
+\end{enumerate}
 
 $$\begin{gather}
 \tilde{w}_{a} \wedge \tilde{w}_{a} = a_{k}dx^{k} \wedge b_{ij}dx^{i} \wedge dx^{j} = a_{k}b_{ij}dx^{k}\wedge dx^{i} \wedge dx^{j} = \\
@@ -532,18 +593,25 @@ $$\begin{gather}
 (b^{k} = \epsilon^{kij}b_{ij})
 \end{gather}$$
 
-## Внешнее дифференцииорвание (производная)
+\subsection{Внешнее дифференцииорвание
+(производная)}\label{ux432ux43dux435ux448ux43dux435ux435-ux434ux438ux444ux444ux435ux440ux435ux43dux446ux438ux438ux43eux440ux432ux430ux43dux438ux435-ux43fux440ux43eux438ux437ux432ux43eux434ux43dux430ux44f}
 
-> [!definition] Внешняя производная
-> $\tilde{d}$ - действие, аналогичное дифференциированию, переводящее антисимметричный тензор в антисимметричный тензор.
-> Пусть $\tilde{\alpha}$ - $p$-форма, $\tilde{\beta},\tilde{\gamma}$ - $q$-формы.
-> 1. $\tilde{d}(\tilde{\beta} + \tilde{\gamma}) = \tilde{d}\tilde{\beta} + \tilde{d}\tilde{\gamma}$ - линейность
-> 2. $\tilde{d}(\tilde{\alpha} \wedge \tilde{\beta}) = d\tilde{\alpha} \wedge \tilde{\beta} + (-1)^{p} \tilde{\alpha} \wedge \tilde{d}\tilde{\beta}$
-> 3. $\tilde{d}\tilde{d}\tilde{\alpha} = 0$
-> 
-> $f$ - 0-форма
-> $\tilde{d}f = df = \frac{\partial f}{\partial x^{1}}dx^{1} + \frac{\partial f}{\partial x^{2}}dx^{2}$ - 1-форма
-> $\tilde{d}^{2}f = \frac{\partial^{2} f}{\partial x^{1}\partial x^{1}}(dx^{1})^{2} + 2\frac{\partial^{2} f}{\partial x^{1}\partial x^{2}}dx^{1}dx^{2} + \frac{\partial^{2} f}{\partial x^{2}\partial x^{2}}(dx^{2})^{2} = 0$ - 2-форма
+\begin{quote}
+{[}!definition{]} Внешняя производная \(\tilde{d}\) - действие,
+аналогичное дифференциированию, переводящее антисимметричный тензор в
+антисимметричный тензор. Пусть \(\tilde{\alpha}\) - \(p\)-форма,
+\(\tilde{\beta},\tilde{\gamma}\) - \(q\)-формы. 1.
+\(\tilde{d}(\tilde{\beta} + \tilde{\gamma}) = \tilde{d}\tilde{\beta} + \tilde{d}\tilde{\gamma}\)
+- линейность 2.
+\(\tilde{d}(\tilde{\alpha} \wedge \tilde{\beta}) = d\tilde{\alpha} \wedge \tilde{\beta} + (-1)^{p} \tilde{\alpha} \wedge \tilde{d}\tilde{\beta}\)
+3. \(\tilde{d}\tilde{d}\tilde{\alpha} = 0\)
+
+\(f\) - 0-форма
+\(\tilde{d}f = df = \frac{\partial f}{\partial x^{1}}dx^{1} + \frac{\partial f}{\partial x^{2}}dx^{2}\)
+- 1-форма
+\(\tilde{d}^{2}f = \frac{\partial^{2} f}{\partial x^{1}\partial x^{1}}(dx^{1})^{2} + 2\frac{\partial^{2} f}{\partial x^{1}\partial x^{2}}dx^{1}dx^{2} + \frac{\partial^{2} f}{\partial x^{2}\partial x^{2}}(dx^{2})^{2} = 0\)
+- 2-форма
+\end{quote}
 
 $$\begin{gather}
 f \in \mathbb{R}^{n}: \mathrm{grad} \ f - \tilde{d}f \mathbb{R}^{n} \\
@@ -555,7 +623,7 @@ f \in \mathbb{R}^{n} : \mathrm{div} \ \vec{a} = *\tilde{d}*\vec{a} \\
 
 $$\tilde{d}(f\tilde{d}\tilde{g}) = \tilde{d}f \wedge \tilde{d}\tilde{g}$$
 
-### Примеры
+\subsubsection{Примеры}\label{ux43fux440ux438ux43cux435ux440ux44b-1}
 
 $$\begin{gather}
 *\tilde{d}((x^{1})^{2}dx^{1} + x^{1}x^{2}dx^{2} + x^{1}x^{3}dx^{3}) \ \text{в} \ \mathbb{R}^{3} \\
@@ -571,7 +639,7 @@ $$\begin{gather}
 = *(-x^{}dx^{2}\wedge dx^{12}\wedge dx^{3} + x^{1}dx^{3}\wedge dx^{1}\wedge dx^{2}) = 2x^{1}
 \end{gather}$$
 
-# Семинар 5
+\section{Семинар 5}\label{ux441ux435ux43cux438ux43dux430ux440-5}
 
 Доказать, что
 
@@ -588,14 +656,15 @@ $$\begin{gather}
 \mathrm{rot} \ \mathrm{grad} \ \vec{a} = *\tilde{d}(\tilde{d}f) = *0 = 0
 \end{gather}$$
 
-> [!definition] Интегрирование дифф. форм
-> $$\begin{gather}
+\begin{quote}
+{[}!definition{]} Интегрирование дифф. форм $$\begin{gather}
 \int _{U} \tilde{\alpha} = \int \alpha(x)dx^{1}\wedge \dots \wedge dx^{p} = \int \alpha(x)dx^{1}\dots dx^{p} \\
 \tilde{\alpha} = \alpha(x)dx^{1}\wedge \dots \wedge dx^{p}, \\
-\end{gather}$$
-> где $\tilde{\alpha}$ - $p$-форма в $p$-мерном пространстве, $u$ - $p$-мерная область
+\end{gather}$$ где \(\tilde{\alpha}\) - \(p\)-форма в \(p\)-мерном
+пространстве, \(u\) - \(p\)-мерная область
+\end{quote}
 
-Получить формулу замены координат $y = y(x)$ в двойном интеграле:
+Получить формулу замены координат \(y = y(x)\) в двойном интеграле:
 
 $$\begin{gather}
 y^{i} = y^{i}(x) \\
@@ -604,24 +673,27 @@ dy^{1} \wedge dy^{2} = \left( \frac{\partial y^{1}}{\partial x^{i}}dx^{i} \right
 = \epsilon^{12}\frac{\partial y^{1}}{\partial x^{1}}\frac{\partial y^{1}}{\partial x^{2}} dx^{1} \wedge dx^{2} = \det \left( \frac{\partial y^{i}}{\partial x^{i}} \right) dx^{1} \wedge dx^{2} \\
 \end{gather}$$
 
-> [!important] Теорема Стокса
-> $$\begin{gather}
+\begin{quote}
+{[}!important{]} Теорема Стокса $$\begin{gather}
 \int _{U} \tilde{d}\tilde{\alpha} = \int _{\partial U} \tilde{\alpha},
-\end{gather}$$
-> где $\tilde{\alpha}$ - $p$-форма, $\tilde{d}\tilde{\alpha}$ - $p+1$-форма, $U$ - $p+1$-мерная область, $\partial U$ - граница области $U$, $p$-мерная
+\end{gather}$$ где \(\tilde{\alpha}\) - \(p\)-форма,
+\(\tilde{d}\tilde{\alpha}\) - \(p+1\)-форма, \(U\) - \(p+1\)-мерная
+область, \(\partial U\) - граница области \(U\), \(p\)-мерная
+\end{quote}
 
-### Пример
+\subsubsection{Пример}\label{ux43fux440ux438ux43cux435ux440-4}
 
-$\mathbb{R}^{1}$, $0$-форма $f(x)$, $n=1, \ p=0$ 
+\(\mathbb{R}^{1}\), \(0\)-форма \(f(x)\), \(n=1, \ p=0\)
 $$\begin{gather}
 \int df = \int_{\partial U} f \\
 \int_{a}^{b} df = f(b) - f(a)
 \end{gather}$$
 
-### 3
+\subsubsection{3}\label{section}
 
-Какую формулу надо подставить в теореме Стокса, чтобы получить аналог формулы Остроградското-Гаусса в $\mathbb{R}^{4}$?
-Записать для $\mathbb{R}^{4}$.
+Какую формулу надо подставить в теореме Стокса, чтобы получить аналог
+формулы Остроградското-Гаусса в \(\mathbb{R}^{4}\)? Записать для
+\(\mathbb{R}^{4}\).
 
 $$\begin{gather}
 \iiint_{U} \mathrm{div} \ \vec{a} \, dV = \iint_{\partial U} (\vec{a}, d\vec{\Sigma}) \\
@@ -632,13 +704,13 @@ $$\begin{gather}
 \end{bmatrix}
 \end{gather}$$
 
-В $\mathbb{R}^{4}$:
+В \(\mathbb{R}^{4}\):
 
 $$\begin{gather}
 \iiiint_{U} \mathrm{div} \ \vec{a} \, dx^{1}\wedge dx^{2} \wedge dx^{3} \wedge dx^{4} = \iiint_{\partial U} a^{i}\epsilon_{ijkl} \, dx^{j} \wedge dx^{k} \wedge dx^{l}
 \end{gather}$$
 
-### 4
+\subsubsection{4}\label{section-1}
 
 На основе решения предыдущей задачи,
 
@@ -646,7 +718,8 @@ $$\begin{gather}
 \int_{U} \mathrm{div} \ \vec{a} \, dS = \int_{\partial  U} *\vec{a}
 \end{gather}$$
 
-получить формулу Грина, перейдя от вектора $\vec{a}$ к дуальному ему ковектору $\tilde{\alpha} = *\vec{a}$.
+получить формулу Грина, перейдя от вектора \(\vec{a}\) к дуальному ему
+ковектору \(\tilde{\alpha} = *\vec{a}\).
 
 $$\begin{gather}
 \iint_{U} \left( \frac{\partial a^{1}}{\partial x^{1}} + \frac{\partial a^{2}}{\partial x^{2}} \right) dx^{1} \wedge dx^{2} \\
@@ -659,8 +732,8 @@ $$\begin{gather}
 = \oint \tilde{\alpha} = \oint \left(\alpha_{1}dx^{1} + \alpha_{2}dx^{2} \right)
 \end{gather}$$
 
-> [!definition] Псевдоевклидовы пространства
-> $$\begin{gather}
+\begin{quote}
+{[}!definition{]} Псевдоевклидовы пространства $$\begin{gather}
 g_{ik} = \begin{pmatrix}
 1 & 0 \\
 0 & -1
@@ -672,15 +745,16 @@ g_{\mu v} = \begin{pmatrix}
 0 & 0 & 0 & -1
 \end{pmatrix} \\
 \end{gather}$$
-> 
-> $$\begin{gather}
+
+$$\begin{gather}
 x^{0} = ct \\
 x^{1}
 x^{2}
 x^{3}
 \end{gather}$$
+\end{quote}
 
-### 5
+\subsubsection{5}\label{section-2}
 
 $$\begin{gather}
 A_{i} = g_{ij}A^{j} = g_{ji}A^{i} \\
@@ -700,32 +774,48 @@ F_{12} = g_{11}g_{22} = -F^{12} \\
 F_{23} = g_{22}g_{33}F^{23} = F^{23}
 \end{gather}$$
 
-## К/р
+\subsection{К/р}\label{ux43aux440}
 
-1. Симметричные и антисимметричные тензоры
-2. Главные значения, главные оси, инварианты тензора
-3. (и 4) Внешнее произведение тензоров, диффеернциирование тензоров, звезда Ходжа
-5. Поднимание и опускание индексов
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Симметричные и антисимметричные тензоры
+\item
+  Главные значения, главные оси, инварианты тензора
+\item
+  (и 4) Внешнее произведение тензоров, диффеернциирование тензоров,
+  звезда Ходжа
+\item
+  Поднимание и опускание индексов
+\end{enumerate}
 
-# Семинар 6
+\section{Семинар 6}\label{ux441ux435ux43cux438ux43dux430ux440-6}
 
-> [!definition] Поливекторы
-> $p$-вектор - полностью антисимметричный тензор типа $(p,0)$.
+\begin{quote}
+{[}!definition{]} Поливекторы \(p\)-вектор - полностью антисимметричный
+тензор типа \((p,0)\).
+\end{quote}
 
-### Примеры
+\subsubsection{Примеры}\label{ux43fux440ux438ux43cux435ux440ux44b-2}
 
-$(1,0)$ - вектор
-$(2, 0)$ - бивектор
-$(3, 0)$ - тривектор
+\((1,0)\) - вектор \((2, 0)\) - бивектор \((3, 0)\) - тривектор
 
-> [!definition]  Свертка поливекторов
-> Вектор: $\langle \vec{x}, \vec{y} \rangle = g_{ij}x^{i}y^{j} = \mathrm{inv}$
-> Бивектор: $\langle \vec{x}, \vec{y} \rangle = g_{ij}g_{kj}x^{ik}y^{jl} = \mathrm{inv}$ (свертка)
+\begin{quote}
+{[}!definition{]} Свертка поливекторов Вектор:
+\(\langle \vec{x}, \vec{y} \rangle = g_{ij}x^{i}y^{j} = \mathrm{inv}\)
+Бивектор:
+\(\langle \vec{x}, \vec{y} \rangle = g_{ij}g_{kj}x^{ik}y^{jl} = \mathrm{inv}\)
+(свертка)
+\end{quote}
 
-> [!definition] Норма вектора
-> $$|x| = \sqrt{ \langle x,x \rangle } = V \ (\text{н-мерный})$$
+\begin{quote}
+{[}!definition{]} Норма вектора
+$$|x| = \sqrt{ \langle x,x \rangle } = V \ (\text{н-мерный})$$
+\end{quote}
 
-Если $v = v_{1} \wedge v_{2} \wedge \dots \wedge v_{n}$, $v = v_{1} \wedge v_{2} \wedge \dots \wedge v_{n}$, то 
+Если \(v = v_{1} \wedge v_{2} \wedge \dots \wedge v_{n}\),
+\(v = v_{1} \wedge v_{2} \wedge \dots \wedge v_{n}\), то
 
 $$\begin{gather}
 \langle u,v \rangle = \begin{vmatrix}
@@ -745,9 +835,9 @@ $$\begin{gather}
 - \text{определитель матрицы Грама системы} \ u_{1}, u_{2}, \dots, u_{n} \\
 \end{gather}$$
 
-### Задача 1
+\subsubsection{Задача 1}\label{ux437ux430ux434ux430ux447ux430-1-1}
 
-Найти форму бивектора $u = u_{1} \wedge u_{2}$.
+Найти форму бивектора \(u = u_{1} \wedge u_{2}\).
 
 $$\begin{gather}
 u_{1} = (1,2,3)^{T} \ u_{2} = (4,0,1)^{T} \\
@@ -757,9 +847,10 @@ u_{1} = (1,2,3)^{T} \ u_{2} = (4,0,1)^{T} \\
 \end{vmatrix} = 189, \ |u| = \sqrt{ 189 } = 3\sqrt{ 21 }
 \end{gather}$$
 
-### Задача 2
+\subsubsection{Задача 2}\label{ux437ux430ux434ux430ux447ux430-2-1}
 
-Найти площадь параллелограма построенного на векторах $u_{1} = (1,4,3,0)^{T}, \ u_{2} = (1,2,0,1)^{T}$.
+Найти площадь параллелограма построенного на векторах
+\(u_{1} = (1,4,3,0)^{T}, \ u_{2} = (1,2,0,1)^{T}\).
 
 $$\begin{gather}
 |u|^{2} = \begin{vmatrix}
@@ -768,9 +859,10 @@ $$\begin{gather}
 \end{vmatrix} = 75, \ |u| = 5\sqrt{ 3 }
 \end{gather}$$
 
-### Задача 3
+\subsubsection{Задача 3}\label{ux437ux430ux434ux430ux447ux430-3-1}
 
-Найти объем параллелепипеда, построенного на векторах $u_{1} = (1,2,3,0)^{T}, \ u_{2} = (1,1,-1,0)^{T}, \ u_{3} = (1,1,0,2)^{T}$.
+Найти объем параллелепипеда, построенного на векторах
+\(u_{1} = (1,2,3,0)^{T}, \ u_{2} = (1,1,-1,0)^{T}, \ u_{3} = (1,1,0,2)^{T}\).
 
 $$\begin{gather}
 |u|^{2} = \begin{vmatrix}
@@ -781,9 +873,11 @@ $$\begin{gather}
 |u| = \sqrt{ 169 } = 13 \\
 \end{gather}$$
 
-### Задача 4
+\subsubsection{Задача 4}\label{ux437ux430ux434ux430ux447ux430-4-1}
 
-Найти кривизны кривой $\alpha(t) = \left( t, \frac{t^{2}}{2}-t, \frac{t^{3}}{3}, \frac{t^{4}}{4} \right)^{T}$ при $t = 0$.
+Найти кривизны кривой
+\(\alpha(t) = \left( t, \frac{t^{2}}{2}-t, \frac{t^{3}}{3}, \frac{t^{4}}{4} \right)^{T}\)
+при \(t = 0\).
 
 $$\begin{gather}
 k_{1} = \frac{|\dot{\alpha} \wedge \ddot{\alpha}|}{|\dot{\alpha}|^{3}} \\
@@ -830,9 +924,12 @@ k_{2} = \frac{2}{1} = 2 \\
 k_{3} = \frac{12\cdot 1}{\sqrt{ 2 } \cdot 4} = \frac{3}{\sqrt{ 2 }}
 \end{gather}$$
 
-### Задача на "галочки"
+\subsubsection{Задача на
+``галочки''}\label{ux437ux430ux434ux430ux447ux430-ux43dux430-ux433ux430ux43bux43eux447ux43aux438}
 
-Выписать инварианты магнитного поля $F_{\mu \nu}F^{\mu \nu}$ и $\frac{1}{2}\epsilon^{\mu \nu \rho \sigma}F_{\mu \nu}F_{\sigma \rho}$ в терминах напряжений электронных и магнитных полей $E$ и $H$.
+Выписать инварианты магнитного поля \(F_{\mu \nu}F^{\mu \nu}\) и
+\(\frac{1}{2}\epsilon^{\mu \nu \rho \sigma}F_{\mu \nu}F_{\sigma \rho}\)
+в терминах напряжений электронных и магнитных полей \(E\) и \(H\).
 
 $$g^{\mu \nu} = g_{\mu \nu} = \begin{pmatrix}
 1 & 0 & 0 & 0 \\
