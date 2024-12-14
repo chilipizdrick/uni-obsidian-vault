@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"Дискретная математика\"  ",
@@ -29,16 +29,16 @@
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0.1,
   "nodeSizeMultiplier": 1.22989974270251,
-  "lineSizeMultiplier": 1.50226687960252,
-  "collapse-forces": false,
-  "centerStrength": 0.408148148148148,
-  "repelStrength": 11.2444444444444,
+  "lineSizeMultiplier": 1.63073374146039,
+  "collapse-forces": true,
+  "centerStrength": 0.434344778635436,
+  "repelStrength": 10.5447608907817,
   "linkStrength": 1,
-  "linkDistance": 259,
-  "scale": 0.40568831536473104,
-  "close": false
+  "linkDistance": 257,
+  "scale": 0.23284643898383967,
+  "close": true
 }
