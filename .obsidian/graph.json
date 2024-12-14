@@ -5,22 +5,8 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
-    {
-      "query": "path:Алгоритмика  ",
-      "color": {
-        "a": 1,
-        "rgb": 12403455
-      }
-    },
-    {
-      "query": "path:\"Аналитическая геометрия\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 16761631
-      }
-    },
     {
       "query": "path:\"Дискретная математика\"  ",
       "color": {
@@ -45,14 +31,14 @@
   ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1.22881481481481,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": 0.1,
+  "nodeSizeMultiplier": 1.22989974270251,
+  "lineSizeMultiplier": 1.50226687960252,
   "collapse-forces": false,
   "centerStrength": 0.408148148148148,
   "repelStrength": 11.2444444444444,
   "linkStrength": 1,
   "linkDistance": 259,
-  "scale": 0.1336431494180731,
-  "close": true
+  "scale": 0.40568831536473104,
+  "close": false
 }
