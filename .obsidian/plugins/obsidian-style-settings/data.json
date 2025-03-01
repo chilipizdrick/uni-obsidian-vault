@@ -30,5 +30,8 @@
   "minimal-style@@ax3@@dark": "#70B7FF",
   "minimal-style@@sp1@@light": "#A9D4FF",
   "minimal-style@@sp1@@dark": "#A9D4FF",
-  "catppuccin-icon-styles@@ctp-icon-hide": false
+  "catppuccin-icon-styles@@ctp-icon-hide": false,
+  "obsidian-prism-theme@@color-schemes-dt": "pt-color-scheme-raven-dt",
+  "obsidian-prism-theme@@color-scheme-style-dt": "pt-color-scheme-style-minimal-dt",
+  "obsidian-prism-theme@@accent-style-dt": "pt-accent-style-minimal-dt"
 }
