@@ -11,7 +11,6 @@
   "encore-settings@@encore-translucency-strength": 0.5,
   "encore-settings@@encore-translucency-blur-amount": 5,
   "encore-settings@@encore-mobile-translucency": false,
-  "encore-settings@@encore-translucency-image": "url(\"https://cdn.discordapp.com/attachments/628563698314903554/1230879913863807046/girl_whale_walpaper_Custom.jpeg?ex=6629b880&is=66286700&hm=19d0769f2bae7f487ddae582af390036fe2676d212117877672f4dfcf5b67c54&\")",
   "minimal-style@@window-title-off": false,
   "minimal-advanced@@styled-scrollbars": false,
   "minimal-advanced@@cursor": "default",
@@ -33,5 +32,6 @@
   "catppuccin-icon-styles@@ctp-icon-hide": false,
   "obsidian-prism-theme@@color-schemes-dt": "pt-color-scheme-raven-dt",
   "obsidian-prism-theme@@color-scheme-style-dt": "pt-color-scheme-style-minimal-dt",
-  "obsidian-prism-theme@@accent-style-dt": "pt-accent-style-minimal-dt"
+  "obsidian-prism-theme@@accent-style-dt": "pt-accent-style-minimal-dt",
+  "encore-settings@@encore-translucency-image": "url(\"https://i.imgur.com/qFmcbT0.png\")"
 }
