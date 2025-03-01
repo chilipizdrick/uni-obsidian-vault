@@ -1,6 +1,8 @@
 /* Semi-transparent color */
 
-body {	background: #000000cc;}
+body {
+    background: #000000cc;
+}
 
 /* Make side-bar and top-bar transparent */ 
 div.app-container, div.horizontal-main-container, div.workspace, div.workspace-ribbon, div.workspace-ribbon::before, div.side-dock-ribbon, div.mod-left, div.workspace-split, div.workspace-tabs, div.workspace-tab-header-container, div.workspace-tab-container, div.workspace-leaf { 
