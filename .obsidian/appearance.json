@@ -9,7 +9,8 @@
     "pdf",
     "image",
     "obsidian.css.live-preview.list-rainbow-indents",
-    "cursor-line-highlight"
+    "cursor-line-highlight",
+    "bulkier-bold-font"
   ],
   "nativeMenus": false,
   "interfaceFontFamily": "JetBrains Mono"
