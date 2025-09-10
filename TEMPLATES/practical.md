@@ -1,7 +1,7 @@
 ---
 tags:
   - типовой-расчет
-  - 2nd-semester
+  - 5th-semester
   - {{date}}
 ---
 
