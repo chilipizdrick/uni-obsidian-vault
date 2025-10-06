@@ -89,3 +89,20 @@ P(np-z \leq k \leq np+z) = 0.99 \\
 P\left( -\frac{z}{\sqrt{ npq }} \leq \frac{k-np}{\sqrt{ npq }}\leq \frac{z}{\sqrt{ npq }} \right) = 0.99 \\
 z = 10.304
 \end{gather}$$
+
+> [!definition] Закон больших чисел
+> $$\begin{gather}
+P\left( \left| \frac{k}{n}-p \right| < \epsilon  \right) = P\left( -\epsilon < \frac{k-np}{n} < \epsilon \right) = \\
+= P\left( -\epsilon \sqrt{ \frac{n}{pq} } < \frac{k-np}{\sqrt{ npq }} < \epsilon\sqrt{ \frac{n}{pq} } \right) = 2\Phi\left( \epsilon \sqrt{ \frac{n}{pq} } \right) - 1
+\end{gather}$$
+
+### Задача 6
+
+Сколько раз надо бросить игральную кость, чтобы вероятность $$\left| \frac{k}{n} - \frac{1}{6} \right| < 0.01$$ была больше вероятности другого события.
+
+$$\begin{gather}
+P\left( \left| \frac{k}{n} -\frac{1}{6} \right| < 0.01 \right) = \frac{1}{2} \\
+2\Phi\left( \epsilon \sqrt{ \frac{n}{pq} } \right) - 1 = \frac{1}{2} \\
+\Phi\left( \epsilon \sqrt{ \frac{n}{pq} } \right) = \frac{3}{4} \\
+\epsilon \sqrt{ \frac{n}{pq} }
+\end{gather}$$
