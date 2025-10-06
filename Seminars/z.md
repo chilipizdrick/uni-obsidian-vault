@@ -104,5 +104,8 @@ $$\begin{gather}
 P\left( \left| \frac{k}{n} -\frac{1}{6} \right| < 0.01 \right) = \frac{1}{2} \\
 2\Phi\left( \epsilon \sqrt{ \frac{n}{pq} } \right) - 1 = \frac{1}{2} \\
 \Phi\left( \epsilon \sqrt{ \frac{n}{pq} } \right) = \frac{3}{4} \\
-\epsilon \sqrt{ \frac{n}{pq} }
+\sqrt{ \frac{n}{pq} } = 67.44897502 \\
+\frac{n}{pq} = 4549.36 \\
+n = 4549.36\cdot \frac{5}{36} \approx 632 \\
 \end{gather}$$
+
