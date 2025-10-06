@@ -80,3 +80,12 @@ $$\begin{gather}
 3. P_{30}(15) = 0.1456731241
 \end{gather}$$
 
+### Задача 5
+
+Каждый студент независимо ходит на лекцию с вероятностью $0.2$.
+
+$$\begin{gather}
+P(np-z \leq k \leq np+z) = 0.99 \\
+P\left( -\frac{z}{\sqrt{ npq }} \leq \frac{k-np}{\sqrt{ npq }}\leq \frac{z}{\sqrt{ npq }} \right) = 0.99 \\
+\Phi()
+\end{gather}$$
