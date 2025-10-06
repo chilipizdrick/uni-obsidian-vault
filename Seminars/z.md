@@ -70,7 +70,13 @@ $$P_{30}(15) = \left[\begin{align}
 \end{align}\right.$$
 
 $$\begin{gather}
-1. \ P_{30}(15) = 0.1444644481 \\
-2. \ P_{30}(15) = \Phi\left( \frac{15.5 - 15}{\sqrt{ 30\cdot \frac{1}{4} }} \right) - \Phi \left(\frac{14.5 - 15}{\sqrt{ 30\cdot \frac{1}{4} }}\right) = \\
-= \Phi\left( \frac{1}{2} \cdot \frac{1}{2.7386} \right) - \Phi\left( -\frac{1}{2}\cdot \frac{1}{2.7386} \right) = 
+\ P_{30}(15) = 0.1444644481 \\
+\ P_{30}(15) = \Phi\left( \frac{15.5 - 15}{\sqrt{ 30\cdot \frac{1}{4} }} \right) - \Phi \left(\frac{14.5 - 15}{\sqrt{ 30\cdot \frac{1}{4} }}\right) = \\
+= \Phi\left( \frac{1}{2} \cdot \frac{1}{2.7386} \right) - \Phi\left( -\frac{1}{2}\cdot \frac{1}{2.7386} \right) = 0.5724342642 - 0.4275657358 = \\
+= 0.1448685284
 \end{gather}$$
+
+$$\begin{gather}
+3. P_{30}(15) = 0.1456731241
+\end{gather}$$
+
