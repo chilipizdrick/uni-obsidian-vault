@@ -1,1 +1,9 @@
-{}
+{
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "bulkier-bold-font",
+    "cursor-line-highlight",
+    "image",
+    "pdf"
+  ]
+}
