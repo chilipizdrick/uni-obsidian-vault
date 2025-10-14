@@ -1,12 +1,13 @@
 {
-  "cssTheme": "Minimal",
+  "cssTheme": "",
   "enabledCssSnippets": [
     "bulkier-bold-font",
     "cursor-line-highlight",
-    "image",
-    "pdf"
+    "pdf",
+    "image"
   ],
   "theme": "system",
   "baseFontSize": 20,
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "accentColor": "#00a6ff"
 }
