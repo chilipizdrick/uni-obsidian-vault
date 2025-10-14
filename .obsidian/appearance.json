@@ -5,5 +5,8 @@
     "cursor-line-highlight",
     "image",
     "pdf"
-  ]
+  ],
+  "theme": "system",
+  "baseFontSize": 20,
+  "baseFontSizeAction": true
 }
