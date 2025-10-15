@@ -9,5 +9,6 @@
   "theme": "obsidian",
   "baseFontSize": 20,
   "baseFontSizeAction": true,
-  "accentColor": "#47bfff"
+  "accentColor": "#47bfff",
+  "interfaceFontFamily": ""
 }
