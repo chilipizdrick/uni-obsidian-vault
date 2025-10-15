@@ -6,7 +6,7 @@
     "pdf",
     "image"
   ],
-  "theme": "system",
+  "theme": "obsidian",
   "baseFontSize": 20,
   "baseFontSizeAction": true,
   "accentColor": "#47bfff"
