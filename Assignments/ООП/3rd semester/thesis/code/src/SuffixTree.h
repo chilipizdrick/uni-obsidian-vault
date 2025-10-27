@@ -15,8 +15,7 @@ class Node {
 
     friend std::ostream &operator<<(std::ostream &, const Node &);
     friend std::istream &operator>>(std::istream &, Node &);
-    friend std::istream &operator>>(std::istream &is,
-                                    SuffixTree &tree);
+    friend std::istream &operator>>(std::istream &is, SuffixTree &tree);
 
   private:
     Node(Node *, int, int *, int);
@@ -62,8 +61,7 @@ class SuffixTree {
     std::string LRS();
     std::string LRS(Node *, std::string);
 
-    friend std::ostream &operator<<(std::ostream &,
-                                    const SuffixTree &);
+    friend std::ostream &operator<<(std::ostream &, const SuffixTree &);
     friend std::istream &operator>>(std::istream &, SuffixTree &);
 
   private:

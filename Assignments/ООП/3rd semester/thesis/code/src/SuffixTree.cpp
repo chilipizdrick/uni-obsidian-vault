@@ -20,23 +20,19 @@ void Node::add_child(const SuffixTree &tree, Node *child_to_add) {
     children[key] = child_to_add;
 }
 
-void Node::remove_child(const SuffixTree &tree,
-                        Node *child_to_remove) {
-    int key =
-        get_key(tree, child_to_remove, child_to_remove->begin_index);
+void Node::remove_child(const SuffixTree &tree, Node *child_to_remove) {
+    int key = get_key(tree, child_to_remove, child_to_remove->begin_index);
     children.erase(key);
 }
 
-int Node::get_key(const SuffixTree &tree, Node *node,
-                  int index) const {
+int Node::get_key(const SuffixTree &tree, Node *node, int index) const {
     char ch = tree.get_char_at_index(index);
     return (ch != '$' ? ch * (-1) : index);
 }
 
-void Node::split_edge(const SuffixTree &tree, int char_index,
-                      int new_node_ID) {
-    Node *new_node = new Node(parent, begin_index,
-                              new int(char_index), new_node_ID);
+void Node::split_edge(const SuffixTree &tree, int char_index, int new_node_ID) {
+    Node *new_node =
+        new Node(parent, begin_index, new int(char_index), new_node_ID);
 
     parent->remove_child(tree, this);
     parent->add_child(tree, new_node);
@@ -59,22 +55,15 @@ Suffix::Suffix(Node *n, int c) : node(n), char_index(c) {
     new_internal_node = false;
 }
 
-bool Suffix::ends_at_node() const {
-    return char_index == *node->end_index;
-}
+bool Suffix::ends_at_node() const { return char_index == *node->end_index; }
 
-bool Suffix::ends_at_leaf() const {
-    return node->is_leaf() && ends_at_node();
-}
+bool Suffix::ends_at_leaf() const { return node->is_leaf() && ends_at_node(); }
 
-bool Suffix::continues_with_char(const SuffixTree &tree,
-                                 int tree_index) const {
+bool Suffix::continues_with_char(const SuffixTree &tree, int tree_index) const {
     char ch = tree.get_char_at_index(tree_index);
     bool terminal(ch == '$');
-    return (ends_at_node() &&
-            node->get_child(tree, tree_index) != nullptr) ||
-           (!ends_at_node() &&
-            tree.get_char_at_index(char_index + 1) == ch &&
+    return (ends_at_node() && node->get_child(tree, tree_index) != nullptr) ||
+           (!ends_at_node() && tree.get_char_at_index(char_index + 1) == ch &&
             (!terminal || char_index + 1 == tree_index));
 }
 
@@ -90,8 +79,7 @@ Node *Suffix::walk_up(int &begin_index, int &end_index) const {
     }
 }
 
-bool Suffix::RULE2_conditions(const SuffixTree &tree,
-                              int tree_index) const {
+bool Suffix::RULE2_conditions(const SuffixTree &tree, int tree_index) const {
     return !ends_at_leaf() && !continues_with_char(tree, tree_index);
 }
 
@@ -137,14 +125,12 @@ void SuffixTree::SPA(int i) {
 
 // Алгоритм одиночного продления суффикса (Single Extension
 // Algorithm)
-SuffixTree::Rule SuffixTree::SEA(Suffix &previous_suffix, int j,
-                                 int i) {
+SuffixTree::Rule SuffixTree::SEA(Suffix &previous_suffix, int j, int i) {
     int begin_index, end_index;
     Node *origin = previous_suffix.walk_up(begin_index, end_index);
-    Suffix suffix =
-        (origin == root ? get_suffix(root, j, i)
-                        : get_suffix(origin->suffix_link, begin_index,
-                                     end_index));
+    Suffix suffix = (origin == root ? get_suffix(root, j, i)
+                                    : get_suffix(origin->suffix_link,
+                                                 begin_index, end_index));
 
     Rule rule_applied;
     if (suffix.RULE2_conditions(*this, i + 1)) {
@@ -161,8 +147,7 @@ SuffixTree::Rule SuffixTree::SEA(Suffix &previous_suffix, int j,
     return rule_applied;
 }
 
-Suffix SuffixTree::get_suffix(Node *origin, int begin_index,
-                              int end_index) {
+Suffix SuffixTree::get_suffix(Node *origin, int begin_index, int end_index) {
     int char_index = *origin->end_index;
 
     while (begin_index <= end_index) {
@@ -170,8 +155,7 @@ Suffix SuffixTree::get_suffix(Node *origin, int begin_index,
         if (origin->edge_length() < end_index - begin_index + 1)
             char_index = *origin->end_index;
         else
-            char_index =
-                origin->begin_index + (end_index - begin_index);
+            char_index = origin->begin_index + (end_index - begin_index);
         begin_index += origin->edge_length();
     }
     return Suffix(origin, char_index);
@@ -190,11 +174,9 @@ char SuffixTree::get_char_at_index(int index) const {
     return tree_string[index - 1];
 }
 
-void SuffixTree::RULE2(Suffix &suffix, int char_index,
-                       int new_leaf_ID) {
+void SuffixTree::RULE2(Suffix &suffix, int char_index, int new_leaf_ID) {
     if (!suffix.ends_at_node()) {
-        suffix.node->split_edge(*this, suffix.char_index,
-                                --internal_node_ID);
+        suffix.node->split_edge(*this, suffix.char_index, --internal_node_ID);
         suffix.node = suffix.node->parent;
         suffix.new_internal_node = true;
     }
@@ -216,28 +198,24 @@ std::string SuffixTree::node_graph(Node *parent) {
            << "];\n";
     for (; it != parent->children.end(); it++) {
         Node *child_node = it->second;
-        buffer << parent->ID << "->" << child_node->ID
-               << " [label = \""
-               << get_substr(child_node->begin_index,
-                             *(child_node->end_index))
+        buffer << parent->ID << "->" << child_node->ID << " [label = \""
+               << get_substr(child_node->begin_index, *(child_node->end_index))
                << "\"];\n"
                << node_graph(child_node);
     }
     Node *suffix_link = parent->suffix_link;
     if (suffix_link)
-        buffer << "\"" << parent->ID << "\" -> " << "\""
-               << suffix_link->ID
+        buffer << "\"" << parent->ID << "\" -> " << "\"" << suffix_link->ID
                << "\" [style=dashed arrowhead=otriangle];\n";
     return buffer.str();
 }
 
 std::ostream &operator<<(std::ostream &os, const Node &node) {
-    std::string suffix_node_id =
-        node.suffix_link != nullptr
-            ? std::to_string(node.suffix_link->ID)
-            : "-";
-    os << "{ " << node.ID << " " << node.begin_index << " "
-       << *node.end_index << " " << suffix_node_id << " ";
+    std::string suffix_node_id = node.suffix_link != nullptr
+                                     ? std::to_string(node.suffix_link->ID)
+                                     : "-";
+    os << "{ " << node.ID << " " << node.begin_index << " " << *node.end_index
+       << " " << suffix_node_id << " ";
     os << " [ ";
     if (!node.children.empty()) {
         for (auto const &[id, node] : node.children) {
@@ -332,15 +310,13 @@ std::string SuffixTree::LRS(Node *node, std::string curr_string) {
         }
         lrs_variants.push_back(LRS(
             child_node,
-            curr_string +
-                this->tree_string.substr(child_node->begin_index - 1,
-                                         child_node->edge_length())));
+            curr_string + this->tree_string.substr(child_node->begin_index - 1,
+                                                   child_node->edge_length())));
     }
-    return *std::max_element(
-        lrs_variants.begin(), lrs_variants.end(),
-        [](const std::string &a, const std::string &b) {
-            return a.size() < b.size();
-        });
+    return *std::max_element(lrs_variants.begin(), lrs_variants.end(),
+                             [](const std::string &a, const std::string &b) {
+                                 return a.size() < b.size();
+                             });
 }
 
 std::string SuffixTree::LRS() { return LRS(this->root, ""); }

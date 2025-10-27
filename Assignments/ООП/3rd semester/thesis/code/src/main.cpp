@@ -41,9 +41,8 @@ int main(int argc, char *argv[]) {
 
         } else if (flag == "-l" || flag == "--lrs") {
             std::string input = read_file_to_string(argv[2]);
-            std::transform(
-                input.begin(), input.end(), input.begin(),
-                [](unsigned char c) { return std::tolower(c); });
+            std::transform(input.begin(), input.end(), input.begin(),
+                           [](unsigned char c) { return std::tolower(c); });
             auto start = std::chrono::high_resolution_clock::now();
             tree.construct(input);
             std::string lrs = tree.LRS();
@@ -79,9 +78,8 @@ int main(int argc, char *argv[]) {
             } else if (test_number == 3) {
                 std::string input = "ATCGATCGA$";
                 tree.construct(input);
-                std::cout
-                    << "Longest repeating substring of string \""
-                    << input << "\" is \"" << tree.LRS() << "\"\n";
+                std::cout << "Longest repeating substring of string \"" << input
+                          << "\" is \"" << tree.LRS() << "\"\n";
             }
 
         } else {

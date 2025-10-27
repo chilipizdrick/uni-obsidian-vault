@@ -17,8 +17,6 @@
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
             typst
-            typstyle
-            tinymist
           ];
         };
       }
