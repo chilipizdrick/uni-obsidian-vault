@@ -1,0 +1,4 @@
+.envrc
+.direnv/
+.venv/
+.store_copy.db
