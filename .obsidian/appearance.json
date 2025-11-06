@@ -10,5 +10,7 @@
   "baseFontSize": 22,
   "baseFontSizeAction": true,
   "accentColor": "#47bfff",
-  "interfaceFontFamily": ""
+  "interfaceFontFamily": "",
+  "showRibbon": true,
+  "showViewHeader": true
 }
