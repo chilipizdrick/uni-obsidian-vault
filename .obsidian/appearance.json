@@ -12,5 +12,6 @@
   "accentColor": "#47bfff",
   "interfaceFontFamily": "",
   "showRibbon": true,
-  "showViewHeader": true
+  "showViewHeader": true,
+  "monospaceFontFamily": ""
 }
