@@ -1,6 +1,6 @@
 ---
 tags:
   - lecture
-  - 5th-semester
+  - 6th-semester
   - {{date}}
 ---
