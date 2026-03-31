@@ -40,6 +40,20 @@
   margin-inline: auto;
 }
 
+/* Target the Obsidian wrapper container, not just the SVG */
+.internal-embed.custom-center {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important; /* Forces the container to span the page */
+}
+
+/* Ensure the drawing respects the centered container */
+.internal-embed.custom-center .excalidraw-svg {
+    display: inline-block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 
 /* =========================================
    EXCALIDRAW CUSTOM SIZE & ALIGNMENT
