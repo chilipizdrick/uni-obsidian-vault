@@ -1,30 +1,67 @@
+/* img[alt*="center"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+/* img { */
+/*     display: block; */
+/*     margin-left: auto; */
+/*     margin-right: auto; */
+/*     max-height: 30rem; */
+/*     max-width: 100%; */
+/* } */
+
+/* img[alt*="center"] { */
+/*     display: block; */
+/*     margin-left: auto; */
+/*     margin-right: auto; */
+/* } */
+/**/
+/* img[alt*="right"] { */
+/*     float:right; */
+/*     clear:right; */
+/*     margin-left: 1rem; */
+/*     margin-bottom: 2px; */
+/*     margin-top: 2px; */
+/* } */
+
+img[alt*="center"],
+.cm-content .image-embed[alt*="center"] {
+  display: block;
+  margin-inline: auto !important;
+}
+
+
 /* =========================================
    EXCALIDRAW CUSTOM SIZE & ALIGNMENT
    ========================================= */
 
 /* OPTION A: Global centering for ALL Excalidraw images */
 /* Uncomment the block below if you want every drawing to center by default */
+
+/*
 .excalidraw-svg {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
+*/
 
 /* OPTION B: Custom Class - Center and Resize */
 /* Triggered by: ![[drawing.excalidraw|custom-center]] */
-/* .excalidraw-svg.custom-center { */
-/*     display: block !important; */
-/*     margin-left: auto !important; */
-/*     margin-right: auto !important; */
-/*     width: 600px !important; /* Change this to your preferred default width */ */
-/*     max-width: 100% !important; /* Ensures it shrinks on mobile */ */
-/* } */
+.excalidraw-svg.custom-center {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 600px !important; /* Change this to your preferred default width */
+    max-width: 100% !important; /* Ensures it shrinks on mobile */
+}
 
 /* OPTION C: Custom Class - Align Right and wrap text */
 /* Triggered by: ![[drawing.excalidraw|custom-right]] */
-/* .excalidraw-svg.custom-right { */
-/*     float: right !important; */
-/*     margin-left: 20px !important; */
-/*     margin-bottom: 10px !important; */
-/*     width: 350px !important;  */
-/* } */
+.excalidraw-svg.custom-right {
+    float: right !important;
+    margin-left: 20px !important;
+    margin-bottom: 10px !important;
+    width: 350px !important; 
+}

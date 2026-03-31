@@ -1,4 +1,3 @@
-/* Page breaks */
 @media print {
     .internal-embed {
         page-break-after: avoid;
@@ -24,7 +23,7 @@
     }
 
     h1 {
-        page-break-before: always;
+        page-break-before: avoid;
     }
 
     h2,

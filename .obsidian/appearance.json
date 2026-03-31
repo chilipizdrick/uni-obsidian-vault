@@ -2,8 +2,7 @@
   "cssTheme": "",
   "enabledCssSnippets": [
     "cursor-line-highlight",
-    "pdf",
-    "hide-ribbon-when-collapsed"
+    "pdf"
   ],
   "theme": "obsidian",
   "baseFontSize": 23,
