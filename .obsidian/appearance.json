@@ -2,7 +2,8 @@
   "cssTheme": "",
   "enabledCssSnippets": [
     "cursor-line-highlight",
-    "pdf"
+    "pdf",
+    "image"
   ],
   "theme": "obsidian",
   "baseFontSize": 23,
