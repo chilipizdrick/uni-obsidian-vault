@@ -25,10 +25,19 @@
 /*     margin-top: 2px; */
 /* } */
 
-img[alt*="center"],
-.cm-content .image-embed[alt*="center"] {
+/* img[alt*="center"], */
+/* .cm-content .image-embed[alt*="center"] { */
+/*   display: block; */
+/*   margin-inline: auto !important; */
+/* } */
+
+.markdown-source-view.mod-cm6 .cm-content > * {
+  margin: 0 auto !important;
+}
+
+.markdown-preview-view img {
   display: block;
-  margin-inline: auto !important;
+  margin-inline: auto;
 }
 
 
