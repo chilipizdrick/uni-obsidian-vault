@@ -1,10 +1,9 @@
 {
   "cssTheme": "",
   "enabledCssSnippets": [
-    "bulkier-bold-font",
     "cursor-line-highlight",
     "pdf",
-    "image"
+    "hide-ribbon-when-collapsed"
   ],
   "theme": "obsidian",
   "baseFontSize": 23,
