@@ -1,0 +1,12 @@
+1. Изменить в программе sockets-nb.c неблокирующий режим работы клиента на блокирующий.
+
+2. Добавить в программу sockets-nb.c поддержку неблокирующего режима для сервера, с возможностью одновременной работы с несколькими клиентами. Подсказка:
+
+struct client_ctx {
+	int	 fd;
+	FILE	*f;
+	char	*linebuf;
+	size_t	 linebufsz;
+	struct client_ctx	*next;
+	struct client_ctx	*prev;
+};

@@ -1,0 +1,8 @@
+upPercAse1 no punct
+loWercAse1!
+a upPercAse2!
+an loWercAse2.
+a An upPercAse3?
+a loWercAse3 no punct
+a a An AN a A An upPpeRcaSe4 no punct
+And lowerCase4 no punct

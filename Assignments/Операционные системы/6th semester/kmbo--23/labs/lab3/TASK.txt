@@ -1,0 +1,30 @@
+В паре с любым коллегой:
+
+1. Настройте беспарольное подключение посредством SSH к учётной записи коллеги
+   с помощью специально созданного, отдельного SSH-ключа. Пароль на ключ не задавайте.
+
+2. Напишите скрипт, который подключается к указанной учётной записи по SSH
+   (синтаксис такой же как у ssh(1), например: st123@mirea.ohvost.ru)
+   и добавляет в ~/.ssh/authorized_keys содержимое, приходящее на stdin.
+   Для тестирования создайте отдельную пару ключей, и добавляйте публичный ключ
+   из этой новой пары. Аутентификация должна идти строго по ключу, при неудаче
+   не должен производиться откат на запрос пароля.
+
+3. Настройте запуск скрипта по расписанию (crontab) каждое утро буднего дня.
+
+
+ssh-keygen -t ed25519 -f ~/.ssh/leha -N "" -C "leha"
+ssh-copy-id -i ~/.ssh/leha.pub st999@mirea.ohvost.ru
+ssh st999@mirea.ohvost.ru
+
+<ДАЮ ПРИВАТНЫЙ BORIS'У>
+<БЕРУ ПРИВАТНЫЙ У BORIS'А>
+
+chmod 600 ~/.ssh/boris
+ssh -i ~/.ssh/boris st998@mirea.ohvost.ru
+
+
+ssh-keygen -t ed25519 -f ~/.ssh/leha_test_key -N "" -C "leha"
+crontab -e
+0 8 * * 1-5 /home/alex/kmbo--23/labs/lab3/add_ssh_key.sh /home/alex/.ssh/boris st998@mirea.ohvost.ru < /home/alex/.ssh/leha_test_key.pub
+

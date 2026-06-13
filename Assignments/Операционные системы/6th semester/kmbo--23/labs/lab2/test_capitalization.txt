@@ -1,0 +1,10 @@
+UPPERCASE1
+lOWERCase1
+uppErcase2
+LOWERCASE2
+uppERCase3
+lowErcase3
+UPPErcase4
+lowErcASE4
+uppercase5
+lowERCAse5

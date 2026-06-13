@@ -1,0 +1,9 @@
+with a dot.
+with a question mark?
+with a semicolon;
+with a colon:
+with a comma, but no punctuation at the end
+with an exclamation mark!
+with nothing
+with a comma at the end,
+with nothing again

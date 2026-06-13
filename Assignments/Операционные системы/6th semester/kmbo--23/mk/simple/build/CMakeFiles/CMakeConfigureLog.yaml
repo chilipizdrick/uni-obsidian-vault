@@ -1,0 +1,179 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: OpenBSD - 7.8 - amd64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/st/kmbo--23/mk/simple/build/CMakeFiles/3.31.8/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/st/kmbo--23/mk/simple/build/CMakeFiles/CMakeScratch/TryCompile-FMPfXD"
+      binary: "/home/st/kmbo--23/mk/simple/build/CMakeFiles/CMakeScratch/TryCompile-FMPfXD"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/st/kmbo--23/mk/simple/build/CMakeFiles/CMakeScratch/TryCompile-FMPfXD'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1ed9f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_1ed9f.dir/build.make CMakeFiles/cmTC_1ed9f.dir/build
+        Building CXX object CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -MD -MT CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        OpenBSD clang version 19.1.7
+        Target: amd64-unknown-openbsd7.8
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/bin/c++" -cc1 -triple amd64-unknown-openbsd7.8 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 1 -pic-is-pie -mframe-pointer=all -relaxed-aliasing -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/st/kmbo--23/mk/simple/build/CMakeFiles/CMakeScratch/TryCompile-FMPfXD -v -fcoverage-compilation-dir=/home/st/kmbo--23/mk/simple/build/CMakeFiles/CMakeScratch/TryCompile-FMPfXD -resource-dir /usr/lib/clang/19 -dependency-file CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -internal-isystem /usr/lib/clang/19/include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fwrapv -D_RET_PROTECTOR -ret-protector -fcf-protection=branch -fno-jump-tables -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fno-builtin-malloc -fno-builtin-calloc -fno-builtin-realloc -fno-builtin-valloc -fno-builtin-free -fno-builtin-strdup -fno-builtin-strndup -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 19.1.7 based upon LLVM 19.1.7 default target amd64-unknown-openbsd7.8
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/v1
+         /usr/lib/clang/19/include
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_1ed9f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ed9f.dir/link.txt --verbose=1
+        OpenBSD clang version 19.1.7
+        Target: amd64-unknown-openbsd7.8
+        Thread model: posix
+        InstalledDir: /usr/bin
+         "/usr/bin/ld" -e __start --eh-frame-hdr -dynamic-linker /usr/libexec/ld.so -o cmTC_1ed9f /usr/lib/crt0.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -rpath-link /usr/X11R6/lib:/usr/local/lib -lc++ -lc++abi -lpthread -lm -lcompiler_rt -lc -lcompiler_rt /usr/lib/crtend.o
+        /usr/bin/c++  -v CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1ed9f  -Wl,-rpath-link,/usr/X11R6/lib:/usr/local/lib
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/v1]
+          add: [/usr/lib/clang/19/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/v1] ==> [/usr/include/c++/v1]
+        collapse include dir [/usr/lib/clang/19/include] ==> [/usr/lib/clang/19/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/v1;/usr/lib/clang/19/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/st/kmbo--23/mk/simple/build/CMakeFiles/CMakeScratch/TryCompile-FMPfXD']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1ed9f/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_1ed9f.dir/build.make CMakeFiles/cmTC_1ed9f.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -MD -MT CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [OpenBSD clang version 19.1.7]
+        ignore line: [Target: amd64-unknown-openbsd7.8]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/bin/c++" -cc1 -triple amd64-unknown-openbsd7.8 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 1 -pic-is-pie -mframe-pointer=all -relaxed-aliasing -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/st/kmbo--23/mk/simple/build/CMakeFiles/CMakeScratch/TryCompile-FMPfXD -v -fcoverage-compilation-dir=/home/st/kmbo--23/mk/simple/build/CMakeFiles/CMakeScratch/TryCompile-FMPfXD -resource-dir /usr/lib/clang/19 -dependency-file CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -internal-isystem /usr/lib/clang/19/include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fwrapv -D_RET_PROTECTOR -ret-protector -fcf-protection=branch -fno-jump-tables -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fno-builtin-malloc -fno-builtin-calloc -fno-builtin-realloc -fno-builtin-valloc -fno-builtin-free -fno-builtin-strdup -fno-builtin-strndup -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 19.1.7 based upon LLVM 19.1.7 default target amd64-unknown-openbsd7.8]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/v1]
+        ignore line: [ /usr/lib/clang/19/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_1ed9f]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ed9f.dir/link.txt --verbose=1]
+        ignore line: [OpenBSD clang version 19.1.7]
+        ignore line: [Target: amd64-unknown-openbsd7.8]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        link line: [ "/usr/bin/ld" -e __start --eh-frame-hdr -dynamic-linker /usr/libexec/ld.so -o cmTC_1ed9f /usr/lib/crt0.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o -rpath-link /usr/X11R6/lib:/usr/local/lib -lc++ -lc++abi -lpthread -lm -lcompiler_rt -lc -lcompiler_rt /usr/lib/crtend.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-e] ==> ignore
+          arg [__start] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/usr/libexec/ld.so] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_1ed9f] ==> ignore
+          arg [/usr/lib/crt0.o] ==> obj [/usr/lib/crt0.o]
+          arg [/usr/lib/crtbegin.o] ==> obj [/usr/lib/crtbegin.o]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_1ed9f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/usr/X11R6/lib:/usr/local/lib] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lc++abi] ==> lib [c++abi]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lm] ==> lib [m]
+          arg [-lcompiler_rt] ==> lib [compiler_rt]
+          arg [-lc] ==> lib [c]
+          arg [-lcompiler_rt] ==> lib [compiler_rt]
+          arg [/usr/lib/crtend.o] ==> obj [/usr/lib/crtend.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [c++;c++abi;pthread;m;compiler_rt;c;compiler_rt]
+        implicit objs: [/usr/lib/crt0.o;/usr/lib/crtbegin.o;/usr/lib/crtend.o]
+        implicit dirs: [/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      LLD 19.1.7 (compatible with GNU linkers)
+...
